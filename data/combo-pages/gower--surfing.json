@@ -10,6 +10,38 @@
   "bestSeason": "September - November (for consistent swells and fewer crowds)",
   "difficultyRange": "Easy to Challenging",
   "priceRange": "Free - £60 guided",
+  "topTips": [
+    "Llangennith is the safest bet for a first Gower surf — it's the most consistent beach in the peninsula and the sandbanks at low to mid-tide often shape the best waves, so check the surf report before you drive out. Just watch for rip currents at the north end.",
+    "Caswell and Langland are the two RNLI lifeguard-patrolled beaches with surf schools right on the sand (daily, 10am-6pm, early May to mid-September), which makes them the easiest choice for beginners and families who want a safety net.",
+    "Never underestimate Rhossili. It's one of the most photographed beaches in Britain but the swell here is powerful and exposed — it's for experienced surfers only, and the Worm's Head causeway at the far end floods fast, so don't get tempted to walk out there mid-session without checking tide times first.",
+    "Broughton Bay is the spot to know about once you're intermediate or better — it's Gower's quiet card, a proper swell magnet with a bumpy, unpaved approach road that keeps the crowds thin, and it's the natural overflow when Llangennith is rammed.",
+    "Parking is the real bottleneck on Gower in summer. Llangennith, Caswell, Langland, Port Eynon and Oxwich car parks all fill early on hot weekends — get there before 9am or be prepared to park further out and walk.",
+    "Wind direction makes or breaks a session here: offshore winds (blowing off the land) groom the waves clean, onshore winds turn everything choppy and messy. Check Magicseaweed or Windguru before committing to a drive across the peninsula.",
+    "A 5/3mm wetsuit covers most of the year, but from November to April you'll want a thicker suit plus boots, gloves and a hood — the Bristol Channel doesn't do warm.",
+    "Combine your surf with food: Llangennith has a burger van right in the car park and the King's Head pub for afterwards, Rhossili has the Bay Bistro for coffee-with-a-view, and Port Eynon has seafood huts near the beach."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start at Llangennith, Caswell or Langland — all three are forgiving, sandy-bottomed beaches suited to learners, and Caswell and Langland both have surf schools on-site if you want a lesson rather than going it alone.",
+      "Book a lesson if it's your first time in the water here. Llangennith Surf School and Rip N Rock both run beginner lessons (roughly £40-60) that include board and wetsuit hire, which is the cheapest way to try the sport without committing to gear.",
+      "Check which beaches have lifeguards before you go. RNLI lifeguards patrol Caswell, Langland, Port Eynon and Three Cliffs from around early May to mid-September (10am-6pm) — Llangennith and Rhossili are not consistently lifeguarded, so treat them with more caution if you're inexperienced.",
+      "Arrive early for parking. Every beach car park on this list gets busy on summer weekends and some school holidays; arriving before 9-10am, or parking in the village and walking down, saves a lot of frustration.",
+      "Skip Rhossili and Broughton Bay as a beginner. Both produce powerful, hollow, exposed waves that are genuinely dangerous if you're not a confident, experienced surfer — save them for later in your surf journey.",
+      "Pack a proper wetsuit even in summer. Water temperatures rarely feel tropical in the Bristol Channel; a 5/3mm suit is the minimum most people are comfortable in outside of high summer.",
+      "If you're planning to walk out toward Worm's Head at Rhossili after your surf, check tide times first — the causeway is only safely crossable for about 2.5 hours either side of low tide, and people get cut off and need rescuing most years.",
+      "Bring cash or a card for pay-and-display car parks (most Gower beach car parks charge £3-8) — some are card-only, some are coin-only, and machines aren't always reliable."
+    ],
+    "regular": [
+      "Read the sandbanks at Llangennith rather than just checking a generic forecast — low to mid-tide often produces the best-shaped peaks here, and that's specific enough to Gower that most generic surf forecasts won't tell you.",
+      "Head to Broughton Bay when Llangennith is packed. It picks up similar swell but the rough access road keeps numbers down — just bring a vehicle that can handle an unpaved track and park considerately, space is tight.",
+      "Caswell is smaller and more sheltered than the open forecasts suggest, so cross-check a local surf cam before driving over — it's easy to arrive and find it flatter than expected compared to Llangennith or Rhossili.",
+      "Autumn (September to November) is the sweet spot on Gower: swells are more consistent, the summer crowds have thinned, and water temperatures haven't dropped to full winter cold yet.",
+      "If you're chasing a genuine challenge, Rhossili's Worm's Head end can produce proper left-handers when the swell lines up — but only paddle out there if you're confident in strong currents and exposed conditions.",
+      "Weekday mornings beat weekend afternoons everywhere on Gower, but especially at Llangennith and Caswell, where summer weekend crowds can mean queuing for a peak.",
+      "Port Eynon rewards patience — it's inconsistent but sheltered, and on its day produces fun, forgiving waves with none of the crowd pressure of Llangennith. Good backup when the main spots are overrun with beginners.",
+      "National Trust members get free parking at the Rhossili car park (and other NT-run Gower car parks) — worth factoring in if you're a regular visitor, since non-member parking there isn't cheap."
+    ]
+  },
   "spots": [
     {
       "name": "Llangennith Beach",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "Free (parking £5-8) or £45-60 for a lesson",
       "operatorSlug": null,
-      "insiderTip": "Check the surf report at low tide. Often, the sandbanks create better-shaped waves at low to mid-tide. Plus, you can grab a burger from the van in the carpark after your session."
+      "insiderTip": "Check the surf report at low tide. Often, the sandbanks create better-shaped waves at low to mid-tide. Plus, you can grab a burger from the van in the carpark after your session.",
+      "howToDoIt": "Walk straight off the car park and down onto the beach — it's a short, flat approach, no cliff paths or scrambling involved. The beach is over a mile long with multiple sandbank peaks, so spread out to find a spot with fewer people rather than paddling for the same wave as everyone else near the main access point. Beginners should stick to the middle of the beach where lifeguarding and surf school activity concentrates during summer; the north end nearer the Burry Holms headland has stronger rips and is better left to experienced surfers.",
+      "access": "Direct beach access from the main car park (SA3 1JD), a two-minute walk down a sandy path. No permits or rights-of-way issues — this is open public beach. Tide affects wave shape more than access; the beach is surfable at all states of tide but sandbank quality shifts, so low to mid-tide is generally best.",
+      "routeDescription": "A vast, west-facing sandy beach roughly 3 miles long backed by dunes, with multiple sandbank-formed peaks running its length. Peaks shift with the sand, so scan the beach on arrival rather than paddling out at the first gap you see; the middle section is most consistent and most patrolled in season."
     },
     {
       "name": "Rhossili Bay",
@@ -51,7 +86,10 @@
       },
       "estimatedCost": "Free (parking £5-7)",
       "operatorSlug": null,
-      "insiderTip": "Walk to the end of the beach towards Worm's Head for a more secluded surf spot, but only if you're a confident surfer and aware of the tides. Bring a camera for sunset - the views are incredible."
+      "insiderTip": "Walk to the end of the beach towards Worm's Head for a more secluded surf spot, but only if you're a confident surfer and aware of the tides. Bring a camera for sunset - the views are incredible.",
+      "howToDoIt": "From the National Trust car park, take the steep path or steps down onto the beach — it's a proper descent, not a flat stroll, so factor that in carrying a board. The beach is fully exposed to Atlantic swell with little shelter, producing powerful, sometimes hollow waves that break with real force; this is not a spot to learn on. Paddle out through the main break near the centre of the beach unless you're experienced enough to handle the currents further along towards Worm's Head.",
+      "access": "Access is via the National Trust car park and coastal path above the beach (SA3 1PL); parking is fee-payable for non-members but free for National Trust members. Do not attempt to reach or surf near the Worm's Head causeway itself — it is only safely crossable for roughly 2.5 hours either side of low tide, currents across it are strong and fast-moving when it floods, and people are cut off and need rescuing most years.",
+      "routeDescription": "A long, open, west-facing bay backed by dramatic cliffs, with the swell wrapping in largely unobstructed from the Atlantic. Waves are generally best in the middle of the bay; the far southwestern end towards Worm's Head can produce quality left-handers on the right swell but carries stronger currents and is for confident, experienced surfers only."
     },
     {
       "name": "Langland Bay",
@@ -72,7 +110,10 @@
       },
       "estimatedCost": "Free (parking £3-5) or £40-50 for a lesson",
       "operatorSlug": null,
-      "insiderTip": "Grab an ice cream from the beachside cafe after your surf. The rock pools at low tide are also great for exploring."
+      "insiderTip": "Grab an ice cream from the beachside cafe after your surf. The rock pools at low tide are also great for exploring.",
+      "howToDoIt": "Small, sheltered bay with a short walk from the car park directly onto the sand. Waves break gently over sand close to shore, which makes it a good place to practise pop-ups and get a feel for whitewater before venturing to more exposed beaches. The on-beach surf school runs group and private lessons if you'd rather learn with an instructor than figure it out solo.",
+      "access": "Direct access from the car park opposite the beach (SA3 4QR), a flat, short walk down. RNLI lifeguards patrol Langland daily from roughly early May to mid-September (10am-6pm), making it one of the more reassuring beginner options on Gower during summer months. Outside patrol hours, treat it like any unlifeguarded beach.",
+      "routeDescription": "A compact, south-facing sandy bay flanked by low headlands that shelter it from the stronger swells hitting the more exposed Gower coast. Best for smaller, cleaner days when bigger beaches like Rhossili are blown out or too powerful; not the spot to chase a big swell."
     },
     {
       "name": "Caswell Bay",
@@ -93,7 +134,10 @@
       },
       "estimatedCost": "Free (parking £3-5) or £40-50 for a lesson",
       "operatorSlug": null,
-      "insiderTip": "Check the surf cams before you head down as Caswell can be a lot smaller than other Gower beaches, and easily missed by general forecasts."
+      "insiderTip": "Check the surf cams before you head down as Caswell can be a lot smaller than other Gower beaches, and easily missed by general forecasts.",
+      "howToDoIt": "A short, easy walk down from the car park above the beach onto sand. The bay's shelter means waves here are usually smaller and mellower than the open-coast beaches, so it's a solid choice for beginners working on their first few sessions, or for anyone wanting a gentler day when the swell is up elsewhere. The on-beach surf school offers lessons and board hire if you need either.",
+      "access": "Access from the car park above the beach (SA3 3BS) down a short path to the sand. RNLI lifeguards patrol Caswell daily from roughly early May to mid-September (10am-6pm) — check current dates locally before relying on cover outside peak summer.",
+      "routeDescription": "A small, south-facing, headland-sheltered bay. Because it's tucked in, swell here can be noticeably smaller than a generic Gower-wide forecast suggests, so check a local surf cam rather than assuming conditions will match Llangennith or Rhossili on the same day."
     },
     {
       "name": "Broughton Bay",
@@ -114,7 +158,10 @@
       },
       "estimatedCost": "Free (parking free)",
       "operatorSlug": null,
-      "insiderTip": "Park respectfully as the space is tight, and only take a vehicle suitable for a bumpy, unpaved road. This is a great spot when Llangennith is packed."
+      "insiderTip": "Park respectfully as the space is tight, and only take a vehicle suitable for a bumpy, unpaved road. This is a great spot when Llangennith is packed.",
+      "howToDoIt": "From the small parking area at the end of the access road, it's a short walk across dunes onto a long, exposed beach. There's no surf school or lifeguard presence here, so this is a self-sufficient spot — go with a buddy, know the conditions, and be honest about your ability before paddling out, particularly at higher tide when the waves have more power behind them.",
+      "access": "Reached via a narrow, unpaved, bumpy road ending in limited parking (SA3 1EU) — not suitable for low-clearance cars, and space is genuinely tight, so park considerately and don't block the turning area. No lifeguard cover; this is an unpatrolled, remote beach.",
+      "routeDescription": "A long, sandy, north-facing beach on Gower's quieter side, backed by dunes and largely free of the crowds that build up at Llangennith. Swell picks up well here but so does the wind exposure, and rip currents are a genuine hazard — best suited to intermediate-to-advanced surfers who can read a beach break and self-rescue if needed."
     },
     {
       "name": "Port Eynon",
@@ -135,7 +182,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "Grab some freshly caught seafood from the nearby huts after your surf. The bay is also great for kayaking and paddleboarding."
+      "insiderTip": "Grab some freshly caught seafood from the nearby huts after your surf. The bay is also great for kayaking and paddleboarding.",
+      "howToDoIt": "A flat, short walk from the car park onto the beach. Port Eynon is inconsistent as a surf spot — it needs the right swell direction to work well — so check the forecast before making the drive rather than turning up on spec. When it does break, it's a forgiving, sandy-bottomed wave suited to beginners and intermediates, but it shares the water with swimmers and families in summer, so keep an eye out and give way where the beach is busy.",
+      "access": "Direct access from the large car park near the beach (SA3 1NN), a level, easy walk. RNLI lifeguards patrol Port Eynon daily from roughly early July to early September (10am-6pm) — outside that window, treat it as unpatrolled.",
+      "routeDescription": "A wide, sheltered, south-facing bay with a sandy bottom, popular with families and swimmers as well as surfers. Best on a moderate swell with the right direction; can go flat when other Gower beaches are working, so it rewards checking conditions rather than assuming."
     },
     {
       "name": "Oxwich Bay",
@@ -156,7 +206,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "Explore the Oxwich National Nature Reserve after your surf. The beach is also great for a long walk."
+      "insiderTip": "Explore the Oxwich National Nature Reserve after your surf. The beach is also great for a long walk.",
+      "howToDoIt": "Easy, flat access from the large car park onto a long sandy beach shared with swimmers, paddleboarders and families in summer. Waves are usually gentle here, making it a relaxed option for beginners or for a lower-key session after tackling somewhere more challenging like Rhossili. Keep clear of designated swimming areas and be aware of other water users, especially in peak season.",
+      "access": "Direct access from the large car park near the beach (SA3 1LS), a short, level walk. No lifeguard patrol confirmed for Oxwich specifically — check locally before relying on cover. Be aware of stronger currents reported near the eastern end of the beach.",
+      "routeDescription": "A long, gently shelving, south-facing sandy beach backed by the Oxwich National Nature Reserve. Generally mellow and forgiving, best suited to smaller swells; the eastern end nearer the headland has more current and deserves extra caution."
     }
   ],
   "practicalInfo": {

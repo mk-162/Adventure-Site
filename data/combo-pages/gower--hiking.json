@@ -10,6 +10,38 @@
   "bestSeason": "May-October",
   "difficultyRange": "Easy to Challenging",
   "priceRange": "Free - £80 guided",
+  "topTips": [
+    "Worm's Head is only accessible for about 2.5 hours either side of low tide, giving roughly a 5-hour window in total. Head down an hour or two before low tide, not right on it, and never plan to be crossing the causeway as the tide turns. Tide times are posted at the National Trust centre by the car park and at the old coastguard station.",
+    "The Outer Head of Worm's Head is closed every year from 1 February to 31 July to protect ground-nesting seabirds — the causeway and Inner Head stay open, but you won't be able to walk all the way to the tip in spring. If that's the whole point of your visit, plan for August onwards.",
+    "Rhossili's National Trust car park fills fast on any sunny weekend and is pay & display (roughly £3 for two hours, £6 for the day, free for NT members) — get there before 10am in summer or you'll be circling for a space.",
+    "At Three Cliffs Bay, the concrete stepping stones across Pennard Pill are your easiest crossing at low-to-mid tide, but they submerge as the tide rises. If you're cut off, the only alternatives are wading waist-deep or detouring half a mile upstream to the footbridge near Parkmill — check tide times before you commit to the beach side.",
+    "Whiteford Lighthouse sits half a mile out into the Loughor estuary, so even at low tide there's only about an hour either side when it's reachable on foot. Aim for a low spring tide for the best chance, wear shoes you don't mind getting wet and sandy, and budget a good 3 hours round trip from the Cwm Ivy/Llanmadoc parking field.",
+    "Few of the coastal routes have shops or cafés along the way, so carry water and snacks with you — Rhossili, Southgate, Three Cliffs and Port Eynon are really the only reliable refuelling points.",
+    "Several of the best walks (Rhossili to Llangennith, the Coast Path sections) are one-way or awkward loops by car. Use the First Cymru Gower Explorer bus to get back to your start point rather than doubling back on foot.",
+    "Sea fog and sudden wind are a real Gower hazard, especially on the exposed western coast around Rhossili and Worm's Head — check the forecast on the morning of your walk, not just the night before, and be ready to turn back on the cliffs if visibility drops."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Never attempt Worm's Head without checking tide times first — this is the one Gower walk where getting it wrong can mean being cut off overnight and needing rescue. Times are posted at the NT centre and coastguard station, or check online before you leave home.",
+      "Wear proper hiking boots with ankle support. Gower's coast path looks gentle in photos but the terrain is uneven, often muddy, and some sections involve scrambling over rock (notably Worm's Head and parts of the Oxwich-to-Three-Cliffs path).",
+      "Pack a waterproof jacket and trousers even if the forecast looks fine — Gower's coastal weather changes quickly and sea fog can roll in with little warning.",
+      "Start with an easy, well-marked route to get your bearings: Rhossili Bay to Llangennith or Arthur's Stone on Cefn Bryn are both flat-ish, obvious paths with big payoff views for minimal risk.",
+      "Book your parking mentally into the day — most Gower car parks (Rhossili, Southgate, Oxwich) are National Trust pay & display and can cost £6-10. Arrive early on weekends or you may not get a space at all.",
+      "Bring cash or a card for pay & display machines — signal can be patchy enough that contactless apps don't always load reliably at rural car parks.",
+      "Tell someone your planned route and expected return time, especially for Worm's Head or Llanmadoc Hill, and carry a fully charged phone. In an emergency, dial 999 and ask for the Coastguard.",
+      "Don't underestimate the 'easy' walks — Whiteford Burrows and Rhossili-to-Llangennith are flat, but they're long, exposed, and have almost nowhere to shelter or resupply, so still pack water and a layer."
+    ],
+    "regular": [
+      "Skip the Worm's Head crowds by walking out early morning on a weekday low tide — you'll often have the causeway and Inner Head largely to yourself, especially outside school holidays.",
+      "If you want Three Cliffs Bay without the Three Cliffs car park queue, start from Pennard Church or Parkmill instead of Southgate — you approach via Pennard Castle and the walk down through the valley is quieter and just as scenic.",
+      "Llanmadoc Hill and Whiteford Burrows are the most reliably peaceful spots on Gower, even in August — most visitors cluster around Rhossili and Three Cliffs, so the north coast stays comparatively empty.",
+      "Take the Gower Explorer bus one-way and walk Rhossili to Llangennith point-to-point rather than there-and-back — it turns a there-and-back stroll into a proper linear walk and saves your legs for a pint at the King's Head.",
+      "Do Worm's Head and Rhossili Bay to Llangennith as a single big day: park once at Rhossili, walk the causeway on the falling tide, then continue north along the bay to Llangennith and bus back.",
+      "For a wet-weather backup when the coast path is battered by wind, Bishopston Valley and the walk down to Pennard Castle are far more sheltered than anything on the exposed west coast.",
+      "Combine Arthur's Stone with a longer loop across Cefn Bryn rather than the short there-and-back — the common has several unmarked paths and is a good spot to have genuinely to yourself even midsummer.",
+      "Autumn (September-October) is the local's secret season here: the causeway crossings are calmer, the Outer Head of Worm's Head has reopened after the seabird closure, and Rhossili's car park is no longer rammed by 9am."
+    ]
+  },
   "spots": [
     {
       "name": "Worm's Head Walk",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "Free (parking £6-10)",
       "operatorSlug": null,
-      "insiderTip": "Check the tide times religiously! Add an extra hour to your crossing time to be safe. Also, the views from the top of the Worm are much better than walking all the way to the end!"
+      "insiderTip": "Check the tide times religiously! Add an extra hour to your crossing time to be safe. Also, the views from the top of the Worm are much better than walking all the way to the end!",
+      "howToDoIt": "From the Rhossili car park, walk down past the Old Rectory to the coastguard lookout above the causeway. Cross the rocky, weed-covered causeway on foot to reach the Inner Head — this is a scramble over uneven rock, not a stroll, so take it slowly and expect wet feet. From the Inner Head you can continue along the spine to the Outer Head (seasonal closure permitting), a narrower, more exposed scramble with real drops either side. Many people turn back at the Inner Head, which already gives excellent views back along the causeway and out to sea.",
+      "access": "Access is entirely tide-dependent: the causeway is only crossable for around 2.5 hours either side of low tide (roughly a 5-hour window). Head down on a falling tide, not a rising one, and never linger on the causeway once the tide turns. The Outer Head is closed annually from 1 February to 31 July for nesting seabirds. Start point is the Rhossili National Trust car park, pay & display.",
+      "routeDescription": "A there-and-back route: car park to coastguard lookout (flat, easy), then the causeway crossing (rocky, uneven, wet), then a scramble along the Inner Head ridge with the option to push on to the narrower, more exposed Outer Head. Return the same way, timed to clear the causeway well before the tide cuts it off again."
     },
     {
       "name": "Three Cliffs Bay Circular",
@@ -51,7 +86,10 @@
       },
       "estimatedCost": "Free (parking £6-10)",
       "operatorSlug": null,
-      "insiderTip": "Low tide is essential for exploring the caves at Three Cliffs Bay. Grab an ice cream from the kiosk at Southgate after your walk."
+      "insiderTip": "Low tide is essential for exploring the caves at Three Cliffs Bay. Grab an ice cream from the kiosk at Southgate after your walk.",
+      "howToDoIt": "From Southgate, follow the clifftop path west past Pobbles Beach towards Three Cliffs. Descend to Pennard Castle's ruined tower, perched dramatically above the valley, then drop down onto the sand dunes and beach itself. Cross Pennard Pill via the concrete stepping stones near the beach (low-to-mid tide) or the wooden footbridge further upstream near Parkmill if the stones are covered. Loop back along the opposite side of the valley or retrace your steps along the coast path.",
+      "access": "The stepping-stone crossing of Pennard Pill is tide-dependent — it submerges as the tide rises, leaving only a waist-deep wade or a half-mile detour to the Parkmill footbridge as alternatives. Plan the crossing for low-to-mid tide. Parking is at the National Trust car park at Southgate, charges apply; alternative start at Pennard Church.",
+      "routeDescription": "A circular route linking Southgate, Pobbles Beach, Pennard Castle ruins, and the sweep of Three Cliffs Bay itself, with a stream crossing partway round. Involves short scrambling sections around the castle and dunes, and can be shortened to an out-and-back from Southgate if you skip the full loop."
     },
     {
       "name": "Rhossili Bay to Llangennith",
@@ -72,7 +110,10 @@
       },
       "estimatedCost": "Free (parking £6-10 at either end, bus back)",
       "operatorSlug": null,
-      "insiderTip": "Take the bus back to Rhossili from Llangennith to avoid walking back the same way. Stop for a pint at the King's Head in Llangennith."
+      "insiderTip": "Take the bus back to Rhossili from Llangennith to avoid walking back the same way. Stop for a pint at the King's Head in Llangennith.",
+      "howToDoIt": "From Rhossili car park, drop onto the sand at the southern end of the bay and simply walk the length of it — nearly two miles of flat, firm sand at low-to-mid tide, backed by dunes and the down. At the northern end, climb up through the dune system (Llangennith Burrows) to reach Llangennith village. The whole route is easy to navigate: keep the sea on your left heading north.",
+      "access": "No tidal restrictions for the main beach walk itself, though the sand is firmer and easier going at low-to-mid tide. Start at Rhossili National Trust car park (pay & display); finish at Llangennith car park, or catch the First Cymru Gower Explorer bus back to Rhossili to avoid retracing your steps.",
+      "routeDescription": "A largely flat, linear beach walk along the full sweep of Rhossili Bay, finishing with a short climb through dunes into Llangennith. Can be extended north past Llangennith towards Broughton Bay for those wanting more distance."
     },
     {
       "name": "Arthur's Stone and Cefn Bryn",
@@ -93,7 +134,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Go early or late in the day to avoid crowds. Bring a picnic to enjoy the views from the top."
+      "insiderTip": "Go early or late in the day to avoid crowds. Bring a picnic to enjoy the views from the top.",
+      "howToDoIt": "From the small car park near Arthur's Stone, it's a short, well-trodden path up open common land to the neolithic burial chamber itself — no navigation skills required, just follow the worn track. From the stone, the ground continues to rise gently across Cefn Bryn common, and you can wander further along the ridge for wider 360-degree views without committing to a longer route.",
+      "access": "Open access land with a well-maintained path from the car park to the stone; no tidal or permit restrictions. The path is uneven in places (loose stone, tussocky grass) so isn't fully accessible for wheelchairs or buggies. Free parking at the small car park near Arthur's Stone.",
+      "routeDescription": "A short there-and-back or extendable ridge walk across open moorland common, climbing gently from the car park to the burial chamber and beyond, with panoramic views over most of the peninsula."
     },
     {
       "name": "Pennard Castle and Bishopston Valley",
@@ -114,7 +158,10 @@
       },
       "estimatedCost": "Free (parking may cost £6-10)",
       "operatorSlug": null,
-      "insiderTip": "Look out for the Pennard Golf Club's quirky windmill on the way to the castle. The Bay Bistro nearby is great for post-walk refreshments."
+      "insiderTip": "Look out for the Pennard Golf Club's quirky windmill on the way to the castle. The Bay Bistro nearby is great for post-walk refreshments.",
+      "howToDoIt": "From Pennard Church, walk across the golf course (mind the flying balls, there's a marked path) to reach the ruins of Pennard Castle overlooking Three Cliffs Bay. From there, descend into Bishopston Valley — a steep, wooded drop into a very different landscape from the open coast — and follow the stream through ancient woodland before looping back up.",
+      "access": "Public rights of way throughout, but the descent into Bishopston Valley is on uneven, sometimes slippery woodland paths, and there are potential stream crossings depending on rainfall. Parking near Pennard Church is limited and free; the Southgate National Trust car park (charges apply) is a fuller-facility alternative start point.",
+      "routeDescription": "A there-and-back or loop route combining open clifftop and golf-course walking near Pennard Castle with a steep descent into the sheltered, wooded Bishopston Valley — a good contrast walk if you want tree cover rather than coastal exposure."
     },
     {
       "name": "Oxwich Bay to Three Cliffs Bay (Coastal Path)",
@@ -135,7 +182,10 @@
       },
       "estimatedCost": "Free (parking £6-10)",
       "operatorSlug": null,
-      "insiderTip": "Pack a picnic to enjoy on Pobbles Beach between Oxwich and Three Cliffs. Check tide times for beach walking at Oxwich."
+      "insiderTip": "Pack a picnic to enjoy on Pobbles Beach between Oxwich and Three Cliffs. Check tide times for beach walking at Oxwich.",
+      "howToDoIt": "From Oxwich Bay car park, join the Wales Coast Path heading east, climbing onto the clifftops above Oxwich Point before dropping back to beach level. The route alternates between sandy beach sections (Oxwich, Pobbles) and proper clifftop path with real elevation gain, finishing at Three Cliffs Bay. It's a full coastal traverse rather than a gentle stroll — expect some steep steps and exposed sections.",
+      "access": "The beach sections at Oxwich are tide-dependent — check tide times before setting out, as the sand route can be cut off at high tide, forcing a detour onto the coast path proper. Start at Oxwich Bay car park (charges apply); Southgate car park (charges apply) works as an alternative end point if doing the route in reverse.",
+      "routeDescription": "A linear or there-and-back coastal traverse along the Wales Coast Path, mixing beach walking with genuine clifftop sections and around 250m of cumulative elevation gain — one of the more physically demanding routes on this list despite the 'moderate' grading."
     },
     {
       "name": "Llanmadoc Hill",
@@ -156,7 +206,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "The best time to go is early morning or late evening for quieter trails and stunning sunrise/sunset views."
+      "insiderTip": "The best time to go is early morning or late evening for quieter trails and stunning sunrise/sunset views.",
+      "howToDoIt": "From the limited parking in Llanmadoc village, the path climbs steadily onto open common, steepening noticeably in the final push to the trig point at the summit. There's no technical scrambling, but the gradient and often boggy or windswept ground make it feel harder than the distance suggests. From the top, the 360-degree views take in the whole peninsula, the Loughor estuary, and on a clear day the Preseli Hills.",
+      "access": "Open access common land with informal paths rather than a single waymarked route — some route-finding is needed, especially in poor visibility. Parking is limited to a small area at the base of the hill in Llanmadoc village; arrive early on weekends.",
+      "routeDescription": "A there-and-back climb up open moorland to Gower's highest point, steep in the final third, with grazing ponies often on the hill and sweeping views in every direction from the summit."
     },
     {
       "name": "Whiteford Burrows National Nature Reserve",
@@ -177,7 +230,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Bring binoculars for birdwatching. Check the tide times before venturing out towards the lighthouse."
+      "insiderTip": "Bring binoculars for birdwatching. Check the tide times before venturing out towards the lighthouse.",
+      "howToDoIt": "From parking near Cwm Ivy/Llanmadoc, walk through the dune system onto Whiteford Sands, then follow the beach north towards the tip of the peninsula. To actually reach the lighthouse itself, cross the wet sand or arc around the high-tide line towards the cast-iron structure standing half a mile out in the estuary — most walkers are happy to view it from the sands without wading all the way out. Return the same way or loop back via Cwm Ivy Marsh.",
+      "access": "The lighthouse itself sits well out into the Loughor estuary and is genuinely reachable only within about an hour either side of low tide — ideally a low spring tide. The wider beach and dune walk has no tidal restriction. Parking is free in a field near Cwm Ivy/Llanmadoc (honesty box donation).",
+      "routeDescription": "A there-and-back walk through dunes onto a vast, flat expanse of sand and salt marsh, with the option to extend out towards the historic cast-iron Whiteford Lighthouse at the tip — mostly flat and easy, but long, exposed, and tide-sensitive if you're aiming for the lighthouse itself."
     }
   ],
   "practicalInfo": {

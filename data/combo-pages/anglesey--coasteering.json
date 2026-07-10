@@ -10,6 +10,38 @@
   "bestSeason": "May-October",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £80 guided",
+  "topTips": [
+    "South Stack Cliffs is closed to coasteering during parts of the bird nesting season – check the RSPB South Stack website before you plan a trip, as exclusion zones on this stretch of coast can run from spring into autumn some years.",
+    "Trearddur Bay has genuine rip currents, not just theoretical ones – the RNLI Trearddur Bay lifeboat station has rescued swimmers and bodyboarders caught in rip tides here as recently as September 2025 and February 2026. Stick to the smaller coves north of the main beach and never coasteer alone.",
+    "Arrive early. Porth Dafarch's car park fills up fast in summer, and Rhoscolyn and Cable Bay both only have small car parks – if you're not there by mid-morning in July or August, expect to be parking in the village and walking down.",
+    "Most operators won't take under-8s coasteering, and full-day or 'adventure' sessions are often restricted to 14+. If you're bringing younger kids, book a half-day or 'eco' session and check the specific operator's age policy before you commit.",
+    "You don't need to book a guide to coasteer in Anglesey, but if you're new to it, do. Sheltered spots like Church Bay and Porth Dafarch are genuinely fine for a self-led first go in calm conditions; South Stack and Cable Bay are not the place to learn currents and swell on your own.",
+    "Check the surf and swell forecast the morning of your session, not the night before. Cable Bay in particular can flip from fun and mellow to genuinely dangerous if a swell picks up.",
+    "Wetsuits are worth having even in August. Anglesey's sea stays cold well into summer, and most of these routes involve long swims between jumps, not just the odd dip.",
+    "Book post-coasteering food ahead in peak season – the Lobster Pot in Church Bay and The White Eagle in Rhoscolyn are both small and popular, and turning up dripping wet on a Saturday evening without a table is a common rookie mistake."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start at a sheltered spot. Church Bay (Porth Swtan) or Porth Dafarch are the easiest introductions – lower cliffs, calmer water, and shorter sessions – before you attempt anything at South Stack or Cable Bay.",
+      "You need to be a confident swimmer, not just an okay one. You should be able to swim in open water and tread water for a while – a buoyancy aid helps, but it isn't a substitute for swimming ability.",
+      "Full kit matters: wetsuit, buoyancy aid, helmet, coasteering shoes, and gloves. Hire from Anglesey Adventures or Anglesey Outdoors in Llanfairpwllgwyngyll if you don't own gear.",
+      "Book a guided session for your first time at anything graded 'Moderate' or above. South Stack, Rhoscolyn, Trearddur Bay and Cable Bay all have currents, swell, and submerged rocks that aren't obvious from the shore.",
+      "Check the tide times before you go, not just the weather. Several of these bays (Church Bay, Aberffraw) change character completely between high and low tide, and access to some scrambles is tide-dependent.",
+      "Tell someone your plan – which cove, what time you're going in, when you expect to be out. If something goes wrong, dial 999 or 112 and ask for the Coastguard.",
+      "Don't coasteer during or right after a big swell, even at the 'easy' spots. Check a surf/swell forecast for the area – Cable Bay's surf report is a good proxy for west-coast conditions generally.",
+      "Bring warm layers and a hot drink for afterwards. You'll be colder than you expect once you're out of the water, even in summer."
+    ],
+    "regular": [
+      "Skip the honeypots on a sunny Saturday. Trearddur Bay and Rhoscolyn get busy fast – Church Bay and Porth Dafarch are quieter, and the smaller coves north of Trearddur's main beach are usually empty even when the main bay is packed.",
+      "Aberffraw and the Inish Mon (Ynys Môn) National Nature Reserve stretch are the pick for solitude – longer approach, less foot traffic, and proper wildlife (seals, seabirds) if you're patient and stick to established routes.",
+      "May and late September are the sweet spot: water's warming up (or hasn't cooled yet), the RSPB nesting restrictions at South Stack have usually lifted or not yet started, and the summer crowds are gone.",
+      "Keep an eye on the RSPB South Stack updates through spring – nesting closures move year to year, and a route that was open last May might not be this year.",
+      "If Cable Bay's swell is too big to coasteer, it's usually still rideable as a surf spot – check conditions before you drive out, since the same swell that ruins coasteering can make the detour worthwhile for a surf instead.",
+      "Combine two spots in a day if you're experienced: Porth Dafarch or Church Bay in the morning for an easy warm-up swim, then South Stack or Rhoscolyn in the afternoon once you've got a feel for the day's conditions.",
+      "Walk the coastal path south from Aberffraw beach for quieter rock formations away from the main access point – most visitors don't go further than the first few hundred metres.",
+      "For a low-key finish, the Wavecrest Café and Sea Shanty Café in Trearddur Bay are far less likely to have a wait than the sit-down restaurants, and they're both right on the sand."
+    ]
+  },
   "spots": [
     {
       "name": "South Stack Cliffs",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "Free (parking £5) or £65pp guided",
       "operatorSlug": "anglesey-adventures",
-      "insiderTip": "Check the RSPB website for bird nesting season closures. The cliffs are closed to coasteering at certain times of the year to protect nesting birds."
+      "insiderTip": "Check the RSPB website for bird nesting season closures. The cliffs are closed to coasteering at certain times of the year to protect nesting birds.",
+      "howToDoIt": "Sessions typically start with a briefing and kit check at the car park, then a walk down to a sheltered entry point below the lighthouse before working along the base of the cliffs. Expect a mix of deep-water jumps (some from height), swims between rock platforms, and short scrambles over volcanic rock – this is not a route to attempt without recent coasteering experience or a guide, given the exposure and depth of water involved.",
+      "access": "Access is via the South Stack road and the National Trust car park; from there it's a walk down towards the lighthouse steps before dropping onto the coasteering entry points. This stretch sits within an RSPB reserve, so check current nesting-season restrictions before you go – access can be closed or limited during breeding season. Tides and swell matter more here than almost anywhere else on this list; this is an exposed, open-water stretch of coast.",
+      "routeDescription": "A committing line beneath South Stack's cliffs, threading between sea stacks and into small caves before reaching the main jump platforms. The rock is old volcanic rhyolite, sharp in places, and the water is deep close to shore – jumps here range from a few metres to genuinely high, operator-guided leaps. Seabirds nest directly above the route in season, so expect noise, guano, and (rightly) restricted access at certain times of year."
     },
     {
       "name": "Rhoscolyn Headland",
@@ -51,7 +86,10 @@
       },
       "estimatedCost": "Free or £60pp guided",
       "operatorSlug": "anglesey-adventures",
-      "insiderTip": "Head to The White Eagle pub after your coasteer for some well-deserved food and drinks – it's a local favourite."
+      "insiderTip": "Head to The White Eagle pub after your coasteer for some well-deserved food and drinks – it's a local favourite.",
+      "howToDoIt": "Groups usually enter from the beach and work out along the headland, mixing rock-hopping and scrambling with a string of jumps of varying heights and a couple of longer swims between platforms. It's a good route for building confidence – there are usually easier alternatives alongside the bigger jumps, so you can opt in or out of the scarier features as you go.",
+      "access": "Park at the small car park near Rhoscolyn beach (fills quickly in summer – if it's full, the village has some roadside parking with a short walk down) and access the water directly from the beach. The headland route is exposed to swell from the west, so it's worth checking conditions before committing to the full route rather than staying in the sheltered bay.",
+      "routeDescription": "A varied line around the Rhoscolyn headland taking in gullies, natural rock arches, and a series of jumps from ledges of different heights, connected by swims across clear, sheltered water. The rock formations here are some of the most striking on this list, and the going is generally calmer than South Stack or Cable Bay, making it a solid step up from a first-timer route."
     },
     {
       "name": "Church Bay (Porth Swtan)",
@@ -72,7 +110,10 @@
       },
       "estimatedCost": "Free (parking £3-5) or £50pp guided",
       "operatorSlug": null,
-      "insiderTip": "Visit the Lobster Pot café for delicious seafood after your coasteering adventure. They also have great ice cream!"
+      "insiderTip": "Visit the Lobster Pot café for delicious seafood after your coasteering adventure. They also have great ice cream!",
+      "howToDoIt": "A gentle introduction: enter from the pebble beach, work along the low cliffs at the bay's edges exploring rock pools and small gullies, with a handful of low jumps into calm water. Well suited to a self-led session in settled conditions if you're not ready to book a guide, though a guided session is still the safer choice with young children.",
+      "access": "Park at the car park right next to the beach (a parking fee applies) and walk straight onto the sand. The bay is at its best at low-to-mid tide, when the beach is widest and the rock pools are exposed; at high tide, the sheltered scrambling area shrinks considerably, so time your visit around the tide table rather than just the forecast.",
+      "routeDescription": "A short, low-commitment route hugging the low cliffs either side of the pebble beach, with plenty of rock pools to explore between features. There's little in the way of serious jumps or swims here – it's more coastal exploration than adrenaline, which is exactly why it works well for families and nervous first-timers."
     },
     {
       "name": "Trearddur Bay",
@@ -93,7 +134,10 @@
       },
       "estimatedCost": "Free (parking £5-8) or £55pp guided",
       "operatorSlug": null,
-      "insiderTip": "Explore the smaller coves to the north of the main beach for quieter coasteering spots."
+      "insiderTip": "Explore the smaller coves to the north of the main beach for quieter coasteering spots.",
+      "howToDoIt": "Routes typically start from one of the smaller coves rather than the main beach, working across rocky outcrops with a mix of easy scrambling and a few bigger jumps for those who want them. Given the RNLI's rip current call-outs here, this is a spot where booking a guide who knows the local water is worth the money rather than a nice-to-have.",
+      "access": "Multiple pay-and-display car parks serve Trearddur Bay; the smaller coves to the north are a short walk from the main beach car parks. Be aware this beach has a documented rip current risk – the RNLI Trearddur Bay lifeboat station has responded to multiple rescues here, including bodyboarders and swimmers caught in rip tides. Stay well clear of the main bay's rip zone and avoid entering the water if red flags or lifeguard warnings are up.",
+      "routeDescription": "A patchwork of small beaches and rocky headlands strung along Trearddur Bay, offering easy scrambling for most of the route with a few punchier jumps on the rockier sections. The quieter coves north of the main beach have better rock features and far fewer people than the central bay, which is worth the extra five-minute walk."
     },
     {
       "name": "Aberffraw Dunes & Coast",
@@ -114,7 +158,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "Walk along the coastal path further south from the main beach to find quieter spots and more interesting rock formations."
+      "insiderTip": "Walk along the coastal path further south from the main beach to find quieter spots and more interesting rock formations.",
+      "howToDoIt": "This is more of a coastal expedition than a classic coasteering circuit – expect a longer walk-in, sections of wading and swimming across the estuary mouth, and lower-key scrambling over rocky sections rather than big jumps. Plan for the extra time this involves and bring more supplies than you would for a shorter session.",
+      "access": "Park in the village car park and walk to the beach; the estuary crossing point is tide-dependent, so check tide times before setting out – attempting the wade at the wrong state of tide can mean a much longer, colder crossing than expected. The Wales Coast Path runs along this stretch, giving a walkable bail-out option if conditions turn.",
+      "routeDescription": "A longer, more varied stretch than most Anglesey coasteering routes, combining sandy beach, estuary wading, and rocky sections with small cliffs further along the coast. Better suited to those wanting a half-day adventure over pure adrenaline – the appeal here is the terrain variety and relative solitude, not big jumps."
     },
     {
       "name": "Porth Dafarch",
@@ -135,7 +182,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "Arrive early in summer, as the car park fills up quickly. Combine your coasteer with a swim in the bay."
+      "insiderTip": "Arrive early in summer, as the car park fills up quickly. Combine your coasteer with a swim in the bay.",
+      "howToDoIt": "Entry is straight off the beach into a sheltered cove, with easy scrambling around the rocky sides of the bay and a few modest jumps. A good spot to practise the basics – reading the water, timing jumps, moving over wet rock – before stepping up to a more exposed route elsewhere on the island.",
+      "access": "Small car park directly at the beach; it fills quickly on sunny days, so arrive early or expect to park further up the lane and walk down. The cove is naturally sheltered from most swell directions, which is what makes it reliable for beginners even when other spots are blown out.",
+      "routeDescription": "A compact, sheltered loop around Porth Dafarch's cove – low rock ledges for scrambling, a couple of easy jump points, and clear water that's also popular with divers and snorkellers. Short enough to combine with a second, more challenging spot later in the day."
     },
     {
       "name": "Cable Bay (Porth Llechog)",
@@ -156,7 +206,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "Check the surf report before you go. If the waves are big, coasteering can be dangerous."
+      "insiderTip": "Check the surf report before you go. If the waves are big, coasteering can be dangerous.",
+      "howToDoIt": "Enter from the beach and work along the low cliffs either side of the bay, mixing scrambling with a handful of decent jumps. Because this is also a surf break, always check the swell before you go – what makes it fun for surfers can make it genuinely hazardous for coasteering, with surge and current around the rocks picking up fast.",
+      "access": "Small car park at Cable Bay itself, limited spaces. Check a surf/swell forecast (Magicseaweed's Rhoscolyn report is a reasonable proxy for this stretch of west coast) before setting out – if there's a swell running, treat this as a surf spot, not a coasteering one.",
+      "routeDescription": "A short but punchy route along Cable Bay's low cliffs, with fun scrambling and a mix of small and larger jumps depending on the swell. Best in calm, settled conditions; give it a miss entirely if there's any meaningful swell forecast."
     },
     {
       "name": "Inish Mon National Nature Reserve",
@@ -177,7 +230,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Stay on the established routes to minimise damage to the fragile ecosystem. Bring binoculars to spot seals and seabirds."
+      "insiderTip": "Stay on the established routes to minimise damage to the fragile ecosystem. Bring binoculars to spot seals and seabirds.",
+      "howToDoIt": "This is a slower, nature-focused session rather than a jump-heavy adrenaline route – expect gentle scrambling along the shoreline, some easy swims, and plenty of stops to watch wildlife. Because it's a protected reserve, stick to established access points and don't treat it as a place to push technical or high-jump lines.",
+      "access": "Limited parking at the reserve entrance – check local permissions and any seasonal access restrictions before you go, as protected nature reserves on Anglesey can have wildlife-driven closures similar to South Stack. Stay on marked routes to avoid damaging the reserve's habitat.",
+      "routeDescription": "A quieter, wilder stretch of coast than the main tourist spots, with an emphasis on the surrounding flora and fauna as much as the coasteering itself. Seals and coastal birds are a regular sight if you move quietly and stick to the established line rather than exploring off-route."
     }
   ],
   "practicalInfo": {

@@ -10,6 +10,38 @@
   "bestSeason": "June-September",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £80 guided",
+  "topTips": [
+    "Wear a wetsuit even in summer. Sea temperatures here peak around 15-16°C in August and sit at 10-12°C over winter, so a lot of first-timers underestimate the cold shock, especially at exposed spots like Whitesands and Aber Mawr.",
+    "The Blue Lagoon looks tame from the car park but it isn't. It's a flooded slate quarry roughly 25m deep with submerged rock and debris, and uncontrolled jumping ('tombstoning') sends several people to hospital most years, with Coastguard helicopter and RNLI callouts a regular occurrence. If you jump, only do it from the marked, lower platforms, enter feet-first like a pencil, and never jump if you haven't checked the water below first.",
+    "Download the Safer Seas & Rivers Service app (Surfers Against Sewage) and check it before any swim. It gives real-time sewage discharge alerts for Pembrokeshire's bathing waters — never swim within 48 hours of a heavy-rain discharge alert or after prolonged heavy rainfall, when run-off tanks water quality across the coast.",
+    "Parking is the single biggest headache in peak season. Abereiddy, Whitesands and Barafundle's Stackpole Quay car park all fill by mid-morning in July and August — arrive before 10am or you'll be turned away or queuing on narrow lanes.",
+    "Tides genuinely change these beaches. Marloes Sands and Barafundle both lose most of their sand at high water, and at Marloes the sea can cut off sections of beach — always check tide times before you commit to a full day, not just before you get in the water.",
+    "Beginners should stick to sheltered, low-current spots: Barafundle Bay, Caerfai Bay and Porthgain harbour are the forgiving options. Save Whitesands, Aber Mawr, Marloes Sands and Druidston Haven for when you're confident reading swell and currents.",
+    "Wear old trainers or neoprene boots, not bare feet. Weever fish bury themselves in sandy shallows and give a nasty sting if trodden on, and several of these beaches (Porthgain, the Blue Lagoon, Stackpole) have rocky or slipway entries that will shred bare soles.",
+    "Bring cash or a card for pay-and-display — Whitesands, Porthgain and Marloes Sands car parks all charge, and several of the smaller free car parks (Aber Mawr) fill within an hour of a sunny forecast breaking, so have a plan B spot in mind."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start at Barafundle Bay or Caerfai Bay. Both have sheltered, relatively calm water and an easy, obvious entry, which makes them far less intimidating than swimming off open, swell-exposed beaches like Whitesands.",
+      "Always swim parallel to the shore, not straight out, and use a brightly coloured tow float so boats and other swimmers can see you — none of these spots have permanent lifeguard cover outside the main summer season.",
+      "A wetsuit isn't optional gear here, it's the difference between a 20-minute swim and a 5-minute one. Even in August the water is cold enough to trigger cold water shock if you go in without one.",
+      "Check the Met Office Coastal Forecast and a surf/swell report before you leave, not just the general weather app on your phone — Pembrokeshire's exposed west-facing beaches (Whitesands, Aber Mawr, Druidston) can look fine on a general forecast and still have dangerous swell.",
+      "Tell someone on land where you're swimming and roughly how long you'll be, especially at quieter spots like Aber Mawr or Druidston Haven where there's no one else around if something goes wrong.",
+      "Budget extra time for parking and the walk in. Barafundle is a half-mile walk from the Stackpole Quay car park, and Druidston involves a steep path down the cliff — factor that into when you set off, not just your swim time.",
+      "If in doubt, join a guided session with TYF Adventure or Preseli Venture in St Davids. It's the easiest way to learn safe entry and exit points, tide reading and cold-water technique from people who swim here year-round.",
+      "Pack warm layers, a hat and a hot drink for after — the shivering ('afterdrop') can hit 10-15 minutes after you get out, once your core temperature keeps dropping even out of the water."
+    ],
+    "regular": [
+      "Skip the Blue Lagoon crowds by walking round the headland south of Abereiddy car park — there are quieter rock platforms and gullies with the same turquoise water and none of the queue for the jump spot.",
+      "Swim Whitesands or Marloes Sands early morning before the surf schools and day-trippers arrive — by 10am in summer both beaches are a different, busier place.",
+      "After heavy rain, Porthgain harbour is often your best bet — it's sheltered by the old harbour walls and doesn't churn up the way open beaches do, though check the Safer Seas app first as harbours can hold run-off too.",
+      "Druidston Haven and Aber Mawr are the two spots locals treat as their quiet alternatives to Barafundle and Whitesands — same quality of water, a fraction of the people, at the cost of a longer walk in.",
+      "Combine Stackpole Quay with the coast path walk to Barafundle Bay and on to Broad Haven South for a proper half-day out — swim at both ends and you avoid doubling back to the same car park.",
+      "Autumn swims (September-October) often have the calmest, clearest water of the year once the summer crowds thin out — sea temperature is still holding from summer but the car parks are empty.",
+      "For a longer or more technical swim, check conditions with TYF Adventure or Preseli Venture before heading to Aber Mawr or Marloes Sands — both spots can flip from calm to genuinely dangerous swell within a tide cycle.",
+      "If you're chasing seals, Marloes Sands and the waters off Stackpole are your best bet — keep well back and never approach a seal on the rocks, they'll abandon a haul-out spot if repeatedly disturbed."
+    ]
+  },
   "spots": [
     {
       "name": "Blue Lagoon (Abereiddy)",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "Free (parking £5)",
       "operatorSlug": null,
-      "insiderTip": "Walk around the headland to the south for some quieter swimming spots and a different perspective on the lagoon. Be careful on the rocks!"
+      "insiderTip": "Walk around the headland to the south for some quieter swimming spots and a different perspective on the lagoon. Be careful on the rocks!",
+      "howToDoIt": "From the car park, follow the short path down to the old quarry workings and pick a spot along the rock ledges to get in — there's no beach, so most people enter from rock or one of the low platforms. Swim a lap of the lagoon to take in the slate cliffs, or head to the seaward end where a gap in the rock connects to the open sea (only attempt this on a calm day and be aware of surge). If you want to jump, only use the marked lower platforms, check the water for submerged rock first, and jump feet-first with arms crossed — higher, unofficial jump points are where the serious injuries happen.",
+      "access": "Free public access via Abereiddy Beach car park, a short walk from the water's edge. No lifeguard cover. The quarry is deep (around 25m in places) with submerged rock and old quarry debris near the edges, so check depth before jumping and never dive head-first into unfamiliar water.",
+      "routeDescription": "A roughly oval flooded quarry around 100m long, ringed by slate cliffs 3-12m high. Deepest water is toward the centre and the seaward end; shallower, rockier margins run around the sides where most swimmers get in and out."
     },
     {
       "name": "Barafundle Bay",
@@ -51,7 +86,10 @@
       },
       "estimatedCost": "Free (parking £5)",
       "operatorSlug": null,
-      "insiderTip": "Pack a picnic and stay for the day. The sunset over Barafundle is magical."
+      "insiderTip": "Pack a picnic and stay for the day. The sunset over Barafundle is magical.",
+      "howToDoIt": "Park at Stackpole Quay and follow the half-mile coast path over the headland down to Barafundle's sands — there's no vehicle access to the beach itself. The bay is sheltered by headlands on both sides, so entry is straightforward off the sand; swim close to shore and parallel to the beach for the calmest water, or head toward the rocks at either end for a bit more interest at high tide.",
+      "access": "No direct road or car access to the beach — it's reached only via the coast path from Stackpole Quay (National Trust car park, charge for non-members) or from Broad Haven South to the south. At high tide the sand narrows considerably, so check tide times if you want beach space as well as swimming.",
+      "routeDescription": "Half-mile coast path walk from Stackpole Quay, gently undulating with a short climb over the headland, before dropping down through dunes and pine trees to the beach. The swim itself is a sheltered, curving bay roughly 300m across."
     },
     {
       "name": "Aber Mawr",
@@ -72,7 +110,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Check the surf report before you go. This beach can get some serious waves."
+      "insiderTip": "Check the surf report before you go. This beach can get some serious waves.",
+      "howToDoIt": "Park at the small car park and follow the short path down through the dunes to the beach. Check the surf and swell forecast before you set off — on a calm day this is a lovely, quiet swim close to shore; with any groundswell running it turns into a proper surf beach with a shorebreak and rip potential, so assess conditions from the sand before getting in.",
+      "access": "Small free car park a short walk from the beach; it fills quickly on good-weather days and there's limited overflow parking along the approach road. North-facing and exposed to Atlantic swell, so conditions here change more with the forecast than at sheltered south-coast spots.",
+      "routeDescription": "A wide, curving, north-facing beach backed by dunes and low cliffs either side. Best swimming is in the middle of the bay away from the rockier margins at each end, which hold more current when there's any swell."
     },
     {
       "name": "Caerfai Bay",
@@ -93,7 +134,10 @@
       },
       "estimatedCost": "Free (parking £2-3)",
       "operatorSlug": null,
-      "insiderTip": "Head to the nearby St Non's Chapel and Well for a bit of history after your swim."
+      "insiderTip": "Head to the nearby St Non's Chapel and Well for a bit of history after your swim.",
+      "howToDoIt": "Park at Caerfai Farm campsite and take the short path down to the small sand-and-shingle beach. The bay is sheltered by the surrounding cliffs, so entry is easy off the sand and it's a good spot to practise sighting and short swims close to shore before venturing to more exposed beaches.",
+      "access": "Reached via Caerfai Farm campsite car park (small charge) with limited additional roadside parking. The bay is naturally sheltered, making it one of the calmer swimming spots on the St Davids peninsula even when other beaches are getting wind and swell.",
+      "routeDescription": "A compact bay beneath layered purple-red sandstone cliffs, with a sand and shingle beach that narrows at high tide. Swimming is mostly close-in and sheltered, with the open sea beyond the bay mouth for stronger swimmers."
     },
     {
       "name": "Whitesands Bay",
@@ -114,7 +158,10 @@
       },
       "estimatedCost": "Free (parking £5-10)",
       "operatorSlug": null,
-      "insiderTip": "Check the lifeguard flags before you enter the water. Respect the currents."
+      "insiderTip": "Check the lifeguard flags before you enter the water. Respect the currents.",
+      "howToDoIt": "In peak season, swim between the red and yellow flags where RNLI lifeguards patrol — this is by far the safest way to swim here given the beach's exposure and currents. Outside the flagged, patrolled hours (and outside the summer season), treat Whitesands with real caution: check the surf forecast, watch for rip currents forming near the rocks at each end of the bay, and don't swim alone.",
+      "access": "Large pay-and-display car park directly behind the beach. Lifeguard cover typically runs the main summer season only (check current dates before relying on it) — outside those times you're on your own for safety, so conditions and experience matter more.",
+      "routeDescription": "A long, open, west-facing sandy beach around 1km across, backed by dunes with Carn Llidi rising behind. Currents and rip potential are highest near the rocky points at the north and south ends; the safest, flattest water is usually mid-beach."
     },
     {
       "name": "Porthgain harbour",
@@ -135,7 +182,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "After your swim, reward yourself with fish and chips at The Shed – it's legendary."
+      "insiderTip": "After your swim, reward yourself with fish and chips at The Shed – it's legendary.",
+      "howToDoIt": "Enter from the slipway or steps inside the harbour walls — this is one of the easiest, most sheltered entries on this list, which makes it a good spot to acclimatise to open water without dealing with waves or a long walk-in. Stay inside the harbour for a short, calm swim, or, if conditions and experience allow, head out past the harbour mouth into open water — only do this on a calm day and be aware of boat traffic in the channel.",
+      "access": "Pay-and-display car park right by the harbour, level walk to the water. The harbour walls give year-round shelter from swell, though water quality can dip after heavy rain like anywhere on this coast, so check the Safer Seas & Rivers app first.",
+      "routeDescription": "A small, walled harbour with calm water inside and open sea just beyond the entrance. Swimming inside the walls is a short, flat loop; venturing past the harbour mouth adds exposure to swell and boat traffic."
     },
     {
       "name": "Stackpole Quay",
@@ -156,7 +206,10 @@
       },
       "estimatedCost": "Free (parking £5)",
       "operatorSlug": null,
-      "insiderTip": "Combine your swim with a walk to Barafundle Bay or Broad Haven South for a longer adventure."
+      "insiderTip": "Combine your swim with a walk to Barafundle Bay or Broad Haven South for a longer adventure.",
+      "howToDoIt": "Enter via the slipway by the quay for a short, sheltered dip around the harbour, or use it as a warm-up before the coast path walk to Barafundle Bay. It's shallow and calm close to the quay, making it a good spot for a quick, low-commitment swim rather than a long session.",
+      "access": "National Trust car park right at the quay (charge for non-members), level access to the water via the slipway. Very sheltered compared to open beaches nearby, so a reliable fallback if wind or swell rules out Barafundle or Whitesands.",
+      "routeDescription": "A small stone quay and harbour with calm, clear water. Swim a short loop around the harbour, or head out a little further toward open water on a calm day for better views of the coastline."
     },
     {
       "name": "Marloes Sands",
@@ -177,7 +230,10 @@
       },
       "estimatedCost": "Free (parking £5)",
       "operatorSlug": null,
-      "insiderTip": "Keep an eye out for seals! They're often spotted in the area. Check the tide times before you go to make the most of the beach and rock pools."
+      "insiderTip": "Keep an eye out for seals! They're often spotted in the area. Check the tide times before you go to make the most of the beach and rock pools.",
+      "howToDoIt": "Walk down from the National Trust car park to the sands and choose your entry point depending on the tide — at low tide there's a huge expanse of beach and rock pools to explore before you even get in the water. Swim close to the main beach area away from the rockier headlands, and treat any currents around the rock outcrops with caution as this is an open, west-facing beach.",
+      "access": "National Trust pay-and-display car park with a walk down to the beach. The beach is tidal — at high water the sand largely disappears and the sea reaches the base of the cliffs in places, so plan your visit around tide times rather than just arrival time.",
+      "routeDescription": "A large, west-facing sandy beach with dramatic layered rock formations and sea stacks. Best swimming is mid-beach; the rockier ends and outcrops hold more current and are better explored on foot at low tide than swum around."
     },
     {
       "name": "Druidston Haven",
@@ -198,7 +254,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "Stay at the Druidston Hotel for a clifftop retreat with stunning views. The restaurant is excellent."
+      "insiderTip": "Stay at the Druidston Hotel for a clifftop retreat with stunning views. The restaurant is excellent.",
+      "howToDoIt": "Follow the path down from the hotel car park or roadside parking to the beach below — it's a steeper, longer approach than most spots on this list, which is exactly why it stays quiet. Check swell and tide before you go: this is an open, exposed beach, and conditions can shift from calm to genuinely rough within a tide cycle, so don't assume a good forecast in St Davids means the same conditions here.",
+      "access": "Access is via a path down from the Druidston Hotel car park (small charge) or limited roadside parking above — no direct vehicle access to the beach. The walk down (and back up) is the main practical barrier, which is why it's one of the quieter spots even in peak season.",
+      "routeDescription": "A long, open beach beneath high, dramatic cliffs, reached by a fairly steep clifftop path. Swimming is best attempted mid-tide when there's enough sand to enter easily but before the sea narrows against the cliff base at full high water."
     }
   ],
   "practicalInfo": {

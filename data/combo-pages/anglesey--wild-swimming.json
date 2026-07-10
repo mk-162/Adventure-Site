@@ -30,7 +30,10 @@
       },
       "estimatedCost": "Free (parking £7)",
       "operatorSlug": "anglesey-adventures",
-      "insiderTip": "Check the tide times religiously! Low tide allows you to walk to the island, but high tide offers a more challenging (and potentially dangerous) swim around it. Don't underestimate the distance."
+      "insiderTip": "Check the tide times religiously! Low tide allows you to walk to the island, but high tide offers a more challenging (and potentially dangerous) swim around it. Don't underestimate the distance.",
+      "howToDoIt": "Park at Newborough Forest car park and walk through the pines and out onto Newborough Beach — it's roughly 20-30 minutes on foot to reach the island itself. Time your arrival for just after high tide, when the sand causeway has started to drain, and walk out across to the island before easing into the water on the sheltered side for a swim, or continue round for a longer loop with Snowdonia as a backdrop. Confident swimmers can also swim across from the beach at the right state of tide rather than walking, but this should only be attempted with tide tables checked and ideally a buddy or guide.",
+      "access": "Access is via Newborough Forest car park (pay and display, gets busy early in summer) and then on foot through the forest to the beach. The island is only reachable on foot at low-to-mid tide; it is cut off for around two hours either side of high water, so check tide times before setting out and build in a return margin.",
+      "routeDescription": "From the car park, follow the forest track through Newborough Warren to the beach, then head out across the sand towards the island's old pilot house and ruined chapel. The main swim options are a short dip in the calmer water on the island's eastern side, or a longer circuit around the headland for stronger swimmers — both are heavily tide-dependent, so plan the route around the tide table rather than the other way round."
     },
     {
       "name": "Rhoscolyn Bay",
@@ -51,7 +54,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "The Oyster Catcher is great for food but can be expensive. Pack a picnic and enjoy it on the beach for a cheaper alternative."
+      "insiderTip": "The Oyster Catcher is great for food but can be expensive. Pack a picnic and enjoy it on the beach for a cheaper alternative.",
+      "howToDoIt": "Walk down from the car park directly above the beach and wade in from the sand — there's no scramble or awkward entry here, which is what makes it such a good spot to learn. Stay within the bay itself rather than heading round the headlands, and use the calm, clear water to practise sighting, breathing, and simply getting comfortable in open water before trying anywhere more exposed.",
+      "access": "Rhoscolyn car park sits right above the beach with a short, easy walk down to the sand. No permits or rights-of-way issues — it's open beach access year-round.",
+      "routeDescription": "A straightforward there-and-back swim within the sheltered bay, ideal for building confidence. Stronger swimmers can extend the route by following the rocky edges toward the headlands, where there's more to see but less shelter from the wind."
     },
     {
       "name": "Church Bay",
@@ -72,7 +78,10 @@
       },
       "estimatedCost": "Free (parking £3)",
       "operatorSlug": null,
-      "insiderTip": "The Lobster Pot gets incredibly busy, especially on weekends. Book a table in advance to avoid disappointment."
+      "insiderTip": "The Lobster Pot gets incredibly busy, especially on weekends. Book a table in advance to avoid disappointment.",
+      "howToDoIt": "Enter from the rocky beach at low-to-mid tide when there's more sand exposed, and swim out into the clear water of the cove — it's sheltered enough for a relaxed swim but has enough going on beneath the surface (kayakers, divers) that it's worth checking around you before setting off. Rock pools either side of the cove are worth exploring on the way in or out.",
+      "access": "Church Bay car park is a short walk from the beach; a small parking fee applies. The beach itself is rocky rather than sandy, so tide state affects how much beach is exposed and how easy entry is.",
+      "routeDescription": "A compact, sheltered cove swim — most people stay within the bay itself given the rocky, cliff-backed setting rather than venturing round the headlands."
     },
     {
       "name": "Porth Dafarch",
@@ -93,7 +102,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "Arrive early to secure a parking spot, especially during peak season. The beach cafe is decent, but bring your own snacks and drinks to save money."
+      "insiderTip": "Arrive early to secure a parking spot, especially during peak season. The beach cafe is decent, but bring your own snacks and drinks to save money.",
+      "howToDoIt": "The sandy beach gives an easy, direct entry into the water — walk in from the car park, get in, and swim parallel to the beach or a short way out into the bay. Because it's popular with watersports too, keep an eye out for kayaks, paddleboards and boats sharing the water, especially in the height of summer.",
+      "access": "Porth Dafarch car park sits right next to the beach with direct, step-free access to the sand. Toilets and a café are on site, making this one of the more convenient spots on the island for a straightforward swim.",
+      "routeDescription": "An easy out-and-back swim within the bay, sheltered enough for a relaxed session but open enough that a longer swim along the coastline is possible for more confident swimmers."
     },
     {
       "name": "Cable Bay",
@@ -114,7 +126,10 @@
       },
       "estimatedCost": "Free (parking £3)",
       "operatorSlug": null,
-      "insiderTip": "Check the tide times, as the beach can disappear at high tide. Also, be careful of the rocks; they can be slippery."
+      "insiderTip": "Check the tide times, as the beach can disappear at high tide. Also, be careful of the rocks; they can be slippery.",
+      "howToDoIt": "Head down from the small car park above the beach and enter with care — the sand gives way to rocky outcrops at either end of the bay, so pick your entry point at low-to-mid tide when more of the beach is exposed. The rocks make for interesting exploring but also mean this isn't a spot to enter carelessly; go in slowly and check footing.",
+      "access": "Parking is limited to a small car park above the beach — arrive early, as spaces go quickly in season. At high tide the beach itself can disappear almost entirely, so check tide times before you commit to a full session here.",
+      "routeDescription": "A swim within the golden-sand bay, with the option to explore around the rocky outcrops at each end for those comfortable navigating uneven, sometimes slippery terrain underwater and on entry/exit."
     },
     {
       "name": "Benllech",
@@ -135,7 +150,10 @@
       },
       "estimatedCost": "Free (parking £4-6)",
       "operatorSlug": null,
-      "insiderTip": "The beach can get very busy, especially on weekends. Head to the far end of the beach for a bit more space."
+      "insiderTip": "The beach can get very busy, especially on weekends. Head to the far end of the beach for a bit more space.",
+      "howToDoIt": "This is about as easy as wild swimming gets on Anglesey — walk straight off the sand into shallow, gently shelving water, ideal for a first open-water swim or for younger family members finding their feet. For a bit more space and fewer people, head to the far end of the beach away from the main car park access point.",
+      "access": "A large pay-and-display car park sits right next to the beach, with flat, easy access onto the sand. No tidal or access complications — this is one of the most straightforward spots on the list.",
+      "routeDescription": "A gentle, shallow-water swim close to shore, with plenty of room to extend along the length of the beach if you want a longer session."
     },
     {
       "name": "Trearddur Bay",
@@ -156,7 +174,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "Explore the rock pools at low tide for some fascinating marine life."
+      "insiderTip": "Explore the rock pools at low tide for some fascinating marine life.",
+      "howToDoIt": "Choose your beach — the two sandy bays either side of the rocky headland offer slightly different characters, with one generally calmer than the other depending on wind direction. Enter from the sand, and if lifeguards are on duty in peak season, swim between the flagged area; the wider bay also sees kayaks and other watersports, so stay aware of other water users.",
+      "access": "Several pay-and-display car parks serve Trearddur Bay directly. This is one of the few spots on this list with a seasonal RNLI lifeguard presence in peak summer — check current beach signage for patrol days, as they vary year to year.",
+      "routeDescription": "A flexible swim across either of the two linked bays, with the rocky headland between them worth a look at low tide for rock pooling either side of your swim."
     },
     {
       "name": "Cemlyn Bay",
@@ -177,7 +198,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Bring binoculars to spot the seabirds nesting on the nearby islands."
+      "insiderTip": "Bring binoculars to spot the seabirds nesting on the nearby islands.",
+      "howToDoIt": "Walk from the small car park near the nature reserve down to the shingle beach and enter on the seaward side — the water here is generally calm, making it a good spot for an unhurried swim, but this is a more exposed bay than the sandy beaches, so check conditions before committing to a longer session.",
+      "access": "Park at the small Cemlyn Nature Reserve car park. Between May and July, the shingle ridge behind the beach is a protected tern nesting site managed by North Wales Wildlife Trust — keep to the seaward side and respect warden fencing during this period; the beach itself remains accessible for swimming.",
+      "routeDescription": "A swim along a quieter, more remote shingle bay, well suited to those who want space and wildlife over facilities — seals and seabirds are a regular sight from the water."
     },
     {
       "name": "Silver Bay",
@@ -198,7 +222,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Access to the beach can be tricky; look for the public footpath signs. Be respectful of the private property."
+      "insiderTip": "Access to the beach can be tricky; look for the public footpath signs. Be respectful of the private property.",
+      "howToDoIt": "Find the public footpath signs near the entrance to reach the beach — access isn't obvious from the road, so this isn't a spot to arrive at without checking a map first. Once on the sand, it's a straightforward, sheltered swim in clear, calm water.",
+      "access": "Limited parking near the entrance; the bay itself is on private land but accessible to the public via a public footpath — follow the footpath signage and be respectful of neighbouring residents and property.",
+      "routeDescription": "A short, sheltered swim in a small, picturesque bay — most visitors stay close to shore given the bay's compact size and the tricky access in and out."
     }
   ],
   "practicalInfo": {
@@ -962,5 +989,37 @@
       "inDatabase": true,
       "priority": "low"
     }
-  ]
+  ],
+  "topTips": [
+    "Check tide times before you go anywhere near Llanddwyn Island — it's a genuine tidal island, cut off for roughly two hours either side of high water. The safest approach is to start your crossing just after high tide, once the sand has visibly drained, giving you a full window to walk out, swim, and walk back before the water returns.",
+    "Wear a wetsuit even in August. Sea temperatures around Anglesey typically sit at 12-16°C in summer, so a wetsuit, swim cap and neoprene socks aren't overkill, they're what makes a 45-minute swim comfortable instead of a 10-minute ordeal.",
+    "Sheltered bays like Rhoscolyn and Porth Dafarch are the right call for a first Anglesey swim. Save the more exposed spots — Llanddwyn, Cable Bay, Cemlyn — for once you've got a feel for the currents and conditions here.",
+    "Arrive early. Nearly every car park on this list — Newborough, Porth Dafarch, Cable Bay, Trearddur — fills up by mid-morning on a sunny summer day, and Cable Bay's car park in particular is small and gets hammered fast.",
+    "A brightly coloured tow float or swim buoy isn't just for open-water swimmers doing distance; it makes you visible to the jet-skis, kayaks and boats that share bays like Porth Dafarch and Trearddur.",
+    "If you're heading to Cemlyn Bay between May and July, stick to the seaward side of the shingle ridge. It's a tern nesting reserve during breeding season and wardens do enforce the fencing — the beach itself stays open, just not the ridge crest.",
+    "Trearddur Bay and Benllech are your best bets if you want a lifeguarded swim in peak season — check current signage on the day, as patrol dates shift year to year and aren't guaranteed at every beach.",
+    "Pack a dry robe or big warm layers for after, not just a towel. The wind off the Irish Sea means you cool down fast once you're out, even on a warm day."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start at a sheltered, easy bay — Rhoscolyn, Porth Dafarch or Benllech — before attempting anything with currents or tidal timing. These give you calm water, easy entry and exit, and nearby parking to build confidence.",
+      "Never swim alone, and tell someone on shore where you're going and how long you'll be. Anglesey's bays look tame but conditions can shift quickly once you're past the shoreline.",
+      "Budget for parking everywhere. Nearly every beach car park charges £3-7 for the day, and it's usually pay-and-display, so bring change or a card even at the smaller, more remote spots like Cable Bay and Cemlyn.",
+      "A wetsuit is not optional gear here, it's the difference between enjoying your swim and cutting it short. Hire one locally from Anglesey Outdoors in Holyhead or Anglesey Adventures if you don't own one.",
+      "Learn to read a tide table before you go anywhere near Llanddwyn Island or the Menai Strait. Both have real tidal risk, and getting cut off or caught in a strong current is the main way people get into trouble here.",
+      "Bring proper footwear for the walk down to the water. Several of these spots — Silver Bay, Cemlyn, the approach to Llanddwyn — involve uneven ground, rocks, or a public footpath rather than a straight drop onto sand.",
+      "Enter the water slowly rather than diving straight in. Cold-water shock is real even in summer, and giving your body a minute to acclimatise in shallow water first makes the whole swim more enjoyable.",
+      "Keep your first few sessions short — 20 to 30 minutes is plenty while you're still finding your cold-water legs. You can build up duration once you know how your body handles the temperature."
+    ],
+    "regular": [
+      "Skip Cable Bay's tiny car park on a summer weekend and head to Porth Dafarch instead, then walk the coast path round if you want the scenery — the car park at Cable Bay genuinely cannot handle peak-season demand.",
+      "Silver Bay is the spot locals keep quiet about: sheltered, sandy, and usually far less crowded than Rhoscolyn, but the public footpath access isn't signposted well, so look for the public footpath markers near the entrance rather than assuming you can drive straight in.",
+      "Swim Llanddwyn Island properly by starting the crossing just after high water, once the sand has drained — that gives you the longest safe window before the tide turns and cuts the causeway again.",
+      "Weekday mornings, especially outside the June-August peak, are when Church Bay and Cemlyn Bay are at their best — both get busy with day-trippers by early afternoon in summer.",
+      "September is a genuinely underrated month for Anglesey swimming: the sea has had all summer to warm up, the crowds thin out after the school holidays, and the light in the evenings is superb for a Llanddwyn Island swim.",
+      "For the Menai Strait, don't go it alone — the currents there are strong enough that even confident open-water swimmers should go with a guided group or experienced local who knows the flow patterns around the bridges.",
+      "If Rhoscolyn's car park is full, the coast path from Silver Bay connects round to it on foot — a good way to string together two swims without needing a second parking fee.",
+      "Check the North Wales Wildlife Trust's Cemlyn updates before a spring visit — the tern colony's exact nesting areas and fencing lines shift year to year, so current signage on the ridge overrides anything written here."
+    ]
+  }
 }

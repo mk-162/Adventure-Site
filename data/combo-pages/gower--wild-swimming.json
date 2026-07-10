@@ -10,6 +10,37 @@
   "bestSeason": "May-September",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £80 guided",
+  "topTips": [
+    "Check tide times before you leave the house, not when you arrive. Swansea Bay and the Gower coast have the second-highest tidal range in the world (around 8.5m), so a beach that looks swimmable can vanish or become cut off within a couple of hours.",
+    "The Blue Pool at Broughton Bay is only reachable in the roughly two hours either side of low tide — turn up at the wrong time and there's simply no beach to walk across. Check the swell forecast too; big Atlantic swells make the rocky scramble dangerous even when the tide is right.",
+    "Three Cliffs Bay, Pobbles, and Tor Bay all have genuinely strong rip currents around the river mouth, especially as the tide comes in. If you're not a confident open water swimmer, treat these as paddling and rock-pooling spots rather than swim destinations.",
+    "Only Caswell Bay and Langland Bay carry RNLI lifeguard cover, and only from late May to mid-September. Every other spot on this list — Mewslade, Fall Bay, Brandy Cove, Pwll Du, the Blue Pool, Rhossili — is unlifeguarded, always. Swim with a buddy and tell someone your plan.",
+    "Mewslade and Fall Bay are reached via the same coastal path from Rhossili — a steep, occasionally muddy walk with no facilities at either end. Bring everything with you (water, food, warm layers) because there's no shop, café, or toilet once you're down in the valley.",
+    "A wetsuit isn't optional gear here — it's the difference between a 20-minute dip and an hour in the water. Sea temperatures rarely exceed 16-17°C even in August, so budget for hire (PJ's Surf Shop in Llangennith or Oxwich Watersports) if you don't own one.",
+    "Parking is the real bottleneck on Gower in summer. The small car parks at Mewslade, Tor Bay, and Broughton Bay fill by mid-morning on any sunny weekend — arrive before 9am or be prepared to walk further from an overflow spot.",
+    "Rock pools at Tor Bay are the easiest, safest introduction to Gower's coastline for young children — shallow, sheltered, and full of things to find. Save the exposed swims (Fall Bay, Rhossili, the Blue Pool) for when everyone in your group is a confident swimmer."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start at a lifeguarded, sheltered beach like Caswell Bay before venturing to the more remote coves — it lets you get a feel for Gower's water temperature and currents with backup on hand.",
+      "Always check tide times and the weather forecast the morning of your swim, not the night before. Conditions on this coast change fast, and several spots (Blue Pool, Fall Bay, Mewslade) are tide-dependent or exposed to Atlantic swell.",
+      "Bring a wetsuit, water shoes, and a brightly coloured tow float as standard kit. Rocky entry points and cold water catch out a lot of first-timers who assume a UK summer swim needs nothing more than a costume.",
+      "Never swim alone, especially at unlifeguarded spots — which is most of Gower. Tell someone on land where you're going and roughly when you'll be back.",
+      "If a spot requires a walk down a valley or along the coastal path (Mewslade, Fall Bay, Pwll Du, Brandy Cove), budget real time and energy for the return climb, not just the swim itself.",
+      "Don't attempt the Blue Pool or Fall Bay on your first visit to Gower. Both require tide knowledge and a level of open-water confidence that's worth building up on the easier beaches first.",
+      "Sunscreen and a hat matter even on overcast days — the exposed clifftop walks to spots like Fall Bay and Rhossili catch more sun (and wind) than you'd expect."
+    ],
+    "regular": [
+      "Weekday mornings, especially outside school holidays, are when you'll have Mewslade or Brandy Cove almost to yourself. Weekend afternoons in July and August are the opposite — arrive by 9am or skip it.",
+      "If Three Cliffs or Caswell are heaving, walk the extra 20 minutes from Southgate around to Pobbles Bay at low tide — quieter, and still within the same National Trust car park orbit.",
+      "September is the local's month: sea temperatures are close to their August peak, lifeguard crowds have thinned, and the car parks empty out once school's back.",
+      "Time the Blue Pool for a mid-week low tide around midday rather than a weekend — it's a small pool and gets genuinely crowded when word gets out on social media for a good low tide window.",
+      "For a proper adventure day, combine the Rhossili to Fall Bay to Mewslade coastal path loop with a swim at each end — roughly 3.5 miles of some of the best clifftop walking on the peninsula, bookended by two very different swims.",
+      "Pwlldu Head car park serves both Brandy Cove and Pwll Du Bay — park once and do both in a single outing rather than moving the car, since spaces are limited and refilling fast on a good day.",
+      "Winter swimming has a small but real following on Gower — Caswell and Langland see regular dawn dippers year-round. Just be aware there's no lifeguard cover outside the summer season, so go with an experienced group.",
+      "Watch the swell forecast on Magicseaweed rather than just the weather app — a calm, sunny day can still bring a heavy groundswell that makes the Blue Pool or Fall Bay unsafe even at the right tide."
+    ]
+  },
   "spots": [
     {
       "name": "Blue Pool (Broughton Bay)",
@@ -30,7 +61,10 @@
       },
       "estimatedCost": "Free (parking £5-10)",
       "operatorSlug": null,
-      "insiderTip": "Check Magicseaweed for swell forecast - large swells make access to the Blue Pool dangerous even at low tide."
+      "insiderTip": "Check Magicseaweed for swell forecast - large swells make access to the Blue Pool dangerous even at low tide.",
+      "howToDoIt": "Time your visit for the two-hour window either side of low tide — outside of that, the pool is unreachable or cut off. From the car park, follow the coastal path down towards Broughton Bay and scramble over rocks at the western end of the beach to reach the pool itself. Ease in from the rocks rather than jumping until you've checked depth and seen how others are entering; the pool bed shelves quickly. Get out well before the tide turns, since the return scramble becomes hazardous once water starts covering the rocks again.",
+      "access": "Access is tide-dependent only — check tide times before setting out, not on arrival. The Loughor estuary just offshore produces strong currents, so this is a pool for swimming in, not a launch point for swimming out into the bay. The rock scramble to reach the pool is uneven and unsuitable for anyone with limited mobility.",
+      "routeDescription": "From Broughton Bay car park, a short walk down onto the beach leads west along the sand towards a jumble of rocks at the bay's far end. The Blue Pool sits within this rock formation — a near-circular, steep-sided pool roughly 15ft across and 8ft deep at its centre, filled and refreshed by each tide."
     },
     {
       "name": "Three Cliffs Bay",
@@ -51,7 +85,10 @@
       },
       "estimatedCost": "Free (parking £5 for non-NT members)",
       "operatorSlug": null,
-      "insiderTip": "At low tide, walk around to Pobbles Bay for even more secluded swimming spots."
+      "insiderTip": "At low tide, walk around to Pobbles Bay for even more secluded swimming spots.",
+      "howToDoIt": "Stick to the open sea well away from the river mouth, where the Pennard Pill stream meets the bay and generates the bay's strongest currents. Confident swimmers can head out into the open water on the seaward side; less experienced swimmers and families are better off paddling in the shallow, slow-moving river channel itself rather than the sea proper. Watch the tide state — currents strengthen noticeably as the tide floods in.",
+      "access": "Reached via a 15-20 minute walk from the National Trust Southgate car park along the coastal path, or a longer approach from Parkmill through the Pennard valley. There are no facilities, including toilets, at the beach itself. Local safety guidance advises against swimming near the river mouth at Three Cliffs Bay and neighbouring Pobbles due to consistently strong rip currents, particularly around high tide.",
+      "routeDescription": "The walk in from Southgate follows the cliff-top path with Pennard Castle visible ahead, then descends to the wide sweep of sand where the Pennard Pill river fans out into the bay. The three limestone cliffs that give the bay its name rise on the eastern side, with Pobbles Bay accessible around the headland at low tide."
     },
     {
       "name": "Mewslade Bay",
@@ -72,7 +109,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Bring a picnic as there are no facilities at Mewslade Bay."
+      "insiderTip": "Bring a picnic as there are no facilities at Mewslade Bay.",
+      "howToDoIt": "Once down on the beach, the water is generally calm enough for a relaxed swim close to shore — this isn't a spot for pushing out into open water, more a peaceful cove swim with clear visibility. Explore the cave at the eastern end of the beach on the way in or out, but keep an eye on the tide while you're inside it. Combine the swim with the wider Rhossili-Fall Bay-Mewslade coastal loop for a full day out.",
+      "access": "Park at the small, limited layby parking area at the top of the lane (spaces fill early in season) and follow the National Trust-owned valley path down — steep in places, unsuitable for pushchairs or limited mobility. The beach is cut off at high tide, so don't plan to linger once the tide turns. No facilities of any kind at the beach.",
+      "routeDescription": "The path drops through a narrow, green valley owned by the National Trust, following a small stream down to the shingle-and-sand beach. Steep limestone cliffs enclose the bay on both sides, with a sea cave visible on the eastern flank — one of the more dramatic short approaches on the Gower coast."
     },
     {
       "name": "Fall Bay",
@@ -93,7 +133,10 @@
       },
       "estimatedCost": "Free (parking £6 at Rhossili)",
       "operatorSlug": null,
-      "insiderTip": "The walk to Fall Bay is exposed, so bring plenty of water and sun protection."
+      "insiderTip": "The walk to Fall Bay is exposed, so bring plenty of water and sun protection.",
+      "howToDoIt": "This is a swim for capable, confident open-water swimmers only — the bay is fully exposed to the Atlantic, so expect swell and wind chop even on calm-looking days. Check the forecast and swell height before committing to the walk in, since there's no shortcut back if conditions turn. Keep well clear of any seals hauled out on the rocks; give them a wide berth both in and out of the water.",
+      "access": "No road access — reached only via the Wales Coast Path from Rhossili, roughly 45-60 minutes each way across open, exposed farmland and clifftop. Fall Bay is tidal and largely disappears at high tide, so plan around low water. At very low tide it's possible to walk around the headland between Fall Bay and neighbouring Mewslade.",
+      "routeDescription": "From Rhossili car park, the coastal path heads south along the clifftop above Mewslade before dropping down to Fall Bay — part of a well-known 3.5-mile loop that takes in both bays. The beach itself is a wide, wild sweep of sand backed by cliffs, with Worm's Head visible along the coast to the north."
     },
     {
       "name": "Brandy Cove",
@@ -114,7 +157,10 @@
       },
       "estimatedCost": "Free (parking £3 at Pwlldu Head)",
       "operatorSlug": null,
-      "insiderTip": "Combine your swim with a walk to Pwlldu Bay for a longer adventure."
+      "insiderTip": "Combine your swim with a walk to Pwlldu Bay for a longer adventure.",
+      "howToDoIt": "The cove is sheltered enough for a relaxed, low-current swim close to the pebble shore — a good option if you want a dip without worrying about open-water conditions. Wear water shoes; the seabed is pebbly rather than sandy underfoot.",
+      "access": "Park at Pwlldu Head car park and follow the coastal path down — a steep but short descent, so wear proper footwear. No facilities at the cove itself. The same car park also serves Pwll Du Bay a little further along, so it's easy to combine both in one visit.",
+      "routeDescription": "A short, steep path drops from the clifftop car park directly down to the cove — small, enclosed, and pebbly, with wooded slopes rising behind it giving genuine shelter from the wind."
     },
     {
       "name": "Pwll Du Bay",
@@ -135,7 +181,10 @@
       },
       "estimatedCost": "Free (parking £3 at Pwlldu Head)",
       "operatorSlug": null,
-      "insiderTip": "Bring sturdy shoes for the walk down the valley, as the path can be uneven."
+      "insiderTip": "Bring sturdy shoes for the walk down the valley, as the path can be uneven.",
+      "howToDoIt": "The bay's shingle shelf and generally calm water make this a good introduction to sea swimming beyond the lifeguarded beaches — but there's no lifeguard cover here, so stick to your depth and swim parallel to shore if you're building confidence rather than heading straight out.",
+      "access": "Park at Pwlldu Head car park and follow the valley path down — an easier, gentler descent than most of the other coves on this list, which is part of why it suits families. No lifeguard service. Combine with Brandy Cove from the same car park for a longer day.",
+      "routeDescription": "The path follows a wooded valley down from Pwlldu Head to a curving shingle beach, opening out to sea views with limestone headlands framing the bay on both sides."
     },
     {
       "name": "Caswell Bay",
@@ -156,7 +205,10 @@
       },
       "estimatedCost": "Free (parking £1/hour)",
       "operatorSlug": null,
-      "insiderTip": "Check the surf report before you go – Caswell can get choppy."
+      "insiderTip": "Check the surf report before you go – Caswell can get choppy.",
+      "howToDoIt": "This is the easiest, most beginner-friendly swim on the list — sandy entry, lifeguard cover in season, and enough space to swim parallel to shore within the patrolled area. First-timers to Gower's cold water should start here rather than at one of the more remote coves, since help is on hand if needed.",
+      "access": "RNLI lifeguards patrol Caswell daily from late May to mid-September (check current dates each year, as they shift slightly). Outside those months and hours, swim with the same caution as any unlifeguarded beach. Good car park access directly onto the beach with cafés and shops nearby.",
+      "routeDescription": "A short walk from the car park leads straight onto sand — no valley descent or clifftop walk required, making this the most accessible entry point on the peninsula."
     },
     {
       "name": "Rhossili Bay",
@@ -177,7 +229,10 @@
       },
       "estimatedCost": "Free (parking £6)",
       "operatorSlug": null,
-      "insiderTip": "Walk to the end of the beach towards Worm's Head at low tide for unique rock formations."
+      "insiderTip": "Walk to the end of the beach towards Worm's Head at low tide for unique rock formations.",
+      "howToDoIt": "Swim close to shore and away from the surf breaks, which draw board riders along much of the bay. Undertows can be strong in bigger surf, so this favours confident swimmers who can read conditions rather than a first open-water swim. Avoid heavy surf days entirely — this is a beach to admire from the sand rather than swim in when the swell is up.",
+      "access": "A steep path descends from Rhossili car park to the three-mile sweep of beach below. There is no RNLI lifeguard patrol at Rhossili, so treat it as an unlifeguarded swim regardless of season. Worm's Head at the southern end is a tidal island reachable only for a short window either side of low tide — people are cut off here most years, so check tide times carefully if you plan to walk out to it.",
+      "routeDescription": "From the clifftop car park, the path drops steeply to a vast, gently curving three-mile beach — one of the most photographed in Wales. Worm's Head extends out from the southern tip, and the wreck of the Helvetia is visible in the sand at low tide partway along the bay."
     },
     {
       "name": "Tor Bay rock pools",
@@ -198,7 +253,10 @@
       },
       "estimatedCost": "Free (parking may apply)",
       "operatorSlug": null,
-      "insiderTip": "Bring a bucket and net for exploring the rock pools – but remember to put everything back!"
+      "insiderTip": "Bring a bucket and net for exploring the rock pools – but remember to put everything back!",
+      "howToDoIt": "Wait for low tide to reveal the full network of pools, then wade and paddle between them rather than attempting a proper swim — this is a rockpooling and gentle-dip spot rather than an open-water destination. Wear water shoes for grip on wet rock and to protect feet from barnacles and sharp edges.",
+      "access": "Tide-dependent — the pools are best explored in the two to three hours around low tide, and much of the interest disappears as the tide floods back in. Parking at Tor Bay itself is limited; the Oxwich car park a short walk away is a reliable overflow option.",
+      "routeDescription": "A short walk from the car park onto the beach reveals, at low tide, a wide shelf of interlinked rock pools running along the shoreline, with open views across to Oxwich Bay."
     }
   ],
   "practicalInfo": {

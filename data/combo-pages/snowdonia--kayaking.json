@@ -10,6 +10,38 @@
   "bestSeason": "Whitewater: October-April (rain-dependent). Flat-water lakes: April-October.",
   "difficultyRange": "Beginner (Bala/Padarn flat-water) to Expert (Glaslyn / Llugwy gorges)",
   "priceRange": "£20-30 hire (lakes); £75-£150 guided / course day",
+  "topTips": [
+    "Whitewater and flat-water are two different trips here — decide which one you're actually doing before you plan anything else. The rivers (Conwy, Llugwy, Glaslyn) need grade 3+ experience and recent rain; the lakes (Bala, Padarn, Gwynant) are hire-and-go for anyone.",
+    "Sea kayaking is not a Snowdonia activity, whatever the marketing implies — the national park is landlocked. If you came for coastal paddling, redirect to Anglesey (South Stack, Holy Island) or the Llŷn Peninsula; Plas y Brenin runs conversion courses out to both.",
+    "Check the river gauge before you drive anywhere near the Conwy, Llugwy or Glaslyn. The UK Rivers Guidebook and the Natural Resources Wales level pages are the two sources every local paddler actually checks — a dry week can mean no water at all.",
+    "None of the three whitewater rivers carry a confirmed public right of navigation — access sits in the same legally unresolved space as most non-tidal rivers in Wales. In practice paddlers have used them for decades without incident, but it's worth knowing the access position isn't settled law, unlike, say, the Wye.",
+    "If you're learning from scratch, start at Plas y Brenin, not on the rivers. The Conwy and Llugwy are step-up venues for people who already have grade 3 skills — they are not beginner water, and the Llugwy gorge in particular has claimed experienced paddlers who misjudged it.",
+    "Scout before you commit on all three rivers — Conwy Falls, the Llugwy's technical drops and the Aberglaslyn railway-bridge eddy line all have blind entries from the boat. Every spot's insider tip in this guide says the same thing for a reason.",
+    "On the lakes, launch early. Bala's open water turns choppy under the afternoon south-westerly, and Padarn and Gwynant get busier as the day goes on — morning sessions are calmer water and quieter car parks.",
+    "Cold water catches people out even in summer. Padarn and the rivers sit at 8-14°C year-round — wear a wetsuit or drysuit even on a warm day, and treat any capsize on the lakes as a genuine cold-shock risk, not just a soaking."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Work out which Snowdonia you're paddling before you book anything — whitewater river or flat-water lake. They need completely different kit, skills and weather, and this guide covers both.",
+      "If you have no whitewater experience, book a course at Plas y Brenin rather than attempting the rivers self-guided. It's the National Outdoor Centre and the standard UK entry point for a reason — the Conwy and Llugwy are not learner water.",
+      "For a first flat-water session, Llyn Tegid (Bala) or Llyn Padarn are the easiest options — both have walk-up hire, buoyancy aids included, and staff on hand. Bala Adventure & Watersports covers Tegid; Snowdonia Watersports covers Padarn.",
+      "Pack for cold water regardless of the season. River and lake temperatures sit at 8-14°C most of the year in Snowdonia — a wetsuit isn't optional kit here, it's the difference between a good day and a genuinely dangerous one.",
+      "Don't plan a whitewater day around a fixed date. These are rain-fed rivers with no dam release — check the gauges 24-48 hours out and be ready to swap to a lake day if the level's wrong.",
+      "Betws-y-Coed is the natural base for river days (train station, gear shops, cafes); Llanberis or Bala for lake days. Trying to cover both from one base means a lot of driving.",
+      "A buoyancy aid (PFD) is mandatory at every hire centre and every course — don't expect to skip it, and don't skip it if you bring your own boat either.",
+      "If you're driving from England, build in the shuttle-vehicle problem for river days — whitewater runs are point-to-point, so a self-guided trip needs two cars or a guided operator who handles the shuttle for you."
+    ],
+    "regular": [
+      "The Llugwy's Fairy Glen-style gorge drops change character completely with water level — a clean line at medium-low becomes a sticky hole at high water. Re-scout on every visit, even ones you know well.",
+      "Weekday mornings are the move on both Bala and Padarn — car parks fill and wind picks up through the afternoon, especially on Bala's exposed open water.",
+      "Llyn Gwynant is the quiet alternative to Padarn if you're bringing your own boat — no commercial day-hire operator works the lake, so it stays markedly less busy even in peak season.",
+      "After a dry spell, don't write off a river day — 24-48 hours of decent rain on the catchment is often enough to bring the Conwy or Glaslyn up to a paddleable level even in summer.",
+      "The Aberglaslyn eddy line under the Welsh Highland Railway bridge is the read of the day on the Glaslyn — get it wrong and you're committed to the harder lower section with no inspection chance. Walk it from the riverside path first, every time.",
+      "For a lower-commitment intro to Snowdonia whitewater, the Fairy Glen-to-Llanrwst stretch on the lower Conwy scales down the classic run without the grade 4 falls section.",
+      "Combine a lake session with a river scout — paddle Padarn or Gwynant in the morning, then walk the Llugwy or Glaslyn banks in the afternoon to read the lines for your next trip up in grade.",
+      "The eastern (Llangower) shoreline on Bala is the sheltered side when the forecast is gusty — worth knowing if you've already driven out and the wind's picked up."
+    ]
+  },
   "spots": [
     {
       "name": "Afon Conwy — Betws-y-Coed to Llanrwst",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "Free self-guided; £75-£120pp guided",
       "operatorSlug": "plas-y-brenin",
-      "insiderTip": "Walk Conwy Falls before you commit — sightlines on the entry boof are misleading from the boat. The lower section from Fairy Glen to Llanrwst makes a cleaner intro run if you want to scale down."
+      "insiderTip": "Walk Conwy Falls before you commit — sightlines on the entry boof are misleading from the boat. The lower section from Fairy Glen to Llanrwst makes a cleaner intro run if you want to scale down.",
+      "howToDoIt": "Get in above Conwy Falls, walk and inspect the falls drop before running or portaging it, then settle into a continuous grade 3 rhythm of eddy-hopping and wave trains down through the gorge to Llanrwst. Most parties run it as a single push rather than stopping to play, since the shuttle logistics reward getting off the water promptly. Solid grade 3 skills (confident eddy turns, a reliable roll) are the minimum; this is a step-up run for paddlers moving on from grade 2 rivers, not a first whitewater trip.",
+      "routeDescription": "From the get-in above the falls, the river drops through a wooded gorge with a near-continuous sequence of grade 3 rapids, broken by pools and eddies that let you regroup. The Conwy Falls drop itself is the one significant grade 4 feature — most parties walk it via the path rather than run it blind. Below the falls the gradient eases into the classic Fairy Glen-style gorge scenery, with the river opening out gradually as you approach Llanrwst and the take-out near the bridge.",
+      "access": "No confirmed public right of navigation exists on the Afon Conwy — like most non-tidal rivers in Wales, the legal access position is unresolved rather than guaranteed, though paddlers have used this stretch for decades without dispute. Get-in is via the A5 layby above Conwy Falls (small, paid, fits only a handful of cars); a mud layby on the river-left road below the Machno bridge gives a lower put-in above the first rapid if you want to skip the falls entirely. Get-out is free roadside parking near the Llanrwst bridge. A car shuttle is essential unless you're going with a guided operator."
     },
     {
       "name": "Afon Llugwy — Pont Cyfyng to Betws-y-Coed (Fairy Glen)",
@@ -51,7 +86,10 @@
       },
       "estimatedCost": "Free self-guided; £120-£150pp coached",
       "operatorSlug": "plas-y-brenin",
-      "insiderTip": "The crux drops in the Glen change character with water level — what's a clean line at medium-low becomes a sticky hole at high. Scout from the riverside path before you get in."
+      "insiderTip": "The crux drops in the Glen change character with water level — what's a clean line at medium-low becomes a sticky hole at high. Scout from the riverside path before you get in.",
+      "howToDoIt": "This is a scout-first river, not a read-and-run one. Walk the gorge from the riverside path before getting on the water so the team knows the crux ledges and slots at the level on the day, then paddle it tight and committed — gorge walls remove most river-right escape options once you're in. Run it with a competent group who can set up rescue positions above the harder drops; this is coached-progression or experienced-team territory, not a solo or casual outing.",
+      "routeDescription": "From the Pont Cyfyng get-in, the river narrows into a wooded gorge of closely-spaced ledges and slots, graded a hard 3 to soft 4 depending on level. The crux sequence sits mid-gorge where the channel tightens and the drops come with little recovery water between them. Below the technical section the gradient eases toward Betws-y-Coed, finishing under the Pont-y-Pair bridge.",
+      "access": "As with the Conwy, there's no confirmed public right of navigation on this stretch of the Llugwy — access has long been used by paddlers without formal dispute, but it isn't a legally guaranteed right. Get-in at the Pont Cyfyng layby is limited to a few cars and fills early on weekends; arrive with time to spare or you'll be parking further out and walking boats in. Get-out is at Betws-y-Coed below the Pont-y-Pair bridge, a short walk from the village."
     },
     {
       "name": "Afon Glaslyn — Beddgelert through the Aberglaslyn Pass",
@@ -72,7 +110,10 @@
       },
       "estimatedCost": "Free self-guided; guided trips run on demand from Plas y Brenin",
       "operatorSlug": "plas-y-brenin",
-      "insiderTip": "The railway-bridge eddy is the move of the day — get it wrong and you're swept into the harder lower section without an inspection chance. Walk the gorge from the riverside path before you launch."
+      "insiderTip": "The railway-bridge eddy is the move of the day — get it wrong and you're swept into the harder lower section without an inspection chance. Walk the gorge from the riverside path before you launch.",
+      "howToDoIt": "Launch from Beddgelert and paddle down into the Aberglaslyn Pass, a tight wooded gorge that the Welsh Highland Railway also threads through on a ledge above the water. The defining move is the eddy line at the railway bridge — catching it correctly gives you the chance to inspect the harder lower ledges; missing it sweeps you straight into them uninspected. A clean portage option exists around the hardest lower drops for teams who want to keep the run within their comfort margin.",
+      "routeDescription": "From the Beddgelert bridge, the Glaslyn runs a short, sharp sequence of grade 3-4 ledges before the gorge properly closes in at the Aberglaslyn Pass. The railway bridge eddy marks the transition into the harder lower section; below it the river drops through further ledges and slots in the narrowest part of the gorge before opening out toward the A4085 take-out layby. Short at 4km, but concentrated — there's little flat water to recover in.",
+      "access": "The Glaslyn carries no confirmed public right of navigation either, the same unresolved position as most Welsh whitewater. The riverside path through the Aberglaslyn Pass is a popular walking route (National Trust-managed land), so expect walkers and photographers watching from the banks, especially near the railway bridge. Get-in is at Beddgelert village, which has multiple pay-and-display car parks; get-out is the layby on the A4085 at the pass. This river needs a genuinely wet catchment to run — it has the smallest and least predictable window of the three."
     },
     {
       "name": "Llyn Tegid (Bala Lake)",
@@ -93,7 +134,10 @@
       },
       "estimatedCost": "Kayak hire from approx £20-£30/hour; lessons from approx £40",
       "operatorSlug": "bala-adventure-watersports",
-      "insiderTip": "Launch from the foreshore early — by mid-afternoon the prevailing wind picks up and turns the open water choppy. The eastern (Llangower) shoreline is the sheltered side if the forecast looks gusty."
+      "insiderTip": "Launch from the foreshore early — by mid-afternoon the prevailing wind picks up and turns the open water choppy. The eastern (Llangower) shoreline is the sheltered side if the forecast looks gusty.",
+      "howToDoIt": "Walk up to Bala Adventure & Watersports on the foreshore, get fitted with a buoyancy aid and a touring kayak or SUP, and launch straight off the shore — no experience or booking-ahead required for casual hire, though lessons and guided sessions can be booked for more structure. First-timers should stay close to the foreshore; more confident paddlers can tour the full four-mile length or cross to the quieter Llangower shore.",
+      "routeDescription": "Llyn Tegid runs roughly four miles north-east to south-west, hemmed in by the Aran and Arenig ranges. The foreshore at the Bala end is the main launch and stays busiest; paddling south-west toward Llangower opens up quieter water and closer mountain views, with the sheltered eastern shore giving the best refuge if wind picks up on the open lake.",
+      "access": "Public lake with an established watersports centre — no access complications. Launch is directly off the Bala Lake foreshore car park (pay-and-display), a short walk from the town centre. No tides to consider; wind exposure on the open water is the only variable that changes access conditions day to day."
     },
     {
       "name": "Llyn Padarn",
@@ -114,7 +158,10 @@
       },
       "estimatedCost": "Hire from approx £15-£25/hour",
       "operatorSlug": "snowdonia-watersports",
-      "insiderTip": "Paddle the south-east shore for the best Dinorwig Quarry views — the abandoned slate workings tower above the water and make the most striking backdrop in the lake."
+      "insiderTip": "Paddle the south-east shore for the best Dinorwig Quarry views — the abandoned slate workings tower above the water and make the most striking backdrop in the lake.",
+      "howToDoIt": "Hire is walk-up from the Snowdonia Watersports base on the lake shore — get kitted with a buoyancy aid and wetsuit (the water stays cold even in summer), then paddle out either direction. The lake is sheltered enough for a relaxed first-timer session, but the cold, deep water means a capsize is a genuine consideration, not just an inconvenience — wear the wetsuit even if you don't plan to go in.",
+      "routeDescription": "Llyn Padarn runs about two miles north-east to south-west below Snowdon. The south-eastern end, toward Llyn Peris and the old Dinorwig Quarry workings, has the most dramatic scenery — slate terraces rising straight from the water. The northern end runs out toward the National Slate Museum and the lake's outflow, a flatter, more open stretch.",
+      "access": "Public lake, no access complications. Launch from the Snowdonia Watersports base on the shore, with on-site parking for hire customers; additional pay-and-display parking runs along the A4086 through Llanberis. No tidal or navigation-rights issues — this is straightforward hire-and-go water."
     },
     {
       "name": "Plas y Brenin — Capel Curig coaching base",
@@ -135,7 +182,10 @@
       },
       "estimatedCost": "Day courses from approx £100; residentials £400+ (includes meals and accommodation)",
       "operatorSlug": "plas-y-brenin",
-      "insiderTip": "Book the residential format if you can — the post-day debriefs in the bar (the Climber's Bar at PyB is a paddling institution in itself) are where most of the actual learning happens."
+      "insiderTip": "Book the residential format if you can — the post-day debriefs in the bar (the Climber's Bar at PyB is a paddling institution in itself) are where most of the actual learning happens.",
+      "howToDoIt": "Book onto a graded course — beginner foundation if you've never paddled, whitewater progression if you've got flat-water skills and want to move onto rivers, or a sea-kayak conversion course if you're heading out to Anglesey or the Llŷn afterwards. Early sessions typically run on the on-site Llynnau Mymbyr lake to build core skills before the group moves onto graded whitewater on the Conwy, Llugwy or nearby rivers as conditions and ability allow.",
+      "routeDescription": "Not a single route — Plas y Brenin's paddling programme uses Llynnau Mymbyr immediately outside the centre for skills and rescue practice, then draws on the full spread of Snowdonia whitewater (Conwy, Llugwy, and other grade 2-4 rivers depending on level and water) for progression days, with the sea coast at Anglesey and the Llŷn available within about an hour for conversion courses.",
+      "access": "Plas y Brenin holds the access relationships and local knowledge to run river days appropriately for the group's ability and the day's water levels, which is one of the practical reasons to book a course here rather than working it out independently — especially given the unresolved public navigation rights on the surrounding rivers. On-site parking is provided for course attendees; the centre sits directly on the A5 at Capel Curig."
     },
     {
       "name": "Llyn Gwynant",
@@ -156,7 +206,10 @@
       },
       "estimatedCost": "Free if bringing own boat; campsite SUP hire approx £15/hour",
       "operatorSlug": null,
-      "insiderTip": "Launch from the campsite end and paddle south-west — the head of the lake holds the best mountain views and the shallowest beach-style entries for swimming breaks."
+      "insiderTip": "Launch from the campsite end and paddle south-west — the head of the lake holds the best mountain views and the shallowest beach-style entries for swimming breaks.",
+      "howToDoIt": "If you're a campsite guest, hire a SUP or kayak on-site and launch straight off the shore. If you're bringing your own boat, pay for day access at the campsite or use the National Trust car park at the foot of the Watkin Path and carry down to the water. There's no lifeguard or hire desk beyond the campsite's own offering, so this suits confident, self-sufficient paddlers more than a first-timer session.",
+      "routeDescription": "A long, narrow lake in the Nant Gwynant valley, running roughly north-east to south-west beneath Yr Aran and the Glyderau. The head of the lake (campsite end) has the most sheltered water and shallow, beach-style entries; paddling the full length gives an increasingly open, mountain-framed run with the Watkin Path trailhead visible at the southern end.",
+      "access": "No commercial day-hire operator works this lake, so casual access depends on either being a campsite guest or bringing your own boat. Day access to launch from the campsite is a paid arrangement; the alternative is the National Trust car park at the foot of the Watkin Path, from where it's a short carry to the water. No tidal considerations — wind is the main variable, though the valley setting gives more shelter than Bala's open water."
     }
   ],
   "practicalInfo": {

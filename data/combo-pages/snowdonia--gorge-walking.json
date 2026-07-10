@@ -30,7 +30,10 @@
       },
       "estimatedCost": "Free (parking £6-10) or £65pp guided",
       "operatorSlug": "mountainxperience",
-      "insiderTip": "Avoid peak times by going early in the morning or later in the afternoon. The light is often better then, too."
+      "insiderTip": "Avoid peak times by going early in the morning or later in the afternoon. The light is often better then, too.",
+      "howToDoIt": "Most people do this as a guided half-day: meet at Ogwen Cottage, kit up in wetsuit, buoyancy aid and helmet, then work upstream from the road, wading through pools and scrambling low rock steps with a handful of small jumps (a metre or two) into deep pools along the way. Guides scale the route to the group, so nervous first-timers can climb down rather than jump. No prior gorge or scrambling experience is needed for this section.",
+      "access": "Start from the Ogwen Cottage / Ogwen Centre car park on the A5 — it's a short walk down to the river from there. The car park is pay-and-display, cashless, and fills early on weekends, so arrive before mid-morning in summer.",
+      "routeDescription": "Working upstream from the road bridge, the lower Ogwen gorge alternates wide, wadeable pools with short scrambled rock steps, framed by Tryfan's east face rising directly above. It's a forgiving line — nothing forces a jump, and escape onto the bank is possible at most points — which is why it's the standard guided introduction for this whole region."
     },
     {
       "name": "Swallow Falls Gorge (View from above, not in the river)",
@@ -51,7 +54,8 @@
       },
       "estimatedCost": "£5 per person entry fee (parking extra)",
       "operatorSlug": null,
-      "insiderTip": "Visit after heavy rain for the most dramatic views of the falls. Be prepared for spray!"
+      "insiderTip": "Visit after heavy rain for the most dramatic views of the falls. Be prepared for spray!",
+      "access": "Paid entry via the turnstile/kiosk at the dedicated Swallow Falls car park on the A5 between Betws-y-Coed and Capel Curig. Paths and viewing platforms only — there is no legal or safe way into the gorge itself here."
     },
     {
       "name": "Fairy Glen (Betws-y-Coed)",
@@ -72,7 +76,10 @@
       },
       "estimatedCost": "£2 per car entry fee",
       "operatorSlug": null,
-      "insiderTip": "Combine your visit with a walk through the surrounding woodland for a longer day out."
+      "insiderTip": "Combine your visit with a walk through the surrounding woodland for a longer day out.",
+      "howToDoIt": "This is a wade-and-paddle outing rather than a full gorge walk: shallow water, easy scrambling over moss-covered rock, and no jumps of consequence. Trainers or old walking shoes are fine; a wetsuit is optional rather than essential outside the coldest months.",
+      "access": "Fairy Glen sits on private land with its own small car park reached down a narrow lane — space for only a handful of cars, and access for larger vehicles is tight. Entry is a small per-person cash fee collected on an honesty basis by the landowners. If the car park is full, park at the larger Conwy Falls car park instead and walk in through Gwydir Forest.",
+      "routeDescription": "A short, sheltered path drops steeply down through mossy woodland to the river, where the gorge narrows into a shallow, enclosed ravine — more atmosphere than adventure, but genuinely pretty, and easy enough for young children under supervision."
     },
     {
       "name": "Aberglaslyn Gorge (Beddgelert)",
@@ -93,7 +100,10 @@
       },
       "estimatedCost": "Free (parking £5-10)",
       "operatorSlug": null,
-      "insiderTip": "Enjoy a post-walk ice cream in Beddgelert - Gelateria Beddgelert is a great option."
+      "insiderTip": "Enjoy a post-walk ice cream in Beddgelert - Gelateria Beddgelert is a great option.",
+      "howToDoIt": "This route is walked, not waded — expect a proper riverside path with some exposed, rocky sections rather than an in-river scramble. Sturdy footwear with grip matters more here than wetsuit boots; metal handholds are fixed at the trickiest point where the path rounds an outcrop above the water.",
+      "access": "The path follows the old fisherman's trackbed alongside the Welsh Highland Railway line between Beddgelert and Nantmor (National Trust land). Start from Beddgelert village or the National Trust car park at Nantmor at the southern end; the path crosses the railway at one point, so stay alert for trains.",
+      "routeDescription": "The Aberglaslyn Pass narrows to a dramatic, steep-sided ravine with the Glaslyn thundering below — the path threads along the true right bank with the railway line for company, opening out into gentler valley walking as you approach Beddgelert."
     },
     {
       "name": "Conwy Falls Gorge",
@@ -114,7 +124,9 @@
       },
       "estimatedCost": "£5 per person entry fee (parking extra)",
       "operatorSlug": null,
-      "insiderTip": "Check the water levels before you go, as the gorge can be impassable after heavy rain."
+      "insiderTip": "Check the water levels before you go, as the gorge can be impassable after heavy rain.",
+      "access": "Entry is via a turnstile at the Conwy Falls Forest Park car park and café, a small per-person fee. The park currently runs a one-way path system to manage the narrow sections, and the site also serves as an alternative walk-in access point for Fairy Glen via Gwydir Forest.",
+      "routeDescription": "A steep, well-built path with steps drops through mixed woodland to a viewing platform below the main falls — a genuinely powerful cascade rather than a wadeable gorge, so treat this as a waterfall walk with a café attached, not a wet scramble."
     },
     {
       "name": "Nant Gwynant Gorge (requires experience)",
@@ -135,7 +147,9 @@
       },
       "estimatedCost": "Free or £75pp guided",
       "operatorSlug": "plas-y-brenin",
-      "insiderTip": "Consider doing this route with a guide, especially if you're unfamiliar with the area."
+      "insiderTip": "Consider doing this route with a guide, especially if you're unfamiliar with the area.",
+      "howToDoIt": "Expect a longer day than Ogwen: deeper pools, bigger jumps, and sustained technical scrambling between them, with fewer easy bail-out points if you decide a section isn't for you. This is where operators like Plas y Brenin pitch trips at people who've already done a beginner gorge day and want to progress.",
+      "access": "Roadside parking only along the Nant Gwynant valley (A498) — limited and informal, so park tight to the verge and don't block passing places or field gates."
     },
     {
       "name": "Dolgarrog Pipeline Gorge (Expert Only)",
@@ -156,7 +170,8 @@
       },
       "estimatedCost": "Free, but high risk",
       "operatorSlug": null,
-      "insiderTip": "This gorge is not for the faint-hearted. Serious risk of injury or death if attempted by inexperienced walkers. Local knowledge is essential."
+      "insiderTip": "This gorge is not for the faint-hearted. Serious risk of injury or death if attempted by inexperienced walkers. Local knowledge is essential.",
+      "access": "Approached from Dolgarrog village — park considerately and be mindful of residents; this is a working village, not a visitor car park. This route should only ever be attempted with an experienced, properly equipped canyoning team; it is not a self-guided or beginner option under any circumstances."
     },
     {
       "name": "Ceunant Mawr (Llanberis Waterfall Canyon)",
@@ -177,7 +192,9 @@
       },
       "estimatedCost": "Guided canyoning trip £75-£100pp (kit included)",
       "operatorSlug": null,
-      "insiderTip": "This is run as canyoning, not gorge walking — you'll be abseiling rather than scrambling up. Book with an operator that specifies Ceunant Mawr by name on their itinerary; generic 'Snowdonia gorge' day tickets usually mean the easier Ogwen route."
+      "insiderTip": "This is run as canyoning, not gorge walking — you'll be abseiling rather than scrambling up. Book with an operator that specifies Ceunant Mawr by name on their itinerary; generic 'Snowdonia gorge' day tickets usually mean the easier Ogwen route.",
+      "howToDoIt": "Almost all operators run Ceunant Mawr as a canyoning descent rather than a gorge walk: a short approach on foot from Llanberis, then a series of rope-led abseils down the stepped falls into deep plunge pools below. It suits confident swimmers who are comfortable being lowered on a rope and dropping into cold water — not a first gorge experience.",
+      "access": "Approach on foot from Llanberis village; operators typically meet clients at their village HQ and walk the short distance to the canyon rather than driving. Park in one of Llanberis's pay-and-display car parks."
     },
     {
       "name": "Ogwen Valley Gorge (Upper)",
@@ -198,7 +215,9 @@
       },
       "estimatedCost": "Free or £75pp guided",
       "operatorSlug": null,
-      "insiderTip": "Consider doing both the upper and lower sections as a full-day adventure."
+      "insiderTip": "Consider doing both the upper and lower sections as a full-day adventure.",
+      "howToDoIt": "The upper Ogwen section raises the stakes over the lower gorge with deeper pools, bigger jumps and more sustained scrambling between them — most groups do it as a guided add-on after the lower section rather than as a standalone beginner trip.",
+      "access": "Same start point as the lower gorge — Ogwen Cottage / Ogwen Centre car park — but continue further upstream. Space in the car park is even tighter than for the lower section since both routes share the same access."
     }
   ],
   "practicalInfo": {
@@ -593,6 +612,38 @@
         "activityTypeSlug": "coasteering",
         "label": "Coasteering in Snowdonia"
       }
+    ]
+  },
+  "topTips": [
+    "Water level beats every other variable here. A dry forecast on the day means nothing if the previous 48 hours dumped rain on the catchment above — Ogwen, Llugwy and Glaslyn all spike fast and drain slow. If you're going self-guided, check the Natural Resources Wales river levels page (stations at Betws-y-Coed/Cwmlanerch and Llanrwst cover the Conwy and Llugwy catchments) before you commit.",
+    "Ogwen Cottage car park (run by Eryri/Snowdonia National Park Authority, not the National Trust) is card/app only — no cash — and charges around £6 for the day or £3 for four hours. It's also the smallest car park serving the busiest gorge, so arrive early or go late afternoon if you want a space at all.",
+    "Fairy Glen at Betws-y-Coed sits on private land with its own small car park and an honesty-style entry system — cash only, a per-person fee on top of the parking charge. If the little car park is full, Conwy Falls has a much bigger one and you can walk in through Gwydir Forest instead.",
+    "Ceunant Mawr above Llanberis is the natural 'next step' after a beginner Ogwen day, but it's almost always run as canyoning (rope-led abseils down the falls) rather than an upward gorge walk — the headwalls are too sheer to scramble. Book with an operator that names Ceunant Mawr specifically; a generic 'Snowdonia gorge day' booking usually means the easier Ogwen route.",
+    "The Aberglaslyn Pass route follows the old fisherman's path alongside the Welsh Highland Railway line between Beddgelert and Nantmor — it's a proper path with metal handholds on the exposed sections, not a riverbed scramble like the others, so temper expectations if you're after a wet gorge day.",
+    "Dolgarrog Pipeline Gorge is listed here for completeness, not as a suggestion. It has a history of serious incidents and is not a self-guided option under any circumstances — go only with an experienced canyoning team who know the line.",
+    "Cold water catches people out even in August — Snowdonia's higher gorge pools sit around 8-12°C year-round. A wetsuit isn't optional kit for comfort, it's what stops a fun day turning into a cold-shock emergency.",
+    "Pack a post-gorge change of clothes and stash it in the car. Pete's Eats in Llanberis and Caffi Siabod in Capel Curig are the obvious refuel stops, but neither wants you dripping through the door in a wetsuit."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start at the Ogwen Valley Gorge (Lower) with a guide — it's the classic beginner introduction, with wading, easy scrambles and small jumps, and it's where operators like Mountainxperience run their standard trips.",
+      "Book ahead. Guided gorge days fill up on summer weekends, and self-guided access to the harder sections (Ogwen Upper, Nant Gwynant) isn't recommended without prior gorge or scrambling experience.",
+      "Wear a wetsuit even if the forecast is warm — the water in Snowdonia's higher pools stays cold (8-12°C) right through summer, and cold-water shock is the biggest real risk for a first-timer, not the scrambling.",
+      "Bring cash for Fairy Glen and coins for pay-and-display machines at Beddgelert and Conwy Falls — several of the smaller sites in this guide are cash-only or card-only in ways that aren't obvious until you arrive.",
+      "If you're nervous about jumps, say so before you start. Every operator will let you climb down instead of jumping into a pool — there's no requirement to leap, and guides would rather you opt out than hesitate mid-jump.",
+      "Check age and ability guidance before booking a family trip. As a rough rule, children need to be around 8 and comfortable in water; the Fairy Glen and lower Aberglaslyn sections are the gentlest options if you're unsure.",
+      "Arrive at Ogwen Cottage early — the car park is small, serves the most popular gorge in the valley, and is cashless, so have a card or the RingGo-style app ready before you drive up.",
+      "Pack a warm layer and a hot drink for after. Even in a wetsuit you'll be cold once you're out of the water, and the nearest proper warm-up (Pete's Eats, Caffi Siabod, or Cobdens Hotel) is a short drive, not a five-minute walk."
+    ],
+    "regular": [
+      "Once you've done a guided Ogwen day, Ceunant Mawr above Llanberis is the natural progression — but go in knowing it's a canyoning descent (abseils down the falls), not an upward gorge walk, and book an operator who names it specifically.",
+      "Skip the crowds by going early morning or late afternoon at Ogwen — the same insider tip applies at Fairy Glen and Aberglaslyn, both of which get busy with sightseers (not just gorge walkers) through the middle of the day in summer.",
+      "After a wet week, check river levels before heading to Ogwen, Llugwy, or Glaslyn-fed gorges — the Natural Resources Wales gauges at Betws-y-Coed and Llanrwst are the quickest read on whether the water's dropped enough to be sensible.",
+      "July and August are the only realistic window for Dolgarrog Pipeline Gorge, when water levels are at their lowest — and even then, it's an expert-only, guided-team-only route, not a solo add-on to a normal trip.",
+      "Nant Gwynant is the quieter alternative to Ogwen for anyone with the experience to go without a full beginner group — deeper water, bigger jumps, and a fraction of the foot traffic.",
+      "Combine both sections of the Ogwen gorge (Lower then Upper) for a full-day outing if you're already experienced — most first-timers only do the lower half, so the upper section stays noticeably quieter even in peak season.",
+      "Conwy Falls and Fairy Glen both sit close enough together to combine in one visit — park at the bigger Conwy Falls car park and walk through Gwydir Forest to Fairy Glen rather than fighting for the small dedicated space there.",
+      "If you're gorge walking out of Llanberis, Joe Brown's and V12 Outdoor on the high street are worth a stop even if you've already got kit — both do repairs and boot fitting, useful if a wetsuit boot blows out mid-trip."
     ]
   }
 }

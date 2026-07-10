@@ -10,6 +10,38 @@
   "bestSeason": "April-October",
   "difficultyRange": "Easy to Challenging",
   "priceRange": "Free - £65 guided",
+  "topTips": [
+    "Tides run everything here. The Bristol Channel has one of the biggest tidal ranges in the world, so a beach that's firing at high tide can be dead flat two hours later — always check the tide time alongside the swell forecast, not instead of it.",
+    "Rest Bay is the easy default: gently sloping sand, mellow waves, a cafe and a surf school right on the beach. It's also the most crowded spot in South Wales on any sunny weekend, so get there early or be ready to share the peak.",
+    "Save money at Rest Bay by parking on the road a short walk from the beach instead of the £6 all-day car park — but this only works if you arrive early, since the free spots go fast.",
+    "Check the surf cam before driving to Coney Beach — it's a good backup when Rest Bay is packed, but the waves are often choppy and water quality can dip badly after heavy rain due to its position by the harbour. The Surfers Against Sewage app is worth having on your phone for exactly this reason.",
+    "Beginners and families should stick to the sandy beach breaks — Rest Bay, Coney Beach, Barry Island — and leave the Heritage Coast to the experienced crowd. Llantwit Major and Southerndown break over reef and rock, carry real rip currents, and are only sensibly surfed by confident surfers who know the tide.",
+    "At tide-dependent reef and rivermouth spots (Ogmore, Llantwit Major, Southerndown), talk to whoever's already in the water about the best entry and exit points before you paddle out — local knowledge is the difference between a good session and a bad afternoon on the rocks.",
+    "Aberavon rewards patience: it needs mid-to-high tide and works best with an offshore wind, so don't judge it on a quick drive-by at low tide in an onshore blow.",
+    "A 4/3mm wetsuit covers most of the year, but South Wales water sits around 8-10°C in winter — budget for boots, gloves and a hood from November through to March if you want to stay out longer than twenty minutes."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start at Rest Bay. It's the most forgiving beach in South Wales, has a surf school and cafe on-site, and the sandy bottom means fewer surprises if you fall off.",
+      "Book a lesson before you buy or hire gear. Porthcawl Surf School and Freewave Surf Academy both operate from Rest Bay and will sort a board and wetsuit sized to you — far better value than guessing your own kit on day one.",
+      "You need a wetsuit every month of the year in South Wales, not just winter. A 4/3mm suit is the standard year-round choice; add boots, gloves and a hood once the water drops toward single figures in winter.",
+      "Never surf alone, and tell someone on land where you're going and when you expect to be back — this matters more at quieter spots like Ogmore or Llantwit Major than at busy Rest Bay.",
+      "Learn to read a tide table before you learn to read a swell chart. Most South Wales beach breaks work through a wide range of tides, but the reef and rivermouth spots (Ogmore, Llantwit Major, Southerndown) only work — and are only safe — at specific tide states.",
+      "If in doubt, don't paddle out. Strong currents around rivermouths and reef breaks catch out visitors every year. If it looks bigger or messier than you're used to, watch from the beach instead.",
+      "In an emergency, dial 999 and ask for the Coastguard. If a lifeguard flag is flying (seasonal, at Rest Bay), swim or surf between the flags where possible.",
+      "Pack sunscreen even on a cloudy day and bring a proper towel or changing robe — the wind off the Bristol Channel makes changing on an exposed car park brutal in any season."
+    ],
+    "regular": [
+      "Autumn and winter are when South Wales actually gets good — bigger, more organised swells hit Aberavon, Ogmore, Llantwit Major and Southerndown, and the summer crowds have gone home. Just dress for it.",
+      "When Rest Bay is heaving on a summer weekend, Langland Bay near Swansea is the quieter, cleaner alternative — and the cafe there is genuinely worth the drive on its own.",
+      "Check the Ogmore River level before heading to Ogmore-by-Sea after rain — heavy runoff turns the rivermouth brown and unpleasant, even when the swell looks good on the forecast.",
+      "Coney Beach is your move when Rest Bay is too crowded to get a wave, but only if it hasn't rained heavily in the last day or two — water quality near the harbour drops fast after storm overflow.",
+      "Barry Island's Whitmore Bay is a sheltered, windy-day option most visitors overlook because it's known for the funfair rather than the surf — it works well at mid-to-high tide when everywhere else is blown out.",
+      "For Llantwit Major and Southerndown, treat the tide window as strict, not approximate — both spots break over reef and rock that becomes exposed or dangerous outside the right tide state, and the swell can turn heavy quickly on the Heritage Coast.",
+      "Free parking is possible at most spots if you arrive early — Rest Bay's roadside spots and Aberavon's seafront parking both fill up by mid-morning on a good day.",
+      "Ditch Magicseaweed — it shut down in 2023 and now just redirects to Surfline. Use Surfline or Windguru directly for accurate South Wales forecasts, and cross-check with the Porthcawl Surf School forecast page for a local read on Rest Bay."
+    ]
+  },
   "spots": [
     {
       "name": "Rest Bay (Porthcawl)",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "Free (parking £6 all day) or £55pp lesson",
       "operatorSlug": null,
-      "insiderTip": "Park slightly further away on the road for free – but get there early!"
+      "insiderTip": "Park slightly further away on the road for free – but get there early!",
+      "howToDoIt": "Walk down from the car park onto the sand and paddle out through the whitewater at the main peak in front of the surf school flags. The wave is a soft, forgiving beach break that peels both ways off the sandbanks, so beginners can catch whitewater close to shore while more confident surfers paddle further out to catch it on the face. It works through most states of the tide, which is what makes it the easiest spot in South Wales to actually get in the water and get waves.",
+      "access": "Direct beach access from the car park, no permits or rights-of-way issues. RNLI lifeguards patrol Rest Bay seasonally (broadly late May to early September) — check current flag status before entering the water outside a lesson.",
+      "routeDescription": "The main peak sits roughly in front of the surf school huts and works across the tide, with a mellower, more sheltered shoulder to the left (facing the sea) that's better for first-timers, and a slightly punchier peak to the right that improvers tend to gravitate toward once they're comfortable catching green waves."
     },
     {
       "name": "Coney Beach",
@@ -51,7 +86,9 @@
       },
       "estimatedCost": "Free (parking £6 all day)",
       "operatorSlug": null,
-      "insiderTip": "Check the surf cam online before heading down to avoid disappointment."
+      "insiderTip": "Check the surf cam online before heading down to avoid disappointment.",
+      "howToDoIt": "Head down from the car park onto the beach beside the fairground and paddle out at whichever peak looks most organised — the swell here tends to be more mixed up and choppy than Rest Bay, so expect closeouts and shifting peaks rather than clean, predictable lines. It suits surfers who want fun, low-stakes waves without the Rest Bay crowd.",
+      "access": "Direct beach access from the town-centre car parks. Check current water quality before paddling out, especially in the 24-48 hours after heavy rain — the beach sits close to Porthcawl harbour and is affected by storm overflow discharges."
     },
     {
       "name": "Aberavon Beach",
@@ -72,7 +109,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "The wave quality improves dramatically with offshore winds."
+      "insiderTip": "The wave quality improves dramatically with offshore winds.",
+      "howToDoIt": "Walk onto the long, open beach from the seafront and paddle out at any of several peaks along its length — Aberavon is exposed and wide enough that you can usually find a quieter section away from other surfers. The wave rewards a patient approach: wait for mid-to-high tide and an offshore (northerly) wind, and the rolling, workable faces here are some of the best in South Wales for practising turns.",
+      "access": "Direct beach access from the seafront, free parking right along the front. No tidal cut-off risk — it's a long, open beach rather than a tucked-away cove.",
+      "routeDescription": "The beach runs for well over a mile, so the wave shifts around with the sandbanks; the middle section near the seafront car parks tends to be the most consistent, while the southern end toward Baglan can be a quieter option when the main stretch is busy."
     },
     {
       "name": "Ogmore-by-Sea",
@@ -93,7 +133,9 @@
       },
       "estimatedCost": "Free (parking £5 all day)",
       "operatorSlug": null,
-      "insiderTip": "Check the Ogmore River level before going – too much runoff makes for unpleasant surfing."
+      "insiderTip": "Check the Ogmore River level before going – too much runoff makes for unpleasant surfing.",
+      "howToDoIt": "From the clifftop car park, take the path down to the beach — it's a proper walk, not a stroll, so factor that into your session length. The wave breaks where the River Ogmore meets the sea, forming a rivermouth peak that needs the right combination of swell and tide to work properly. Currents around the river channel are strong and can pull you sideways quickly, so this is a spot for confident, experienced surfers who can read moving water.",
+      "access": "Steep path down from the clifftop car park to the beach — allow extra time and energy for the walk back up with a board under your arm. Tide-dependent: the rivermouth peak only works at certain states of the tide, so check a tide table alongside the swell forecast before making the walk down."
     },
     {
       "name": "Llantwit Major",
@@ -114,7 +156,9 @@
       },
       "estimatedCost": "Free (parking £5 all day)",
       "operatorSlug": null,
-      "insiderTip": "Talk to the locals to get the lowdown on the best entry and exit points."
+      "insiderTip": "Talk to the locals to get the lowdown on the best entry and exit points.",
+      "howToDoIt": "This is a reef break, not a sandy beach break, so the wave forms over rock rather than a shifting sandbank — expect a more defined, powerful takeoff but also real consequences if you fall in the wrong spot at the wrong tide. Entry and exit points are specific and not always obvious, which is why local knowledge matters more here than anywhere else on this list. Only attempt it if you're an experienced surfer comfortable around exposed rock and reef.",
+      "access": "Beach access from the car park above, but the surf zone itself is only safely surfable at certain states of the tide — the reef becomes exposed and dangerous outside the right window. Watch for rip currents around the reef edges at all times."
     },
     {
       "name": "Southerndown",
@@ -135,7 +179,9 @@
       },
       "estimatedCost": "Free (parking £5 all day)",
       "operatorSlug": null,
-      "insiderTip": "Be very careful of the submerged rocks and reefs at low tide."
+      "insiderTip": "Be very careful of the submerged rocks and reefs at low tide.",
+      "howToDoIt": "Southerndown (Dunraven Bay) is a fairly consistent break with low-lying reef to the right of the beach and a rip that runs around the point at the far left — know which side you're paddling out on before you commit. The wave generally needs the tide on the push and works best from mid-tide upwards; at low tide, the lineup thins out as peaks spread across the exposed rock, and at high tide the shorebreak can thump hard into the steep storm bank, making for a tricky exit. South Wales Surf School runs lessons here for those wanting a guided introduction to this more serious spot.",
+      "access": "Path down from the clifftop car park to the beach. Tide state matters more here than almost anywhere else on this coast — low tide exposes rock pools and reef (great for a walk, bad for surfing), while high tide brings a genuinely awkward shorebreak exit. Aim for the push from mid to high tide."
     },
     {
       "name": "Barry Island",
@@ -156,7 +202,9 @@
       },
       "estimatedCost": "Free (parking varies, can be expensive)",
       "operatorSlug": null,
-      "insiderTip": "Combine your surf with a visit to the arcades and funfair for a classic British seaside experience."
+      "insiderTip": "Combine your surf with a visit to the arcades and funfair for a classic British seaside experience.",
+      "howToDoIt": "Whitmore Bay is sheltered by the headlands on either side, which takes the edge off windy conditions that would ruin a session at more exposed spots. Paddle out from the main beach at mid-to-high tide when the bay picks up enough swell to produce a fun, forgiving wave — it's not going to be world-class, but on its day it's a genuinely enjoyable, low-pressure surf close to Cardiff.",
+      "access": "Direct beach access from the town car parks. Gets very busy with non-surfing beachgoers in summer, so expect to share the water and the sand."
     },
     {
       "name": "Langland Bay",
@@ -177,7 +225,9 @@
       },
       "estimatedCost": "Free (parking varies)",
       "operatorSlug": null,
-      "insiderTip": "The cafe here is the perfect spot to recover after a long session."
+      "insiderTip": "The cafe here is the perfect spot to recover after a long session.",
+      "howToDoIt": "Take the path down from the clifftop car park to the bay and paddle out at the main peak — Langland tends to be better shaped and less wind-affected than the open Porthcawl beaches, which is why it holds a loyal local following despite being trickier to reach. It works best in autumn and winter swells and suits surfers who've already got some wave experience.",
+      "access": "Path down from the clifftop car park to the beach — steps and a slope, not a flat walk-in. Can get crowded with the local Swansea crew on a good day, so expect some etiquette-mindedness in the lineup."
     }
   ],
   "practicalInfo": {

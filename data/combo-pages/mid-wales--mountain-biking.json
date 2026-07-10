@@ -10,6 +10,38 @@
   "bestSeason": "April-October",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £80 guided",
+  "topTips": [
+    "Nant yr Arian is the natural first stop – it has trails for every ability (Pendam blue, Summit red, Syfydrin black) all starting from one car park, so you can warm up before committing to 'The Wall' climb.",
+    "The red kite feeding happens daily at the visitor centre lake – 2pm in winter, 3pm in summer (BST) – and it's free to watch. Time your ride so you roll back into the car park beforehand; hundreds of kites circle for up to two hours before the actual feed.",
+    "Mobile signal is patchy to non-existent across Hafren, Dyfi, and Irfon forests. Download GPX tracks and an offline map before you leave Aberystwyth, Machynlleth, or Llanidloes – don't count on finding signal to bail out.",
+    "Dyfi Bike Park (Esgair Forest, near Machynlleth) is uplift-only and booking is mandatory in advance online – there's no walk-up option and no riding without completing their online waiver first, so sort this a few days ahead if it's on your list.",
+    "Carry cash. Several trailhead car parks and rural cafes in Mid Wales – including some near Elan Valley and Irfon Forest – don't reliably take card, and machines can be offline.",
+    "The unmarked, natural trails around Dyfi and Irfon forests are for confident navigators only – there's no waymarking and phone signal won't save you. If in doubt, book a guide (MB Wales, based near Llanidloes, run guided rides and skills coaching across the region).",
+    "Arrive early at Nant yr Arian on weekends and school holidays – the pay-and-display car park is the only realistic access point for three graded trails and fills quickly once the red kite crowds arrive.",
+    "Hafren Forest's longer loop passes Severn-Break-its-Neck waterfall and continues towards the source of the River Severn on the slopes of Pumlumon – worth the detour even on a bike-focused day, but the moorland section beyond the treeline is exposed and boggy."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start at Nant yr Arian's Pendam Trail (blue) or the Elan Valley Reservoirs Loop before attempting anything red or black – both are gentle, well-surfaced, and forgiving if your bike-handling is still developing.",
+      "Book a guided session if you're heading beyond Nant yr Arian's waymarked trails. Dyfi Forest, Hafren's unmarked sections, and Irfon Forest have no signage, and getting lost in the Cambrian Mountains with no phone signal is a real risk, not a cliché.",
+      "Pack more food and water than you think you need. There are no shops, cafes, or water points on the trails themselves – only at the Nant yr Arian and Elan Valley visitor centres – so self-sufficiency matters once you're out.",
+      "Wear proper layers, including a waterproof, even if the forecast looks fine. Weather in the Cambrian Mountains changes fast and exposed sections of the Syfydrin and Summit trails get the worst of any wind or rain.",
+      "Check your bike over before you set off – there's no bike shop on the trail. The nearest are Summit Cycles and Beics Menai in Aberystwyth or The Holey Trail in Machynlleth, so a pre-ride check avoids a long walk out.",
+      "Budget for parking everywhere. Nant yr Arian, Elan Valley, and Brechfa are all pay-and-display, and card machines aren't always reliable, so keep coins or a banking app with offline capability handy.",
+      "If you're new to gravity/bike-park riding, Dyfi Bike Park requires an online waiver and advance uplift booking – you cannot turn up and ride, so plan this a few days out rather than as a spontaneous stop.",
+      "Tell someone your planned route and expected return time before heading into Hafren, Dyfi, or Irfon – these are genuinely remote forests without the safety net of other riders or staff on-site."
+    ],
+    "regular": [
+      "Ride the Syfydrin early on a weekday morning – the climb ('The Wall') is brutal enough without sharing the descent with a busy car park's worth of riders on a Saturday.",
+      "Time a Nant yr Arian visit around the red kite feed (2pm winter, 3pm summer) – ride first, then park up by the lake as the kites gather, rather than trying to squeeze a ride in afterwards when the car park has filled with wildlife-watchers.",
+      "Hafren Forest's unmarked side trails, off the main circular, are far quieter than anything at Nant yr Arian – good for repeat visitors wanting solitude, but bring a map or GPX, not just trail memory.",
+      "Machynlleth and Dyfi Forest trails are best tackled in drier spells – the natural, unmarked singletrack turns to genuine hike-a-bike in sustained wet weather, unlike the better-drained, purpose-built trails at Nant yr Arian.",
+      "Irfon Forest near Abergwesyn is about as remote as Mid Wales mountain biking gets – go with someone who knows it, or at minimum with a downloaded GPX track, and treat it as a proper backcountry day rather than a quick loop.",
+      "For an easy add-on after a hard day on Syfydrin, drop into Aberystwyth for food at Number 21 or a pint at the White Horse Tavern rather than the more tourist-heavy seafront spots – both are used to muddy kit.",
+      "Brechfa Forest's Raven Trail is technically outside Mid Wales but worth the drive south if Nant yr Arian is busy or you want fresh terrain – it rides year-round but gets properly muddy after sustained rain.",
+      "If you're chasing quieter singletrack, Dyfi Forest and Hafren reward local knowledge over waymarking – linking up with MB Wales for a guided day is the fastest way to learn the good lines without years of trial and error."
+    ]
+  },
   "spots": [
     {
       "name": "Syfydrin Trail, Nant yr Arian",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "Free (parking £5-8)",
       "operatorSlug": null,
-      "insiderTip": "Check the weather forecast before you go, as the trail can be very exposed at the top. Carry extra water and snacks, as there are no facilities on the trail."
+      "insiderTip": "Check the weather forecast before you go, as the trail can be very exposed at the top. Carry extra water and snacks, as there are no facilities on the trail.",
+      "howToDoIt": "Start from the Nant yr Arian Visitor Centre and follow the waymarked black route signage from the trailhead. The climb comes first and doesn't let up – known locally as 'The Wall' – so pace yourself rather than sprinting the opening ramps. Once you crest the high point, the descent switches quickly onto rocky, technical singletrack through forest, so keep weight back and brakes covered until you're reading the trail clearly. This is not a trail to learn technical riding on; come with descending experience already banked.",
+      "access": "Access is via the pay-and-display Nant yr Arian Visitor Centre car park, the only realistic trailhead parking. The car park charges apply from early morning into the evening, so factor that into your day. Trail is waymarked throughout from the visitor centre.",
+      "routeDescription": "A punishing fireroad and singletrack climb out of the visitor centre gains most of its height in the first third, before the trail turns onto narrower forest tracks with loose rock, roots, and a couple of exposed, open sections near the top where the wind can hit hard. The descent drops back through mixed forest on tight, technical singletrack with rock gardens and off-camber sections – flowing in the drier months, considerably harder work when wet."
     },
     {
       "name": "Summit Trail, Nant yr Arian",
@@ -51,7 +86,10 @@
       },
       "estimatedCost": "Free (parking £5-8)",
       "operatorSlug": null,
-      "insiderTip": "The descent can be quite fast and flowy, so be aware of other trail users. Take a break at the summit to enjoy the views."
+      "insiderTip": "The descent can be quite fast and flowy, so be aware of other trail users. Take a break at the summit to enjoy the views.",
+      "howToDoIt": "Follow the red waymarkers from the visitor centre – the climb is steady rather than brutal, making it a good step up once you've ridden Pendam a few times. Expect a mix of fireroad and singletrack climbing, then commit to the descent's berms and small jumps at a pace that matches your comfort with the trail features, since faster riders often use this as their main loop and will be closing in behind you.",
+      "access": "Same trailhead as the other Nant yr Arian trails – the visitor centre car park, pay-and-display. Waymarked red throughout.",
+      "routeDescription": "Climbs through forest on a mix of fireroad and singletrack before opening onto moorland with wide views over the Cambrian Mountains. The descent is where this trail earns its reputation – built berms, small jumps, and flowing singletrack that rewards momentum rather than braking, dropping back through the trees to the visitor centre."
     },
     {
       "name": "Pendam Trail, Nant yr Arian",
@@ -72,7 +110,10 @@
       },
       "estimatedCost": "Free (parking £5-8)",
       "operatorSlug": null,
-      "insiderTip": "Keep an eye out for the red kites that frequent the area. Stop at the Pendam reservoir for a picnic."
+      "insiderTip": "Keep an eye out for the red kites that frequent the area. Stop at the Pendam reservoir for a picnic.",
+      "howToDoIt": "Follow the blue waymarkers from the visitor centre – this is a genuine introduction trail, so keep it simple: stay seated on the climbs, use both brakes evenly on the descents, and treat it as a chance to get used to riding off-road rather than pushing pace. Good for a first ever mountain bike outing, including on hire bikes.",
+      "access": "Starts and finishes at the Nant yr Arian Visitor Centre pay-and-display car park. Fully waymarked blue trail, well surfaced.",
+      "routeDescription": "A gentle, well-surfaced loop through forest and past the Pendam reservoir with gradual climbs and easy, wide descents – no technical features to worry about, just a scenic, rolling ride with good visibility of the surrounding hills."
     },
     {
       "name": "Elan Valley Reservoirs Loop",
@@ -93,7 +134,10 @@
       },
       "estimatedCost": "Free (parking £3-6)",
       "operatorSlug": null,
-      "insiderTip": "Pack a picnic and enjoy it by one of the reservoirs. Visit the Elan Valley Visitor Centre to learn about the history of the dams and the area."
+      "insiderTip": "Pack a picnic and enjoy it by one of the reservoirs. Visit the Elan Valley Visitor Centre to learn about the history of the dams and the area.",
+      "howToDoIt": "Start from the Elan Valley Visitor Centre and follow the quiet estate roads and gravel tracks linking the reservoirs – this is more a scenic ride than a mountain bike route, so any hybrid or gravel bike will manage it comfortably. Stop at each dam to look at the Victorian engineering, and treat the ride as a full day out rather than a fast lap.",
+      "access": "Multiple car parks around the reservoir loop, some pay-and-display, some free – the Elan Valley Visitor Centre car park is the main starting point. Tracks and estate roads are open access, well-signposted, and shared with walkers and other cyclists.",
+      "routeDescription": "A rolling loop on quiet estate roads and gravel tracks linking the Elan Valley's chain of reservoirs and dams, with regular viewpoints over the water and surrounding hills. Gentle gradients throughout make this suitable for a relaxed family day rather than a technical ride."
     },
     {
       "name": "Machynlleth (Dyfi Forest) Trails",
@@ -114,7 +158,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Download a GPX track of the trails onto your GPS device before you go, as mobile phone signal is limited. Be prepared for hike-a-bike sections."
+      "insiderTip": "Download a GPX track of the trails onto your GPS device before you go, as mobile phone signal is limited. Be prepared for hike-a-bike sections.",
+      "howToDoIt": "There's no single waymarked route here – riders link forest tracks and natural singletrack using a GPX file or prior local knowledge, starting from Machynlleth or one of the forest's access points. Expect to navigate as you ride, mix riding with some pushing on steeper, looser sections, and treat any given day as an exploration rather than a fixed loop. Not a place to arrive without a plan.",
+      "access": "Park considerately in Machynlleth and ride out to the forest access points, or find limited roadside parking near specific trailheads – there's no dedicated car park for this trail network. Rights of way and permissive forest tracks vary, so a current map or app (Trailforks or similar) is worth checking before you commit to a route.",
+      "routeDescription": "Natural, unmarked trails through Dyfi Forest's dense woodland, with steep, technical climbs and equally technical, rooty descents. Terrain and route options vary enormously depending on which access point and tracks you choose – this is remote, self-navigated riding rather than a defined trail."
     },
     {
       "name": "Hafren Forest Circular",
@@ -135,7 +182,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Explore some of the unmarked trails branching off the main route. Pack a map and compass as signage can be limited."
+      "insiderTip": "Explore some of the unmarked trails branching off the main route. Pack a map and compass as signage can be limited.",
+      "howToDoIt": "From the Forestry England car park, follow the forest roads that form the main circular – well-surfaced enough for a hardtail or gravel-capable mountain bike. If you want to see the forest's namesake river feature, factor in a detour to Severn-Break-its-Neck waterfall or, for a longer day, continue towards the source of the River Severn on the slopes of Pumlumon, which lies just outside the forest boundary on open moorland.",
+      "access": "Free Forestry England car park near Llanidloes serves as the trailhead. Main forest roads are open access and well-surfaced; side trails and the moorland approach to the Severn's source are less maintained and can be boggy underfoot.",
+      "routeDescription": "A circular route mixing well-surfaced forest roads with some natural singletrack, climbing gradually through conifer plantation with occasional views out over the Hafren valley. Riders wanting more can extend towards Severn-Break-its-Neck waterfall or push on to the source of the River Severn near the summit of Pumlumon, though that final stretch is exposed, open moorland rather than forest trail."
     },
     {
       "name": "Brechfa Forest - Raven Trail",
@@ -156,7 +206,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "Check the trail conditions before you go, as it can be very muddy after rain. Be prepared for some steep climbs."
+      "insiderTip": "Check the trail conditions before you go, as it can be very muddy after rain. Be prepared for some steep climbs.",
+      "howToDoIt": "Follow the waymarked red signage from the Brechfa Forest car park – the trail alternates between technical climbing sections and flowing, built descents with jumps and berms, so riders comfortable with red-grade trail centre features elsewhere in Wales will feel at home. Check conditions before setting off, since the climbs turn greasy fast after rain.",
+      "access": "Pay-and-display Brechfa Forest car park is the only trailhead; roughly an hour's drive south of the core Mid Wales spots, so plan it as a separate day trip rather than a quick add-on.",
+      "routeDescription": "A red-graded loop of steep technical climbs followed by fast, flowing descents built with jumps, berms, and rocky sections – closer in character to a purpose-built trail centre than the more natural riding further north in Mid Wales."
     },
     {
       "name": "Irfon Forest Trails",
@@ -177,7 +230,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Download a GPX track of the trails onto your GPS device. Be prepared for hike-a-bike sections and carry plenty of water and snacks."
+      "insiderTip": "Download a GPX track of the trails onto your GPS device. Be prepared for hike-a-bike sections and carry plenty of water and snacks.",
+      "howToDoIt": "Start from Abergwesyn village and ride out on forest tracks and open hill trails, navigating by GPX or a physical map – there's no waymarking here. This is the most remote riding covered on this page; go with a partner or a guide, carry proper navigation and repair kit, and be honest with yourself about your fitness and self-sufficiency before setting off.",
+      "access": "Limited roadside and informal parking around Abergwesyn – park responsibly and avoid blocking farm or forestry access. Much of the riding crosses open hill and forest tracks with no formal waymarking, so route-finding is on you.",
+      "routeDescription": "Steep, technical natural trails through remote forest and open hillside above Abergwesyn, with sustained climbs and technical, unmarked descents. Terrain is genuinely wild – this is the closest Mid Wales gets to backcountry mountain biking, and route options depend entirely on the tracks and GPX file you bring."
     }
   ],
   "practicalInfo": {

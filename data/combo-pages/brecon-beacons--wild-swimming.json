@@ -10,6 +10,38 @@
   "bestSeason": "May-September (wetsuit recommended)",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £80 guided",
+  "topTips": [
+    "Sgwd yr Eira gets busy fast — arrive before 9am or after 5pm to walk behind the falls without queuing, and you'll get better light for photos too. Note that from 13 July the direct trail from Dinas Rock car park is closed for tree harvesting and path improvement works, so approach via Gwaun Hepste car park instead.",
+    "Both Gwaun Hepste and Cwm Porth car parks (the two main starts for Waterfall Country) charge £5 for the day (8am-4pm, £4 outside those hours) — Gwaun Hepste's machine is card-only, so don't rely on cash there.",
+    "None of these spots have lifeguards. Cold water shock is the biggest real risk, even in August — ease in rather than jumping, and know that a wetsuit genuinely changes what's possible here, not just comfort.",
+    "If you're swimming near Porth yr Ogof (close to the Blue Pool), stay well clear of the resurgence pool at the cave's far end — it's a 7-metre scoured hole with strong undercurrents and has been the site of multiple drowning fatalities. Stick to the surface pools near the entrance.",
+    "After heavy rain, rivers and waterfalls here rise and speed up dramatically — Henrhyd Falls in particular becomes genuinely dangerous to approach when in full flow. Check recent rainfall before committing to any waterfall swim, and be prepared to walk away if the water looks brown or fast.",
+    "Llangorse Lake occasionally gets blue-green algae blooms in warm weather, which can make swimming unsafe (skin irritation, and worse if swallowed) — check for posted warnings at the Multi Activity Centre before getting in, especially after a hot spell.",
+    "Pontneddfechan (for the waterfalls) and Talybont-on-Usk (for the reservoir) both have solid pubs right by the water — the Angel Inn and the Star Inn respectively — so you don't need to drive far cold and wet to warm back up.",
+    "A dry robe or changing robe is worth the investment over a towel alone if you're doing more than one spot in a day — changing in a Beacons car park in a stiff wind is not fun without one."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start at Sgwd yr Eira or Pont Melin-fach — both are easy to reach, well signposted, and forgiving if you've never wild-swum before. Save the reservoirs and Henrhyd Falls for once you know how you handle cold, moving water.",
+      "Buy or hire a wetsuit before you go rather than after your first freezing dip convinces you. Brecon Adventure on Lion Street in Brecon sells and hires wetsuits and swimwear.",
+      "Tell someone your plan and expected return time before you set off, and never swim completely alone at the more remote spots like Grwyne Fawr or Henrhyd Falls — phone signal is unreliable in the valleys.",
+      "Wear proper footwear for the walk-in, not flip-flops — the paths to Sgwd yr Eira, Blue Pool, and Henrhyd Falls involve steps, mud, and wet rock, and the swim itself often needs a scramble over stones.",
+      "Check the weather and recent rainfall the morning you go, not the night before — Beacons conditions and river levels change fast, and a swim that's calm on Monday can be a torrent by Wednesday.",
+      "If in doubt, pick Llangorse Lake or Pont Melin-fach first — both are gentle, low-current, and much easier to bail out of if the cold gets too much.",
+      "Bring cash and a card for parking — most car parks here (Gwaun Hepste, Cwm Porth, Henrhyd Falls, Llangorse) charge a few pounds and machines vary between card-only and cash-preferred.",
+      "999 or 112 is the number for genuine emergencies out here — save it in your phone before you set off, since you likely won't have signal to look it up once you're at the water."
+    ],
+    "regular": [
+      "Skip Sgwd yr Eira on a summer Saturday and head to Pont Melin-fach or the Blue Pool instead — both are a fraction of the crowd for a similar Waterfall Country experience.",
+      "Weekday mornings in June are the sweet spot at the popular falls: water's warming up, school crowds haven't started, and you'll often have the plunge pool to yourself for the first hour.",
+      "Grwyne Fawr Reservoir is the one for solitude — the narrow approach road puts most people off, which is exactly why it's worth the drive if you want a swim with nobody else around.",
+      "After a dry spell, the reservoirs (Talybont, Grwyne Fawr) hold their water quality and levels far better than the river-fed pools, which can thin out and warm up unpleasantly by late August.",
+      "The eastern shore of Talybont Reservoir is consistently quieter than the dam end — worth the extra walk if the main access points are busy on a bank holiday.",
+      "Combine a Blue Pool dip with the walk to Porth yr Ogof caves, but stay out of the resurgence pool at the cave's far end — it's claimed multiple lives and isn't worth the risk for a photo.",
+      "River Usk near Brecon is best swum upstream-first, then floated back down with the current — far less effort and a better way to see the promenade and grassy banks.",
+      "If you're chasing warmer water rather than dramatic scenery, July and August at Llangorse beat any of the waterfall pools, which stay cold from spring meltwater and shade well into summer."
+    ]
+  },
   "spots": [
     {
       "name": "Sgwd yr Eira Plunge Pool",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "Free (parking £5)",
       "operatorSlug": null,
-      "insiderTip": "Go early (before 9am) or late (after 5pm) to avoid the worst of the crowds. The light is also best for photos at these times."
+      "insiderTip": "Go early (before 9am) or late (after 5pm) to avoid the worst of the crowds. The light is also best for photos at these times.",
+      "howToDoIt": "From Gwaun Hepste car park, follow the well-marked Four Waterfalls Trail path down through woodland — expect steps, roots, and mud in places. The path takes you right behind the curtain of water before dropping to the plunge pool below. Ease into the water rather than jumping; it's cold year-round and the ledge behind the falls is slippery underfoot, so take your time on the rocks.",
+      "access": "Reached via the Four Waterfalls Trail, a public footpath maintained by the National Park. From 13 July the direct route from Dinas Rock car park is closed for tree harvesting and path improvement works — use Gwaun Hepste car park instead, which stays open throughout. Expect muddier-than-usual sections while machinery works on the path.",
+      "routeDescription": "A 5.6km round-trip loop from Gwaun Hepste, descending through mixed woodland alongside the Afon Hepste before reaching the falls. The path behind the waterfall itself is a short, sheer rock ledge — narrow enough that you'll be queuing behind other visitors on busy days. After the falls, most people continue the loop back via the riverside path rather than retracing their steps."
     },
     {
       "name": "Pont Melin-fach Pools",
@@ -51,7 +86,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Bring a picnic and enjoy it by the river after your swim. The nearby village of Pontneddfechan has a couple of nice pubs for a post-swim pint."
+      "insiderTip": "Bring a picnic and enjoy it by the river after your swim. The nearby village of Pontneddfechan has a couple of nice pubs for a post-swim pint.",
+      "howToDoIt": "Park by the bridge and follow the short riverside path to whichever pool looks quietest — there are several to choose from strung along the Mellte, so it's worth walking a little further than the first one you see. The shallower pools are easy to wade into gradually, making this a good spot to get used to the water temperature before attempting anything deeper.",
+      "access": "Short walk from the small roadside parking area at the bridge — no steep paths or scrambling required, which is part of why it suits families and less confident swimmers.",
+      "routeDescription": "A gentle 1-2 hour outing rather than a route: follow the Mellte downstream from the bridge, picking between a handful of small pools and mini waterfalls. Little elevation change and no technical sections, so it's easy to turn back at any point."
     },
     {
       "name": "Llangorse Lake",
@@ -72,7 +110,10 @@
       },
       "estimatedCost": "Free (parking/activities extra)",
       "operatorSlug": null,
-      "insiderTip": "Hire a kayak or paddleboard to explore the lake fully. Look out for the crannog (artificial island) which is believed to be the only one in Wales."
+      "insiderTip": "Hire a kayak or paddleboard to explore the lake fully. Look out for the crannog (artificial island) which is believed to be the only one in Wales.",
+      "howToDoIt": "Enter the water from the shoreline near the Multi Activity Centre, where the lake bed shelves gently — this is calm, current-free swimming rather than anything technical, and it's the easiest spot on this list for building confidence in open water. Check for any posted algae warnings at the centre before getting in, particularly after a warm spell, as Llangorse can experience blue-green algae blooms in summer.",
+      "access": "Access is via the Llangorse Multi Activity Centre car park, which charges a parking fee. The lake itself is open water with no restricted swimming zones, but watersports traffic (kayaks, paddleboards, sailing) shares the same area, so stay visible.",
+      "routeDescription": "No set route — this is a leisurely area swim rather than a point-to-point. Stay reasonably close to the shore near the activity centre unless you're a strong open-water swimmer, and be aware of the crannog (Wales's only known artificial island) further out if you want a target to swim towards."
     },
     {
       "name": "River Usk (Brecon)",
@@ -93,7 +134,10 @@
       },
       "estimatedCost": "Free (parking fees)",
       "operatorSlug": null,
-      "insiderTip": "Swim upstream first, then float back down with the current. Stop for a picnic on the riverbank afterwards."
+      "insiderTip": "Swim upstream first, then float back down with the current. Stop for a picnic on the riverbank afterwards.",
+      "howToDoIt": "Enter from the grassy bank near the Promenade and swim a short way upstream first, so you can float back down with the current rather than fighting it on tired arms. The current is noticeably stronger than the lake or pool spots on this list, so it suits swimmers who are already comfortable reading moving water.",
+      "access": "Access is informal, via the public grassy banks along the Promenade in Brecon town — no permit needed, but check the current before entering, especially after rain, when flow increases quickly.",
+      "routeDescription": "A gentle downstream drift along the Usk near Brecon town, with grassy banks for easy entry and exit. There's no fixed distance — most people swim for as long as feels comfortable and exit wherever's convenient, since the whole stretch through town is accessible."
     },
     {
       "name": "Blue Pool (Ystradfellte)",
@@ -114,7 +158,10 @@
       },
       "estimatedCost": "Free (parking fees)",
       "operatorSlug": null,
-      "insiderTip": "Combine your visit with a walk to the nearby caves at Porth yr Ogof. The Blue Pool can be muddy after heavy rain, affecting the colour."
+      "insiderTip": "Combine your visit with a walk to the nearby caves at Porth yr Ogof. The Blue Pool can be muddy after heavy rain, affecting the colour.",
+      "howToDoIt": "Follow the short path from Cwm Porth car park down to the pool and ease in gradually — it's small, deep, and consistently cold, so this is a quick, invigorating dip rather than a long swim. If you're combining with Porth yr Ogof caves nearby, stick to the surface pools near the cave entrance and stay well away from the resurgence pool at the far end, which has a long history of drownings due to a deep, undercut hole with strong currents.",
+      "access": "Short walk from Cwm Porth car park (fee applies). The pool itself sits on open access land with no restrictions, but the path can be muddy and the rocks around the pool slippery, especially after rain.",
+      "routeDescription": "A short, direct walk-in from the car park rather than a long route — most of the 1-2 hour visit is spent at the pool itself. The water's blue tint comes from mineral content and is most vivid in clear conditions; heavy rain upstream can turn it murky within hours."
     },
     {
       "name": "Henrhyd Falls Pool",
@@ -135,7 +182,10 @@
       },
       "estimatedCost": "Free (parking fees)",
       "operatorSlug": null,
-      "insiderTip": "Check the waterfall flow before you go – it can be very powerful after heavy rain, making swimming dangerous."
+      "insiderTip": "Check the waterfall flow before you go – it can be very powerful after heavy rain, making swimming dangerous.",
+      "howToDoIt": "Follow the National Trust path down to the falls, which takes you behind the curtain of water on a narrow ledge — the trail includes a warning about falling rocks along this section, so keep moving rather than lingering directly under the cliff. Only swim in the plunge pool when the falls are running at a gentler flow (typically spring and summer); in high flow the recirculating current at the base can be genuinely dangerous, and the rocks in and around the pool are slippery underfoot.",
+      "access": "Access is via the National Trust car park near Coelbren, with a signed path down to the falls. Note that at times of footbridge works the direct route from the car park has been closed, with the footpath to Graig Llech woods used as an alternative — check the National Trust's Henrhyd Falls page for current access status before you go, particularly if visiting outside peak season.",
+      "routeDescription": "A steep, well-maintained path descends through woodland to the base of Henrhyd Falls, South Wales's tallest waterfall. The route behind the falls is short but exposed to spray and loose ground; most visitors treat the walk down and back as the main challenge, with the swim itself a brief, cold dip once you're there."
     },
     {
       "name": "Talybont Reservoir",
@@ -156,7 +206,10 @@
       },
       "estimatedCost": "Free (parking fees)",
       "operatorSlug": null,
-      "insiderTip": "Explore the eastern side of the reservoir, where you'll find quieter swimming spots and beautiful woodland walks."
+      "insiderTip": "Explore the eastern side of the reservoir, where you'll find quieter swimming spots and beautiful woodland walks.",
+      "howToDoIt": "Enter from one of the informal access points around the shoreline — the small beach area near the dam is the easiest and most popular, with a gradual entry rather than a drop-off. Because this is a large body of still water rather than a river, it suits longer, steadier swims; just keep an eye on distance from shore as there's no current to carry you back if you tire.",
+      "access": "Several informal access points around the reservoir, reached from the various car parks nearby. No permit required for swimming, though it's a working reservoir, so be mindful of any signage near the dam structure itself.",
+      "routeDescription": "An open-water swim rather than a fixed route — most swimmers stick to the area near the small beach by the dam, though stronger swimmers can follow the shoreline further round, particularly on the quieter eastern side away from the main car parks."
     },
     {
       "name": "Grwyne Fawr Reservoir",
@@ -177,7 +230,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Bring a map and compass (or a fully charged phone with GPS), as the area can be difficult to navigate. The views from the top of the dam are incredible."
+      "insiderTip": "Bring a map and compass (or a fully charged phone with GPS), as the area can be difficult to navigate. The views from the top of the dam are incredible.",
+      "howToDoIt": "Park near the dam and pick your way down to the water's edge — there's no formal beach here, so expect to swim from rocks or a grassy bank rather than a gentle slope. The water is clear and cold even in midsummer, and because it's remote and quiet, don't rely on other people being around if something goes wrong.",
+      "access": "Reached via a narrow, single-track road with limited passing places, ending at a small parking area near the dam. There's no formal path network around the reservoir, so this suits confident, self-sufficient swimmers rather than a casual visit.",
+      "routeDescription": "No marked route — this is a remote reservoir swim best approached by parking at the dam and following the shoreline on foot to find a suitable entry point. The terrain is rougher and less signposted than anywhere else on this list, so a map, compass, or reliable GPS is genuinely useful, not just a nice-to-have."
     }
   ],
   "practicalInfo": {

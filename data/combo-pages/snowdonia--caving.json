@@ -10,6 +10,38 @@
   "bestSeason": "Year-round, but spring and summer (May-September) offer the most stable weather conditions above ground.",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £150 guided",
+  "topTips": [
+    "Know which tier you're booking before you commit. Zip World Caverns and Bounce Below are adrenaline/adventure-park experiences carved into slate, the Llechwedd Deep Mine Tour is a sit-down 500ft narrow-gauge ride into Victorian chambers, and Go Below is genuine underground exploration with abseils and zip lines in the working Cwmorthin/Croesor mine network. They are not interchangeable days out.",
+    "For Cwmorthin, water levels are everything. They fluctuate fast after rain, and flooded lower sections that are passable one week can be waist-deep the next — ask locally in Tanygrisiau for recent conditions rather than trusting an old trip report.",
+    "Parking at Cwmorthin is genuinely tight. Park considerately in Tanygrisiau village and walk up the old incline — spaces fill early on weekends, and blocking the narrow lanes here causes real problems for residents.",
+    "None of the independent mines (Cwmorthin, Croesor, Rhosydd) have formal permits or wardens. That freedom cuts both ways: you're expected to be self-sufficient, properly equipped (helmet, three independent light sources, waterproofs), and honest about your navigation skills before you go in.",
+    "If you want the underground thrill without the risk assessment, book Go Below or Plas y Brenin — both put you in the same mine network as independent explorers but with kit, instruction and a guide who knows the current state of the roof and water.",
+    "Bring proper layers even for the 'easy' commercial tours. Llechwedd's Deep Mine Tour and Sygun Copper Mine sit at a steady chilly temperature year-round regardless of what it's doing on the surface.",
+    "Check opening times for Sygun Copper Mine before you travel, especially off-season — hours contract outside the main summer months.",
+    "If you're combining sites in one day, Llechwedd's Deep Mine Tour and Quarry Explorer tour run from the same site, and Zip World Caverns and Bounce Below share the Llechwedd complex too — you can pre-book multiple adventures at once and cut down on driving between Blaenau Ffestiniog car parks."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start with a commercial, guided product — Zip World Caverns, Llechwedd's Deep Mine Tour, Sygun Copper Mine, or a Go Below trip. These need no experience, provide all safety kit, and give you a real sense of what underground Snowdonia is like before you consider anything independent.",
+      "Pack a headlamp with spare batteries even on a guided tour — most operators provide lighting, but having your own backup is good practice for anyone new to being underground.",
+      "Wear sturdy waterproof boots with ankle support and bring warm layers. Underground temperatures stay cool and damp year-round no matter how warm it is outside.",
+      "Book ahead, especially in summer. Go Below and Zip World Caverns are popular and slots fill, and Sygun Copper Mine's off-season hours can be limited.",
+      "Understand this isn't natural caving — it's industrial heritage. Snowdonia's hard volcanic rock doesn't form the limestone cave systems you'd find in the Brecon Beacons, so everything here is a mine, worked by hand in the 1800s.",
+      "If you have any claustrophobia or mobility concerns, the Llechwedd Deep Mine Tour and Sygun Copper Mine are the gentlest options — level, guided routes with no wading or scrambling required.",
+      "Tell someone your plans and expected return time, even for a guided trip, and keep a mobile phone on you — though don't expect signal underground.",
+      "Don't attempt Cwmorthin, Rhosydd or Croesor as a first underground experience. They're open-access but genuinely serious: cold water, unstable roof sections, and no signage or safety net."
+    ],
+    "regular": [
+      "Cwmorthin's outer galleries get busy with photographers and casual explorers on weekends — if you know the network, head for the deeper chambers or Rhosydd via the connecting levels for solitude.",
+      "May-September gives the lowest, most stable water levels in Cwmorthin — attempt any wading sections outside this window only if you really know current conditions.",
+      "Talk to Snowdonia Caving Club or the Welsh Underground Group before an independent trip if you're not already plugged into the local scene — conditions knowledge (roof falls, flooded sections) moves through word of mouth, not guidebooks.",
+      "Go Below's longer trips (Hero Xtreme, Ultimate Xtreme) get you into the same terrain as independent cavers with full instruction — a good way to build real skills before going it alone.",
+      "Plas y Brenin's mine-exploration courses run periodically rather than as a fixed schedule — worth checking directly if you want structured skills training rather than a one-off guided trip.",
+      "Avoid Cwmorthin and Rhys's Chambers entirely after heavy or prolonged rain — flooding rises fast in a mine that's been draining these mountains for over a century, and what was passable last week may not be this week.",
+      "Weekday mornings are your best bet for quiet parking in Tanygrisiau — the small roadside spaces near the incline fill by mid-morning on any dry weekend.",
+      "For a change of pace after a hard Cwmorthin trip, Braichgoch's exterior remains are worth a look — no permit or gear needed, just respect the 'no entry' on the mine itself."
+    ]
+  },
   "spots": [
     {
       "name": "Cwmorthin Slate Mine",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "Free (parking £5-10)",
       "operatorSlug": null,
-      "insiderTip": "Check water levels beforehand – they can fluctuate rapidly after rain. Talk to locals in Tanygrisiau for recent conditions."
+      "insiderTip": "Check water levels beforehand – they can fluctuate rapidly after rain. Talk to locals in Tanygrisiau for recent conditions.",
+      "howToDoIt": "Cwmorthin is a self-led trip, not a booked activity — you walk in as a properly equipped, experienced group. From the old incline above Tanygrisiau, the route climbs into the quarry workings and drops into the underground levels, where you'll be wading through flooded sections, picking through collapsed rubble, and route-finding by headlamp between chambers first worked in the Victorian era. Go in with a group who already know the network, or build up to it via a guided Go Below trip first — this isn't a place to learn mine navigation from scratch.",
+      "access": "No formal permit system — access is open in the sense that nobody stops you, but that also means nobody is checking on conditions for you. Park considerately in Tanygrisiau village (spaces are limited and fill early on weekends) and walk up the old incline to the mine entrance. Roof stability and water levels are not monitored or signed, so current local knowledge is essential before entering.",
+      "routeDescription": "The classic round trip takes in the upper dressing floors and chambers before descending into the semi-flooded lower levels, where wading is unavoidable in several sections. Expect a mix of open chambers with intact roof supports, areas of rubble from historic collapses, and narrow connecting passages. Cwmorthin's workings run to over 50 miles of tunnels in total, so even experienced groups stick to known, well-travelled routes rather than pushing into unexplored sections."
     },
     {
       "name": "Go Below Underground Adventures",
@@ -51,7 +86,10 @@
       },
       "estimatedCost": "£60-£150pp depending on the adventure",
       "operatorSlug": null,
-      "insiderTip": "Book in advance, especially during peak season. They offer different adventures for different age groups and fitness levels."
+      "insiderTip": "Book in advance, especially during peak season. They offer different adventures for different age groups and fitness levels.",
+      "howToDoIt": "You'll be kitted out with helmet, headlamp and harness on arrival, briefed by your guide, then led into the Cwmorthin/Croesor mine network for a mix of walking, scrambling, abseiling and zip lines depending on which package you've booked. No prior experience is needed — guides set the pace and technical sections are talked through before you commit to them. Trips range from shorter family-friendly evening explores to the multi-hour Hero Xtreme and Ultimate Xtreme routes for those wanting a proper physical challenge.",
+      "access": "Go Below's base is at the old Tanygrisiau Station car park (Ffestiniog Railway), reached via the A496 and signed turning toward Tanygrisiau village — follow the brown signs and look for the entrance opposite the reservoir. All access into the mine workings is guided; there's no independent access via the Go Below site.",
+      "routeDescription": "Routes vary by package but generally combine sections of the same historic workings used by independent cavers — flooded levels, incline shafts, and large chambers — with adventure-park additions like zip lines and rope bridges rigged by the operator. The longer trips (Hero Xtreme, Ultimate Xtreme) push further into the network and include more technical rope work."
     },
     {
       "name": "Llechwedd Slate Caverns",
@@ -72,7 +110,10 @@
       },
       "estimatedCost": "£20-£30pp",
       "operatorSlug": null,
-      "insiderTip": "Combine the Deep Mine Tour with the Quarry Explorer tour for a full day out."
+      "insiderTip": "Combine the Deep Mine Tour with the Quarry Explorer tour for a full day out.",
+      "howToDoIt": "You board a narrow-gauge railway that descends around 500ft into the mountain, then continue on foot through a sequence of Victorian chambers with audio-visual and light displays telling the story of the miners who worked here by candlelight. It's fully guided, level underfoot, and needs no fitness or experience — just a willingness to be underground for about an hour.",
+      "access": "Part of the wider Llechwedd site, which also hosts Zip World Caverns and Bounce Below — all reached via the same entrance and car park above Blaenau Ffestiniog on the A470. Pre-booking two or more adventures at the site can reduce or waive parking charges.",
+      "routeDescription": "A fixed underground railway line leading to a walking circuit through excavated chambers, with no route choice involved — this is a heritage attraction rather than an exploration."
     },
     {
       "name": "Sygun Copper Mine",
@@ -93,7 +134,10 @@
       },
       "estimatedCost": "£15-£25pp",
       "operatorSlug": null,
-      "insiderTip": "Check the opening times, particularly during off-season, as they can be limited. The gift shop offers unique copper-related souvenirs."
+      "insiderTip": "Check the opening times, particularly during off-season, as they can be limited. The gift shop offers unique copper-related souvenirs.",
+      "howToDoIt": "A self-guided or lightly guided walk (check current format) through excavated copper-mining tunnels and chambers near Beddgelert, following a fixed underground trail with information panels along the way. Sturdy footwear is sensible as the floor can be uneven and damp, but no technical skill or caving experience is required.",
+      "access": "Signed off the A498 near Beddgelert with on-site parking. This is a copper-mining site rather than slate, so it's a genuinely different story to the Blaenau Ffestiniog attractions — worth combining with a Beddgelert visit rather than treating as a slate-mine substitute.",
+      "routeDescription": "A waymarked underground trail through the old workings, taking in tunnels, chambers and mineral formations, with the surface visitor centre and gift shop at the entrance."
     },
     {
       "name": "Zip World Caverns",
@@ -114,7 +158,10 @@
       },
       "estimatedCost": "£50-£70pp",
       "operatorSlug": "zip-world",
-      "insiderTip": "Wear comfortable clothing and closed-toe shoes. Book in advance as it's a popular attraction."
+      "insiderTip": "Wear comfortable clothing and closed-toe shoes. Book in advance as it's a popular attraction.",
+      "howToDoIt": "This is an adventure-course experience rather than exploration: you're harnessed up, briefed, and led through a sequence of zip lines, rope bridges, ladders and tunnels built into a genuine Victorian slate cavern. Guides manage the group through each obstacle, so no prior harness or rope experience is necessary, but a reasonable level of fitness and comfort with heights and confined spaces helps.",
+      "access": "Part of the Llechwedd site above Blaenau Ffestiniog, sharing the entrance and car park with the Deep Mine Tour and Bounce Below. All access is via booked, guided sessions — there's no self-guided or independent entry to this part of the cavern.",
+      "routeDescription": "A fixed circuit of platforms, zip lines, rope bridges and tunnels rigged through the cavern's original excavated chambers, designed to showcase the scale of the slate workings while keeping the physical challenge accessible to non-specialists."
     },
     {
       "name": "Rhys's Chambers (Cwmorthin Extension)",
@@ -135,7 +182,10 @@
       },
       "estimatedCost": "Free (parking £5-10)",
       "operatorSlug": null,
-      "insiderTip": "Take a very, very detailed map and compass. GPS doesn't work well underground and you need to be able to navigate even if your headlamp fails."
+      "insiderTip": "Take a very, very detailed map and compass. GPS doesn't work well underground and you need to be able to navigate even if your headlamp fails.",
+      "howToDoIt": "This is an extension of a standard Cwmorthin trip, not a separate destination — you reach it by first navigating the main Cwmorthin levels, then branching into the extension's colder, more flooded passages. Only attempt this with a group who already know the main Cwmorthin route well and are comfortable in a wetsuit or drysuit for sustained cold-water sections.",
+      "access": "Same access point as Cwmorthin — park in Tanygrisiau village and walk up the old incline. There's no separate entrance or marker for Rhys's Chambers; you need to already know the branch point within the mine.",
+      "routeDescription": "Branches off the main Cwmorthin network into more complex, less-travelled passages with deeper and colder water, tighter navigation between chambers, and a higher chance of disorientation if you stray from the known route."
     },
     {
       "name": "Braichgoch Slate Mine (exterior only)",
@@ -156,7 +206,9 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Combine a visit to Braichgoch with a walk in the nearby forest for a pleasant day out."
+      "insiderTip": "Combine a visit to Braichgoch with a walk in the nearby forest for a pleasant day out.",
+      "howToDoIt": "This is a viewing-only visit — walk around the surface remains, slate tips and ruined buildings rather than entering the workings. Sturdy footwear is enough; there's no technical requirement, but stay well back from open shafts and unstable edges, which are not fenced or signed.",
+      "access": "Limited roadside parking near the mine entrance; park considerately as space is tight. The site itself is unmanaged, so there's no visitor centre, signage or safety infrastructure — entering the mine itself is not recommended due to its unstable condition."
     }
   ],
   "practicalInfo": {

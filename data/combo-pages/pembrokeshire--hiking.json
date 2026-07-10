@@ -10,6 +10,38 @@
   "bestSeason": "May-September",
   "difficultyRange": "Easy to Challenging",
   "priceRange": "Free - £80 guided",
+  "topTips": [
+    "Check tide times before you set off for anything involving a beach crossing. At Marloes Sands, the path down to Gateholm Island only opens up at low tide over boulders and rock — get the timing wrong and you can be cut off, so build tide checks into route planning rather than an afterthought.",
+    "If you're heading to the Green Bridge of Wales or Elegug Stacks, ring the Castlemartin range information line (07971 708587, from 8:15am) or check the MOD's monthly firing notice on GOV.UK before you drive out. Red flags or lights mean the range is live and the coast path through it is closed — weekdays are more likely to be restricted than weekends.",
+    "Popular National Trust car parks — St Davids Head (Porthmelgan), Marloes Sands, and Stackpole Quay — fill up by mid-morning on any dry summer day. Arrive before 10am, or park a little further out and walk in, especially in July and August.",
+    "If you want to see Skomer's puffins, sort your landing ticket before you leave home. Boats run a pre-booking system through pembrokeshire-islands.co.uk with a daily cap of around 250 visitors, and summer sailings sell out days in advance — turning up on spec at Martin's Haven is a gamble.",
+    "Pack proper waterproofs even when the forecast looks kind. Pembrokeshire's coastal weather turns quickly, and several of the best walks (St Davids Head, Dinas Island, Green Bridge of Wales) have exposed, cliff-edge sections where wind and rain make the going properly unpleasant, not just damp.",
+    "Keep dogs on a lead near livestock and check individual beaches for seasonal restrictions — several Pembrokeshire beaches restrict dogs between May and September, so it's worth confirming before you plan a coastal dog walk.",
+    "Don't try to see everything from one base. St Davids suits the northern walks (St Davids Head, Strumble Head, Marloes), while Stackpole, Castlemartin and Tenby are a good 40-60 minutes further south — split multi-day trips between a northern and southern base rather than driving the length of the county each day.",
+    "If you don't fancy an there-and-back walk, the Puffin Shuttle (bus 400) runs daily from late May to late September between St Davids and Marloes, calling at Solva, Broad Haven, Little Haven, St Brides and Martin's Haven — handy for linear routes without needing two cars."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start with an easier route to gauge how exposed Pembrokeshire's coast path really is — Strumble Head Loop or the Stackpole Estate and Barafundle Bay walk are both gentle, well-signed introductions before you tackle anything with serious cliffside sections.",
+      "Wear proper hiking boots with ankle support. The coast path is rarely flat: expect roots, loose stone, mud after rain, and short steep climbs even on the 'easy' routes.",
+      "Tell someone your planned route and rough return time before you set off, particularly on the quieter northern sections around Strumble Head and Dinas Island where phone signal can drop out.",
+      "Budget more time than the guidebook says for your first walk. Coastal paths climb in and out of every cove, so distance alone understates the effort — a 7km route with 250m of ascent can take noticeably longer than a flat 7km.",
+      "Bring layers and waterproofs regardless of the forecast. Pembrokeshire's coastal weather changes fast, and there's often little shelter on clifftop sections.",
+      "If you're walking with children, pick routes away from unguarded cliff edges — Barafundle Bay and Strumble Head are safer first choices than St Davids Head or the Green Bridge of Wales.",
+      "Book any boat trips (Skomer) or check any access restrictions (Castlemartin range) before you leave home, not on the day — both can derail a plan with no fallback if you haven't checked.",
+      "Carry more water than you think you need. There are long stretches of the coast path with no cafés, shops or taps, particularly between St Davids and Newport."
+    ],
+    "regular": [
+      "Walk St Davids Head in the late afternoon in summer — the sun sets behind Ramsey Island and the light on Carn Llidi is far better than the midday crowds get to see.",
+      "Skip the main Marloes Sands car park on a sunny weekend and instead time your visit for low tide midweek, when you'll have Gateholm Island largely to yourself.",
+      "Head to Dinas Island or the Newport to Cwm-yr-Eglwys stretch when St Davids and Stackpole are heaving — they're just as scenic, get a fraction of the visitors, and both have decent pubs at the end.",
+      "Ignore the assumption that Castlemartin's firing range restrictions make the Green Bridge of Wales walk unreliable — weekends are usually clear, and the Castlemartin Range Trail stays open even on firing days as an alternative route.",
+      "Puffin season (April-July) at Martin's Haven gets busy early. If you just want the views of Skomer without the crowds or the boat queue, walk the short circuit from Martin's Haven in the early morning before the first sailings.",
+      "For a quieter alternative to St Davids Head, the Strumble Head Loop has comparable wildlife-spotting (seals, porpoises, seabirds) with far smaller crowds — bring binoculars and go early or late in the day.",
+      "In winter, several of these walks — Stackpole, Strumble Head, Dinas Island — are genuinely better: empty car parks, dramatic seas, and none of the midsummer parking stress. Just check firing range status for Castlemartin, since winter access can be more restricted.",
+      "If you're doing a multi-spot day, plan south-to-north or vice versa and use the Puffin Shuttle or a second car to avoid backtracking — the coast road network in Pembrokeshire is slow and doubling back eats hours."
+    ]
+  },
   "spots": [
     {
       "name": "St Davids Head Circular Walk",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "Free (parking £5)",
       "operatorSlug": null,
-      "insiderTip": "The best time to walk St Davids Head is late afternoon, as the sun sets behind Ramsey Island, offering incredible light."
+      "insiderTip": "The best time to walk St Davids Head is late afternoon, as the sun sets behind Ramsey Island, offering incredible light.",
+      "howToDoIt": "From the Porthmelgan car park, follow the coast path signs north-west onto the headland. Most walkers do the circuit anticlockwise, hugging the coast path out to the tip of the headland past Carn Llidi before cutting back inland across open heath to close the loop. The outbound leg along the cliffs is the highlight and the most exposed section, so keep well back from the edge in wind. There's an optional short scramble up Carn Llidi itself if you want the best viewpoint — not technical, but rough underfoot.",
+      "access": "Public access via the coast path and open-access heathland (National Trust land). No permits needed. The Porthmelgan car park is a short walk from the start of the headland path — follow signposts from the car park. Livestock (ponies, cattle) graze the heath, so keep dogs on leads.",
+      "routeDescription": "A clifftop loop around the headland taking in the Iron Age promontory fort of Clawdd-y-Milwyr on Carn Llidi, gorse-lined cliff paths, and views out to Ramsey Island and the Bishops and Clerks rocks. The terrain alternates between rocky coast path and open heathland, with one modest climb onto Carn Llidi itself."
     },
     {
       "name": "Strumble Head Loop",
@@ -51,7 +86,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Bring binoculars! Strumble Head is one of the best places in Pembrokeshire to spot seals and porpoises from the shore."
+      "insiderTip": "Bring binoculars! Strumble Head is one of the best places in Pembrokeshire to spot seals and porpoises from the shore.",
+      "howToDoIt": "Park at the lighthouse car park and follow the coast path in either direction around the headland — most walkers go as an out-and-back rather than a full loop, since the lighthouse itself is the focal point. Allow extra time at the headland to scan the water; this is a working seawatching spot, so a slow pace pays off more than covering distance.",
+      "access": "Open coast path access, free car park at the lighthouse. No tidal or permit restrictions. The lighthouse itself is not open to the public but the headland around it is fully accessible on foot.",
+      "routeDescription": "A short there-and-back or loop around the dramatic headland at Strumble Head, crossing a footbridge to the lighthouse viewpoint with sweeping views over the sea towards Ireland on a clear day. Gentle gradients throughout, with the terrain mostly grassy clifftop path."
     },
     {
       "name": "Marloes Peninsula Circular",
@@ -72,7 +110,10 @@
       },
       "estimatedCost": "Free (parking £5)",
       "operatorSlug": null,
-      "insiderTip": "Check the tide times before you go! At low tide, you can walk across to Gateholm Island (but be careful not to get cut off!)."
+      "insiderTip": "Check the tide times before you go! At low tide, you can walk across to Gateholm Island (but be careful not to get cut off!).",
+      "howToDoIt": "From Marloes Sands car park, follow the coast path west around the peninsula, dropping down to Marloes Sands beach itself before continuing on to Gateholm Island (tide-dependent) and around to views of Skomer. The circular route climbs back up onto the peninsula and returns via inland paths and lanes. If you want to reach Gateholm, check tide tables first — the crossing over boulders and rock is only exposed for a window either side of low tide.",
+      "access": "National Trust car park at Marloes Sands (£5 all day). The path to Gateholm Island is only passable at low tide over rocks and boulders — a steep, narrow descent from the cliff path, not suitable for anyone unsteady on uneven ground. Do not linger on Gateholm as the tide turns.",
+      "routeDescription": "A varied circuit around the Marloes Peninsula combining a long sandy beach, dramatic old red sandstone cliffs, the wartime radar station ruins, and views across to Skomer and Skokholm islands. The optional detour to Gateholm Island adds a tidal scramble for those wanting to see the Iron Age hut settlement on its plateau."
     },
     {
       "name": "Stackpole Estate and Barafundle Bay Walk",
@@ -93,7 +134,10 @@
       },
       "estimatedCost": "Free (parking £5)",
       "operatorSlug": null,
-      "insiderTip": "Pack a picnic and enjoy it on Barafundle Bay – regularly voted one of the best beaches in Britain."
+      "insiderTip": "Pack a picnic and enjoy it on Barafundle Bay – regularly voted one of the best beaches in Britain.",
+      "howToDoIt": "From Stackpole Quay car park, take the coast path south over the headland — a short climb with steps down onto Barafundle Bay itself. From the beach, continue on the coast path or loop back inland through the Stackpole Estate's woodland and past the lily ponds (Bosherston lakes) before returning to the quay. This is one of the gentlest routes in the file, well suited to a relaxed pace.",
+      "access": "National Trust car park at Stackpole Quay (£5 all day). Well-maintained paths throughout, including steps down to Barafundle Bay. No tidal restrictions on this route, though the lily ponds are best visited when the water lilies are in bloom (roughly June-August).",
+      "routeDescription": "A gentle loop linking Stackpole Quay, the steps down into Barafundle Bay, and the wooded lily ponds at Bosherston. Largely sheltered and well-surfaced, with only a short climb over the headland between the quay and the beach — the least strenuous route in this guide."
     },
     {
       "name": "Green Bridge of Wales and Elegug Stacks Walk",
@@ -114,7 +158,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Check the MOD firing range schedule online before you go! Access to this area is often restricted due to live firing exercises. Avoid weekends to increase your chances of access."
+      "insiderTip": "Check the MOD firing range schedule online before you go! Access to this area is often restricted due to live firing exercises. Avoid weekends to increase your chances of access.",
+      "howToDoIt": "Park at the Green Bridge of Wales car park and walk out to the viewpoint over the arch itself, then follow the coast path along the clifftops to Elegug Stacks (Stac Rocks), where guillemots and razorbills nest on the stacks in season. The path continues further along the range coast if access allows; most visitors do a shorter there-and-back between the two main viewpoints.",
+      "access": "This walk sits inside the Castlemartin MOD range. Check the current firing notice on GOV.UK or call the range information line (07971 708587, from 8:15am) before travelling — red flags or lights mean the area is closed. The Castlemartin Range Trail remains open as an alternative route even on live-firing days. Free car park at the Green Bridge of Wales.",
+      "routeDescription": "A clifftop walk between two of Pembrokeshire's best-known natural features: the Green Bridge of Wales rock arch and the Elegug Stacks seabird colony. Exposed, open cliff-edge path with no shelter, best avoided in high winds regardless of range access."
     },
     {
       "name": "Dinas Island Circular Walk",
@@ -135,7 +182,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "Stop for lunch at the Old Sailors pub in Pwllgwaelod after your walk – they have a lovely beer garden overlooking the beach."
+      "insiderTip": "Stop for lunch at the Old Sailors pub in Pwllgwaelod after your walk – they have a lovely beer garden overlooking the beach.",
+      "howToDoIt": "From Pwllgwaelod car park, follow the coast path clockwise around the Dinas 'island' (actually a peninsula) — the climb up through woodland onto the headland is the main effort, after which the path opens onto cliffs with views over Fishguard Bay before descending to Cwm-yr-Eglwys and looping back along the neck of the peninsula to the start.",
+      "access": "Pay-and-display car park at Pwllgwaelod beach. Well-marked circular coast path throughout, no tidal or permit restrictions. Livestock may be present on the headland sections.",
+      "routeDescription": "A circular walk around the Dinas peninsula linking two beaches — Pwllgwaelod and Cwm-yr-Eglwys — via wooded lower slopes and open clifftop with views across Fishguard Bay. A good mix of shelter and exposure, with one sustained climb through woodland."
     },
     {
       "name": "Newport to Cwm-yr-Eglwys Coastal Path",
@@ -156,7 +206,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "Consider taking the Puffin Shuttle bus back to your starting point if you don't want to walk the route twice."
+      "insiderTip": "Consider taking the Puffin Shuttle bus back to your starting point if you don't want to walk the route twice.",
+      "howToDoIt": "This is a linear route, best walked one way from Newport to Cwm-yr-Eglwys (or vice versa) rather than there-and-back, given the distance. Follow the coast path west out of Newport, passing sandy beaches and clifftop sections, finishing at the tiny village of Cwm-yr-Eglwys where the ruined church of St Brynach sits partly submerged on the shoreline. Arrange a lift back, use a second car, or check bus options for the return leg.",
+      "access": "Pay-and-display car parks at both ends — Newport and Cwm-yr-Eglwys (limited spaces at the latter). Being a linear route, plan your return transport before setting off. No tidal restrictions on the coast path itself.",
+      "routeDescription": "A one-way coastal path section between the market town of Newport and the small, atmospheric village of Cwm-yr-Eglwys, known for its part-submerged 12th-century church ruin. Varied terrain with clifftop stretches, sandy beach access, and a couple of short, sharp climbs."
     },
     {
       "name": "Skomer Island Views from Martin's Haven",
@@ -177,7 +230,10 @@
       },
       "estimatedCost": "Free (parking £5-7)",
       "operatorSlug": null,
-      "insiderTip": "Arrive early, especially during peak puffin season, as the car park fills up quickly. The boat trips to Skomer also sell out in advance, so book online if you plan to visit the island."
+      "insiderTip": "Arrive early, especially during peak puffin season, as the car park fills up quickly. The boat trips to Skomer also sell out in advance, so book online if you plan to visit the island.",
+      "howToDoIt": "From the Martin's Haven car park, a short walk down to the coast leads to the boat departure point at Lockley Lodge (for those with a Skomer ticket) and to the headland viewpoints for those staying on the mainland. Even without landing on Skomer, the short walk along the coast path here gives clear views across to the island and its cliffs, with a good chance of seeing seals in the water below.",
+      "access": "Pay-and-display car park at Martin's Haven. If landing on Skomer, book online in advance at pembrokeshire-islands.co.uk — the island operates a pre-booking system with a daily visitor cap, and boats depart from Lockley Lodge, a short walk from the car park. No landing ticket is needed to walk the coast path and view the island from the mainland.",
+      "routeDescription": "A short, easy stretch of coast path from Martin's Haven out to the headland opposite Skomer Island, with views across Jack Sound to the island's cliffs and seabird colonies. Flat and accessible by Pembrokeshire standards, making it one of the easiest routes here for families or those short on time."
     }
   ],
   "practicalInfo": {

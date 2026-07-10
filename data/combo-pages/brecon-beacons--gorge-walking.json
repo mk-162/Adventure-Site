@@ -10,6 +10,38 @@
   "bestSeason": "April-October",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £80 guided",
+  "topTips": [
+    "Gorge walking proper (waist-deep wading, waterfall jumps, chutes) is only sensible with a licensed guide. Natural Resources Wales, who own much of Waterfall Country, only permit organised gorge-walking, canyoning and scrambling activity on their land under a formal agreement with registered operators — walking in on your own to 'have a go' in the gorge itself is both against access rules and genuinely dangerous.",
+    "The famous walk-behind-the-waterfall spots (Sgwd yr Eira, Henrhyd Falls) are a different, much easier activity to a guided gorge walk in the Mellte or Nedd Fechan — don't book a guided trip expecting the postcard walk-behind shot, and don't expect a solo waterfall walk to deliver the scrambling and wading experience.",
+    "Arrive at Gwaun Hepste car park (the start for Sgwd yr Eira and the Four Falls Trail) before 9.30am on weekends and school holidays. It's pay-and-display, card only, and regularly fills by mid-morning in summer.",
+    "Porth yr Ogof's resurgence pool has a long and serious drowning history — the cave signs warning you away from the pool are not decorative. Keep well back from the water's edge here regardless of how calm it looks; the Afon Mellte can turn from a dry riverbed to a torrent within an hour of heavy rain upstream.",
+    "Check river levels, not just the weather forecast, before any gorge walk — Natural Resources Wales' river level pages are the most reliable read on whether the Mellte or Nedd Fechan are safe. Water can rise fast after rain on higher ground even if it's dry where you're standing.",
+    "A wetsuit is not optional even on a warm day. The rivers here are spring-fed and stay cold well into summer; most guided operators supply wetsuits, neoprene socks and helmets as standard, so check what's included before you pack.",
+    "The Four Falls Trail occasionally closes short sections (the path to Sgwd yr Eira has had maintenance closures in past years) with no alternative route to that specific waterfall — check the Brecon Beacons/Bannau Brycheiniog park authority site the week of your visit rather than relying on an old blog post.",
+    "If you want an easy, low-crowd taste of gorge scenery without a guide, the Sychryd trail from Dinas Rock is a flat, all-ability path along the river — genuinely suitable for wheelchairs, buggies and anyone who doesn't want to scramble."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Book a guided operator for anything beyond the easy waterfall walks — Adventure Britain, Black Mountain Adventure and Adventures Wales all run guided gorge walking in the Mellte/Nedd Fechan system and supply wetsuits, helmets and buoyancy aids.",
+      "Pack a full change of clothes, a towel, and a dry bag for your phone and car keys — you will get properly wet, not just splashed, on any guided route.",
+      "If you're bringing kids, check the operator's minimum age (commonly around 10) and ask specifically which route they run — the Nedd Fechan is a gentler introduction than the full Mellte gorge.",
+      "Start with an easy, ungraded spot like Porth yr Ogof or the Sychryd cascades if you want to see Waterfall Country before committing to a paid guided walk — both give you a real sense of the gorges without any technical difficulty.",
+      "Wear old trainers or approach shoes you don't mind getting soaked and scuffed — flip-flops or bare feet are a genuine injury risk on the rock underfoot.",
+      "Budget £50-£80pp for a guided gorge walk and book at least a couple of weeks ahead for weekends in July and August — smaller operators sell out fast in peak season.",
+      "Check the forecast the night before and again on the morning — reputable operators will postpone or reroute if water levels are unsafe, and you should be suspicious of any operator who won't.",
+      "Bring cash or a card ready for parking — most car parks in Waterfall Country (Gwaun Hepste, Dinas Rock) are pay-and-display and increasingly card-only."
+    ],
+    "regular": [
+      "Skip Gwaun Hepste on a sunny Saturday and go straight to the Nedd Fechan gorge near Ystradfellte instead — same quality of scenery and scrambling, far fewer people on the trail.",
+      "Weekday mornings in May or September hit the sweet spot: water levels are typically manageable, the light through the gorge is better for photos, and you'll often have entire sections of the Mellte to yourself.",
+      "If you've done the Four Falls Trail before, do it in reverse from Ystradfellte rather than Gwaun Hepste — you'll be walking against the main flow of day-trippers and get Sgwd yr Eira with far fewer people around.",
+      "Combine Henrhyd Falls with the Nant Llech gorge walk rather than just doing the there-and-back to the falls — it's the same car park but a much better half-day out and noticeably quieter than the Mellte valley.",
+      "After sustained heavy rain, head for Henrhyd Falls rather than the Mellte or Nedd Fechan — it's the most dramatic to view in spate and, unlike a guided gorge walk, you're not relying on the river being calm enough to get in.",
+      "Late afternoon light (after 4pm in summer) through Porth yr Ogof's archway is far better for photos than midday, and the coach-trip crowds have usually thinned out by then.",
+      "The Dinas Rock car park doubles as access to the Dinas Rock climbing crags — if you're a climber as well, it's worth combining a gorge walk with an afternoon on the rock rather than a separate trip.",
+      "For a quieter pint after a Mellte valley walk, the Ancient Briton near Pen-y-cae gets less passing trade than the Angel Inn at Pontneddfechan, which fills up fast with walkers straight off the Four Falls Trail."
+    ]
+  },
   "spots": [
     {
       "name": "Sgwd yr Eira (Waterfall Walk Behind)",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "Free (parking £5)",
       "operatorSlug": null,
-      "insiderTip": "Go early in the morning or late in the afternoon to avoid the crowds. Bring a waterproof jacket, even on a sunny day, as you'll get wet behind the falls!"
+      "insiderTip": "Go early in the morning or late in the afternoon to avoid the crowds. Bring a waterproof jacket, even on a sunny day, as you'll get wet behind the falls!",
+      "howToDoIt": "This is a waymarked walk, not a technical gorge walk — follow the Four Falls Trail signage from Gwaun Hepste car park down through woodland to the river, then along the bank to Sgwd yr Eira. The path behind the falls is a narrow rock ledge; go slowly, use the handholds where provided, and expect a genuine soaking from the spray as you pass behind the curtain of water.",
+      "access": "Open access land reached via a waymarked National Park path from the pay-and-display Gwaun Hepste car park; no permit needed for the walk itself, but the ledge behind the falls can close temporarily after high water or maintenance work, so check the park authority's site before travelling.",
+      "routeDescription": "From Gwaun Hepste, the path drops steadily through oak woodland into the Hepste valley before joining the riverside trail. The final approach to Sgwd yr Eira follows a rocky, sometimes slippery ledge that tucks in behind the full width of the falls — a wide curtain of water crashing into a plunge pool below, with the path continuing out the far side back onto the main Four Falls loop."
     },
     {
       "name": "Henrhyd Falls (Tallest Waterfall)",
@@ -51,7 +86,10 @@
       },
       "estimatedCost": "Free (parking charge for non-NT members)",
       "operatorSlug": null,
-      "insiderTip": "Combine your visit with a walk along the Nant Llech gorge for a longer, more varied hike."
+      "insiderTip": "Combine your visit with a walk along the Nant Llech gorge for a longer, more varied hike.",
+      "howToDoIt": "A short, steep descent from the National Trust car park brings you to the base of the falls. The path behind the water is narrower and more enclosed than at Sgwd yr Eira, with uneven, often wet rock underfoot — take it slowly on the way down and back up, especially with kids or in wet boots.",
+      "access": "National Trust car park at the top; the path down to the falls is a maintained but steep and uneven National Trust trail, free to walk. Parking is free for NT members and chargeable for non-members — an honesty-box/overflow arrangement operates when the main car park is full.",
+      "routeDescription": "The route drops roughly 100m through mixed woodland via stone steps and a gravel path to reach the Nant Llech at the base of the falls. You pass behind the full 90-foot drop through a short, dark, overhung section of rock before emerging on the far bank — the whole there-and-back takes most visitors under two hours, with the climb back out the main effort."
     },
     {
       "name": "Porth yr Ogof (Waterfall Cave Entrance)",
@@ -72,7 +110,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Bring a torch to explore the area just inside the cave entrance – you can see some interesting rock formations. Be extremely careful near the water's edge."
+      "insiderTip": "Bring a torch to explore the area just inside the cave entrance – you can see some interesting rock formations. Be extremely careful near the water's edge.",
+      "howToDoIt": "This is a viewing and short-exploration stop rather than a gorge walk — walk down from the car park to the huge cave mouth where the River Mellte emerges, and you can safely step a short way inside on dry rock in normal conditions. Do not attempt to cross or approach the resurgence pool inside the cave; this is a genuinely dangerous spot with a long history of drownings, and it is not a place for casual paddling regardless of how the water looks.",
+      "access": "Reached directly from the small pay car park at Cwm Porth; the cave entrance area is open access with no permit required, but signage inside the cave warns visitors away from the pool and directs an alternative exit — take these seriously rather than as generic caution.",
+      "routeDescription": "A short path leads from the car park down to the wide, arched cave mouth where the Afon Mellte reappears from underground. In dry conditions you can walk a little way onto the rocks at the entrance; after rain the riverbed above can turn into a fast-flowing torrent within the hour, so the character of this spot changes quickly and should be judged on the day, not on what you saw in photos."
     },
     {
       "name": "Mellte Gorge (Guided Gorge Walk)",
@@ -93,7 +134,10 @@
       },
       "estimatedCost": "£50-£80pp guided",
       "operatorSlug": null,
-      "insiderTip": "Book your guided gorge walk well in advance, especially during peak season. Some operators offer smaller group sizes for a more personalized experience."
+      "insiderTip": "Book your guided gorge walk well in advance, especially during peak season. Some operators offer smaller group sizes for a more personalized experience.",
+      "howToDoIt": "You'll be kitted out by your guide with a wetsuit, helmet and buoyancy aid before walking in from Pontneddfechan. Expect a mix of wading through waist- and occasionally chest-deep pools, scrambling over boulders, sliding down natural rock chutes, and jumping into plunge pools where the guide judges depth and conditions safe on the day — routes and specific features used vary session to session depending on water levels.",
+      "access": "This stretch of the Mellte sits on land managed by Natural Resources Wales and the National Park; organised gorge walking here is only permitted for registered operators working under a formal agreement with NRW, which is the core reason a guide is required rather than optional. Independent, unguided gorge walking in this section is both against access terms and one of the higher-risk ways to get into difficulty in the park.",
+      "routeDescription": "Guided routes typically follow the Mellte upstream or downstream from Pontneddfechan through a sequence of pools, small chutes and rock steps, taking in sections near Sgwd Clun-Gwyn and Sgwd Isaf Clun-Gwyn. The exact line through the gorge is chosen by the guide on the day based on water level — higher water closes off jumps and slides that are available in a drier spell."
     },
     {
       "name": "Nedd Fechan Gorge (More Remote)",
@@ -114,7 +158,10 @@
       },
       "estimatedCost": "£50-£80pp guided",
       "operatorSlug": null,
-      "insiderTip": "The Nedd Fechan is known for its crystal-clear water. Bring a waterproof camera to capture the stunning scenery."
+      "insiderTip": "The Nedd Fechan is known for its crystal-clear water. Bring a waterproof camera to capture the stunning scenery.",
+      "howToDoIt": "As with the Mellte, this is a guided experience — you'll wade, scramble and slide through the gorge with your operator setting the pace and picking safe lines through the pools. Expect less continuous water immersion than the Mellte and more time picking your way along rocky banks between wading sections, making it a slightly gentler introduction to gorge walking proper.",
+      "access": "Access into the gorge itself for organised activity again requires an operator working under agreement with Natural Resources Wales; walking the surrounding valley paths on foot is open access, but entering and moving through the gorge as a group is a permitted, guided-only activity in practice.",
+      "routeDescription": "Guided groups typically walk in from near Ystradfellte and follow the Nedd Fechan through a narrower, more wooded gorge than the Mellte, with a series of smaller pools and rock steps rather than big set-piece waterfalls. The quieter, more intimate feel of this stretch is the main draw over the busier Mellte routes."
     },
     {
       "name": "Sychryd Cascades (Easy Access)",
@@ -135,7 +182,10 @@
       },
       "estimatedCost": "Free (parking charges may apply)",
       "operatorSlug": null,
-      "insiderTip": "Combine your visit with a trip to the nearby Dinas Rock climbing area."
+      "insiderTip": "Combine your visit with a trip to the nearby Dinas Rock climbing area.",
+      "howToDoIt": "From Dinas Rock car park, follow the riverside path alongside the Afon Sychryd, stepping down onto the rocks and into shallow water where you fancy it — this is an informal, low-commitment way to get a taste of gorge scenery on foot rather than a guided technical walk. For a fully accessible option, the signed Sychryd All Ability Trail follows a level, compacted path along the same stretch without needing to leave dry ground.",
+      "access": "Reached directly from Dinas Rock car park via open access land; the all-ability trail section is a maintained, level path suitable for wheelchairs and pushchairs, while the rock-hopping sections of the cascades themselves are informal and unmaintained.",
+      "routeDescription": "The path follows the Sychryd through a narrow, wooded gorge with a rock face rising on one side, passing a series of small cascades and shallow pools. The all-ability trail runs roughly 400m one-way on level, compacted stone-dust surface (can get muddy after prolonged rain); those wanting to get into the water can branch off onto the rocks alongside for informal rock-hopping and wading."
     },
     {
       "name": "Four Falls Trail Gorges (Varied Experience)",
@@ -156,7 +206,10 @@
       },
       "estimatedCost": "Free (parking £5)",
       "operatorSlug": null,
-      "insiderTip": "Look out for dippers and grey wagtails along the river banks. These birds are specially adapted to living near fast-flowing water."
+      "insiderTip": "Look out for dippers and grey wagtails along the river banks. These birds are specially adapted to living near fast-flowing water.",
+      "howToDoIt": "Follow the waymarked Four Falls Trail loop from Gwaun Hepste — a mostly on-foot walking route with well-defined paths, though several sections run right alongside the gorge edge and drop close to the water at viewpoints for each of the falls. Sturdy footwear is essential; the paths get muddy and the rock steps near the falls are slippery when wet, even though this isn't a wading route.",
+      "access": "Fully waymarked National Park trail on open access land, starting and finishing at the pay-and-display Gwaun Hepste car park; no permit needed. Sections nearest the falls can close temporarily for maintenance, most recently around Sgwd yr Eira, so check for notices before setting out.",
+      "routeDescription": "The full loop links Sgwd Clun-Gwyn, Sgwd Isaf Clun-Gwyn, Sgwd y Pannwr and Sgwd yr Eira, threading through oak woodland that hugs the Mellte and Hepste gorges for most of its length. Expect a mix of woodland track, stone steps down to river level, and short, steeper scrambly sections near each waterfall viewpoint, with the terrain becoming noticeably more technical and closer to the water the further round the loop you go."
     }
   ],
   "practicalInfo": {

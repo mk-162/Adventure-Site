@@ -10,6 +10,38 @@
   "bestSeason": "April-October",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £150 guided",
+  "topTips": [
+    "Porth yr Ogof is free and open access, but it's not a paddling pool — ten of the eleven recorded deaths there have happened in the Resurgence Pool at the far, downstream end of the cave. Wade in from the main entrance and turn back; leave the pool itself to equipped cave divers.",
+    "OFD (both I and II) and Cwm Dwr all require permits arranged in advance through the South Wales Caving Club — apply at least two weeks ahead and reconfirm access codes with the permit secretary in the week before you go. Turning up without one gets you turned away, not a discount.",
+    "Ogof Draenen is gated and key-controlled by the Pwll Du Cave Management Group for conservation reasons. You need a recognised caving club membership and a returnable deposit to get a key — this isn't a spot you can just wander into.",
+    "If you want caving without the logistics, Dan yr Ogof's showcaves need no gear, guide, or permit, while the Cathedral Cave adventure tour is a fully guided, kitted-out step up for families wanting more than a paved walkway.",
+    "The Afon Mellte is a 'flashy' river — its name literally means lightning. Heavy rain upstream can flood Porth yr Ogof's entrance within the hour, so check the forecast and don't go near it during or straight after a downpour.",
+    "Go early (before 9am) or late (after 4pm) for Porth yr Ogof to dodge the crowds, and note the small free car park fills fast — the overflow adds a 15-minute walk from further up the Ystradfellte road.",
+    "Water underground stays a consistent 6-10°C regardless of the weather on the surface, so a caving suit and thermal layers matter as much in August as in January.",
+    "Starless River in Ystradgynlais is the specialist caving shop in the area for hire and gear — general outdoor shops in Brecon stock helmets and headlamps but staff won't have caving-specific expertise."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Book a guided trip for your first caving experience rather than trying to self-lead into OFD or Cwm Dwr — operators like Adventure Britain and Black Mountain Adventure supply all the gear and know the permit system.",
+      "Start at Porth yr Ogof or Bridge Cave if you want to try caving without commitment — both are free, permit-free, and short enough to bail out of if it's not for you.",
+      "Wear a helmet with a chin strap and bring spare headlamp batteries no matter which cave you visit — darkness underground is total, and a dead light is a real emergency, not an inconvenience.",
+      "Tell someone your plans and expected return time before entering any cave, even the 'easy' ones. Mobile signal is nonexistent underground and often patchy in the valleys above.",
+      "Dress in thermal base layers under a caving suit or old clothes you don't mind ruining — water temperatures sit around 6-10°C year-round, and you will get wet.",
+      "If in doubt about water levels at Porth yr Ogof, don't go in. The entrance floods fast after rain and the currents inside are stronger than they look from the bank.",
+      "Hire your kit from Starless River in Ystradgynlais if you don't own caving gear — they know the local systems and can advise on what you actually need for the cave you're planning to visit.",
+      "Dan yr Ogof Showcaves is the honest choice if anyone in your group has mobility issues, claustrophobia, or is simply unsure — it's the only fully accessible, no-experience-needed option on this list."
+    ],
+    "regular": [
+      "Weekday OFD permits are far easier to secure than weekend slots — if your schedule allows it, apply for a Tuesday or Wednesday trip and skip the scramble for Saturday dates.",
+      "Cwm Dwr's through-trip connections into the OFD system are worth doing once you know cavers who've run them before; it's a different experience from an out-and-back OFD trip and much quieter.",
+      "Porth yr Ogof before 9am on a weekday in shoulder season (May or September) is close to having the entrance chamber to yourself — peak summer weekends are the opposite experience entirely.",
+      "Ogof Draenen's Chocolate Stream and Cheese Chamber are worth the long key-application lead time if you've got the experience for an 8-hour-plus trip — it's the most technically rewarding system in the region for those qualified to go.",
+      "Combine a Bridge Cave visit with the full Four Waterfalls walk (Sgwd yr Eira, Sgwd Clun-Gwyn, Sgwd Isaf Clun-Gwyn) from Ystradfellte — park once at Gwaun Hepste and get both in one outing.",
+      "The free Comin y Rhos car park near Ystradfellte is smaller than the main Gwaun Hepste pay-and-display, but if you get there early it saves the parking fee and cuts the walk to the falls.",
+      "SWCC's changeover codes for the Penwyllt cottage and key safe rotate regularly — always ring or email to confirm the current code in the week before your trip rather than relying on an old permit email.",
+      "The Ancient Briton and Gwyn Arms both get hammered by cavers on weekend afternoons; if you want a table without a wait, the Felin Fach Griffin further from the main caving hubs is a quieter, if pricier, alternative."
+    ]
+  },
   "spots": [
     {
       "name": "Porth yr Ogof Main Entrance",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Go early in the morning (before 9am) or late in the afternoon (after 4pm) to avoid the crowds. Check water levels online beforehand."
+      "insiderTip": "Go early in the morning (before 9am) or late in the afternoon (after 4pm) to avoid the crowds. Check water levels online beforehand.",
+      "howToDoIt": "Enter via the main gaping entrance where the Afon Mellte disappears underground, and wade upstream through the wide, low-roofed passage into the main chamber — head-height torches on, and expect to get wet to at least your knees, often your chest. Turn back the way you came rather than pushing on toward the Resurgence Pool at the far, downstream end of the system, which is a genuinely dangerous deep-water sump and the site of most of the cave's historic fatalities — that section is for experienced, equipped cave divers only, never casual visitors.",
+      "access": "Free and open access, no permit needed — this is the most casual caving experience in the Beacons, but it is still a live river cave. The Afon Mellte is known for flashy flooding: heavy rain upstream can turn the entrance impassable within an hour, so check the forecast and avoid entirely after or during heavy rain. Managed under a Brecon Beacons National Park Authority safety statement given its accident history.",
+      "routeDescription": "From the car park it's a two-minute walk down to the river and the huge arched entrance. The main show is a there-and-back wade into the entrance chamber — you don't need to go far to get the full 'proper caving' sensation of cold water, echoing rock, and darkness beyond your headtorch beam. Do not attempt to reach or swim in the Resurgence Pool downstream; it has claimed multiple lives and is where the underground river re-emerges into a deep, cold, current-pulled pool."
     },
     {
       "name": "Ogof Ffynnon Ddu I (OFD I)",
@@ -51,7 +86,10 @@
       },
       "estimatedCost": "Free (permit required)",
       "operatorSlug": null,
-      "insiderTip": "Book your SWCC permit well in advance, especially for weekends and holidays. The 'long crawl' can be avoided in a streamway bypass. Carry spare batteries for your headlamp."
+      "insiderTip": "Book your SWCC permit well in advance, especially for weekends and holidays. The 'long crawl' can be avoided in a streamway bypass. Carry spare batteries for your headlamp.",
+      "howToDoIt": "Sign in at Penwyllt, tackle the entrance series (a short pitch, or the 'long crawl' bypass if you'd rather not rig a rope), and work down to the Main Streamway, where the going is mostly walking and wading with a scattering of deep pools. This is a trip best done with someone who already knows the system — the passage network branches often enough that first-timers regularly need a guide or a very good survey to avoid backtracking.",
+      "access": "Entry requires a permit from the South Wales Caving Club (SWCC); non-members should apply well ahead — SWCC's own guidance asks for a minimum of two weeks' notice, ideally by email to the club's OFD access address. Access codes for the changeover point and key safe are reissued regularly and must be confirmed with the permit secretary in the week before your trip. Parking at Penwyllt is SWCC's own yard, with club members and permit holders prioritised — do not treat it as public parking.",
+      "routeDescription": "The classic beginner-to-intermediate round trip runs from the entrance series down through the streamway passages to the Time Machine area and back, taking in swimmable pools, short crawls, and a couple of short pitches. It's the most forgiving introduction to the full OFD system, but 'forgiving' is relative — you're still underground for several hours in a system with genuine navigational complexity."
     },
     {
       "name": "Ogof Ffynnon Ddu II (OFD II)",
@@ -72,7 +110,10 @@
       },
       "estimatedCost": "Free (permit required)",
       "operatorSlug": null,
-      "insiderTip": "Take a detailed survey (map) and compass. Consider using a GPS device with pre-loaded waypoints. Check the weather forecast beforehand – heavy rain can rapidly raise water levels."
+      "insiderTip": "Take a detailed survey (map) and compass. Consider using a GPS device with pre-loaded waypoints. Check the weather forecast beforehand – heavy rain can rapidly raise water levels.",
+      "howToDoIt": "Follow the shared OFD I entrance route before splitting off toward The Crossroads and beyond into OFD II proper, where the passages open into larger, more complex chambers and the navigation gets genuinely serious. Expect some pitches that need rigging, sustained cold-water immersion, and stretches where route-finding matters as much as physical caving ability — this is not a trip to attempt from a photocopied survey alone.",
+      "access": "Same SWCC permit and Penwyllt sign-in process as OFD I — apply at least two weeks ahead through the club's permit secretary and reconfirm access codes the week of your trip. Given the added complexity and rope sections, SWCC and most guiding operators expect a caving CV or a qualified leader before granting or guiding an OFD II permit.",
+      "routeDescription": "Beyond The Crossroads, popular objectives include The Columns and the connecting streamways toward the Cwm Dwr link, both requiring confident ropework and a good head for exposure in places. Cold, wet, and long — budget the full 6-8 hours and don't rush the pitches."
     },
     {
       "name": "Dan yr Ogof Showcaves",
@@ -93,7 +134,9 @@
       },
       "estimatedCost": "£16.50 per adult",
       "operatorSlug": null,
-      "insiderTip": "Combine a visit to the showcaves with a walk to the nearby waterfalls for a full day out. The cafe is decent but can get busy."
+      "insiderTip": "Combine a visit to the showcaves with a walk to the nearby waterfalls for a full day out. The cafe is decent but can get busy.",
+      "howToDoIt": "Buy your ticket at the entrance and follow the lit, paved walkway through the show cave system at your own pace — no equipment, guide, or caving experience required. It's the easiest possible way to see genuine cave formations in the Beacons, and a good warm-up if you're building family confidence before trying Bridge Cave or Porth yr Ogof.",
+      "access": "Fully commercial and wheelchair/pushchair accessible in the main showcave sections (check with staff on the day for current accessibility of each cave, as some sections involve steps). Free onsite parking. No booking required outside peak season, but arriving early avoids coach-tour crowds in summer."
     },
     {
       "name": "Cathedral Cave",
@@ -114,7 +157,9 @@
       },
       "estimatedCost": "£55 per adult (adventure tour)",
       "operatorSlug": null,
-      "insiderTip": "Book your Cathedral Cave tour in advance, especially during peak season. Wear clothes you don't mind getting muddy."
+      "insiderTip": "Book your Cathedral Cave tour in advance, especially during peak season. Wear clothes you don't mind getting muddy.",
+      "howToDoIt": "This runs as a guided adventure tour, not self-led — you'll be kitted out and briefed onsite before heading in with a guide, who leads the group through crawls and wades to reach the Cathedral chamber itself. It's a genuine step up in commitment from the standard showcave visit but still fully guided and equipment-supplied, making it a solid bridge for families wanting more than the paved walkway offers without committing to permit caving.",
+      "access": "Booking ahead is effectively required, not optional, since the adventure tour runs to a schedule and group size limits. Meet at the Dan yr Ogof Showcaves entrance; parking and facilities are shared with the main showcaves site."
     },
     {
       "name": "Bridge Cave",
@@ -135,7 +180,9 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Combine a visit to Bridge Cave with a walk to the nearby waterfalls (Sgwd yr Eira, Sgwd Clun-Gwyn, Sgwd Isaf Clun-Gwyn). The walk is very scenic."
+      "insiderTip": "Combine a visit to Bridge Cave with a walk to the nearby waterfalls (Sgwd yr Eira, Sgwd Clun-Gwyn, Sgwd Isaf Clun-Gwyn). The walk is very scenic.",
+      "howToDoIt": "A short streamside walk from the Ystradfellte car park brings you to the natural rock bridge; duck under and through the cave passage beneath it, which takes minutes rather than hours. No permit, no gear beyond sturdy boots and a torch, making it a genuinely low-commitment way to combine caving with the Four Waterfalls walk in the same outing.",
+      "access": "Free, open access on foot from Ystradfellte. Parking at the main Gwaun Hepste car park nearby is pay-and-display (card only, roughly £4/day) and run by the National Park Authority; the small free car park at Comin y Rhos is closer to the falls but very limited on space."
     },
     {
       "name": "Cwm Dwr",
@@ -156,7 +203,9 @@
       },
       "estimatedCost": "Free (permit required)",
       "operatorSlug": null,
-      "insiderTip": "Obtain landowner permission well in advance. Carry a detailed survey (map) and compass. Be prepared for cold water and tight squeezes. Let someone know your plans before entering."
+      "insiderTip": "Obtain landowner permission well in advance. Carry a detailed survey (map) and compass. Be prepared for cold water and tight squeezes. Let someone know your plans before entering.",
+      "howToDoIt": "Cwm Dwr connects into the wider OFD network, so most visits are done either as a through-trip with experienced OFD cavers who know the connections, or as a standalone exploration of its own streamways and crawls for those with strong navigation skills. Not a route to learn on — go with people who've done it before, or hire a qualified guide through one of the local activity operators.",
+      "access": "Requires landowner permission arranged in advance, separate from the standard SWCC OFD permit — build in lead time and don't assume SWCC membership covers Cwm Dwr access. Parking is limited roadside space near the entrance; be considerate of residents and don't block the lane."
     },
     {
       "name": "Ogof Draenen",
@@ -177,7 +226,9 @@
       },
       "estimatedCost": "Free (access restrictions may apply)",
       "operatorSlug": null,
-      "insiderTip": "Check with the South East Wales Caving Club for access information and restrictions. Be prepared for a long and strenuous trip. Pack plenty of food and water. A strong headlamp is essential."
+      "insiderTip": "Check with the South East Wales Caving Club for access information and restrictions. Be prepared for a long and strenuous trip. Pack plenty of food and water. A strong headlamp is essential.",
+      "howToDoIt": "This is an expedition-length trip: a gated entrance, long stretches of walking and crawling passage, and objectives like the Chocolate Stream and Cheese Chamber that sit well into the system. Only attempt this with a club-organised trip or an experienced local caver holding a current key — it is not a venue to improvise in.",
+      "access": "The cave is gated for conservation reasons; access is restricted to members of recognised caving clubs (BCA-affiliated or similar), with keys held via the Pwll Du Cave Management Group. Applying typically means writing to the management group with a proposed trip date and a returnable deposit — plan weeks, not days, ahead. Parking near the entrance is limited and informal; be respectful of the local landowners whose goodwill keeps access open at all."
     }
   ],
   "practicalInfo": {

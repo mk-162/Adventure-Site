@@ -10,6 +10,38 @@
   "bestSeason": "May-October",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £80 guided",
+  "topTips": [
+    "Plynlimon (Pumlumon) is trackless wilderness above the treeline — there's no defined path across the plateau, so don't attempt it in poor visibility. If Nant y Moch's car park (SN750880) is full or you want a drier line, start from Eisteddfa Gurig instead; it's less boggy underfoot.",
+    "The Elan Valley Trail is the one to pick if you want scenery without the suffering — it's mostly flat, follows the old Birmingham Corporation Railway line, and you can hire a bike (including e-bikes) at the Bike Hub next to the Visitor Centre to cover the full 29km one-way stretch.",
+    "Devil's Bridge gets busy fast in summer — go first thing in the morning or late afternoon. The main car park has a 4-hour limit; if it's full, the Woodlands Caravan Park overflow and the Hafod Hotel car park are both close by.",
+    "Hafren Forest's short waterfall loop is family-friendly, but the full Source of the Severn extension is a genuinely strenuous 13km out past the forest boundary — know which one you're signing up for before you set off.",
+    "Book accommodation early if you're tackling Glyndŵr's Way in sections — beds along the route are limited, and a baggage transfer or taxi service (Peter's Taxis in Machynlleth covers the central Wales section) will save your legs for the walking.",
+    "None of the remote routes — Plynlimon, Claerwen, the Cambrian Way section — have facilities on route. Carry all your water and food, and don't count on a mobile signal once you're off the valley roads.",
+    "Waterproof boots aren't optional. Several of these trails (Plynlimon, Hafren Forest, the reservoir circuits) turn boggy or muddy after rain, which in Mid Wales is often.",
+    "If you're driving up for the red kites, Bwlch Nant yr Arian near Devil's Bridge feeds them daily (2pm winter, 3pm summer) and it's free to watch — worth combining with a Devil's Bridge or Rheidol Valley walk since it's on the same road."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start with the Elan Valley Trail or Strata Florida Abbey walk before attempting anything in the Cambrian Mountains proper — both are easy, well-marked, and give you a feel for the landscape without the navigation risk.",
+      "Pack a map and compass (or a loaded GPS) even for the 'easy' walks — Mid Wales trails are far less waymarked than Snowdonia or the Beacons, and mobile signal disappears fast once you're off the main roads.",
+      "Tell someone your planned route and expected return time before setting off on anything beyond the Elan Valley or Devil's Bridge — this is genuinely remote country and mountain rescue call-outs here are not quick.",
+      "Bring full waterproofs regardless of the forecast. Mid Wales weather changes fast, and several trails (Plynlimon, Hafren Forest, Claerwen) turn boggy underfoot after rain.",
+      "Check both the Met Office and the Mountain Weather Information Service (MWIS) before any hike above the valley floor — general forecasts don't capture what's happening on exposed ridges.",
+      "If you're new to the area, base yourself in Aberystwyth, Machynlleth, or Rhayader — all three sit close to multiple trailheads and have proper gear shops and pubs for after.",
+      "Don't attempt Plynlimon, the Cambrian Way section, or the Claerwen Reservoir Circuit as your first Mid Wales hike — they're serious, remote routes that assume confident navigation.",
+      "Buy or download the relevant OS Explorer map before you go — phone signal and battery can't be relied on as your only navigation tool out here."
+    ],
+    "regular": [
+      "Skip Nant y Moch on a wet weekend and use the Eisteddfa Gurig approach to Plynlimon instead — it avoids the worst of the boggy ground near the reservoir car park.",
+      "Weekday mornings are the best time to do Devil's Bridge — by late morning on a summer weekend the car park fills and the falls path gets genuinely crowded.",
+      "Hire a bike rather than walk the full Elan Valley Trail — at nearly 29km one-way, it's a much better ride than a there-and-back walk, and the Bike Hub at the Visitor Centre has e-bikes if you want to cover more ground without the climb.",
+      "Hike Glyndŵr's Way in sections over multiple weekends rather than committing to the full multi-day route in one go — it lets you pick the best weather windows and avoid booking scarce trail-side accommodation months out.",
+      "The Claerwen Reservoir Circuit is one of the quietest serious hikes in the region — if Elan Valley's main trail feels too busy, this is the escape, but only with solid navigation skills since it's unmarked in places.",
+      "September is the sweet spot for the Cambrian Way section and Plynlimon — the bracken has died back, biting insects are gone, and the ground has usually dried out from the summer.",
+      "Combine Bwlch Nant yr Arian's red kite feeding (2pm winter, 3pm summer, free) with a Devil's Bridge or Rheidol Valley walk — they're a short drive apart on the same road out of Aberystwyth.",
+      "For a proper pub finish, Y Ffarmers in Llanfihangel-y-Creuddyn is worth the detour off the Devil's Bridge or Rheidol routes — it's the locals' choice over the more tourist-facing options nearer the falls."
+    ]
+  },
   "spots": [
     {
       "name": "Plynlimon Summit via the Severn Way",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "Free (parking free)",
       "operatorSlug": null,
-      "insiderTip": "The path can get extremely boggy after rain. Check the forecast and pack gaiters. An alternative (slightly longer) route up Plynlimon is from Eisteddfa Gurig, which is less boggy."
+      "insiderTip": "The path can get extremely boggy after rain. Check the forecast and pack gaiters. An alternative (slightly longer) route up Plynlimon is from Eisteddfa Gurig, which is less boggy.",
+      "howToDoIt": "From the Nant y Moch car park, follow the track and open hillside up onto the Plynlimon plateau, aiming for the summit trig point via Pen Pumlumon Arwystli. Above the treeline there's no defined path across the plateau, so this is a walk that demands proper navigation, not just a trail to follow — take a map and compass or GPS and know how to use them in poor visibility. Expect several water crossings on the approach; avoid these at times of high water. Budget the full 6-7 hours and turn back early if cloud closes in, since the summit plateau has few landmarks to relocate by.",
+      "access": "Open access land under the right to roam, but the ground is genuinely boggy and criss-crossed by streams — poles help for testing ground ahead. The Nant y Moch car park is reached via a long single-track road off the A44; it's free but limited, so arrive early on weekends. The alternative Eisteddfa Gurig start avoids the worst of the bog nearer the reservoir.",
+      "routeDescription": "A there-and-back ascent from Nant y Moch Reservoir onto the open moorland of the Cambrian Mountains, climbing steadily to the summit ridge before reaching Plynlimon's trig point at 752m — the source of both the Severn and the Wye. The final approach is exposed and featureless, with wide views across mid Wales on a clear day but total disorientation risk in mist."
     },
     {
       "name": "Elan Valley Trail",
@@ -51,7 +86,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "Hire a bike at the Elan Valley Visitor Centre to cover more ground. Stop for refreshments at the Pen y Garreg Dam Tea Room."
+      "insiderTip": "Hire a bike at the Elan Valley Visitor Centre to cover more ground. Stop for refreshments at the Pen y Garreg Dam Tea Room.",
+      "howToDoIt": "The trail follows the line of the old Birmingham Corporation Railway, so gradients are gentle throughout and it's suitable for most fitness levels. Walk any section you like out-and-back from the Visitor Centre, or, since the full trail runs close to 29km one-way, hire a bike from the Bike Hub next to the Visitor Centre (adult, child, e-bike and trailer options available, ID required) to cover the whole route and link up the reservoirs and dams in a day.",
+      "access": "Largely traffic-free, running on old railway trackbed and reservoir access roads, so no permits or rights-of-way concerns. Multiple car parks along the valley (some chargeable) let you join or leave the trail at different points, making it flexible for shorter family sections.",
+      "routeDescription": "A gentle, largely flat trail tracing the chain of Elan Valley reservoirs from the Visitor Centre past the Victorian dams at Caban Coch, Garreg Ddu, Pen y Garreg and Craig Goch. Surfaces are good throughout (railway trackbed and quiet access roads), with regular viewpoints over the dams and water, making it easy to turn any section into a there-and-back walk of whatever length suits."
     },
     {
       "name": "Devil's Bridge Falls Walk",
@@ -72,7 +110,10 @@
       },
       "estimatedCost": "£5 (parking and entry fee)",
       "operatorSlug": null,
-      "insiderTip": "Visit early in the morning or late in the afternoon to avoid the crowds. The Hafod Hotel nearby is a great place for a post-walk drink with a view."
+      "insiderTip": "Visit early in the morning or late in the afternoon to avoid the crowds. The Hafod Hotel nearby is a great place for a post-walk drink with a view.",
+      "howToDoIt": "From the car park, pass through the turnstile (entry fee applies) and descend the steep, stepped path down into the gorge to view the three bridges stacked on top of one another and the punchbowl waterfall below. Expect uneven stone steps, some handrails, and a proper climb back up — this is a short walk but not a flat one, so allow the full 1-2 hours and take it slowly on wet stone.",
+      "access": "Entry to the falls themselves requires paying the turnstile fee; the surrounding woodland paths are open access. Parking is free in the main car park but limited to 4 hours with no overnight parking — if it's full, the Woodlands Caravan Park overflow (200m up the road) or the Hafod Hotel car park are the backup options.",
+      "routeDescription": "A short, steep loop down through ancient oak woodland into the gorge below Devil's Bridge, taking in views of the three bridges (medieval, 18th-century, and modern, stacked on top of each other) and the cascading falls of the Mynach and Rheidol rivers. Steps and some scrambling on the descent and return climb; not a walk for anyone unsteady on uneven stone."
     },
     {
       "name": "Glyndwr's Way Section: Machynlleth to Llanidloes",
@@ -93,7 +134,10 @@
       },
       "estimatedCost": "Free (transport costs vary)",
       "operatorSlug": null,
-      "insiderTip": "Book accommodation in advance, especially during peak season. Consider using a baggage transfer service to lighten your load."
+      "insiderTip": "Book accommodation in advance, especially during peak season. Consider using a baggage transfer service to lighten your load.",
+      "howToDoIt": "This section of Glyndŵr's Way is best tackled as a two-day linear walk with an overnight stop, rather than attempted as a single long day. Waymarking on the national trail is generally good, but the terrain switches between forest, moorland and farmland, so pace yourself for the climbs and check the day's forecast each morning. Since it's point-to-point, sort your return transport before you start — Peter's Taxis in Machynlleth covers transfers for the central Wales section of the trail.",
+      "access": "A National Trail, so rights of way are established throughout, but as a linear route you need a plan to get back to your start point — arrange a taxi transfer, use local buses where they run, or park a second car at the finish. A baggage transfer service will collect your bag each morning and have it waiting at that night's accommodation, which is worth the cost on a two-day itinerary.",
+      "routeDescription": "A point-to-point section of the 217km Glyndŵr's Way National Trail, climbing out of the Dyfi Valley near Machynlleth into the Cambrian Mountains before descending towards Llanidloes. Terrain shifts between conifer forest, open moorland and farmland with stiles and gates throughout — a proper varied-terrain trail walk rather than a single mountain objective, with an overnight stop needed to break up the 30km."
     },
     {
       "name": "Strata Florida Abbey Walk",
@@ -114,7 +158,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Visit the nearby village of Pontrhydfendigaid for refreshments after your walk. The local pub offers a great atmosphere."
+      "insiderTip": "Visit the nearby village of Pontrhydfendigaid for refreshments after your walk. The local pub offers a great atmosphere.",
+      "howToDoIt": "Park at the abbey and wander the grounds at your own pace — information boards explain the ruins' history as the burial place of medieval Welsh princes and poets. Extend the walk by picking up the riverside path along the River Teifi for a longer loop; the terrain is flat and easy throughout, making it a good option to pair with a more strenuous hike earlier in the day.",
+      "access": "Free parking directly at the abbey; the abbey grounds and riverside extension are open access with no permits needed. Level, easy underfoot throughout, suitable for most abilities.",
+      "routeDescription": "A short, flat walk around the ruins of Strata Florida Abbey, with the option to extend along the River Teifi for a longer riverside loop through quiet countryside. Easy underfoot and gentle in pace — a good low-key finish to a day that started with something more demanding, like Claerwen or Plynlimon."
     },
     {
       "name": "Hafren Forest Waterfall Trail",
@@ -135,7 +182,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Wear waterproof footwear, as the trail can be muddy, especially after rain. Keep an eye out for wildlife, including red kites."
+      "insiderTip": "Wear waterproof footwear, as the trail can be muddy, especially after rain. Keep an eye out for wildlife, including red kites.",
+      "howToDoIt": "Start from the main Rhyd-y-benwch car park and follow the waymarked circular trail through the forest, taking in Severn-Break-its-Neck waterfall via a riverside path with a viewing platform over the cascade. Stick to the shorter waterfall loop for a family-friendly outing, or extend onto the Source of the Severn Trail (around 13km, strenuous) if you want to push on to the actual source of the river on the slopes of Plynlimon — know which one you're setting out to do before you leave the car park, as they diverge significantly in length and difficulty.",
+      "access": "Managed by Natural Resources Wales; the main circular trail is waymarked from the Rhyd-y-benwch car park and open to all. The longer Source of the Severn extension leaves the forest boundary onto open moorland and is unwaymarked beyond that point, requiring proper navigation.",
+      "routeDescription": "A waymarked circular route through conifer forest along the young River Severn, passing the Severn-Break-its-Neck waterfall and a riverside viewing platform. The short loop is well-surfaced and family-friendly; the extended Source of the Severn option continues well beyond the forest to a standing stone and old mine workings before reaching the river's actual source in peat bog on Plynlimon's slopes — a much longer and rougher undertaking."
     },
     {
       "name": "Claerwen Reservoir Circuit",
@@ -156,7 +206,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Bring plenty of water and snacks, as there are no facilities on the route. Be prepared for changeable weather conditions."
+      "insiderTip": "Bring plenty of water and snacks, as there are no facilities on the route. Be prepared for changeable weather conditions.",
+      "howToDoIt": "This is a long circuit around the reservoir's perimeter with no waymarking to rely on for large stretches, so plan the route on a map beforehand and carry a GPS or compass as backup. Start early given the 6-8 hour duration, and treat it as a full mountain day: pack all your food and water, layer up, and check the forecast for the whole window, not just the start time.",
+      "access": "Open access land with informal paths rather than a maintained trail — navigation skills are effectively required, not optional. Parking is limited to scattered points around the reservoir; be considerate of local residents when choosing where to leave a car, and expect no facilities anywhere on the route.",
+      "routeDescription": "A long, remote circuit tracing the shoreline of Claerwen Reservoir, one of the quietest and most isolated of the Elan Valley reservoirs. Expect rough, largely pathless walking across open moorland with a strong sense of solitude — this is one of the least-visited routes in this guide, better suited to confident, self-sufficient hikers than a first outing in the area."
     },
     {
       "name": "Cambrian Way Section: Cwmystwyth to Pontarfynach",
@@ -177,7 +230,10 @@
       },
       "estimatedCost": "Free (transport costs vary)",
       "operatorSlug": null,
-      "insiderTip": "This is a serious hike. Check the weather forecast thoroughly before setting off, and be prepared for rapid changes. Carry a map, compass, and GPS, and know how to use them."
+      "insiderTip": "This is a serious hike. Check the weather forecast thoroughly before setting off, and be prepared for rapid changes. Carry a map, compass, and GPS, and know how to use them.",
+      "howToDoIt": "As a linear point-to-point section of the Cambrian Way, you need transport sorted at both ends before setting off — park at one village and arrange a lift, taxi, or second car at the other. This is the most demanding route in this guide: exposed ridgelines, steep ascents and descents, and terrain that punishes poor route-finding. Treat it as a full mountain day, start early, and be willing to turn back if the weather closes in.",
+      "access": "Open access land with sections of established path and sections of rougher, less-defined ground on the ridges — this is not a route to rely on waymarking for. Parking is informal at both Cwmystwyth and Pontarfynach (Devil's Bridge); arranging onward transport between the two is on you.",
+      "routeDescription": "A rugged, high-level section of the Cambrian Way linking Cwmystwyth to Pontarfynach (Devil's Bridge), crossing exposed ridges with steep, sustained ascents and descents and far-reaching views across the Cambrian Mountains when the weather allows. This is serious mountain terrain rather than a waymarked trail walk — reserved for fit, experienced hikers with confident navigation skills and a healthy respect for how fast conditions can change up there."
     }
   ],
   "practicalInfo": {

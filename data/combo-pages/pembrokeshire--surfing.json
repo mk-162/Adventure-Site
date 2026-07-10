@@ -10,6 +10,38 @@
   "bestSeason": "September - November",
   "difficultyRange": "Beginner to Expert",
   "priceRange": "Free - £60 guided",
+  "topTips": [
+    "Freshwater West is not a beginner beach — the RNLI has flagged it for large breaking waves, rip currents, submerged rocks and sandbanks, and lifeguards only cover it from early June to September. If you're new to surfing, learn at Newgale or Whitesands Bay instead.",
+    "Skip the main Freshwater West car park queue by parking at Gupton Farm (National Trust) and walking across the dunes — quieter, and a proper walk in through the marram grass.",
+    "Check tide times before any Pembrokeshire session, not just at Freshwater West. Newgale and Manorbier both surf differently through the tide, and Marloes Sands disappears completely at high water, so plan your walk in and out around it.",
+    "Offshore wind is easterly here — that's the wind direction to look for on the forecast regardless of which beach you're heading to, since it holds the wave faces up rather than blowing them flat.",
+    "Lifeguard cover is seasonal and beach-specific (broadly June–September at Newgale and Whitesands). Outside those months and at unpatrolled beaches like Marloes Sands and West Angle Bay, you're on your own — go with a buddy and tell someone your plan.",
+    "A 5mm wetsuit is the sensible year-round choice; Pembrokeshire's Atlantic water stays cold even when the air is warm in July and August.",
+    "Bench Bar at Newgale and the café at Manorbier are made for the post-surf comedown — but Porthgain (The Sloop Inn, The Shed) is worth the drive if you're surfing the St Davids peninsula and want a proper sit-down meal.",
+    "West Angle Bay is your fallback when it's blowing hard everywhere else — it's the most wind-sheltered spot on this list, so check it first on a stormy forecast."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start at Newgale or Whitesands Bay, not Freshwater West. Both have RNLI lifeguard cover in summer, more forgiving beach breaks, and surf schools on hand if you want a lesson rather than going it alone.",
+      "Hire your kit before you commit to buying — Newsurf at Newgale and Ma Simes Surf Hut in St Davids both do board and wetsuit hire, so you can try before you invest.",
+      "Book a lesson if it's your first time in the water. A 2-hour group lesson will teach you to read rips and pick a safe peak, which matters more in Pembrokeshire's exposed swell than in a sheltered spot.",
+      "Always check the flags and ask the lifeguards where's safest before paddling out — rip currents are a real hazard here, especially around Freshwater West and on bigger swells.",
+      "Bring a 5mm wetsuit, boots, and a warm layer for afterwards — dry robes are almost standard kit on Pembrokeshire beaches for a reason.",
+      "Don't surf alone on your first few sessions. Pick a buddy, and if you're heading somewhere without lifeguards (Marloes Sands, West Angle Bay), make sure someone else knows your plan.",
+      "Arrive early for parking, especially at Freshwater West and Whitesands Bay in summer — both car parks fill fast and there's little overflow.",
+      "Treat Freshwater West as a spectator beach until you're confident. Watch from the dunes, learn the line-up, and come back once you've built experience elsewhere."
+    ],
+    "regular": [
+      "Autumn (September–November) is when Pembrokeshire really turns on — more consistent groundswell, fewer people in the water, and the summer crowds have gone home.",
+      "Weekday dawn patrol at Newgale or Whitesands beats any weekend session — same swell, a fraction of the people in the lineup.",
+      "When Freshwater West and Newgale are maxed out and closing out, Manorbier and Broadhaven South tuck in behind headlands and hold a much friendlier shape.",
+      "West Angle Bay is the spot to check first on a big, blown-out day — it's sheltered from the prevailing south-westerlies and often surfable when everywhere else is unrideable.",
+      "Marloes Sands rewards patience — it's fickle and the swell window is narrow, but a 15-minute walk from the National Trust car park keeps the crowds down even when it's firing.",
+      "Fancy Freshwater West without the car park scrum? Park at Gupton Farm and walk in across the dunes — a five-minute stroll most visitors never bother with.",
+      "Mid-tide is the sweet spot at Manorbier; low tide there can go flat and high tide gets messy against the cliffs, so time your session around the middle of the tide.",
+      "If you're chasing solitude over facilities, Marloes Sands and West Angle Bay are the two spots on this list least likely to have another surfer in sight — bring your own everything, though, as neither has much in the way of amenities."
+    ]
+  },
   "spots": [
     {
       "name": "Freshwater West",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "Free (parking donations encouraged)",
       "operatorSlug": null,
-      "insiderTip": "Park at Gupton Farm (National Trust) and walk across the dunes to avoid the crowded car park and enjoy a lovely walk. Check the tide tables before you go; low tide can expose a lot of rocks."
+      "insiderTip": "Park at Gupton Farm (National Trust) and walk across the dunes to avoid the crowded car park and enjoy a lovely walk. Check the tide tables before you go; low tide can expose a lot of rocks.",
+      "howToDoIt": "This is a paddle-out-and-read-the-peaks beach break, not a spot to just wander into. Watch from the dunes first to spot the rip channels and where the sets are peaking, pick your entry point accordingly, and expect a workout getting out through the shorebreak. The waves are powerful, hollow, and fast — this rewards experienced surfers who can duck-dive quickly and commit to steep drops. It's not a place to learn the basics.",
+      "access": "Two free National Trust car parks (main car park and a smaller one further along); both fill quickly on any day with swell. RNLI lifeguards patrol in summer only (roughly early June to September) — outside those months you're surfing entirely at your own risk. Direct beach access from both car parks; the walk-in from Gupton Farm across the dunes is longer but avoids the crowds.",
+      "routeDescription": "A wide, west-facing beach break backed by dunes, with peaks shifting along its length depending on sandbank position and swell direction. The main bank sits roughly in front of the central car park, throwing up fast, hollow lefts and rights on the right swell; further along towards Gupton the beach mellows slightly but rips are still a serious hazard. Best on a moderate groundswell with light offshore (easterly) wind."
     },
     {
       "name": "Newgale",
@@ -51,7 +86,10 @@
       },
       "estimatedCost": "Free (parking charges apply)",
       "operatorSlug": null,
-      "insiderTip": "Check the wind direction – offshore (easterly) winds are ideal. The Bench Bar is THE place for post-surf beers, right on the beach."
+      "insiderTip": "Check the wind direction – offshore (easterly) winds are ideal. The Bench Bar is THE place for post-surf beers, right on the beach.",
+      "howToDoIt": "Newgale's 2-mile length means there's almost always a peak to suit your level — walk the beach before paddling out to find a bank that matches your ability, rather than surfing straight off the car park. Beginners should stick to the flagged, lifeguarded sections in summer and take a lesson if it's your first time; the beach break here is genuinely forgiving compared to Freshwater West, with plenty of room to spread out even on a busy day.",
+      "access": "Pay-and-display council car parks along the 2-mile beach (around £6 for all-day parking in season), plus roadside parking — three car parks in total. RNLI lifeguards patrol two flagged sections from roughly the start of June to the end of September. Direct, flat beach access from all car parks — the easiest entry point on this list.",
+      "routeDescription": "A long, gently shelving sand-and-shingle beach break with multiple peaks strung along its length — the northern end tends to be more exposed and punchier, the southern end (near the surf shop and Bench Bar) more sheltered and beginner-friendly. Works across most tide states, which is part of why it's the go-to learning beach in Pembrokeshire."
     },
     {
       "name": "Manorbier",
@@ -72,7 +110,10 @@
       },
       "estimatedCost": "Free (parking charges may apply)",
       "operatorSlug": null,
-      "insiderTip": "Check the tide times – the best surfing is usually around mid-tide. The beach cafe serves great coffee and cakes."
+      "insiderTip": "Check the tide times – the best surfing is usually around mid-tide. The beach cafe serves great coffee and cakes.",
+      "howToDoIt": "Manorbier suits surfers who want to build confidence in smaller, more predictable waves. Time your session for mid-tide rather than arriving whenever suits — low tide can go flat here, and the surf gets messy against the cliffs as the tide pushes in towards high water. It's a straightforward paddle out from the sand with no significant rip hazards in normal conditions, making it a good spot to practise duck-dives and wave selection.",
+      "access": "Small free car park on the hillside above the beach, plus a larger pay-and-display car park with toilets behind the beach — the free car park fills first. No RNLI lifeguard cover, so check conditions yourself. Short, easy walk down to the sand from either car park.",
+      "routeDescription": "A sheltered, cliff-flanked bay beneath Manorbier Castle, with a sandy beach break that softens noticeably compared to the exposed spots further west. Left-handers tend to show up over the sandy sections at mid-to-low tide; the cliffs on either side shelter the swell as the tide fills in, so surf quality is best in the couple of hours either side of mid-tide."
     },
     {
       "name": "Whitesands Bay",
@@ -93,7 +134,10 @@
       },
       "estimatedCost": "Free (parking charges apply)",
       "operatorSlug": null,
-      "insiderTip": "Walk up Carn Llidi for stunning views of the coastline after your surf. Check out Ma Simes Surf Hut in St Davids for gear."
+      "insiderTip": "Walk up Carn Llidi for stunning views of the coastline after your surf. Check out Ma Simes Surf Hut in St Davids for gear.",
+      "howToDoIt": "Whitesands is one of the most consistent beginner-to-intermediate waves in Pembrokeshire, breaking reliably across a range of swell and tide combinations thanks to the shelter Carn Llidi provides from some wind directions. Paddle out where the lifeguards have flagged the surfing zone in summer, stay between the flags, and expect company — this is one of the busiest beaches on the peninsula, so patience and good wave etiquette matter more here than almost anywhere else on this list.",
+      "access": "Large pay-and-display car park directly behind the beach — arrives full by mid-morning in summer, so early starts pay off. RNLI lifeguards patrol daily through the main season (broadly April/May to October, with specific hours posted at the beach). Flat, direct access onto the sand from the car park.",
+      "routeDescription": "A wide, north-facing sandy bay running up towards St Davids Head, with Carn Llidi's rocky bulk providing some shelter from onshore winds. The main peaks sit in the centre of the bay in front of the car park; walk further along towards the rocks at either end for a bit more room away from the crowds. Rideable across most tides, which is a big part of its appeal for less experienced surfers."
     },
     {
       "name": "Broadhaven South",
@@ -114,7 +158,10 @@
       },
       "estimatedCost": "Free (parking charges apply)",
       "operatorSlug": null,
-      "insiderTip": "Explore the Bosherston Lily Ponds after your surf – a beautiful and tranquil spot. The walk from the car park is beautiful too."
+      "insiderTip": "Explore the Bosherston Lily Ponds after your surf – a beautiful and tranquil spot. The walk from the car park is beautiful too.",
+      "howToDoIt": "Broadhaven South offers a gentler, more contained wave than the exposed spots further north, making it a good step up for improvers who've outgrown the flattest beginner beaches but aren't ready for Freshwater West. Read the peak from the dunes before paddling out — the headlands either side shape the swell into smaller, more manageable faces than the open coast gets.",
+      "access": "National Trust car park at Stackpole Quay, roughly a 20-30 minute walk to the beach via Barafundle Bay or the coast path — there's no direct car park at Broadhaven South itself, so budget time for the walk in with your board. Part of the walk in and beach itself sits within the Castlemartin Range danger area; the Coast Path here is normally open at weekends but check current MOD range firing times before you go, as sections close on weekdays.",
+      "routeDescription": "A curved, dune-backed beach within the Stackpole Estate, framed by limestone headlands and within sight of the Elegug Stacks. The bay's shape shelters it from some of the full Atlantic exposure that batters Freshwater West, producing smaller, more rideable waves that suit intermediate surfers. Combine with the walk over from Stackpole Quay past Barafundle Bay for one of the most scenic approaches to any break in Wales."
     },
     {
       "name": "Marloes Sands",
@@ -135,7 +182,10 @@
       },
       "estimatedCost": "Free (parking charges apply)",
       "operatorSlug": null,
-      "insiderTip": "Check the forecast carefully as it can be fickle. The walk to the beach is part of the experience, but be prepared for mud! This is a great place to see seals."
+      "insiderTip": "Check the forecast carefully as it can be fickle. The walk to the beach is part of the experience, but be prepared for mud! This is a great place to see seals.",
+      "howToDoIt": "Marloes rewards surfers who check the forecast properly rather than just turning up — the wave here is inconsistent, so look for a clean groundswell rather than assuming it'll be on. Once it's working, expect a wilder, less crowded session than anywhere else on this list, but plan your session around the tide: the beach vanishes underwater at high tide, so know your window before you paddle out and don't get caught having to swim for the rocks.",
+      "access": "National Trust car park at the end of the road into Marloes village, then a signed footpath of around 0.6 miles down a gravelled bridle track to the beach — roughly 15 minutes each way, longer carrying a board, and the track can be muddy after rain. No lifeguard cover and no direct vehicle access to the sand. Check tide tables before you go; the beach is completely covered at high tide.",
+      "routeDescription": "A remote, mile-long stretch of golden sand at low tide, flanked by dramatic, layered cliffs and reached only on foot. The wave here is a fickle beach break — needs the right swell direction and size to work well — but on its day delivers a genuinely wild surf far from any crowd, with seals a regular sight in the water and along the rocks."
     },
     {
       "name": "West Angle Bay",
@@ -156,7 +206,10 @@
       },
       "estimatedCost": "Free (parking charges may apply)",
       "operatorSlug": null,
-      "insiderTip": "The cafe at the beach serves great food and drinks. This bay is more protected from prevailing winds so a good option if it's howling elsewhere. This is a very beautiful spot."
+      "insiderTip": "The cafe at the beach serves great food and drinks. This bay is more protected from prevailing winds so a good option if it's howling elsewhere. This is a very beautiful spot.",
+      "howToDoIt": "This is the spot to check first when the forecast looks stormy and blown-out everywhere else — the bay's shelter from prevailing south-westerly winds means it can hold a clean, surfable shape when Freshwater West and Newgale are a mess. It's a mellow, small-scale wave, well suited to beginners and improvers practising in a lower-pressure environment, though don't expect much size or power even on a big swell.",
+      "access": "Small free car park right next to the beach — limited spaces, so it fills quickly on a good-weather weekend. No lifeguard cover, so check conditions and be self-sufficient. Direct, short walk onto the sand from the car park.",
+      "routeDescription": "A small, sheltered sandy bay near Pembroke with views out to Dale across the Milford Haven waterway. The headlands wrapping the bay cut down the swell size considerably compared to the open coast, producing soft, forgiving waves — a reliable backup rather than a destination in its own right, best used when wind or swell direction rules out the more exposed beaches."
     }
   ],
   "practicalInfo": {

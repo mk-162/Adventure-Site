@@ -10,6 +10,38 @@
   "bestSeason": "April-October",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £80 guided",
+  "topTips": [
+    "Book your BikePark Wales uplift pass online before you travel — it gets busy on weekends and school holidays, and turning up without a booking risks disappointment.",
+    "The National Park is now officially known as Bannau Brycheiniog (its traditional Welsh name, readopted in 2023), so don't be thrown if you see that name on signage, maps, or the National Park Authority's website — it's the same place as the Brecon Beacons.",
+    "The Gap lives or dies on the weather. It's high, open moorland with no shelter, so check the forecast right up until the morning you ride and be ready to bail to a lower-level route if it turns — GPS can be unreliable up there, so carry a map and compass as backup.",
+    "Parking is tight at several of the best spots — Storey Arms for the Gap and the village centres at Bwlch and Pontsticill all have limited free spaces. Arrive early, especially on weekends, or you'll be looking for a verge.",
+    "If you're new to the area, start at BikePark Wales or the Talybont Reservoir loop. Both are graded and forgiving; the natural trails elsewhere (the Gap, Coed Taf Fawr) are unmarked and demand real navigation and fitness.",
+    "Mud is a fact of life on the natural trails, especially Coed Taf Fawr — go after a dry spell if you can, and expect winter riding to be considerably harder going than the April-October window this guide is built around.",
+    "For a bike-shop pit stop or last-minute spares, Brecon town has two independents (Brecon Bikes and Biped Cycles) within a few hundred metres of each other on the High Street/Market Street — handy if one hasn't got what you need.",
+    "Plan your post-ride refuel before you set off — options range from the onsite BikePark Wales cafe for a quick refuel to the Star Inn at Talybont-on-Usk for a proper sit-down pint by the reservoir."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start with BikePark Wales or the Talybont Reservoir loop — both are graded or gentle, so you can get a feel for the area before tackling anything remote or unmarked.",
+      "Bring paper map and compass skills, not just a phone. Several of the best rides (the Gap, Coed Taf Fawr) rely on natural trails with limited signage, and GPS/phone signal can drop out in the valleys.",
+      "Layer up regardless of the season. The Beacons' weather changes fast, and exposed high ground like the Gap can be genuinely cold and wet even when it's warm and dry at the car park.",
+      "Book BikePark Wales uplift in advance if that's your first stop — it's the most reliable, beginner-friendly way into Brecon Beacons riding, with a shop and cafe onsite if you need gear or food.",
+      "Carry a basic repair kit (spare tube, pump, multi-tool) and know how to use it. Several trailheads (Bwlch, Pontsticill, Coed Taf Fawr) are a fair distance from the nearest bike shop.",
+      "Tell someone your route and expected return time before heading onto the Gap or Coed Taf Fawr — both are remote enough that a mechanical or injury could leave you stuck for a while.",
+      "Check car park situations before you set off — Storey Arms, Bwlch, and Pontsticill are all small and fill up fast, so have a backup plan.",
+      "Don't underestimate the Gap because it's 'only' 25km — the climbs, exposure, and hike-a-bike sections make it a serious undertaking best saved for once you've built some fitness and navigation confidence locally."
+    ],
+    "regular": [
+      "Ride the Gap early on a clear morning — the moorland gets more exposed to wind through the day, and you'll want the best possible visibility for navigation.",
+      "Hit Coed Taf Fawr after a dry spell rather than straight after rain; the natural trails there turn to proper mud fast and lose a lot of their flow.",
+      "Talybont Reservoir loop gets busy with walkers at weekends — go on a weekday morning or later evening in summer for a clearer run.",
+      "Bwlch Loop's descent back into the village is the technical crux — start early to beat both the crowds and the midday heat if you're riding in summer.",
+      "Pair a morning uplift session at BikePark Wales with an afternoon on the Garwnant skills loop or Coed Taf Fawr — they're close enough to combine into one big day without much extra driving.",
+      "Skip the obvious weekend crowds at BikePark Wales by going midweek, especially outside school holidays — same trails, far fewer people in the uplift queue.",
+      "The Taff Trail section near Brecon Canal Basin is a good low-key add-on for a rest day or when the weather rules out anything exposed — flat, scenic, and easy to combine with a stop at the Honey Cafe.",
+      "For a proper celebratory meal rather than a quick pub stop, the Felin Fach Griffin is worth the slightly longer drive out from Brecon — book ahead, it's popular."
+    ]
+  },
   "spots": [
     {
       "name": "BikePark Wales",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "£49-£59 uplift day pass",
       "operatorSlug": null,
-      "insiderTip": "Book your uplift early, especially on weekends and school holidays. Try to arrive early to make the most of your day."
+      "insiderTip": "Book your uplift early, especially on weekends and school holidays. Try to arrive early to make the most of your day.",
+      "howToDoIt": "Arrive with (or hire) a bike suited to the trail grade you're after, check in, and load onto the uplift shuttle — it does the climbing so you don't have to. Warm up on a green or blue run to get a feel for the surface and grip before working up to reds and blacks. Most riders session a trail a couple of times to nail the lines, then move on; with uplift running all day you can easily rack up 10+ descents.",
+      "access": "Access is via the main BikePark Wales entrance off the A470 near Merthyr Tydfil; you'll need a valid uplift or pedal pass to ride, checked at the base area. Parking is onsite but fills up on weekends, so book your pass and arrive with time to spare.",
+      "routeDescription": "A graded network rather than a single route — greens are smooth and forgiving with rollable berms, blues add flow and small jumps, reds bring bigger features and steeper gradients, and the blacks are full-on with drops, rock gardens, and technical lines. Trail choice is yours each lap; the uplift van drops at the same point regardless of which line you plan to ride down."
     },
     {
       "name": "The Gap",
@@ -51,7 +86,10 @@
       },
       "estimatedCost": "Free (parking)",
       "operatorSlug": null,
-      "insiderTip": "Check the weather forecast religiously. This route is very exposed and can be treacherous in bad weather. Bring a map and compass as GPS can be unreliable."
+      "insiderTip": "Check the weather forecast religiously. This route is very exposed and can be treacherous in bad weather. Bring a map and compass as GPS can be unreliable.",
+      "howToDoIt": "This is a big-mountain day out, not a casual pedal. Start early from Storey Arms, climb steadily onto the open moorland, and be prepared to push or carry your bike on the steepest, most eroded sections — hike-a-bike is part of the route, not a failure. Pace yourself on the way up so you've got the legs and concentration left for the technical, exposed descent, and build in extra time buffer in case the weather turns.",
+      "access": "The route starts from the Storey Arms outdoor centre car park on the A470, which is free but limited — arrive early, especially at weekends, as it also serves Pen y Fan walkers. There's no official waymarking on the moorland sections, so this is navigation-dependent access rather than a signed trail.",
+      "routeDescription": "A proper mountain traverse across open, exposed moorland with sustained climbing, loose and rocky descents, and at least one significant hike-a-bike section. The terrain is unmarked natural trail throughout, so route-finding is as much a part of the challenge as the riding itself, and the reward is some of the widest, most dramatic views in the Beacons on a clear day."
     },
     {
       "name": "Bwlch Loop",
@@ -72,7 +110,10 @@
       },
       "estimatedCost": "Free (parking)",
       "operatorSlug": null,
-      "insiderTip": "Start early to avoid crowds, especially on weekends. The descent back into Bwlch can be quite technical in places."
+      "insiderTip": "Start early to avoid crowds, especially on weekends. The descent back into Bwlch can be quite technical in places.",
+      "howToDoIt": "Set off from the village centre and climb through forestry onto open moorland before looping back via quiet lanes. Treat the climbs as the main effort of the ride and save some concentration for the final descent back into Bwlch, which tightens up and gets technical — this is where most incidents happen if you're tired and going too fast.",
+      "access": "Start point is free but limited parking in Bwlch village itself, so get there early on busy weekends. The loop crosses a mix of forest tracks, open access moorland, and short sections of quiet public road, so ride considerately where you're sharing lanes with traffic.",
+      "routeDescription": "A varied half-day loop that mixes forest doubletrack, open moorland singletrack, and country lane connectors. The climbs are sustained but not brutal, and the payoff is a technical, rewarding descent back into the village with good views from the high point along the way."
     },
     {
       "name": "Talybont Reservoir Loop",
@@ -93,7 +134,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "Pack a picnic and enjoy it by the reservoir. The Star Inn in Talybont-on-Usk is a great place to grab a post-ride pint."
+      "insiderTip": "Pack a picnic and enjoy it by the reservoir. The Star Inn in Talybont-on-Usk is a great place to grab a post-ride pint.",
+      "howToDoIt": "This is a relaxed, sociable loop rather than a technical challenge — set your own pace, keep an eye out for walkers on shared sections (especially at weekends), and treat it as much about the scenery and a picnic stop as the riding itself. Ideal for building confidence or bringing kids along.",
+      "access": "Start and park at the Talybont Reservoir visitor centre car park, which is pay and display. The route follows the reservoir's perimeter tracks, which are shared with walkers, so ride at a sensible pace and give way where paths narrow.",
+      "routeDescription": "A mostly flat, gently undulating loop that circles the reservoir with consistent water and mountain views throughout. Surfaces are generally good doubletrack, making this comfortably rideable on a hardtail or even a hybrid, and there's rarely anything steep or technical enough to catch out a beginner."
     },
     {
       "name": "Coed Taf Fawr",
@@ -114,7 +158,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Download a trail map before you go, as signage is limited. This area can be very remote, so ensure you have phone signal or a means of contacting help."
+      "insiderTip": "Download a trail map before you go, as signage is limited. This area can be very remote, so ensure you have phone signal or a means of contacting help.",
+      "howToDoIt": "Download a GPX track or trail map before you set off, since onsite signage is sparse and it's easy to end up on the wrong fireroad. Expect a mix of technical climbing and descending through forest, with mud a near-certainty outside a dry spell, so pick tyres and gearing accordingly and be ready to dismount on the greasier sections.",
+      "access": "Access is via several unmarked points around the forest, with limited free parking — the Pontsticill Reservoir car park is the most reliable start. Because the network is informal and largely unsignposted, this is best suited to riders comfortable navigating from a downloaded map rather than following waymarkers.",
+      "routeDescription": "An informal network of natural forest trails with variable distance and elevation depending on which lines you link together. Expect technical climbs, tight singletrack descents, and often muddy conditions underfoot, with the remoteness and lack of signage adding a genuine sense of adventure for experienced riders."
     },
     {
       "name": "Garwnant",
@@ -135,7 +182,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "Check out the cafe at the visitor centre for a post-ride refuel. The black trail is quite technical."
+      "insiderTip": "Check out the cafe at the visitor centre for a post-ride refuel. The black trail is quite technical.",
+      "howToDoIt": "Start on the skills area or blue trail to get a feel for the surfaces before stepping up to the more technical black sections. The graded trails make it easy to self-select difficulty as you go, and the visitor centre car park means you can head back for a break or to swap trails without a long ride back.",
+      "access": "Park at Garwnant Visitor Centre, which has ample pay-and-display parking. Trails are graded and signed from the centre, making this one of the more straightforward access points in the area compared to the unmarked natural trails elsewhere.",
+      "routeDescription": "A graded trail centre network running from blue through to black, plus a dedicated skills area for practising technique. The black trail is notably technical for its short length, with tight, demanding sections that reward good bike handling."
     },
     {
       "name": "Pontsticill Circular",
@@ -156,7 +206,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "The section along the reservoir can be quite exposed to the wind. The descent into Pontsticill is quite rocky."
+      "insiderTip": "The section along the reservoir can be quite exposed to the wind. The descent into Pontsticill is quite rocky.",
+      "howToDoIt": "Loop out from the village through forestry and open hillside before circling back past the reservoir. Keep some energy and concentration in reserve for the final descent into Pontsticill, which is rocky enough to catch out a tired rider, and expect the reservoir-side section to be noticeably windier and more exposed than the forest stretches.",
+      "access": "Start and park in Pontsticill village, where free parking is limited — this is a small village, so arrive early or expect to look for street parking further out on busy days.",
+      "routeDescription": "A varied circular route combining forestry track, open hillside, and a stretch along the exposed reservoir edge, finishing with a rocky, technical descent back into the village. Good views across the Beacons from the higher sections make the exposed reservoir stretch worthwhile despite the wind."
     },
     {
       "name": "Taff Trail (Section in Brecon Beacons)",
@@ -177,7 +230,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Stop for refreshments in one of the many villages along the route. The section near Brecon Canal Basin is particularly scenic."
+      "insiderTip": "Stop for refreshments in one of the many villages along the route. The section near Brecon Canal Basin is particularly scenic.",
+      "howToDoIt": "This is an easy, traffic-free option for a recovery day, a family outing, or simply linking into other trails — join and leave at any point along the canal path or former railway line, and treat village stops as natural break points for food or drink rather than pushing straight through.",
+      "access": "Multiple free parking points along the trail, with the Brecon Canal Basin being the most convenient and scenic starting point. As a shared-use, mostly traffic-free path, it's accessible to a wide range of riders and doesn't require the navigation skills needed for the area's natural trails.",
+      "routeDescription": "A flat, easy-going route following canal towpath and former railway trackbed, linking villages through the southern Beacons. Ideal for stringing together a relaxed day with cafe stops, or as a gentle warm-up or cool-down ride either side of a more demanding trail."
     }
   ],
   "practicalInfo": {

@@ -10,6 +10,38 @@
   "bestSeason": "May-September",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £80 guided",
+  "topTips": [
+    "Tide times rule everything here. The Swellies (Menai Strait, between the two bridges) can run at up to 8 knots at springs — paddle it within an hour either side of slack water, not local high or low water at Menai Bridge, which is a different thing entirely. Get a proper slack-water table before you go.",
+    "South Stack's tidal race is no place to learn — it forms off the underwater spur west of the lighthouse, has no eddies, and pushes paddlers straight out to sea on the ebb. Check the sea state forecast, not just the weather forecast, and only go with the skills (or the guide) to handle it.",
+    "Puffin season is May to July, but landing on Puffin Island itself is prohibited during nesting — view the colonies from the water only, and time your crossing from Penmon Point around slack tide.",
+    "Parking fills fast at the popular spots (South Stack, Trearddur Bay, Rhoscolyn) in summer — arrive early or you'll be paying for a space a long walk from the water.",
+    "Trearddur Bay's main beach has two slipways at its northern end — one for public launching, one reserved for the RNLI inshore lifeboats, so launch from the public one and keep it clear.",
+    "Llanddwyn Island off Newborough Beach is tidal — it's only accessible on foot at low water and can cut off for an hour or two either side of high tide, so if you're combining a paddle with a walk out to the island, plan around the tide table, not the clock.",
+    "Anglesey's coastline is genuinely exposed — westerly and southwesterly winds pick up fast and turn a calm bay into a washing machine. Sheltered doesn't mean safe in all conditions; check wind direction as carefully as tide times.",
+    "If you're new to sea kayaking, start at Aberffraw Estuary, Church Bay or a calm-day Trearddur Bay paddle before even thinking about South Stack or Puffin Island — the gap in difficulty between the easy spots and the exposed ones is bigger than it looks on a map."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Book a guided trip for your first Anglesey paddle, especially anywhere near South Stack or Puffin Island — providers like Anglesey Adventures know the tidal windows and will read conditions you won't yet recognise.",
+      "Always wear a buoyancy aid, even on the calmest-looking bay — Anglesey's weather and sea state can change faster than you'd expect from the shore.",
+      "Check both the weather forecast and a dedicated sea state / swell forecast before you go. A fine, sunny day can still mean unpaddleable conditions offshore.",
+      "Tell someone your route and expected return time before you launch, and carry a means of calling for help — in an emergency, dial 999 and ask for the Coastguard.",
+      "Start with the sheltered, easy spots — Aberffraw Estuary, Church Bay, or Trearddur Bay in calm conditions — before attempting anything exposed or tidal.",
+      "Hire gear locally rather than travelling with your own if this is a one-off trip; Anglesey Adventures and Plas Menai both offer instruction alongside hire, which is worth the extra over a bare rental.",
+      "Bring more warm layers than you think you need — thermal base layers matter even in summer once you're wet and exposed to the wind.",
+      "Don't attempt the Menai Strait Swellies, South Stack, or a Puffin Island crossing as a first outing — these are experienced-paddler routes with real tidal hazards."
+    ],
+    "regular": [
+      "Time the Swellies for slack water and you get a totally different, calm passage under both bridges — miss the window at springs and you're in genuine white water with whirlpools.",
+      "Weekday mornings at South Stack and Trearddur Bay mean you can actually get a parking space — the RSPB car park at South Stack is routinely full by mid-morning in summer.",
+      "Puffin season (May-July) draws crowds to Penmon Point — if you just want the birdlife without the crossing crowds, go early morning or scope conditions from Trwyn Du first.",
+      "Aberffraw and Church Bay are good shoulder-season options (April/October) when the more exposed spots are too rough — sheltered water holds up better outside peak summer.",
+      "Rhoscolyn to Church Bay is a fine route to build sea-conditions experience on a moderate day before stepping up to South Stack — similar exposure to westerly swell, lower consequences.",
+      "If South Stack is blown out, Newborough Beach with a low-tide detour past Llanddwyn Island is a solid backup — flatter water, still scenic, and the forest walk afterwards is a bonus.",
+      "Neap tides (smaller tidal range, roughly weekly) make the Swellies and other tidal pinch-points far more forgiving than spring tides — worth planning trips around the neap window if you have flexibility.",
+      "Locals rate autumn for South Stack — the summer crowds thin out at the RSPB centre, and settled high-pressure spells can give you flat, clear water around the lighthouse that's rare in peak season."
+    ]
+  },
   "spots": [
     {
       "name": "Menai Strait (Swelly Rocks to Menai Bridge)",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "Free (parking £3-5) or £50pp guided",
       "operatorSlug": null,
-      "insiderTip": "Paddle at slack tide for a more relaxed experience. Stop at the Gazelle Hotel in Menai Bridge for a post-paddle pint with a view."
+      "insiderTip": "Paddle at slack tide for a more relaxed experience. Stop at the Gazelle Hotel in Menai Bridge for a post-paddle pint with a view.",
+      "howToDoIt": "Launch from Church Island or the slipway near Menai Bridge town and paddle the Strait towards the Swellies, the narrow, rock-strewn stretch between the Britannia and Menai Suspension Bridges. The line through requires reading the water — pick your channel between the exposed rocks and commit, rather than hesitating mid-current. Outside of the Swellies section itself, this is a straightforward flatwater paddle suitable for anyone with basic boat control.",
+      "routeDescription": "From Church Island, head under the Menai Suspension Bridge first — a good warm-up stretch of open water with mostly gentle current. The Swellies section proper starts as you approach Britannia Bridge, where the channel narrows and the tide accelerates around exposed rocks (Swelly Rocks among them). At slack water this is a scenic, manageable paddle; at mid-tide on springs it becomes standing waves, whirlpools, and boils that have caught out unprepared paddlers.",
+      "access": "Slack water at the Swellies falls at a different time to local high or low water at Menai Bridge — roughly two hours before HW Liverpool for high water slack, and around four hours after for low water slack. Always work from a slack-water table for the Swellies specifically, not a generic tide table. Public parking and slipway access are available in Menai Bridge town."
     },
     {
       "name": "South Stack (Circular Route)",
@@ -51,7 +86,10 @@
       },
       "estimatedCost": "Free (parking £5-7) or £80pp guided",
       "operatorSlug": "anglesey-adventures",
-      "insiderTip": "Check the sea state forecast (not just the weather forecast) before setting out. The wind-against-tide effect can create very challenging conditions."
+      "insiderTip": "Check the sea state forecast (not just the weather forecast) before setting out. The wind-against-tide effect can create very challenging conditions.",
+      "howToDoIt": "This is a full sea-kayaking day, not a casual paddle. Launch and work the circuit around South Stack under guidance or with a group of similarly experienced paddlers, allowing plenty of margin for the tidal race off the underwater spur west of the lighthouse. Strong rescue skills, a solid roll, and comfort in confused, breaking water are prerequisites — this is exactly the kind of route where a guided trip with a local operator earns its price.",
+      "routeDescription": "The circuit runs beneath South Stack's towering cliffs and past the lighthouse, with the option to loop further around Holy Island's tidal races depending on conditions and group experience. The race itself forms over a shallow underwater spur running out to the west of South Stack — it builds most reliably on the ebb tide, has no eddies to escape into, and the flow pushes paddlers out to sea, so timing and an exit plan matter as much as paddling ability.",
+      "access": "Launch and take-out is via South Stack RSPB car park, a steep walk down to the water. Sea kayakers should check a dedicated sea state or swell forecast in addition to the general weather forecast — wind against tide here creates conditions well beyond what a calm-looking forecast implies."
     },
     {
       "name": "Puffin Island (From Penmon Point)",
@@ -72,7 +110,10 @@
       },
       "estimatedCost": "Free (parking £3-5) or £65pp guided",
       "operatorSlug": "anglesey-adventures",
-      "insiderTip": "Bring binoculars for better birdwatching. Time your paddle to avoid peak tidal flow."
+      "insiderTip": "Bring binoculars for better birdwatching. Time your paddle to avoid peak tidal flow.",
+      "howToDoIt": "Launch from Penmon Point and make the open-water crossing to Puffin Island, keeping a close eye on tidal flow through the strait between Anglesey and the island. This isn't a distance challenge so much as a conditions one — the crossing is short but exposed, so it suits paddlers who can handle a bit of chop and hold a course without relying on landmarks the whole way.",
+      "routeDescription": "From Penmon Point, the crossing runs roughly northeast towards Puffin Island (Ynys Seiriol), with the option to circle the island at a respectful distance to view the seabird colonies before returning. Currents run hardest through the narrow strait separating the island from the mainland, so a route that accounts for tidal drift — rather than a straight line — makes for a far easier crossing.",
+      "access": "No landing is permitted on Puffin Island during the nesting season (roughly April to August) — this is a view-from-the-water trip only. Parking at Penmon Point is pay and display and gets busy in summer and puffin season alike."
     },
     {
       "name": "Rhoscolyn to Church Bay",
@@ -93,7 +134,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "Stop at the Wavecrest Cafe in Rhoscolyn for a well-deserved coffee and cake."
+      "insiderTip": "Stop at the Wavecrest Cafe in Rhoscolyn for a well-deserved coffee and cake.",
+      "howToDoIt": "This is a point-to-point coastal paddle, so you'll want transport sorted at the Church Bay end or plan it as an out-and-back from Rhoscolyn. Hug the coastline to make the most of the rock formations and caves around Rhoscolyn, staying far enough off the cliffs to avoid clapotis (rebounding waves) on breezier days, and keep a weather eye on the westerly exposure the whole way.",
+      "routeDescription": "Heading north from Rhoscolyn, the coast is a mix of rocky headlands, sea caves and small coves — good territory for exploring close to the cliffs in calm conditions, with seals hauled out on rocks a common sight. The route is fully exposed to the west, so swell and wind build quickly here compared with the more sheltered Menai Strait or Trearddur Bay.",
+      "access": "Parking is available at both Rhoscolyn beach and Church Bay, but spaces are limited at both ends, especially in summer — this route works best with a second car or a lift arranged for the return leg."
     },
     {
       "name": "Aberffraw Estuary",
@@ -114,7 +158,10 @@
       },
       "estimatedCost": "Free (parking free)",
       "operatorSlug": null,
-      "insiderTip": "Bring a picnic and enjoy lunch on the beach. Watch out for the shallow water at low tide."
+      "insiderTip": "Bring a picnic and enjoy lunch on the beach. Watch out for the shallow water at low tide.",
+      "howToDoIt": "Launch from Aberffraw Beach and paddle up into the estuary on a rising tide for the easiest going — the channel narrows as you head inland, with sandy dunes either side and generally calm, sheltered water throughout. This is a good spot to practise basic strokes and boat control before tackling anything more exposed.",
+      "routeDescription": "The estuary winds gently inland from the beach, past dunes and salt marsh, with the option to paddle as far as the site of Aberffraw's ruined royal court (llys) on a suitable tide. Wildlife spotting is the main draw here rather than technical paddling — expect wading birds and calm water rather than any real challenge.",
+      "access": "Parking near Aberffraw beach is limited, so arrive early in peak season. The estuary shallows significantly at low tide, so check tide times if you want to paddle any distance upstream rather than getting stuck on sandbanks."
     },
     {
       "name": "Trearddur Bay",
@@ -135,7 +182,10 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
-      "insiderTip": "Hire a kayak from one of the local shops and explore the coastline at your own pace."
+      "insiderTip": "Hire a kayak from one of the local shops and explore the coastline at your own pace.",
+      "howToDoIt": "Launch from the main beach and stay within the bay in anything other than calm, settled conditions — it's sheltered enough for beginners to build confidence, with the option to push out around the headlands towards the more exposed coast once you're comfortable reading the water. Local hire shops on the beachfront make this an easy no-equipment option if you're just passing through.",
+      "routeDescription": "Trearddur Bay itself is a wide, sandy, relatively protected bay, good for pottering along the shoreline or crossing to explore the small rocky islets just offshore. Beyond the headlands at either end, the coast opens up to the full exposure of the Irish Sea, so the character of the paddle changes fast once you leave the bay proper.",
+      "access": "The main beach has two slipways at its northern end — one for public launching and one reserved for the RNLI inshore lifeboats, so use the public slipway and keep the lifeboat slip clear. Kayak and paddleboard hire is available on the beachfront."
     },
     {
       "name": "Church Bay",
@@ -156,7 +206,10 @@
       },
       "estimatedCost": "Free (parking £2-3)",
       "operatorSlug": null,
-      "insiderTip": "Enjoy a bowl of lobster bisque at the Wavecrest Cafe – it's a Church Bay institution."
+      "insiderTip": "Enjoy a bowl of lobster bisque at the Wavecrest Cafe – it's a Church Bay institution.",
+      "howToDoIt": "A short, sheltered paddle straight off the beach — good for a first-ever go in a kayak or a relaxed hour with kids. There's little in the way of technique required beyond basic strokes; the main job is picking your moment around the tide so you're not launching or landing over exposed rock or mud.",
+      "routeDescription": "Church Bay is a compact, curved bay with calm water in settled conditions, bounded by low headlands. It doesn't offer much distance to cover, but it's a pleasant, low-stakes paddle with the beach café right there for before or after.",
+      "access": "Parking in the village is limited, so arrive early, particularly on a sunny weekend when the beach and café both get busy."
     },
     {
       "name": "Newborough Beach",
@@ -177,7 +230,10 @@
       },
       "estimatedCost": "Free (parking £5-7)",
       "operatorSlug": null,
-      "insiderTip": "Combine your paddle with a walk through Newborough Forest and visit Llanddwyn Island (check tide times!)."
+      "insiderTip": "Combine your paddle with a walk through Newborough Forest and visit Llanddwyn Island (check tide times!).",
+      "howToDoIt": "Launch from the beach in front of Newborough Forest and paddle along the sweep of sand, with Snowdonia's peaks visible across the water on a clear day. This is an easy, low-technicality paddle in calm conditions, but the beach is fully exposed to the wind, so a breezy day here is a very different experience to a still one — check the forecast for wind, not just rain.",
+      "routeDescription": "The route runs along Newborough's long sandy beach towards Llanddwyn Island, with the option to land and walk the island's headland (lighthouse, old pilot cottages) if the tide allows. Watch for the tidal causeway to Llanddwyn — at higher states of tide the island is fully cut off, and the crossing can flood faster than it looks from the beach.",
+      "access": "Park at the large Newborough Forest car park and walk through the forest to the beach — it's a genuine walk, not a roadside drop-off, so factor that into your timing with kit. Llanddwyn Island itself is only reachable on foot at low water and can be cut off for an hour or two either side of high tide, so check tide times before planning to land there."
     }
   ],
   "practicalInfo": {

@@ -10,6 +10,38 @@
   "bestSeason": "May-October",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £80 guided",
+  "topTips": [
+    "Pen y Fan via Storey Arms is the busiest hike in Wales on a sunny weekend. If you want the summit without the queue for the trig point photo, be walking by 8am or leave it until late afternoon in summer.",
+    "Pont ar Daf now has a much bigger car park (around 180+ spaces) after National Trust redevelopment, but it's pay and display and card-only, so don't rely on carrying coins. Arrive early on weekends regardless — it still fills up.",
+    "Waterproofs aren't optional here, even when the forecast looks clear. The Beacons make their own weather, and mist can drop over Pen y Fan or Fan y Big in minutes, even in July.",
+    "If you're walking the Four Falls Trail specifically to go behind Sgwd yr Eira, check conditions first — the path behind the falls floods out and closes after heavy rain, and nearby access routes (like the Dinas Rock approach) are subject to periodic closures for path works.",
+    "Lambing season (roughly March–May) means extra care needed with dogs across the whole national park — keep them on a short lead or under close control around any farmland or open hill grazing.",
+    "For a first Beacons summit without the Pen y Fan crowds, Table Mountain above Crickhowell or Skirrid Fawr near Abergavenny both give you a proper mountain feel in under three hours, with a fraction of the footfall.",
+    "Navigation matters more than fitness on the western hills. Fan Brycheiniog and the Carmarthen Fans have far fewer marked paths than the honeypot routes — a map and compass (and the knowledge to use them) are non-negotiable, not just advice for a rainy day.",
+    "Crickhowell is the best base for combining a hike with a decent meal afterwards — it sits within striking distance of Table Mountain, Sugar Loaf, and the Black Mountains, with several good cafes and pubs on the high street."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start with Pen y Fan via Storey Arms or Table Mountain above Crickhowell — both are well-marked, well-trodden, and forgiving if the weather turns while you're still learning to read Beacons conditions.",
+      "Pack a waterproof jacket and trousers regardless of the forecast. Beacons weather changes fast, and a clear morning can turn into a windy, low-visibility summit within an hour.",
+      "Wear proper hiking boots with ankle support. The terrain looks gentle in photos but is rutted, boggy in places, and steep and loose underfoot near most summits.",
+      "Tell someone your route and expected return time before you set off, especially for anything beyond Pen y Fan — mobile signal is patchy across most of the park.",
+      "Bring more water and snacks than you think you need. There are no shops or cafes on the hill once you leave the car park.",
+      "Budget for parking. Most trailhead car parks in the national park charge a fee (typically £5–£8), and several machines are now card-only, so don't count on cash.",
+      "If you only do one waterfall walk, make it the Four Falls Trail — but wear old shoes or walking sandals if you plan to go behind Sgwd yr Eira, since you will get properly wet.",
+      "Check which car park you actually need before you leave home. Storey Arms and Pont ar Daf are both used for Pen y Fan but are different car parks a short distance apart on the A470."
+    ],
+    "regular": [
+      "Skip Storey Arms on a summer Saturday and use the Fan y Big or Cribyn approach instead — same National Park, similar quality ridge walking, a fraction of the people.",
+      "Midweek mornings, especially outside school holidays, are the only reliable way to get Pen y Fan's summit to yourself for a few minutes.",
+      "The western Beacons — Fan Brycheiniog and the Llyn y Fan lakes — are consistently the quietest big hills in the park. Good for solitude, but come prepared for indistinct paths and exposed ridgelines.",
+      "Table Mountain and Skirrid Fawr are solid wet-weather or low-cloud alternatives to the main massif — shorter, lower, and still rewarding when Pen y Fan is socked in.",
+      "After sustained rain, Sgwd yr Eira's behind-the-waterfall path can be impassable — check current conditions before committing to that leg of the Four Falls Trail rather than finding out at the falls.",
+      "Blorenge's network of paths around Keeper's Pond is a good option when you want a shorter, flatter outing without sacrificing views over Abergavenny.",
+      "Autumn (September–October) gives some of the best hiking conditions in the Beacons: cooler air, fewer crowds than summer, and good visibility on clear days, without the exposed-summit risk of winter.",
+      "If the honeypot car parks (Storey Arms, Pont ar Daf, Gwaun Hepste) are full, don't try to squeeze in on a verge — use it as the cue to switch to a quieter alternative like Sugar Loaf or Table Mountain instead."
+    ]
+  },
   "spots": [
     {
       "name": "Pen y Fan via the Storey Arms",
@@ -30,7 +62,10 @@
       },
       "estimatedCost": "Free (parking £5)",
       "operatorSlug": null,
-      "insiderTip": "For a slightly quieter route, consider the Pont ar Daf car park route which is slightly longer."
+      "insiderTip": "For a slightly quieter route, consider the Pont ar Daf car park route which is slightly longer.",
+      "howToDoIt": "From the Storey Arms roadside, follow the clear stone-pitched path south-west up onto the flank of the mountain. The route climbs steadily with no route-finding required — just keep following the main path and the crowds — before a final steeper pull to the col between Corn Du and Pen y Fan. Most walkers tag Corn Du first, then cross to Pen y Fan's summit trig point, and return the way they came. No scrambling or technical skill needed, just a reasonable level of fitness and sturdy footwear for the loose, rocky sections near the top.",
+      "access": "Open access on National Trust and common land; no permits required. The path is a made, maintained trail the whole way, so navigation is straightforward in good visibility, but becomes much harder to follow in mist — several rescues happen each year from walkers losing the path near the summit plateau. Storey Arms itself is a roadside pull-in on the A470; the National Trust has also significantly expanded parking at nearby Pont ar Daf, which is now the primary access point with around 180+ spaces, disabled parking, and toilets, and can be used as an alternative start for the same route.",
+      "routeDescription": "A there-and-back climb of roughly 6.4km starting at 430m and topping out at 886m. From Storey Arms the path crosses open moorland before climbing the shoulder of Corn Du, then continues along the connecting ridge to Pen y Fan's flat summit. The gradient is consistent rather than punishing, but the final approach to both summits is loose underfoot and exposed to wind. Return by retracing your steps, or extend the walk by continuing over Cribyn for a longer ridge outing if conditions and time allow."
     },
     {
       "name": "Fan y Big and Cribyn Horseshoe",
@@ -51,7 +86,10 @@
       },
       "estimatedCost": "Free (parking £5)",
       "operatorSlug": null,
-      "insiderTip": "Visit during the week or early in the morning to avoid the worst of the crowds, especially at the 'diving board' on Fan y Big."
+      "insiderTip": "Visit during the week or early in the morning to avoid the worst of the crowds, especially at the 'diving board' on Fan y Big.",
+      "howToDoIt": "From Pont ar Daf, climb onto the ridge and head east, taking in Cribyn first before continuing to Fan y Big. The route follows well-defined ridge paths with a couple of steep pulls between summits, and involves genuine exposure along sections of the horseshoe — this is a step up from the standard Pen y Fan there-and-back, requiring confident scrambling-adjacent footwork rather than technical climbing. Many walkers link it back to Pen y Fan and Corn Du to make a full horseshoe rather than backtracking.",
+      "access": "Open access land throughout; no permits needed. Paths are generally clear but become indistinct in mist on the connecting ridgelines, and the terrain around Fan y Big's 'diving board' rock has real drops either side — take care in wind or wet rock. Starts from the same Pont ar Daf car park used for Pen y Fan, so arrive early on weekends to guarantee a space.",
+      "routeDescription": "A horseshoe-style ridge walk of around 9.5km with 750m of ascent, linking Cribyn and Fan y Big via connecting bwlchs (saddles). Expect a mix of grassy ridge, rocky outcrops, and one or two short, steep scrambly sections rather than sustained technical ground. The high point along the way is Fan y Big's narrow promontory — the 'diving board' — jutting out over the valley, a popular photo spot but one that demands care in poor visibility or strong wind."
     },
     {
       "name": "Sugar Loaf Mountain",
@@ -72,7 +110,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Check the weather forecast before you go – the summit can be exposed in windy conditions."
+      "insiderTip": "Check the weather forecast before you go – the summit can be exposed in windy conditions.",
+      "howToDoIt": "From the car park at the base, the most direct path climbs steadily through bracken and open hillside straight to the cone-shaped summit. It's short and unrelenting rather than technical — no navigation skill required on a clear day, just a steady pace up a consistently steep gradient. Most walkers go up and down the same way, though a longer circular route via the Deri and back is possible for those wanting to extend the outing.",
+      "access": "National Trust-managed open access land. The main car park is small and now charges for parking (previously free), so arrive early on weekends or bank holidays, and note the Trust's suggested overflow option at Fairfield car park in Abergavenny if the summit car park is full. No permits needed for walking.",
+      "routeDescription": "A short, sharp there-and-back of about 5km and 300m of ascent. The path climbs directly up the cone with little in the way of flat respite, giving a disproportionate sense of achievement for the distance covered. The 360-degree summit views take in the Black Mountains, the Brecon Beacons massif, and the Usk Valley — on a clear day this is one of the best viewpoint-to-effort ratios in the whole park."
     },
     {
       "name": "Four Falls Trail, Waterfall Country",
@@ -93,7 +134,10 @@
       },
       "estimatedCost": "Free (parking £5)",
       "operatorSlug": null,
-      "insiderTip": "Wear waterproofs if you plan on walking behind Sgwd yr Eira – you will get wet!"
+      "insiderTip": "Wear waterproofs if you plan on walking behind Sgwd yr Eira – you will get wet!",
+      "howToDoIt": "From Gwaun Hepste, follow the main red-waymarked trail through the woodland gorge, taking the green-marked link paths down to each waterfall in turn. The main route is on wide, stone-surfaced paths with gentle gradients, but the spur paths down to the falls themselves — including the approach behind Sgwd yr Eira — are narrow, unsurfaced, and involve steps, so allow extra time and care at each stop rather than rushing the whole loop.",
+      "access": "Waymarked trail on Natural Resources Wales-managed land; no permit needed, but the Gwaun Hepste car park is pay and display (card-only machine) and overnight parking isn't permitted. The path behind Sgwd yr Eira floods and closes to safe passage after heavy rain or when the river's running high, so treat 'walking behind the waterfall' as conditions-dependent rather than guaranteed. Some approach routes into the wider Waterfall Country network (including via Dinas Rock) are subject to periodic path-improvement closures, so it's worth checking current NRW notices before you go if you're set on a specific approach.",
+      "routeDescription": "A circular route of around 8.9km through ancient oak woodland and the gorge of the Afon Mellte and Afon Hepste, taking in Sgwd Gwladus, Sgwd y Pannwr, Sgwd Isaf Clun-gwyn, and finishing at Sgwd yr Eira. The main trail gradient is gentle, but each waterfall detour drops steeply down slippery stone steps to the water's edge, and the path behind Sgwd yr Eira itself is a narrow ledge behind the falling water — atmospheric, but not for anyone uneasy on wet rock."
     },
     {
       "name": "Skirrid Fawr (Holy Mountain)",
@@ -114,7 +158,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "The summit can be windy, so bring a windproof jacket."
+      "insiderTip": "The summit can be windy, so bring a windproof jacket.",
+      "howToDoIt": "From the small car park at the base, a clear path climbs steadily through woodland and then open hillside to the distinctive split summit ridge. No technical skill is required — it's a steep but straightforward walk on a well-trodden path — though the final approach to the ridge itself is narrow with drops either side, so take care in wind or when the ground is wet.",
+      "access": "National Trust-owned land (part of the Sugar Loaf and Usk Valley estate), with open public access via public rights of way. The car park at the base is small and can fill quickly; there's no charge currently noted for this specific car park, though nearby National Trust sites in the area have introduced paid parking, so it's worth having a backup plan on a busy day.",
+      "routeDescription": "A there-and-back of about 6.4km and 300m of ascent, climbing through mixed woodland before opening onto exposed hillside for the final approach to Skirrid Fawr's unusual split summit. The distinctive cleft in the ridge — subject of local legend linking it to the crucifixion — is the main feature, and the summit ridge itself gives clear views across the Monmouthshire countryside towards the Black Mountains."
     },
     {
       "name": "Fan Brycheiniog Horseshoe (Carmarthen Fans)",
@@ -135,7 +182,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Take a map and compass (and know how to use them!) – the paths can be indistinct, especially in poor visibility."
+      "insiderTip": "Take a map and compass (and know how to use them!) – the paths can be indistinct, especially in poor visibility.",
+      "howToDoIt": "From the Llanddeusant car park, the route climbs past Llyn y Fan Fach up onto the ridge, traversing the horseshoe over Fan Foel and Fan Brycheiniog before dropping back down past Llyn y Fan Fawr. Unlike the honeypot routes further east, paths here are thinner and less obvious on the ground, so this is a hike for walkers comfortable navigating by map, compass, and terrain features rather than following a well-trodden line. Fitness and pacing matter too — this is a long day out with sustained exposure on the tops.",
+      "access": "Open access land; no permits required, but this is genuinely remote terrain with limited waymarking. Mobile signal is unreliable across most of the route. Parking is a small, limited car park near Llanddeusant (grid ref SN800246) that fills up on the rare busy day, so arrive early — there's little alternative parking nearby.",
+      "routeDescription": "A demanding horseshoe of around 16km and 700m ascent around the two glacial lakes, Llyn y Fan Fach and Llyn y Fan Fawr. The route stays high on an exposed ridge for much of its length, with sweeping views west into Carmarthenshire on a clear day and virtually no shelter if the weather turns. This is the wildest and least-crowded of the classic Beacons horseshoes — reward for those with the navigation skills and stamina to do it properly."
     },
     {
       "name": "Table Mountain (Crug Hywel)",
@@ -156,7 +206,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Grab a coffee and cake in Crickhowell before or after your walk – there are some great cafes in town."
+      "insiderTip": "Grab a coffee and cake in Crickhowell before or after your walk – there are some great cafes in town.",
+      "howToDoIt": "From the small car park in Crickhowell town centre, a clear path leads up through fields and woodland onto the flat-topped hill, passing the Iron Age hillfort remains near the summit. It's a steady, well-marked climb with no navigation challenges, making it a good choice for building confidence before tackling one of the higher Beacons peaks.",
+      "access": "Public rights of way throughout; no permits required. The hillfort earthworks at the summit are a scheduled monument, so stick to the path across the top rather than cutting across the ramparts. Parking is limited in the town centre car park, which can be busy on weekends given the popularity of Crickhowell itself.",
+      "routeDescription": "A gentle there-and-back or short loop of around 6km and 250m of ascent, climbing from the town through farmland to the flat summit plateau of Crug Hywel, known locally as Table Mountain for its distinctive shape. The Iron Age hillfort ramparts are still visible underfoot at the top, and the summit gives clear views down over Crickhowell and the Usk Valley — a good option when you want mountain views without a mountain-length day."
     },
     {
       "name": "Blorenge",
@@ -177,7 +230,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Pack a picnic and enjoy it by the Keeper's Pond – it's a beautiful spot."
+      "insiderTip": "Pack a picnic and enjoy it by the Keeper's Pond – it's a beautiful spot.",
+      "howToDoIt": "Several routes criss-cross the Blorenge, so the approach depends on your chosen car park. From Keeper's Pond, an easy path circles the pond itself before climbing gently onto the open hillside for wider views; more direct ascents to the summit trig point are steeper but still straightforward walking with no technical sections. This is a good hill for choosing your own difficulty level rather than following one fixed route.",
+      "access": "Open access land with a dense network of public paths; no permits required. Keeper's Pond and the surrounding common are popular with dog walkers and picnickers as well as hikers, so expect a more sociable, easy-access atmosphere than the remoter Beacons summits. Several free car parks serve different points on the hill, giving flexibility if one is full.",
+      "routeDescription": "A flexible route network of 2-4 hours depending on the loop chosen, taking in the Blorenge's open moorland, the scenic Keeper's Pond, and views north over Abergavenny and the Usk Valley. Unlike the sharper Beacons peaks, this is rolling, accessible terrain — good for a shorter outing, wildlife spotting, or combining a short walk with a picnic rather than a full mountain day."
     }
   ],
   "practicalInfo": {

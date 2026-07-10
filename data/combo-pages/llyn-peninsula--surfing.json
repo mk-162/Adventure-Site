@@ -10,6 +10,38 @@
   "bestSeason": "April-October (wetsuit essential year-round)",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £60 guided",
+  "topTips": [
+    "Check the swell direction before you commit to a spot: south-westerlies wrap into Hell's Mouth and Porth Ceiriad, while Abersoch, Pwllheli and Aberdaron need smaller, more sheltered conditions to work. One phone check of the forecast can save you a 40-minute drive across the peninsula for nothing.",
+    "There are no facilities at Hell's Mouth itself — no café, no toilets, no shop. Fuel up beforehand and head to Llanengan village afterwards for food and a pub.",
+    "Hell's Mouth's rip currents are serious and claim rescues most years, especially when a big swell is running. If you're not confident reading rips, stick to the beach's northern end near the lifeguard-patrolled sections in summer, or choose a mellower spot like Porth Oer instead.",
+    "Porth Ceiriad's reef only really comes alive from mid to high tide — turn up at low tide and you'll likely find it flat and rocky. Time your session around the tide table, not the clock.",
+    "Getting down to Porth Ceiriad means a walk across a couple of fields followed by a steep flight of cliff steps carrying your board — factor that into how tired you'll be paddling back up afterwards.",
+    "Beginners should start at Abersoch Beach or Porth Oer (Whistling Sands), both of which stay forgiving even when the bigger reef breaks are firing. Abersoch also has the peninsula's surf schools and gear shops on the doorstep.",
+    "Porth Oer's National Trust car park is pay-and-display (free if you're a member) — bring coins or the JustPark app as a backup, and reward yourself with the beach café's ice cream afterwards.",
+    "Parking on the peninsula tightens up fast on summer weekends, particularly around Abersoch. Arrive early, expect to pay, and don't block field entrances or farm gateways near the smaller car parks."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start at Abersoch Beach or Porth Oer (Whistling Sands) — both are sandy, gently sloping, and far more forgiving than the reef and beach-break power spots further round the peninsula.",
+      "Book a lesson before you paddle out solo. Abersoch Watersports and West Coast Surf both run lessons in Abersoch and cover the basics — reading the whitewater, paddling technique, and where it's safe to sit.",
+      "A 5mm wetsuit is the minimum year-round here, and in winter you'll want boots, gloves and a hood too — the water rarely gets above 18°C even in high summer.",
+      "Skip Hell's Mouth and Porth Ceiriad until you can confidently duck-dive and read a rip current. Both have real, well-documented rip hazards that catch out visiting surfers every season.",
+      "Hire your board and wetsuit from West Coast Surf or Abersoch Watersports rather than bringing an unsuitable board from home — staff there know which board length suits current conditions.",
+      "Always surf with someone else and tell them (or someone on land) where you're heading, especially at quieter, unpatrolled beaches like Porth Ceiriad or Aberdaron.",
+      "Check tide times before you leave, not after you arrive — several spots here (Porth Ceiriad, Pwllheli) only work within a narrow tide window.",
+      "Bring cash or a card for pay-and-display car parks — several of the peninsula's beach car parks don't take contactless reliably, especially the smaller National Trust ones."
+    ],
+    "regular": [
+      "Autumn and winter bring the biggest, most consistent swells to Hell's Mouth and Porth Ceiriad — the trade-off is 8-12°C water, so budget for a proper winter wetsuit setup if you're chasing size.",
+      "Walk past the main peak at Porth Ceiriad towards the eastern cliffs for the more secluded, harder-breaking lefts — fewer people are willing to make the extra walk with a board.",
+      "Pwllheli is the peninsula's most underrated wave — usually quieter than Abersoch, and the marina wall sometimes creates a helpful rip to paddle out on, saving your arms on a mid-tide swell.",
+      "If Abersoch is rammed with watersports traffic in August, Aberdaron on the peninsula's western tip is usually calmer and less crowded, with a good pub (Ty Newydd) right on the beach for afterwards.",
+      "Hell's Mouth's backwash off the cliffs at high tide can throw up unexpectedly hollow, barrelling sections — worth knowing if you only ever surf it at low tide and assume it's a straightforward beach break.",
+      "Midweek mornings, out of school holidays, are your best bet for empty peaks anywhere on the peninsula — weekends and July/August afternoons draw the crowds to Abersoch and Hell's Mouth.",
+      "Keep a long-sleeve rash vest or thin wetsuit top in the car for the shoulder seasons — the air temperature on an exposed beach like Hell's Mouth can be brutal even when the water's tolerable.",
+      "Offshore wind here typically means an easterly — check wind direction alongside swell before driving to the exposed west-facing beaches, as an onshore wind can wreck an otherwise promising swell within an hour."
+    ]
+  },
   "spots": [
     {
       "name": "Porth Neigwl (Hell's Mouth)",
@@ -30,6 +62,9 @@
       },
       "estimatedCost": "Free (parking £5)",
       "operatorSlug": null,
+      "routeDescription": "A four-mile crescent of sand facing south-west into the Irish Sea, Hell's Mouth picks up more swell than anywhere else on the peninsula. The main peaks sit mid-beach; 'The Corner' at the southern end is a wedgy left breaking over a rockier bottom, while 'The Reef' to the north is a busier, punchier right. On a big day the whole beach can be a heaving wall of whitewater, so pick your peak and stick to it rather than drifting along the beach.",
+      "access": "Large pay car park (£5 all day) right at the beach with a short walk down to the sand. There are no facilities at the beach itself — no café, toilets, or shop — so eat beforehand and head to nearby Llanengan village afterwards. Rip currents here are serious and well documented; several rescues happen most years, so don't surf alone and treat any 'calm' patch of water with suspicion.",
+      "howToDoIt": "Best surfed from mid to high tide when the sandbanks are covered and the wave has more shape. Paddle out via the channel to the side of the main peak rather than through the breaking waves, and keep checking your position against a fixed landmark on the cliffs — the beach's currents can move you along the shore faster than you'd expect. This is a powerful, exposed beach break: fine for confident intermediates on a smaller day, but genuinely heavy when the swell is up, so check the forecast size before committing.",
       "insiderTip": "Check the backwash off the cliffs at high tide – it can create some unexpected barrels!"
     },
     {
@@ -51,6 +86,9 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
+      "routeDescription": "A tighter, more dramatic cove than Hell's Mouth, with waves refracting off the eastern cliffs to form powerful, pyramidal peaks that hold their shape rather than closing out. It's shorter than Hell's Mouth wave-for-wave, but tends to be hollower and more punishing when it's on — this is reef-influenced power, not a soft beginner beach break.",
+      "access": "Two small cliff-top car parks (charges apply, coin meter barrier), reached via Nant-y-Big farm or near Cim Farm, Bwlchtocyn. From the car park it's a walk across a couple of fields followed by a steep flight of steps cut into the cliff down to the beach — carrying a board down (and back up, tired, afterwards) is part of the deal. Arrive early, as both car parks are limited.",
+      "howToDoIt": "Works best from mid to high tide; at low tide it can be rocky and lack shape. The ideal combination is a south-westerly swell with a north or north-easterly offshore wind. Given the reef bottom and known rip hazards, this is a spot for confident, experienced surfers only — read the lineup from the cliff top before committing to the walk down, since paddling back up against a rip here is hard work.",
       "insiderTip": "Walk further along the coast to find the more secluded and challenging left-handers. Bring booties!"
     },
     {
@@ -72,6 +110,9 @@
       },
       "estimatedCost": "Free (parking £5)",
       "operatorSlug": null,
+      "routeDescription": "A small, horseshoe-shaped bay tucked between headlands on the peninsula's northern coast, named for the way the fine sand 'whistles' underfoot in the right conditions. The waves here are gentler and more forgiving than the south-facing spots, breaking closer to shore over sand — ideal for finding your feet or getting a longboard moving.",
+      "access": "National Trust car park right at the beach (pay and display; free for NT members), a short flat walk from car to sand. Toilets are on site. Note the car park is grass and gravel and can get soft after heavy rain, and dogs have seasonal restrictions from April to September.",
+      "howToDoIt": "Smaller swells wrap into the bay and stay manageable even when bigger, more exposed spots like Hell's Mouth are blown out or too powerful — a good barometer beach for beginners deciding whether conditions are surfable elsewhere on the peninsula. Best in spring and summer when the swell is smaller; check the forecast, as it can go flat on very small days.",
       "insiderTip": "The café does amazing ice cream – perfect after a surf. Walk around the headland for even more secluded spots."
     },
     {
@@ -93,6 +134,9 @@
       },
       "estimatedCost": "Free (parking £5-10)",
       "operatorSlug": null,
+      "routeDescription": "A long, gently shelving sandy beach right in the village, with soft, forgiving whitewater that's ideal for learning. It's also the peninsula's watersports hub, so expect SUP boards, kayaks, and beginner surf lessons sharing the water, especially in the height of summer.",
+      "access": "Multiple pay car parks around Abersoch village, all a short walk from the sand. This is the easiest spot on the peninsula to reach gear, lessons, and food in one trip — West Coast Surf and Abersoch Watersports are both a few minutes' walk away.",
+      "howToDoIt": "Perfect for your first few sessions or for SUP: paddle out through the whitewater, practise popping up in the shallows, and use the beach's gentle gradient to build confidence before venturing to a more powerful spot. It gets genuinely busy in summer, so morning sessions before the watersports crowds arrive are calmer and safer for beginners.",
       "insiderTip": "Head to the south end of the beach for slightly cleaner waves. Book parking in advance during peak season."
     },
     {
@@ -114,6 +158,9 @@
       },
       "estimatedCost": "Free (parking £3-5)",
       "operatorSlug": null,
+      "routeDescription": "A quieter alternative to Abersoch, breaking along the promenade near Pwllheli marina. On its day it offers small, clean waves that suit longboards and improving surfers, without the crowds or watersports traffic of Abersoch.",
+      "access": "Parking along the promenade (charges may apply), with easy, flat access straight onto the beach — no cliff paths or long walks here, making it a practical option if you're carrying gear solo.",
+      "howToDoIt": "Tide-dependent: aim for mid-tide when the sandbanks give the wave the most shape. The marina wall can generate a helpful rip current running out to the lineup, which locals use to save a paddle — useful once you know how to spot and use it safely, but treat it with caution if you're inexperienced with rip currents.",
       "insiderTip": "Check the tide times – it works best around mid-tide. The marina sometimes creates a nice little rip current to help you get out back."
     },
     {
@@ -135,6 +182,9 @@
       },
       "estimatedCost": "Free (parking £4-6)",
       "operatorSlug": null,
+      "routeDescription": "A wide, sheltered bay at the far western tip of the peninsula, backed by the village of Aberdaron. The waves are gentle and forgiving in summer, making it one of the calmer options on this stretch of coast, though currents pick up noticeably near the headlands at either end of the bay.",
+      "access": "Car park near the beach in the village (charges apply), with a short flat walk to the sand. Being the furthest spot from Abersoch, it's also the quietest — worth the extra drive time if you're avoiding the summer crowds.",
+      "howToDoIt": "Best suited to gentle summer swells and beginner-to-intermediate surfing or family sessions in the whitewater. Stay clear of the headland at each end of the bay, where currents strengthen and the water gets deeper quickly — the calmest, safest water is mid-bay.",
       "insiderTip": "Walk along the beach towards the headland for some sheltered spots. The Ty Newydd pub is a must-visit after a surf."
     }
   ],

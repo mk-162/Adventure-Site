@@ -10,6 +10,38 @@
   "bestSeason": "April-October",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £80 guided",
+  "topTips": [
+    "Coed y Brenin's visitor centre café and information desk are currently closed (an NRW cost-saving measure) — trails, car park, and toilets stay open, but the site is unstaffed with no first aid on-site. Beics Brenin bike shop next door is still open for hire, spares, and repairs, so head there if you need help, then refuel at Cross Foxes, Ty Siamas, or Meirion Mill Cafe in Dolgellau instead.",
+    "Ride Coed y Brenin's reds midweek if you can — MBR and Dragon's Back both get properly congested on weekends and school holidays, and the pinch points on Dragon's Back's climbs are where queues form.",
+    "Antur Stiniog's uplift is booked online and the system closes at 4pm the day before — if you miss it, phone them the next morning and they'll usually slot you in. Book ahead for weekends regardless. Bring spare brake pads: the sustained descents chew through pads fast.",
+    "Penmachno is proper natural trail riding, not a manicured trail centre — both Dolen Machno and Dolen Eryri currently have several sections closed for forestry work with volunteer-built diversions in place. Check penmachnobiketrails.org.uk/trail-conditions the morning you ride, since the printed map doesn't reflect live closures.",
+    "Signal is patchy across Gwydir Forest and Penmachno — download GPX tracks before you leave accommodation. The Gwydir Mawr & Bach (Dduallt) trails aren't waymarked at all, so a phone with an offline map is close to essential, not optional.",
+    "Beddgelert Forest is the honest beginner and family choice — gentler gradients, shared use with walkers, and the village itself (ice cream, cafés) makes a natural finish point. Don't take beginners to Coed y Brenin's reds expecting an easy green-blue warm-up; the site skews intermediate-and-up.",
+    "Weather turns fast here — check MWIS as well as the Met Office before committing to an exposed ride like Penmachno or the Marin Trail, where there's little tree cover on the moorland sections.",
+    "If you're basing yourself in Betws-y-Coed, Beics Betws can sort hire, repairs, and guided rides in one stop and sits a short ride from both the Marin Trail and the Gwydir Mawr & Bach loops."
+  ],
+  "tieredTips": {
+    "firstTimer": [
+      "Start at Coed y Brenin or Beddgelert Forest before anything else — both are signed trail centres with graded routes, unlike Penmachno or the Gwydir hand-cut trails, which assume you can navigate and ride natural terrain unaided.",
+      "Budget for parking everywhere — Coed y Brenin, Beddgelert, and the Gwydir Forest car parks near Betws-y-Coed all charge, and Coed y Brenin's machine is card/RingGo only, no cash.",
+      "A full-suspension bike isn't compulsory for the trail centre reds, but bring one (or hire one) if you're planning to ride Dragon's Back, Temtiwr, or anything at Antur Stiniog — hardtails make the rocky descents much harder work.",
+      "Pack for four seasons in one ride: waterproof jacket, warm layer, gloves, even in July. Snowdonia's weather changes faster than forecasts update, especially at altitude on the Penmachno and Marin Trail moorland sections.",
+      "If you're trying downhill for the first time, Antur Stiniog's uplift trails are graded blue to black — start on the easier blues, and don't be shy about walking a section to scope the line first.",
+      "Let someone know your planned route and expected return time, especially on Penmachno or the Gwydir Mawr & Bach — these are quieter, less-supervised trails than the main trail centres, and mobile signal is unreliable.",
+      "Bring cash or contactless for the small independent cafés (Meirion Mill, Ty Siamas, Caffi Siabod) — Coed y Brenin's own café is currently closed, so don't plan your day around refuelling there.",
+      "Book any uplift or guided sessions ahead of time, particularly for weekends — Antur Stiniog's online system cuts off at 4pm the day before, so last-minute weekday planning is safest."
+    ],
+    "regular": [
+      "Ride Coed y Brenin first thing on a weekday — the main car park fills fast on weekends, and with the café gone there's less reason for casual visitors to linger, so trail traffic thins out noticeably by mid-afternoon.",
+      "Penmachno and the Gwydir Mawr & Bach trails are the crowd-avoidance play when Coed y Brenin is heaving — far lower footfall, no trail-centre polish, but genuinely rewarding natural riding if you're comfortable navigating.",
+      "Check Penmachno's live trail-conditions page before heading out — several named sections on both Dolen Machno and Dolen Eryri are currently closed for forestry work, with diversions marked on-site but not always on the downloadable map.",
+      "Antur Stiniog runs uplift-only in genuinely wet weather — if it's tipping down, call ahead rather than driving up, and have Marin Trail or Beddgelert as a lower-consequence backup for the day.",
+      "Autumn (September-October) gives the best combination on the black and technical red trails: cooler air for the climbs, tackier ground than midsummer dust, and noticeably fewer riders than school-holiday season.",
+      "For a quieter take on Gwydir Forest, park near Llyn Elsi and link into the Gwydir Mawr & Bach loops rather than starting from the busier Marin Trail car parks nearer Betws-y-Coed.",
+      "Winter riding is viable on the trail-centre routes but Penmachno's exposed moorland sections and the Gwydir natural trails get genuinely difficult in the wet — save those for drier spells and stick to Coed y Brenin or Beddgelert when the ground's saturated.",
+      "The post-ride scene has shifted since Coed y Brenin's café closed — Cross Foxes and Ty Siamas in Dolgellau, and Caffi Siabod in Capel Curig for anyone finishing near Beddgelert or Penmachno, are the better bets now rather than assuming the visitor centre will have you covered."
+    ]
+  },
   "spots": [
     {
       "name": "MBR Trail, Coed y Brenin",
@@ -30,7 +62,9 @@
       },
       "estimatedCost": "Free (parking £6 for all day)",
       "operatorSlug": null,
-      "insiderTip": "Ride it midweek to avoid the crowds, and check out the Beics Brenin cafe for a post-ride coffee and cake."
+      "insiderTip": "Ride it midweek to avoid the crowds, and check out the Beics Brenin cafe for a post-ride coffee and cake.",
+      "howToDoIt": "Pick up the MBR waymarkers (red) from the visitor centre car park — the route climbs steadily out through forestry tracks before dropping into its first singletrack sections. Ride it clockwise as signed; the climbs are graded to warm you up gradually before the technical descending starts. Expect to stop and read a couple of rock-garden entries before committing on a first lap — most riders walk one or two features the first time through and ride them clean by lap two.",
+      "routeDescription": "A red-graded loop built around a long, steady climb through mixed forestry followed by several distinct descending sections, each with its own character — flowing berm-and-roller singletrack, a rockier technical section lower down, and a final fast run back toward the car park. It's the trail most people ride first at Coed y Brenin, and it's designed that way: nothing on MBR is a surprise if you're paying attention, but the cumulative climbing adds up."
     },
     {
       "name": "Dragon's Back, Coed y Brenin",
@@ -51,7 +85,9 @@
       },
       "estimatedCost": "Free (parking £6 for all day)",
       "operatorSlug": null,
-      "insiderTip": "The climb up to the 'Dragon's Back' is a lung-buster, so pace yourself. Bring plenty of water and snacks."
+      "insiderTip": "The climb up to the 'Dragon's Back' is a lung-buster, so pace yourself. Bring plenty of water and snacks.",
+      "howToDoIt": "Follow the red waymarkers from the visitor centre — this shares its opening sections with MBR before splitting off onto its own, longer loop. Treat the ride as two halves: a long climbing phase where the goal is pacing, not speed, followed by a sustained descending phase where fitness in your arms and grip strength matter as much as your legs. Riders who've done MBR first usually find Dragon's Back a natural step up rather than a shock.",
+      "routeDescription": "The longest red at Coed y Brenin, built around a genuinely tough sustained climb — the section riders nickname the lung-buster — that gains height steadily rather than in short sharp ramps. What follows is a long technical descent through rocky, root-laced singletrack with tight switchbacks and a couple of exposed traverses. It rewards riders who've built some fitness on the shorter reds first; going in cold, it can feel relentless rather than fun."
     },
     {
       "name": "Antur Stiniog Downhill Trails",
@@ -72,7 +108,10 @@
       },
       "estimatedCost": "£42 per day uplift (prices vary)",
       "operatorSlug": "antur-stiniog",
-      "insiderTip": "Book your uplift in advance, especially on weekends. Bring spare brake pads – you'll need them!"
+      "insiderTip": "Book your uplift in advance, especially on weekends. Bring spare brake pads – you'll need them!",
+      "howToDoIt": "Book your uplift slot online before you arrive — the booking system closes at 4pm the day before, so same-day walk-ups aren't guaranteed a place. On arrival, check in at the base, load your bike onto the uplift vehicle, and ride the graded trails down from the top of the old slate workings. Start on a blue to get a feel for the terrain and the uplift rhythm before dropping into red or black runs; the slate-spoil surface rides very differently from forest singletrack and rewards a session-it approach — several runs down the same trail rather than one attempt at the hardest line.",
+      "access": "Uplift is a paid, booked service, not open trail access — you need a valid pass to use the vehicle, and trails are only legally rideable as part of the uplift operation. In sustained wet weather Antur Stiniog can run uplift-only (no pedal-up access) or curtail runs, so it's worth calling ahead if the forecast is bad rather than turning up on spec.",
+      "routeDescription": "Multiple graded downhill lines dropping off the slate-quarry spoil tips above Blaenau Ffestiniog, ranging from flowing blue runs with berms and rollers through to technical black lines with rock gardens, drops, and steeper gradients. The post-industrial slate terrain gives the trails a distinctive hardpack, sometimes loose-over-hard character that's different from anything else in this list — good grip when dry, but demanding when wet."
     },
     {
       "name": "Penmachno Trails - Dolen Machno",
@@ -93,7 +132,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "The trails can be difficult to follow in places, so download a GPX track to your phone or GPS device. The cafe in Penmachno village is a great place to refuel."
+      "insiderTip": "The trails can be difficult to follow in places, so download a GPX track to your phone or GPS device. The cafe in Penmachno village is a great place to refuel.",
+      "howToDoIt": "Download the GPX or route map from penmachnobiketrails.org.uk before you set off — waymarking is sparser than a Forestry-run trail centre, and the route mixes forest track climbs with genuine moorland singletrack where the line isn't always obvious. Check the trail-conditions page the morning you ride: several named sections are currently closed for forestry work with volunteer-marked diversions, so a route loaded the week before may not match what's on the ground.",
+      "access": "The trailhead car park is small and unstaffed; it fills quickly on good-weather weekends, so have a backup plan (or arrive early) if it's full. The trails cross open moorland in places with minimal shelter, so treat access as weather-dependent — this is not a ride to start into deteriorating conditions.",
+      "routeDescription": "The shorter of Penmachno's two loops, mixing forestry track climbs with natural, unsanitised singletrack across moorland and through mixed woodland. Expect technical, rooty and rocky sections that demand line choice rather than flow, plus some genuinely exposed stretches with big views back over the Machno and Conwy valleys. It reads much more like proper mountain biking than a groomed trail centre — the trade-off for the lower footfall and rawer riding is that you're more on your own if something goes wrong."
     },
     {
       "name": "Marin Trail, Gwydir Forest, Betws-y-Coed",
@@ -114,7 +156,9 @@
       },
       "estimatedCost": "Free (parking charges apply)",
       "operatorSlug": null,
-      "insiderTip": "The climbs are tough, but the descents are worth it. Pack a puncture repair kit, as the trails are rocky in places."
+      "insiderTip": "The climbs are tough, but the descents are worth it. Pack a puncture repair kit, as the trails are rocky in places.",
+      "howToDoIt": "Park at one of the Gwydir Forest car parks near Betws-y-Coed and follow the red waymarkers for the Marin Trail loop — the route works its way up through forestry before opening onto rockier, more exposed sections with the Conwy Valley views. Pace the sustained climbs conservatively; the descents are where the trail rewards saved energy, with fast, flowing sections interspersed with tight, technical rock gardens that need full attention.",
+      "routeDescription": "A red-graded loop through Gwydir Forest combining forestry-track climbing with a strong mix of natural and shaped descending — rock gardens, switchback singletrack, and some fast, open sections with views over the Conwy Valley. One of North Wales's original hand-built trails, and it shows in the variety: no two descents feel quite the same."
     },
     {
       "name": "Temtiwr Trail, Coed y Brenin",
@@ -135,7 +179,9 @@
       },
       "estimatedCost": "Free (parking £6 for all day)",
       "operatorSlug": null,
-      "insiderTip": "Walk the key sections before you ride them to scope out the best lines. Bring spare brake pads and plenty of confidence."
+      "insiderTip": "Walk the key sections before you ride them to scope out the best lines. Bring spare brake pads and plenty of confidence.",
+      "howToDoIt": "Only ride Temtiwr once you're comfortable on Coed y Brenin's reds — it's signed black for a reason. Ride to the top of the main descent and walk the key rock gardens and drop sections first if you haven't ridden it before; there's no shame in scoping a line rather than committing blind. Once you know the trail, session the hardest features individually rather than trying to link the whole thing clean on a first attempt.",
+      "routeDescription": "A short but intense black descent built to test riders who've already got the trail centre reds dialled — steep chutes, rock gardens, consecutive drops, and technical roll-downs with very little flat recovery between features. It's shorter than MBR or Dragon's Back but demands full concentration throughout; this is not a trail to ride tired or distracted."
     },
     {
       "name": "Beddgelert Forest Trails",
@@ -156,7 +202,9 @@
       },
       "estimatedCost": "Free (parking charges apply)",
       "operatorSlug": null,
-      "insiderTip": "Check the trail map before you set off, as some trails are not well signposted. The nearby village of Beddgelert is a charming place to grab a post-ride ice cream."
+      "insiderTip": "Check the trail map before you set off, as some trails are not well signposted. The nearby village of Beddgelert is a charming place to grab a post-ride ice cream.",
+      "howToDoIt": "Pick up a trail map at the car park before you set off — signage is lighter here than at Coed y Brenin, and the blue and red loops share junctions in places. Beginners and families should stick to the waymarked blue sections; the reds add climbing and technical features that suit riders with some trail-centre experience already. It's a shared-use forest, so expect walkers on some sections and ride with that in mind.",
+      "routeDescription": "A network of blue and red loops through Beddgelert Forest, with the blues offering gentle, flowing singletrack and forgiving climbs suited to families and newer riders, and the reds adding more technical features and sustained climbing for intermediate riders. The scenery — forest opening onto views toward the Moelwynion — is some of the most approachable in this list, and the short ride into Beddgelert village afterwards makes it an easy half-day out."
     },
     {
       "name": "Gwydir Mawr & Bach Trails (The Dduallt Trails)",
@@ -177,7 +225,10 @@
       },
       "estimatedCost": "Free",
       "operatorSlug": null,
-      "insiderTip": "Download a detailed map or GPX file onto your GPS device or phone. Signal can be patchy. Be prepared for hike-a-bike sections!"
+      "insiderTip": "Download a detailed map or GPX file onto your GPS device or phone. Signal can be patchy. Be prepared for hike-a-bike sections!",
+      "howToDoIt": "This is unsigned, so load a GPX track before you leave — don't rely on live signal once you're in the forest. Parking near Llyn Elsi and riding up into the network is the recommended approach; from there you're linking natural singletrack by feel and by map rather than following waymarkers. Go in expecting some hike-a-bike on the steeper or more overgrown sections, and treat it as an exploratory ride rather than a fixed route.",
+      "access": "There's no formal trailhead — parking is limited to pull-ins along minor forest roads, with the Llyn Elsi car park suggested as the most reliable starting option. Because these are informal, volunteer-maintained lines rather than an official trail centre, access can change with forestry operations; there's no live conditions page to check in advance the way there is for Penmachno, so factor in some uncertainty.",
+      "routeDescription": "An interlinked network of natural, rooty and rocky singletrack hidden through Gwydir Forest, with the short Dduallt loop as the core route and plenty of scope to extend it by linking in other unsigned trails nearby. Expect dense forest, technical natural features rather than shaped ones, and a genuine sense of exploration — this is the local-knowledge alternative for riders who've done the Marin Trail and want something rawer."
     }
   ],
   "practicalInfo": {

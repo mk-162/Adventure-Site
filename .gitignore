@@ -57,3 +57,6 @@ __pycache__/
 
 # local DB credential scratch — never commit
 /db-pw.txt
+
+# Graphify knowledge graph (regenerated locally)
+graphify-out/

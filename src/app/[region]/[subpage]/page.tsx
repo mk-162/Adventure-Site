@@ -2,12 +2,13 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import { 
-  getRegionBySlug, 
-  getActivityTypeBySlug, 
-  getActivitiesByType, 
+import {
+  getRegionBySlug,
+  getActivityTypeBySlug,
+  getActivitiesByType,
   getAllActivityTypes,
-  getAllRegions
+  getAllRegions,
+  getItineraries
 } from "@/lib/queries";
 import { getComboPageData } from "@/lib/combo-data";
 import { getBestListData } from "@/lib/best-list-data";
@@ -132,8 +133,11 @@ async function ActivityComboPage({ regionSlug, activitySlug }: { regionSlug: str
     notFound();
   }
 
-  const activitiesData = await getActivitiesByType(regionSlug, activitySlug);
-  const allActivityTypes = await getAllActivityTypes();
+  const [activitiesData, allActivityTypes, relatedItineraries] = await Promise.all([
+    getActivitiesByType(regionSlug, activitySlug),
+    getAllActivityTypes(),
+    getItineraries({ regionId: region.id, limit: 3 }),
+  ]);
   const comboData = getComboPageData(regionSlug, activitySlug);
 
   // Empty state only when there is neither a DB activity nor combo JSON content.
@@ -215,7 +219,7 @@ async function ActivityComboPage({ regionSlug, activitySlug }: { regionSlug: str
 
         {comboData && (
           <div className="mb-10">
-            <ComboEnrichment data={comboData} regionName={region.name} />
+            <ComboEnrichment data={comboData} regionName={region.name} relatedItineraries={relatedItineraries} />
           </div>
         )}
       </main>
@@ -364,7 +368,7 @@ async function ActivityComboPage({ regionSlug, activitySlug }: { regionSlug: str
 
       {comboData && (
         <div className="mb-10">
-          <ComboEnrichment data={comboData} regionName={region.name} />
+          <ComboEnrichment data={comboData} regionName={region.name} relatedItineraries={relatedItineraries} />
         </div>
       )}
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Cloud,
   CheckCircle,
@@ -12,6 +13,7 @@ import {
 } from "lucide-react";
 import type { ComboPageData } from "@/lib/combo-data";
 import { isLaunchCombo } from "@/lib/launch";
+import type { getItineraries } from "@/lib/queries/itineraries";
 import { ComboSpotCard } from "./ComboSpotCard";
 import { ComboMap } from "./ComboMap";
 import { FAQAccordion } from "@/components/operators/FAQAccordion";
@@ -27,9 +29,11 @@ import ReactMarkdown from "react-markdown";
 interface ComboEnrichmentProps {
   data: ComboPageData;
   regionName: string;
+  /** Region-level multi-day itineraries — NOT filtered by this combo's activity (no such data exists). */
+  relatedItineraries?: Awaited<ReturnType<typeof getItineraries>>;
 }
 
-export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
+export function ComboEnrichment({ data, regionName, relatedItineraries = [] }: ComboEnrichmentProps) {
   const practicalInfo = data.practicalInfoNormalized;
   const hasMap = data.spots.some((s) => s.startPoint?.lat);
   const hasSpots = data.spots.length > 0;
@@ -46,6 +50,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
   );
   const hasFaqs = Boolean(data.faqs && data.faqs.length > 0);
   const hasWhatToDo = Boolean(data.editorial || data.introduction);
+  const hasItineraries = relatedItineraries.length > 0;
 
   const cafes = data.localDirectory?.cafes ?? [];
   const whereToEat = data.whereToEat && data.whereToEat.length > 0 ? data.whereToEat : null;
@@ -58,6 +63,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
     hasSpots && { href: "#spots", label: "Spots" },
     hasTips && { href: "#tips", label: "Tips" },
     hasNeedToKnow && { href: "#need-to-know", label: "Need to know" },
+    hasItineraries && { href: "#itineraries", label: "Itineraries" },
     hasFaqs && { href: "#faqs", label: "FAQs" },
   ].filter((v): v is { href: string; label: string } => Boolean(v));
 
@@ -300,6 +306,58 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
                 </div>
               </div>
             )}
+          </div>
+        </section>
+      )}
+
+      {/* Plan a Full Trip — region-level itineraries, not filtered by this combo's activity
+          (no activity linkage exists on itineraries in real data). */}
+      {hasItineraries && (
+        <section id="itineraries" className="scroll-mt-28">
+          <SectionHeader
+            title={`Plan a full trip to ${regionName}`}
+            subtitle={`Multi-day itineraries across ${regionName}.`}
+          />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {relatedItineraries.map(({ itinerary }) => {
+              const metaParts = [
+                itinerary.durationDays ? `${itinerary.durationDays}-day` : null,
+                itinerary.difficulty || null,
+              ].filter(Boolean);
+
+              return (
+                <Link
+                  key={itinerary.slug}
+                  href={`/itineraries/${itinerary.slug}`}
+                  className="group bg-white rounded-xl border border-border overflow-hidden hover:border-accent-strong hover:shadow-sm transition-all"
+                >
+                  {itinerary.heroImage && (
+                    <div className="relative w-full aspect-[3/2] bg-slate-200">
+                      <Image
+                        src={itinerary.heroImage}
+                        alt={itinerary.title}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover"
+                      />
+                    </div>
+                  )}
+                  <div className="p-5">
+                    <h3 className="font-bold text-primary text-base mb-1 group-hover:text-accent-strong transition-colors">
+                      {itinerary.title}
+                    </h3>
+                    {itinerary.tagline && (
+                      <p className="text-sm text-slate-600 mb-3 leading-relaxed">{itinerary.tagline}</p>
+                    )}
+                    {metaParts.length > 0 && (
+                      <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                        {metaParts.join(" • ")}
+                      </p>
+                    )}
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </section>
       )}

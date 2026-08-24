@@ -1,0 +1,1 @@
+ALTER TABLE "listing_evidence" ALTER COLUMN "entity_id" SET DATA TYPE varchar(255);

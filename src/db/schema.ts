@@ -70,6 +70,17 @@ export const tagTypeEnum = pgEnum("tag_type", [
   "region",
 ]);
 
+// Human fact-check state for an operator listing. Distinct from `dataSource`
+// (where the raw data came from, e.g. 'manual'/'google_places'/'research') —
+// this tracks whether a human has actually checked it since import.
+export const verificationLevelEnum = pgEnum("verification_level", [
+  "unverified",
+  "csv_seed",
+  "self_reported",
+  "human_verified",
+  "disputed",
+]);
+
 // =====================
 // CORE CONTENT TABLES
 // =====================
@@ -657,6 +668,9 @@ export const operators = pgTable("operators", {
   adminNotes: text("admin_notes"), // internal CRM notes
   verifiedAt: timestamp("verified_at"),
   verifiedByEmail: varchar("verified_by_email", { length: 255 }),
+  // Fact-check state (see listingEvidence for the field-level evidence trail).
+  // Defaults to 'unverified' — never assume the CSV import means "checked".
+  verificationLevel: verificationLevelEnum("verification_level").default("unverified").notNull(),
   // Trial fields
   trialTier: varchar("trial_tier", { length: 50 }), // 'enhanced' or 'premium'
   trialStartedAt: timestamp("trial_started_at"),
@@ -672,6 +686,7 @@ export const operators = pgTable("operators", {
   index("operators_claim_status_idx").on(table.claimStatus),
   index("operators_category_idx").on(table.category),
   index("operators_status_idx").on(table.status),
+  index("operators_verification_level_idx").on(table.verificationLevel),
 ]);
 
 // Partner offers/promotions
@@ -1009,7 +1024,16 @@ export const operatorInterest = pgTable("operator_interest", {
   planInterest: varchar("plan_interest", { length: 50 }), // 'free', 'verified', 'premium'
   message: text("message"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
-});
+  // Triage — this table was write-only (submissions landed with nowhere to
+  // track follow-up). Status is a loose string, matching the convention used
+  // for other evolving ops statuses (e.g. operatorClaims.status, outreachRecipients.status).
+  status: varchar("status", { length: 50 }).default("new").notNull(), // 'new', 'contacted', 'in_progress', 'converted', 'declined'
+  handledByEmail: varchar("handled_by_email", { length: 255 }),
+  handledAt: timestamp("handled_at"),
+  nextAction: text("next_action"),
+}, (table) => [
+  index("operator_interest_status_idx").on(table.status),
+]);
 
 // =====================
 // AUTH & MAGIC LINKS
@@ -1335,3 +1359,129 @@ export const usersRelations = relations(users, ({ many }) => ({
 export const userFavouritesRelations = relations(userFavourites, ({ one }) => ({
   user: one(users, { fields: [userFavourites.userId], references: [users.id] }),
 }));
+
+// =====================
+// FACT-CHECK EVIDENCE (Phase 1 — durable, database-backed fact-check state)
+// =====================
+
+export const evidenceSourceTypeEnum = pgEnum("evidence_source_type", [
+  "csv_seed", // original spreadsheet import — never a publishable verification source
+  "operator_website",
+  "operator_confirmed", // direct phone/email confirmation from the operator
+  "google_places",
+  "official_tourism_board",
+  "manual_research",
+  "other",
+]);
+
+export const evidenceVerdictEnum = pgEnum("evidence_verdict", [
+  "unverified",
+  "verified",
+  "disputed",
+  "needs_recheck",
+  "rejected",
+]);
+
+// Field-level fact-check evidence. Polymorphic: entityType + entityId identify
+// the record (operator, activity, accommodation, ...); field identifies which
+// claim on that record this evidence supports (e.g. "phone", "priceFrom").
+// Append-only — a re-check inserts a new row rather than overwriting, so the
+// verification history survives (mirrors userFavourites' favouriteType/Id
+// polymorphic-reference convention).
+export const listingEvidence = pgTable("listing_evidence", {
+  id: serial("id").primaryKey(),
+  entityType: varchar("entity_type", { length: 50 }).notNull(),
+  entityId: integer("entity_id").notNull(),
+  field: varchar("field", { length: 100 }).notNull(),
+  value: text("value"),
+  sourceUrl: text("source_url"),
+  sourceType: evidenceSourceTypeEnum("source_type").notNull(),
+  verifierEmail: varchar("verifier_email", { length: 255 }),
+  verifiedAt: timestamp("verified_at"),
+  recheckDueAt: timestamp("recheck_due_at"),
+  verdict: evidenceVerdictEnum("verdict").default("unverified").notNull(),
+  notes: text("notes"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+}, (table) => [
+  index("listing_evidence_entity_idx").on(table.entityType, table.entityId),
+  index("listing_evidence_entity_field_idx").on(table.entityType, table.entityId, table.field),
+  index("listing_evidence_verdict_idx").on(table.verdict),
+]);
+
+// Lifecycle status mirrors scripts/content-ops/schemas.ts's contentStatusSchema
+// so the two stay interchangeable for the same content_item_id.
+export const contentReviewStatusEnum = pgEnum("content_review_status", [
+  "discovered",
+  "triaged",
+  "research_needed",
+  "researched",
+  "generated",
+  "qa_needed",
+  "reviewed",
+  "signed_off",
+  "published",
+  "refresh_due",
+  "blocked",
+  "archived",
+]);
+
+// Durable lifecycle/review state per content item, keyed by the same stable
+// content_item_id used across scripts/content-ops (e.g.
+// "operator-adventure-parc-snowdonia"). The prior control-plane inventory is
+// rebuilt from scratch on every run, so human review state had nowhere to land.
+export const contentReviewState = pgTable("content_review_state", {
+  id: serial("id").primaryKey(),
+  contentItemId: varchar("content_item_id", { length: 255 }).notNull().unique(),
+  status: contentReviewStatusEnum("status").default("discovered").notNull(),
+  reviewedByEmail: varchar("reviewed_by_email", { length: 255 }),
+  reviewedAt: timestamp("reviewed_at"),
+  notes: text("notes"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+}, (table) => [
+  index("content_review_state_status_idx").on(table.status),
+]);
+
+// Mirrors the CommercialDecisionOption union in
+// src/app/admin/content-ops/decisions/route.ts — keep these in sync.
+export const opsDecisionEnum = pgEnum("ops_decision", [
+  "strategic_anchor",
+  "premium_sales_lure",
+  "claimed_basic",
+  "stub_only",
+  "remove_or_block",
+  "needs_human_permission",
+]);
+
+// Durable version of the content/ops/commercial-decisions.json contract. That
+// route writes to local disk only, which is lost on every deploy/instance
+// recycle on Vercel. Append-only so decision history survives; callers
+// needing "the current decision" take the most recent row per contentItemId
+// by decidedAt.
+export const opsDecisions = pgTable("ops_decisions", {
+  id: serial("id").primaryKey(),
+  contentItemId: varchar("content_item_id", { length: 255 }).notNull(),
+  title: varchar("title", { length: 255 }),
+  routeOrSlug: varchar("route_or_slug", { length: 255 }),
+  decision: opsDecisionEnum("decision").notNull(),
+  decidedByEmail: varchar("decided_by_email", { length: 255 }).notNull(),
+  decidedAt: timestamp("decided_at").defaultNow().notNull(),
+  rationale: text("rationale"),
+  nextAction: text("next_action"),
+  evidenceSnapshot: jsonb("evidence_snapshot"),
+  guardrails: text("guardrails").array(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+}, (table) => [
+  index("ops_decisions_content_item_id_idx").on(table.contentItemId),
+]);
+
+// Global send-suppression list. One row per email; any future sender must
+// check this before contacting an address, regardless of which campaign
+// wants to. No automated sender reads this yet (Phase 1 is schema-only).
+export const emailSuppression = pgTable("email_suppression", {
+  id: serial("id").primaryKey(),
+  email: varchar("email", { length: 255 }).notNull().unique(),
+  reason: varchar("reason", { length: 100 }).notNull(), // 'unsubscribed', 'bounced', 'complaint', 'manual'
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});

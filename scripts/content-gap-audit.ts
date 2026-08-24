@@ -113,7 +113,7 @@ async function audit(): Promise<GapItem[]> {
         slug: op.slug,
         issue: `Operator "${op.name}" missing: ${issues.join(", ")}`,
         fix: `Fill ${issues.length} missing fields`,
-        autoFixable: issues.includes("no Google rating") || issues.includes("no coordinates"),
+        autoFixable: false,
       });
     }
   }

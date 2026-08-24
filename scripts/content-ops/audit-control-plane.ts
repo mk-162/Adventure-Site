@@ -25,6 +25,8 @@ import {
   formatValidationError,
   researchOutputSchema,
 } from "./schemas";
+import { mergeSourceRegistry } from "../../src/lib/content-ops/source-registry";
+import { LAUNCH_COMBOS, LAUNCH_REGIONS } from "../../src/lib/launch";
 import { z } from "zod";
 
 interface AuditFile {
@@ -69,7 +71,23 @@ function addOrMerge(item: ContentInventoryItem) {
 }
 
 function launchVisible(route: string, contentType: string, channel: string) {
-  if (route === "/" || route.includes("snowdonia")) return true;
+  // Region landing pages (location_landing) visible if region is in launch scope
+  if (contentType === "location_landing") {
+    const regionSlug = route.split("/").filter(Boolean)[0];
+    return LAUNCH_REGIONS.has(regionSlug);
+  }
+
+  // Activity-location combo pages visible if region/activity combo is verified
+  if (contentType === "activity_location") {
+    const parts = route.split("/").filter(Boolean);
+    if (parts.length >= 3 && parts[1] === "things-to-do") {
+      const comboKey = `${parts[0]}/${parts[2]}`;
+      return LAUNCH_COMBOS.has(comboKey);
+    }
+    return false;
+  }
+
+  // Operator directory profiles: only strategic + verified operators visible
   if (contentType === "operator") {
     const strategic = [
       "zip-world",
@@ -86,7 +104,9 @@ function launchVisible(route: string, contentType: string, channel: string) {
     ];
     return strategic.some((slug) => route.includes(slug));
   }
-  return channel === "commercial" && route.includes("/directory/") ? false : contentType === "location_landing";
+
+  // Other content types (guides, itineraries, etc.): not visible on launch
+  return false;
 }
 
 function qualityFromGap(severity: AuditGap["severity"]) {
@@ -324,15 +344,51 @@ const tasks: TaskQueueItem[] = items
     output_path: `data/research/content-ops/${item.id}.json`,
   }));
 
-const sourceRegistry = items.flatMap((item) => item.source_urls.map((url) => ({
-  content_item_id: item.id,
-  channel: item.channel,
-  route_or_slug: item.route_or_slug,
-  source_url: url,
-  authority: "unreviewed",
-  last_checked_at: "",
-  notes: "Imported from existing content during content-ops audit.",
-})));
+const existingRegistryFile = readJson<{
+  generatedAt?: string;
+  sources?: Array<{
+    content_item_id: string;
+    channel: string;
+    route_or_slug: string;
+    source_url: string;
+    authority: string;
+    last_checked_at: string;
+    notes: string;
+  }>;
+}>(join(OPS_DIR, "source-registry.json"), { sources: [] });
+
+const existingRegistry = existingRegistryFile.sources ?? [];
+
+const incomingRegistry = items.flatMap((item) =>
+  item.source_urls.map((url) => ({
+    content_item_id: item.id,
+    channel: item.channel,
+    route_or_slug: item.route_or_slug,
+    source_url: url,
+    notes: "Imported from existing content during content-ops audit.",
+  }))
+);
+
+// Extract only the existing entries (without notes) for the merge function
+const existingForMerge = (existingRegistry as Array<{
+  content_item_id: string;
+  channel: string;
+  route_or_slug: string;
+  source_url: string;
+  authority: string;
+  last_checked_at: string;
+  notes: string;
+}>).map((entry) => ({
+  content_item_id: entry.content_item_id,
+  channel: entry.channel,
+  route_or_slug: entry.route_or_slug,
+  source_url: entry.source_url,
+  authority: (entry.authority || "unreviewed") as "unreviewed" | "discovered" | "partial" | "verified",
+  last_checked_at: entry.last_checked_at || "",
+  notes: entry.notes || "",
+}));
+
+const sourceRegistry = mergeSourceRegistry(existingForMerge, incomingRegistry);
 
 const imageRegistry = items
   .filter((item) => item.image_status !== "not_applicable")

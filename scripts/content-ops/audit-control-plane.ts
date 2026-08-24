@@ -208,6 +208,7 @@ for (const file of listFiles(join(process.cwd(), "data", "combo-pages"), ".json"
   if (itemsById.has(id)) continue;
   const contentText = readFileSync(file, "utf8");
   const sourceUrls = extractUrls(contentText);
+  const visible = launchVisible(route, "activity_location", "evergreen");
   addOrMerge(emptyInventoryItem({
     id,
     channel: "evergreen",
@@ -216,9 +217,9 @@ for (const file of listFiles(join(process.cwd(), "data", "combo-pages"), ".json"
     title: slugToTitle(slug),
     region,
     activity,
-    priority: region === "snowdonia" ? 50 : 24,
+    priority: visible ? 50 : 24,
     status: sourceUrls.length > 0 ? "qa_needed" : "research_needed",
-    launch_visible: region === "snowdonia",
+    launch_visible: visible,
     source_count: sourceUrls.length,
     source_urls: sourceUrls,
     evidence_status: sourceUrls.length >= 3 ? "sourced" : sourceUrls.length > 0 ? "partial" : "missing",

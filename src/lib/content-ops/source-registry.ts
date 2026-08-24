@@ -38,22 +38,25 @@ export function mergeSourceRegistry(
   existing: SourceRegistryEntry[],
   incoming: IncomingSourceEntry[]
 ): SourceRegistryEntry[] {
-  // Build a map of existing entries by URL for fast lookup
-  const existingByUrl = new Map<string, SourceRegistryEntry>();
+  // Build a map of existing entries by composite key (content_item_id + URL)
+  // to handle cases where multiple content items reference the same URL
+  const existingByKey = new Map<string, SourceRegistryEntry>();
   for (const entry of existing) {
-    existingByUrl.set(entry.source_url, entry);
+    const key = `${entry.content_item_id}::${entry.source_url}`;
+    existingByKey.set(key, entry);
   }
 
   // Build result by processing incoming data
   const result: SourceRegistryEntry[] = [];
   for (const incomingEntry of incoming) {
-    const existing = existingByUrl.get(incomingEntry.source_url);
+    const key = `${incomingEntry.content_item_id}::${incomingEntry.source_url}`;
+    const existingEntry = existingByKey.get(key);
 
-    if (existing) {
+    if (existingEntry) {
       // Preserve the existing entry's authority state
-      result.push(existing);
+      result.push(existingEntry);
     } else {
-      // New URL: start unreviewed
+      // New URL for this content item: start unreviewed
       result.push({
         content_item_id: incomingEntry.content_item_id,
         channel: incomingEntry.channel,

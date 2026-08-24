@@ -223,4 +223,63 @@ describe("mergeSourceRegistry", () => {
 
     expect(result).toHaveLength(0);
   });
+
+  it("preserves distinct authority states when two content items share the same URL", () => {
+    // Regression: merge lookup keyed only by URL causes collapsing when
+    // multiple content items reference the same source URL
+    const existing = [
+      {
+        content_item_id: "activity-hiking",
+        channel: "evergreen",
+        route_or_slug: "/snowdonia/hiking",
+        source_url: "https://example.com/shared-source",
+        authority: "verified",
+        last_checked_at: "2026-08-20T10:00:00Z",
+        notes: "Hiking authority",
+      },
+      {
+        content_item_id: "activity-climbing",
+        channel: "evergreen",
+        route_or_slug: "/snowdonia/climbing",
+        source_url: "https://example.com/shared-source",
+        authority: "partial",
+        last_checked_at: "2026-08-15T14:30:00Z",
+        notes: "Climbing authority",
+      },
+    ];
+
+    const incoming = [
+      {
+        content_item_id: "activity-hiking",
+        channel: "evergreen",
+        route_or_slug: "/snowdonia/hiking",
+        source_url: "https://example.com/shared-source",
+        notes: "From audit",
+      },
+      {
+        content_item_id: "activity-climbing",
+        channel: "evergreen",
+        route_or_slug: "/snowdonia/climbing",
+        source_url: "https://example.com/shared-source",
+        notes: "From audit",
+      },
+    ];
+
+    const result = mergeSourceRegistry(existing, incoming);
+
+    // Should preserve both entries with their distinct states
+    expect(result).toHaveLength(2);
+
+    const hiking = result.find((r) => r.content_item_id === "activity-hiking");
+    expect(hiking).toBeDefined();
+    expect(hiking?.authority).toBe("verified");
+    expect(hiking?.last_checked_at).toBe("2026-08-20T10:00:00Z");
+    expect(hiking?.notes).toBe("Hiking authority");
+
+    const climbing = result.find((r) => r.content_item_id === "activity-climbing");
+    expect(climbing).toBeDefined();
+    expect(climbing?.authority).toBe("partial");
+    expect(climbing?.last_checked_at).toBe("2026-08-15T14:30:00Z");
+    expect(climbing?.notes).toBe("Climbing authority");
+  });
 });

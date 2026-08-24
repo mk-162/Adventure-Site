@@ -1391,7 +1391,7 @@ export const evidenceVerdictEnum = pgEnum("evidence_verdict", [
 export const listingEvidence = pgTable("listing_evidence", {
   id: serial("id").primaryKey(),
   entityType: varchar("entity_type", { length: 50 }).notNull(),
-  entityId: integer("entity_id").notNull(),
+  entityId: varchar("entity_id", { length: 255 }).notNull(),
   field: varchar("field", { length: 100 }).notNull(),
   value: text("value"),
   sourceUrl: text("source_url"),

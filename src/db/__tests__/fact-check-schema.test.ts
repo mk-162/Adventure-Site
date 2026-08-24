@@ -24,6 +24,11 @@ describe("listing_evidence", () => {
     expect(column(listingEvidence, "source_type").notNull).toBe(true);
   });
 
+  it("uses a varchar entity_id to support stable string keys (operators, combo facts)", () => {
+    const col = column(listingEvidence, "entity_id");
+    expect(col.columnType).toBe("PgVarchar");
+  });
+
   it("constrains source_type to a closed enum that includes csv_seed", () => {
     const col = column(listingEvidence, "source_type");
     expect(col.enumValues).toContain("csv_seed");

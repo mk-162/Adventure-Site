@@ -26,7 +26,7 @@ CREATE TABLE "email_suppression" (
 CREATE TABLE "listing_evidence" (
 	"id" serial PRIMARY KEY NOT NULL,
 	"entity_type" varchar(50) NOT NULL,
-	"entity_id" integer NOT NULL,
+	"entity_id" varchar(255) NOT NULL,
 	"field" varchar(100) NOT NULL,
 	"value" text,
 	"source_url" text,

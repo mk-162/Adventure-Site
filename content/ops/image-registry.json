@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T22:18:12.716Z",
+  "generatedAt": "2026-08-25T03:40:32.716Z",
   "images": [
     {
       "content_item_id": "operator-adventure-parc-snowdonia",
@@ -11,30 +11,16 @@
     {
       "content_item_id": "operator-bala-watersports",
       "route_or_slug": "/directory/bala-watersports",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-beics-brenin",
       "route_or_slug": "/directory/beics-brenin",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
-    },
-    {
-      "content_item_id": "operator-snowdonia-adventures",
-      "route_or_slug": "/directory/snowdonia-adventures",
-      "image_status": "missing",
-      "image_source_url": "",
-      "notes": "Image issue flagged by audit."
-    },
-    {
-      "content_item_id": "operator-snowdonia-mtb-days",
-      "route_or_slug": "/directory/snowdonia-mtb-days",
-      "image_status": "missing",
-      "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-snowdonia-watersports",
@@ -44,8 +30,120 @@
       "notes": "Image issue flagged by audit."
     },
     {
-      "content_item_id": "activity-location-snowdonia-beaches",
-      "route_or_slug": "/snowdonia/things-to-do/beaches",
+      "content_item_id": "activity-location-anglesey-coasteering",
+      "route_or_slug": "/anglesey/things-to-do/coasteering",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-kayaking",
+      "route_or_slug": "/anglesey/things-to-do/kayaking",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-wild-swimming",
+      "route_or_slug": "/anglesey/things-to-do/wild-swimming",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-caving",
+      "route_or_slug": "/brecon-beacons/things-to-do/caving",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-gorge-walking",
+      "route_or_slug": "/brecon-beacons/things-to-do/gorge-walking",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-hiking",
+      "route_or_slug": "/brecon-beacons/things-to-do/hiking",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-mountain-biking",
+      "route_or_slug": "/brecon-beacons/things-to-do/mountain-biking",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-wild-swimming",
+      "route_or_slug": "/brecon-beacons/things-to-do/wild-swimming",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-gower-hiking",
+      "route_or_slug": "/gower/things-to-do/hiking",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-gower-surfing",
+      "route_or_slug": "/gower/things-to-do/surfing",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-gower-wild-swimming",
+      "route_or_slug": "/gower/things-to-do/wild-swimming",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-llyn-peninsula-surfing",
+      "route_or_slug": "/llyn-peninsula/things-to-do/surfing",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-hiking",
+      "route_or_slug": "/mid-wales/things-to-do/hiking",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-mountain-biking",
+      "route_or_slug": "/mid-wales/things-to-do/mountain-biking",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-hiking",
+      "route_or_slug": "/pembrokeshire/things-to-do/hiking",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-surfing",
+      "route_or_slug": "/pembrokeshire/things-to-do/surfing",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-wild-swimming",
+      "route_or_slug": "/pembrokeshire/things-to-do/wild-swimming",
       "image_status": "needs_review",
       "image_source_url": "",
       "notes": "Needs image provenance review."
@@ -53,13 +151,6 @@
     {
       "content_item_id": "activity-location-snowdonia-caving",
       "route_or_slug": "/snowdonia/things-to-do/caving",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-climbing",
-      "route_or_slug": "/snowdonia/things-to-do/climbing",
       "image_status": "needs_review",
       "image_source_url": "",
       "notes": "Needs image provenance review."
@@ -93,43 +184,15 @@
       "notes": "Needs image provenance review."
     },
     {
-      "content_item_id": "activity-location-snowdonia-scenic-railway",
-      "route_or_slug": "/snowdonia/things-to-do/scenic-railway",
+      "content_item_id": "activity-location-south-wales-mountain-biking",
+      "route_or_slug": "/south-wales/things-to-do/mountain-biking",
       "image_status": "needs_review",
       "image_source_url": "",
       "notes": "Needs image provenance review."
     },
     {
-      "content_item_id": "activity-location-snowdonia-surfing",
-      "route_or_slug": "/snowdonia/things-to-do/surfing",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-trail-running",
-      "route_or_slug": "/snowdonia/things-to-do/trail-running",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-underground-trampolines",
-      "route_or_slug": "/snowdonia/things-to-do/underground-trampolines",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-wild-swimming",
-      "route_or_slug": "/snowdonia/things-to-do/wild-swimming",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-zip-lining",
-      "route_or_slug": "/snowdonia/things-to-do/zip-lining",
+      "content_item_id": "activity-location-south-wales-surfing",
+      "route_or_slug": "/south-wales/things-to-do/surfing",
       "image_status": "needs_review",
       "image_source_url": "",
       "notes": "Needs image provenance review."
@@ -163,25 +226,11 @@
       "notes": "Image issue flagged by audit."
     },
     {
-      "content_item_id": "operator-snowdonia-mountain-guides",
-      "route_or_slug": "/directory/snowdonia-mountain-guides",
-      "image_status": "missing",
-      "image_source_url": "",
-      "notes": "Image issue flagged by audit."
-    },
-    {
       "content_item_id": "operator-zip-world",
       "route_or_slug": "/directory/zip-world",
       "image_status": "missing",
       "image_source_url": "",
       "notes": "Image issue flagged by audit."
-    },
-    {
-      "content_item_id": "itinerary-snowdonia-adventure-weekend",
-      "route_or_slug": "/itineraries/snowdonia-adventure-weekend",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "location-landing-anglesey",
@@ -193,13 +242,6 @@
     {
       "content_item_id": "location-landing-brecon-beacons",
       "route_or_slug": "/brecon-beacons",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "location-landing-carmarthenshire",
-      "route_or_slug": "/carmarthenshire",
       "image_status": "needs_review",
       "image_source_url": "",
       "notes": "Needs image provenance review."
@@ -226,13 +268,6 @@
       "notes": "Needs image provenance review."
     },
     {
-      "content_item_id": "location-landing-north-wales",
-      "route_or_slug": "/north-wales",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
       "content_item_id": "location-landing-pembrokeshire",
       "route_or_slug": "/pembrokeshire",
       "image_status": "needs_review",
@@ -254,270 +289,67 @@
       "notes": "Needs image provenance review."
     },
     {
-      "content_item_id": "location-landing-wye-valley",
-      "route_or_slug": "/wye-valley",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-archery",
-      "route_or_slug": "/snowdonia/things-to-do/archery",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-attractions",
-      "route_or_slug": "/snowdonia/things-to-do/attractions",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-bike-hire",
-      "route_or_slug": "/snowdonia/things-to-do/bike-hire",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-boat-tour",
-      "route_or_slug": "/snowdonia/things-to-do/boat-tour",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-canyoning",
-      "route_or_slug": "/snowdonia/things-to-do/canyoning",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-caving-potholing",
-      "route_or_slug": "/snowdonia/things-to-do/caving-potholing",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-coasteering",
-      "route_or_slug": "/snowdonia/things-to-do/coasteering",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-fishing",
-      "route_or_slug": "/snowdonia/things-to-do/fishing",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-gorge-scrambling",
-      "route_or_slug": "/snowdonia/things-to-do/gorge-scrambling",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-high-ropes",
-      "route_or_slug": "/snowdonia/things-to-do/high-ropes",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-hiking-scrambling",
-      "route_or_slug": "/snowdonia/things-to-do/hiking-scrambling",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-horse-riding",
-      "route_or_slug": "/snowdonia/things-to-do/horse-riding",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-jet-ski",
-      "route_or_slug": "/snowdonia/things-to-do/jet-ski",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-kitesurfing",
-      "route_or_slug": "/snowdonia/things-to-do/kitesurfing",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-mine-exploration",
-      "route_or_slug": "/snowdonia/things-to-do/mine-exploration",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-mtb-coaching",
-      "route_or_slug": "/snowdonia/things-to-do/mtb-coaching",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-paintball-laser-tag",
-      "route_or_slug": "/snowdonia/things-to-do/paintball-laser-tag",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-powerboating",
-      "route_or_slug": "/snowdonia/things-to-do/powerboating",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-rafting",
-      "route_or_slug": "/snowdonia/things-to-do/rafting",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-running",
-      "route_or_slug": "/snowdonia/things-to-do/running",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-sailing",
-      "route_or_slug": "/snowdonia/things-to-do/sailing",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-sea-kayaking",
-      "route_or_slug": "/snowdonia/things-to-do/sea-kayaking",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-sup",
-      "route_or_slug": "/snowdonia/things-to-do/sup",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-toboggan",
-      "route_or_slug": "/snowdonia/things-to-do/toboggan",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-wildlife-birdwatching",
-      "route_or_slug": "/snowdonia/things-to-do/wildlife-birdwatching",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-wildlife-boat-tour",
-      "route_or_slug": "/snowdonia/things-to-do/wildlife-boat-tour",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-windsurfing",
-      "route_or_slug": "/snowdonia/things-to-do/windsurfing",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-snowdonia-wing-foiling",
-      "route_or_slug": "/snowdonia/things-to-do/wing-foiling",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
       "content_item_id": "operator-ace-adventure",
       "route_or_slug": "/directory/ace-adventure",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-adrenaline-mtb",
       "route_or_slug": "/directory/adrenaline-mtb",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-adventure-beyond",
       "route_or_slug": "/directory/adventure-beyond",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-adventure-tours-uk",
       "route_or_slug": "/directory/adventure-tours-uk",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-afan-a-blast",
       "route_or_slug": "/directory/afan-a-blast",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-afan-forest-park",
       "route_or_slug": "/directory/afan-forest-park",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-arete-outdoor-centre",
       "route_or_slug": "/directory/arete-outdoor-centre",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-beddgelert-bikes",
       "route_or_slug": "/directory/beddgelert-bikes",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-big-blue-experience",
       "route_or_slug": "/directory/big-blue-experience",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-bike-corris",
@@ -529,9 +361,9 @@
     {
       "content_item_id": "operator-black-mountain-activities",
       "route_or_slug": "/directory/black-mountain-activities",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-black-mountains-cycle-centre",
@@ -543,44 +375,44 @@
     {
       "content_item_id": "operator-blue-ocean-activities",
       "route_or_slug": "/directory/blue-ocean-activities",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-caersws-dh",
       "route_or_slug": "/directory/caersws-dh",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-campbell-coaching",
       "route_or_slug": "/directory/campbell-coaching",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-cardiff-international-white-water",
       "route_or_slug": "/directory/cardiff-international-white-water",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-cardigan-bay-active",
       "route_or_slug": "/directory/cardigan-bay-active",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-celtic-canoes",
       "route_or_slug": "/directory/celtic-canoes",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-celtic-quest-coasteering",
@@ -599,44 +431,44 @@
     {
       "content_item_id": "operator-ciww",
       "route_or_slug": "/directory/ciww",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-climb-snowdon",
       "route_or_slug": "/directory/climb-snowdon",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-cwmcarn-forest",
       "route_or_slug": "/directory/cwmcarn-forest",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-dan-yr-ogof-showcaves",
       "route_or_slug": "/directory/dan-yr-ogof-showcaves",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-dyfi-bike-park",
       "route_or_slug": "/directory/dyfi-bike-park",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-elan-valley-lodge",
       "route_or_slug": "/directory/elan-valley-lodge",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-evolution-bikes",
@@ -655,44 +487,44 @@
     {
       "content_item_id": "operator-forest-freeride",
       "route_or_slug": "/directory/forest-freeride",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-gaynor-lee-coaching",
       "route_or_slug": "/directory/gaynor-lee-coaching",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-gethin-woods-bike-park",
       "route_or_slug": "/directory/gethin-woods-bike-park",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-gigrin-farm",
       "route_or_slug": "/directory/gigrin-farm",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-go-below-underground",
       "route_or_slug": "/directory/go-below-underground",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-gone-mountain-biking",
       "route_or_slug": "/directory/gone-mountain-biking",
-      "image_status": "missing",
+      "image_status": "needs_review",
       "image_source_url": "",
-      "notes": "Image issue flagged by audit."
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-gower-adventures",
@@ -940,6 +772,20 @@
       "notes": "Image issue flagged by audit."
     },
     {
+      "content_item_id": "operator-snowdonia-adventures",
+      "route_or_slug": "/directory/snowdonia-adventures",
+      "image_status": "missing",
+      "image_source_url": "",
+      "notes": "Image issue flagged by audit."
+    },
+    {
+      "content_item_id": "operator-snowdonia-mtb-days",
+      "route_or_slug": "/directory/snowdonia-mtb-days",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
       "content_item_id": "operator-summit-cycles",
       "route_or_slug": "/directory/summit-cycles",
       "image_status": "missing",
@@ -1043,34 +889,6 @@
       "image_status": "missing",
       "image_source_url": "",
       "notes": "Image issue flagged by audit."
-    },
-    {
-      "content_item_id": "event-snowdonia-outdoor-festival",
-      "route_or_slug": "/events/snowdonia-outdoor-festival",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "event-snowdonia-trail-marathon-eryri",
-      "route_or_slug": "/events/snowdonia-trail-marathon-eryri",
-      "image_status": "missing",
-      "image_source_url": "",
-      "notes": "Image issue flagged by audit."
-    },
-    {
-      "content_item_id": "event-snowdonia-trail-marathon-eryri-2026",
-      "route_or_slug": "/events/snowdonia-trail-marathon-eryri-2026",
-      "image_status": "missing",
-      "image_source_url": "",
-      "notes": "Image issue flagged by audit."
-    },
-    {
-      "content_item_id": "location-landing-all-wales",
-      "route_or_slug": "/all-wales",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "operator-aber-adventures",
@@ -1409,62 +1227,6 @@
       "notes": "Image issue flagged by audit."
     },
     {
-      "content_item_id": "activity-location-anglesey-coasteering",
-      "route_or_slug": "/anglesey/things-to-do/coasteering",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-anglesey-kayaking",
-      "route_or_slug": "/anglesey/things-to-do/kayaking",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-anglesey-wild-swimming",
-      "route_or_slug": "/anglesey/things-to-do/wild-swimming",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-brecon-beacons-caving",
-      "route_or_slug": "/brecon-beacons/things-to-do/caving",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-brecon-beacons-gorge-walking",
-      "route_or_slug": "/brecon-beacons/things-to-do/gorge-walking",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-brecon-beacons-hiking",
-      "route_or_slug": "/brecon-beacons/things-to-do/hiking",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-brecon-beacons-mountain-biking",
-      "route_or_slug": "/brecon-beacons/things-to-do/mountain-biking",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-brecon-beacons-wild-swimming",
-      "route_or_slug": "/brecon-beacons/things-to-do/wild-swimming",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
       "content_item_id": "activity-location-carmarthenshire-hiking",
       "route_or_slug": "/carmarthenshire/things-to-do/hiking",
       "image_status": "needs_review",
@@ -1474,48 +1236,6 @@
     {
       "content_item_id": "activity-location-gower-coasteering",
       "route_or_slug": "/gower/things-to-do/coasteering",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-gower-hiking",
-      "route_or_slug": "/gower/things-to-do/hiking",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-gower-surfing",
-      "route_or_slug": "/gower/things-to-do/surfing",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-gower-wild-swimming",
-      "route_or_slug": "/gower/things-to-do/wild-swimming",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-llyn-peninsula-surfing",
-      "route_or_slug": "/llyn-peninsula/things-to-do/surfing",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-mid-wales-hiking",
-      "route_or_slug": "/mid-wales/things-to-do/hiking",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
-      "content_item_id": "activity-location-mid-wales-mountain-biking",
-      "route_or_slug": "/mid-wales/things-to-do/mountain-biking",
       "image_status": "needs_review",
       "image_source_url": "",
       "notes": "Needs image provenance review."
@@ -1542,13 +1262,6 @@
       "notes": "Needs image provenance review."
     },
     {
-      "content_item_id": "activity-location-pembrokeshire-hiking",
-      "route_or_slug": "/pembrokeshire/things-to-do/hiking",
-      "image_status": "needs_review",
-      "image_source_url": "",
-      "notes": "Needs image provenance review."
-    },
-    {
       "content_item_id": "activity-location-pembrokeshire-kayaking",
       "route_or_slug": "/pembrokeshire/things-to-do/kayaking",
       "image_status": "needs_review",
@@ -1556,29 +1269,57 @@
       "notes": "Needs image provenance review."
     },
     {
-      "content_item_id": "activity-location-pembrokeshire-surfing",
-      "route_or_slug": "/pembrokeshire/things-to-do/surfing",
+      "content_item_id": "activity-location-snowdonia-beaches",
+      "route_or_slug": "/snowdonia/things-to-do/beaches",
       "image_status": "needs_review",
       "image_source_url": "",
       "notes": "Needs image provenance review."
     },
     {
-      "content_item_id": "activity-location-pembrokeshire-wild-swimming",
-      "route_or_slug": "/pembrokeshire/things-to-do/wild-swimming",
+      "content_item_id": "activity-location-snowdonia-climbing",
+      "route_or_slug": "/snowdonia/things-to-do/climbing",
       "image_status": "needs_review",
       "image_source_url": "",
       "notes": "Needs image provenance review."
     },
     {
-      "content_item_id": "activity-location-south-wales-mountain-biking",
-      "route_or_slug": "/south-wales/things-to-do/mountain-biking",
+      "content_item_id": "activity-location-snowdonia-scenic-railway",
+      "route_or_slug": "/snowdonia/things-to-do/scenic-railway",
       "image_status": "needs_review",
       "image_source_url": "",
       "notes": "Needs image provenance review."
     },
     {
-      "content_item_id": "activity-location-south-wales-surfing",
-      "route_or_slug": "/south-wales/things-to-do/surfing",
+      "content_item_id": "activity-location-snowdonia-surfing",
+      "route_or_slug": "/snowdonia/things-to-do/surfing",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-trail-running",
+      "route_or_slug": "/snowdonia/things-to-do/trail-running",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-underground-trampolines",
+      "route_or_slug": "/snowdonia/things-to-do/underground-trampolines",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-wild-swimming",
+      "route_or_slug": "/snowdonia/things-to-do/wild-swimming",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-zip-lining",
+      "route_or_slug": "/snowdonia/things-to-do/zip-lining",
       "image_status": "needs_review",
       "image_source_url": "",
       "notes": "Needs image provenance review."
@@ -1726,6 +1467,13 @@
     {
       "content_item_id": "operator-sealyham-activity-centre",
       "route_or_slug": "/directory/sealyham-activity-centre",
+      "image_status": "missing",
+      "image_source_url": "",
+      "notes": "Image issue flagged by audit."
+    },
+    {
+      "content_item_id": "operator-snowdonia-mountain-guides",
+      "route_or_slug": "/directory/snowdonia-mountain-guides",
       "image_status": "missing",
       "image_source_url": "",
       "notes": "Image issue flagged by audit."
@@ -1885,6 +1633,13 @@
       "notes": "Needs image provenance review."
     },
     {
+      "content_item_id": "itinerary-snowdonia-adventure-weekend",
+      "route_or_slug": "/itineraries/snowdonia-adventure-weekend",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
       "content_item_id": "itinerary-solo-traveler-trail",
       "route_or_slug": "/itineraries/solo-traveler-trail",
       "image_status": "needs_review",
@@ -1901,6 +1656,223 @@
     {
       "content_item_id": "itinerary-winter-adventure",
       "route_or_slug": "/itineraries/winter-adventure",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "location-landing-carmarthenshire",
+      "route_or_slug": "/carmarthenshire",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "location-landing-north-wales",
+      "route_or_slug": "/north-wales",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "location-landing-wye-valley",
+      "route_or_slug": "/wye-valley",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-archery",
+      "route_or_slug": "/snowdonia/things-to-do/archery",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-attractions",
+      "route_or_slug": "/snowdonia/things-to-do/attractions",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-bike-hire",
+      "route_or_slug": "/snowdonia/things-to-do/bike-hire",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-boat-tour",
+      "route_or_slug": "/snowdonia/things-to-do/boat-tour",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-canyoning",
+      "route_or_slug": "/snowdonia/things-to-do/canyoning",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-caving-potholing",
+      "route_or_slug": "/snowdonia/things-to-do/caving-potholing",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-coasteering",
+      "route_or_slug": "/snowdonia/things-to-do/coasteering",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-fishing",
+      "route_or_slug": "/snowdonia/things-to-do/fishing",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-gorge-scrambling",
+      "route_or_slug": "/snowdonia/things-to-do/gorge-scrambling",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-high-ropes",
+      "route_or_slug": "/snowdonia/things-to-do/high-ropes",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-hiking-scrambling",
+      "route_or_slug": "/snowdonia/things-to-do/hiking-scrambling",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-horse-riding",
+      "route_or_slug": "/snowdonia/things-to-do/horse-riding",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-jet-ski",
+      "route_or_slug": "/snowdonia/things-to-do/jet-ski",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-kitesurfing",
+      "route_or_slug": "/snowdonia/things-to-do/kitesurfing",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-mine-exploration",
+      "route_or_slug": "/snowdonia/things-to-do/mine-exploration",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-mtb-coaching",
+      "route_or_slug": "/snowdonia/things-to-do/mtb-coaching",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-paintball-laser-tag",
+      "route_or_slug": "/snowdonia/things-to-do/paintball-laser-tag",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-powerboating",
+      "route_or_slug": "/snowdonia/things-to-do/powerboating",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-rafting",
+      "route_or_slug": "/snowdonia/things-to-do/rafting",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-running",
+      "route_or_slug": "/snowdonia/things-to-do/running",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-sailing",
+      "route_or_slug": "/snowdonia/things-to-do/sailing",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-sea-kayaking",
+      "route_or_slug": "/snowdonia/things-to-do/sea-kayaking",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-sup",
+      "route_or_slug": "/snowdonia/things-to-do/sup",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-toboggan",
+      "route_or_slug": "/snowdonia/things-to-do/toboggan",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-wildlife-birdwatching",
+      "route_or_slug": "/snowdonia/things-to-do/wildlife-birdwatching",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-wildlife-boat-tour",
+      "route_or_slug": "/snowdonia/things-to-do/wildlife-boat-tour",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-windsurfing",
+      "route_or_slug": "/snowdonia/things-to-do/windsurfing",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-wing-foiling",
+      "route_or_slug": "/snowdonia/things-to-do/wing-foiling",
       "image_status": "needs_review",
       "image_source_url": "",
       "notes": "Needs image provenance review."
@@ -7128,6 +7100,27 @@
       "notes": "Needs image provenance review."
     },
     {
+      "content_item_id": "event-snowdonia-outdoor-festival",
+      "route_or_slug": "/events/snowdonia-outdoor-festival",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
+    },
+    {
+      "content_item_id": "event-snowdonia-trail-marathon-eryri",
+      "route_or_slug": "/events/snowdonia-trail-marathon-eryri",
+      "image_status": "missing",
+      "image_source_url": "",
+      "notes": "Image issue flagged by audit."
+    },
+    {
+      "content_item_id": "event-snowdonia-trail-marathon-eryri-2026",
+      "route_or_slug": "/events/snowdonia-trail-marathon-eryri-2026",
+      "image_status": "missing",
+      "image_source_url": "",
+      "notes": "Image issue flagged by audit."
+    },
+    {
       "content_item_id": "event-snowman-legend-triathlon",
       "route_or_slug": "/events/snowman-legend-triathlon",
       "image_status": "needs_review",
@@ -8554,6 +8547,13 @@
       "image_status": "missing",
       "image_source_url": "",
       "notes": "Image issue flagged by audit."
+    },
+    {
+      "content_item_id": "location-landing-all-wales",
+      "route_or_slug": "/all-wales",
+      "image_status": "needs_review",
+      "image_source_url": "",
+      "notes": "Needs image provenance review."
     },
     {
       "content_item_id": "activity-location-all-wales-archery",

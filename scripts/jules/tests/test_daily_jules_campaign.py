@@ -264,18 +264,16 @@ class MainMalformedQueueTests(unittest.TestCase):
 
 
 class MainApiKeyTests(unittest.TestCase):
-    def test_missing_api_key_exits_gracefully_without_network_call(self):
+    def test_missing_api_key_uses_authenticated_cli_path(self):
         queue = {"tasks": [make_task(id="needs-key", content_item_id="needs-key")]}
         with _tmp_file(json.dumps(queue)) as queue_path, _tmp_dir() as state_dir:
             state_path = state_dir / "state.json"
             with patch.object(djc, "QUEUE_PATH", queue_path), patch.object(djc, "STATE_PATH", state_path):
                 with patch.dict("os.environ", {"JULES_API_KEY": ""}, clear=False):
-                    with patch.object(djc, "create_session", side_effect=AssertionError("must not call API")):
-                        out = io.StringIO()
-                        with redirect_stdout(out):
-                            rc = djc.main([])
-            self.assertEqual(rc, 1)
-            self.assertIn("JULES_API_KEY", out.getvalue())
+                    with patch.object(djc, "create_session", return_value={"name": "sessions/cli"}) as mock_create:
+                        rc = djc.main([])
+            self.assertEqual(rc, 0)
+            self.assertEqual(mock_create.call_count, 1)
 
     def test_api_key_never_printed(self):
         secret = "sk-super-secret-value-12345"
@@ -315,6 +313,7 @@ class MainSubmissionTests(unittest.TestCase):
             self.assertEqual(len(records), 1)
             self.assertEqual(records[0]["status"], "submitted")
             self.assertEqual(records[0]["session_id"], "sessions/xyz")
+            self.assertEqual(records[0]["output_path"], "data/research/content-ops/operator-example.json")
 
     def test_failed_submission_recorded_and_retryable(self):
         queue = {"tasks": [make_task(id="fail-1", content_item_id="fail-1")]}

@@ -29,6 +29,8 @@ import datetime as dt
 import hashlib
 import json
 import os
+import re
+import subprocess
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -278,7 +280,22 @@ Do not take any action beyond producing this one research file.
 
 
 def create_session(api_key: str, prompt: str, title: str, timeout: int = 60) -> dict:
-    """POST a new research session to the Jules API. Never logs the API key."""
+    """Create a session via API, falling back to the authenticated Jules CLI."""
+    if not api_key:
+        proc = subprocess.run(
+            ["jules", "new", "--repo", JULES_REPO_LABEL, prompt],
+            cwd=REPO_ROOT,
+            text=True,
+            capture_output=True,
+            timeout=timeout,
+        )
+        output = (proc.stdout + "\n" + proc.stderr).strip()
+        if proc.returncode:
+            raise JulesApiError(f"Jules CLI failed: {output[-500:]}")
+        match = re.search(r"^ID:\s*(\d+)\s*$", output, flags=re.MULTILINE)
+        if not match:
+            raise JulesApiError("Jules CLI created a session but did not return its ID")
+        return {"name": f"sessions/{match.group(1)}"}
     url = f"{JULES_API_BASE}/sessions"
     body = json.dumps(
         {
@@ -386,14 +403,9 @@ def main(argv: list[str] | None = None) -> int:
         save_state(STATE_PATH, state)
         return 0
 
+    # Prefer an API key when configured; otherwise use the existing authenticated
+    # Jules CLI session. Either path records a real remote session ID.
     api_key = os.environ.get("JULES_API_KEY", "").strip()
-    if not api_key:
-        print("ERROR: JULES_API_KEY is not set (or empty). Refusing to submit Jules sessions.")
-        run_record["finished_at"] = dt.datetime.now().isoformat(timespec="seconds")
-        run_record["error"] = "missing_api_key"
-        state["runs"][today] = run_record
-        save_state(STATE_PATH, state)
-        return 1
 
     for idx, task in enumerate(selected, start=1):
         content_item_id = task.get("content_item_id")
@@ -434,6 +446,7 @@ def main(argv: list[str] | None = None) -> int:
                     "date": today,
                     "attempt": attempt,
                     "session_id": session_id,
+                    "output_path": task.get("output_path"),
                     "status": "submitted",
                     "at": at,
                     "error": None,

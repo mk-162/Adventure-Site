@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T03:40:32.716Z",
+  "generatedAt": "2026-08-26T03:45:59.154Z",
   "sourceAuditGeneratedAt": "2026-05-22T17:26:33.808Z",
   "items": [
     {
@@ -2153,7 +2153,7 @@
       "schema_status": "needs_review",
       "commercial_review_status": "needs_review",
       "safety_or_legal_status": "not_applicable",
-      "last_generated_at": "2026-08-25T03:40:32.716Z",
+      "last_generated_at": "2026-08-26T03:45:59.154Z",
       "last_reviewed_at": "",
       "next_review_due": "",
       "published_at": "",

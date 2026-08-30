@@ -1,9 +1,8 @@
 name: Content Ops Nightly
 
 on:
-  schedule:
-    # 03:00 UTC daily
-    - cron: "0 3 * * *"
+  # Adventure Wales is paused; scheduled execution is disabled until the
+  # project resumes. workflow_dispatch remains for manual runs if needed.
   workflow_dispatch:
 
 permissions:

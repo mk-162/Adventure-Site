@@ -2,7 +2,7 @@
 
 **Audience:** MK (founder), non-technical.
 **Purpose:** where content-ops work actually lives at each stage, how to judge whether a piece of work is good, and why research work you can see in the repo is not the same as something live on the public site.
-**Last verified against the repo:** 2026-08-30 (branch `docs/content-ops-control-room`). Paths below were checked to exist in the worktree on that date.
+**Last verified against the repo:** 2026-08-25 (branch `docs/content-ops-control-room`). Paths below were checked to exist in the worktree on that date.
 
 ---
 
@@ -12,9 +12,9 @@
  audit          queue           research proposal        review          approved apply        DB              public page          build/crawl
 ┌─────────┐   ┌─────────┐   ┌──────────────────────┐   ┌──────────┐   ┌─────────────────┐   ┌────────┐   ┌────────────────────┐   ┌──────────────────┐
 │ content │──▶│ task-   │──▶│ agent research pass   │──▶│ human /  │──▶│ human applies    │──▶│ Neon   │──▶│ /admin/content-ops │──▶│ typecheck, lint,  │
-│ gap +   │   │ queue   │   │ (Jules CLI session or │   │ Opus     │   │ change to DB /   │   │ Postgres│   │ dashboard shows    │   │ test, build, then │
-│ inventory│  │ .json   │   │ Claude Code swarm)    │   │ verify   │   │ code, sets       │   │ (Drizzle│   │ status; only       │   │ npm run build +   │
-│ audit   │   │         │   │ writes proposal JSON  │   │ pass     │   │ status=published │   │ ORM)   │   │ published rows     │   │ crawl before it   │
+│ gap +   │   │ queue   │   │ (Jules CLI session)   │   │ Opus     │   │ change to DB /   │   │ Postgres│   │ dashboard shows    │   │ test, build, then │
+│ inventory│  │ .json   │   │ writes proposal JSON  │   │ verify   │   │ code, sets       │   │ (Drizzle│   │ status; only       │   │ npm run build +   │
+│ audit   │   │         │   │                       │   │ pass     │   │ status=published │   │ ORM)   │   │ published rows     │   │ crawl before it   │
 └─────────┘   └─────────┘   └──────────────────────┘   └──────────┘   └─────────────────┘   └────────┘   │ leave the DB       │   └──────────────────┘
                                                                                                             └────────────────────┘
 ```
@@ -29,13 +29,13 @@ Every arrow up to "approved apply" is **file-based and local to whoever's worktr
 |---|---|---|---|
 | Queue / inventory | The prioritised list of what needs work, generated from a gap audit | `content/ops/content-inventory.json` / `.csv`, `content/ops/task-queue.json` | No — repo file |
 | Research JSON | One agent's proposed facts for one item (operator, region page, itinerary) | `data/research/content-ops/<item-id>.json` | No — a proposal, not applied content |
-| Jules session / patch | A single agent run against a task; identified by a numeric session ID, pulled via CLI (`jules remote list --session`, `jules remote pull --session <SESSION_ID>`) | Jules' own session store, not this repo | No — no public URL exists for a session; visible only to whoever runs the CLI with access |
+| Jules session / patch | A single research-only agent run against a task; identified by a numeric session ID, viewable in the Jules web app and (where CLI/API access is set up) pullable via `jules remote list --session` / `jules remote pull --session <SESSION_ID>` | Jules' own session store, not this repo | Not public — an authenticated account holder can view the session at `https://jules.google.com/session/<SESSION_ID>`, but that is private to the account, not a public URL, and does not mean the content is in this repo, the database, the CMS, or the public site |
 | Git branch / PR | Reviewed, merged code or content change | GitHub, this repo | Not until merged **and** deployed |
 | Database | The actual data the site renders from (operators, activities, regions, etc.) | Neon Postgres, via Drizzle (`src/db/schema.ts`) | Yes, for rows with `status = 'published'` — this is the real source of truth for live pages |
 | Admin dashboard | Read-only-ish monitoring + decision-recording UI over the files/DB above | `/admin/content-ops` (`src/app/admin/content-ops/page.tsx`) | Only if deployed and you're signed in as admin |
 | Vercel / public site | The actual live pages a visitor sees | Vercel deployment (config: `vercel.json`, `.vercelignore`) | Yes, once deployed — but this document does not confirm there is currently a live deployment; see §5 |
 
-The important distinction: **queue → research JSON → Jules/Claude output** are all steps 1–3 of the diagram. None of them touch the database. A file existing in `data/research/content-ops/` means an agent proposed something — it says nothing about whether it's live.
+The important distinction: **queue → research JSON → Jules output** are all steps 1–3 of the diagram. None of them touch the database. A file existing in `data/research/content-ops/` means Jules proposed something — it says nothing about whether it's live.
 
 ---
 
@@ -45,7 +45,7 @@ The important distinction: **queue → research JSON → Jules/Claude output** a
 - **`content/ops/task-queue.json`** — the raw, priority-ordered queue every agent task comes from. Large (100+ items); read `status-report.md` first.
 - **`data/research/content-ops/`** — one JSON file per researched item (operators, region landings, itineraries). Each has a `_meta` block with `recommendedNextStatus`, `identityConfidence`, and `redFlags`. **This is a proposal folder, not published content** — a file here has no effect on the live site until a human reviews it and applies it.
 - **`/admin/content-ops`** — when an authorised deployment is available. Shows inventory counts, the commercial-decision queue, and launch-visible blockers by reading the files above (plus `content/ops/commercial-decisions.json`). It does **not** currently read the database for content status, and decision buttons on it write to a JSON file, not the database — see §5 for the durability caveat.
-- **Jules sessions** — referenced by numeric session ID (e.g. `jules remote pull --session 2730327055973848465`), pulled via the authenticated Jules CLI from this machine. There is no browsable web URL for a session; a Jules session existing does not mean anything reached this repo or the site — only a pulled, reviewed, applied patch does.
+- **Jules sessions** — research-only agent runs, referenced by numeric session ID (e.g. `jules remote pull --session 2730327055973848465`). An authenticated account holder can view a session in the Jules web app at `https://jules.google.com/session/<SESSION_ID>`; sessions can also be listed/pulled via the Jules CLI or API where that access is set up (the CLI is not currently installed on this machine). Either way, viewing or pulling a session is private to the account — a Jules session existing does not mean anything reached this repo, the database, the CMS, or the site; only a pulled, reviewed, applied patch does.
 
 None of the above is a public URL. If you want to check what's actually live, the only correct source is the deployed site itself (or a direct look at `operators.status = 'published'` and equivalent rows in the database) — not a file in this repo.
 
@@ -79,14 +79,16 @@ In order, per the operator/content workflow (`vault/workflows/operator-verificat
 
 ## 6. Operational review cadence
 
-Target operating rhythm for this pipeline:
+Two separate schedules are actually running, from two separate places:
 
-- **Every 30 minutes:** a research pulse — agents pick up the next `research_needed` items from the queue and write proposal JSON.
-- **Each morning:** an exception report — a human-readable summary of what's blocked, what needs a decision, and what changed overnight (today, the closest equivalent already automated in-repo is the nightly audit).
+- **In this repository, verifiable via git:** a single scheduled GitHub Action, **Content Ops Nightly** (`.github/workflows/content-ops-nightly.yml`), runs once daily at 03:00 UTC. It runs `npm run content-ops:audit` and `npm run content-ops:report` (filesystem-only — inventory/queue/status-report regeneration) and commits the result back to `content/ops/`. It does not run research, does not touch the database, and needs no secrets.
+- **In the active Adventure Wales operational system, outside this repository:** a research pulse runs every 30 minutes under the MiniGeek Hermes profile. It picks up the next `research_needed` items from the queue and submits **research-only** Jules tasks (writing proposal JSON, per §2) — it does not publish, apply, or deploy anything. This pulse is operational configuration owned by that profile, not a file in this repo, so nothing in this repo's git history or worktree confirms it on its own; it's described here based on how the operator has configured it, separately from what git can show.
+
+On top of both of those:
+
+- **Each morning:** an exception report — a human-readable summary of what's blocked, what needs a decision, and what changed overnight (today, the closest equivalent already automated in-repo is the nightly audit above).
 - **Ongoing:** a human review queue — nothing moves past `qa_needed`/`reviewed` without a person looking at it, via the gates in §4.
-- **Bounded Claude implementation tasks:** development work (dashboard, schema, scripts — like this document) is scoped to specific, narrow tasks, not open-ended "finish the site" instructions.
-
-What's actually automated in this repo today is narrower than the target above: a single scheduled GitHub Action, **Content Ops Nightly** (`.github/workflows/content-ops-nightly.yml`), runs once daily at 03:00 UTC. It runs `npm run content-ops:audit` and `npm run content-ops:report` (filesystem-only — inventory/queue/status-report regeneration) and commits the result back to `content/ops/`. It does not run research, does not touch the database, and needs no secrets. The 30-minute pulse and morning exception report describe where the cadence is headed, not what's currently scheduled.
+- **Bounded Claude Code implementation tasks:** development work (dashboard, schema, scripts — like this document) is scoped to specific, narrow tasks, not open-ended "finish the site" instructions. Claude Code does not run research passes or write proposal JSON — that's Jules' job (§5).
 
 ---
 

@@ -1,9 +1,19 @@
 import { existsSync, readFileSync, readdirSync } from "fs";
 import { join } from "path";
 import Link from "next/link";
-import { AlertTriangle, ArrowRight, CheckCircle2, ClipboardList, Clock, FileSearch, Layers3, ShieldAlert } from "lucide-react";
+import { AlertTriangle, ArrowRight, CheckCircle2, ClipboardList, Clock, Database, FileSearch, Layers3, ShieldAlert } from "lucide-react";
 
 import type { ReactNode } from "react";
+
+import {
+  COMMERCIAL_DECISION_OPTIONS,
+  REVIEW_ACTION_LABELS,
+  REVIEW_ACTION_STATUSES,
+  buildQualityScorecard,
+  describeDurableStore,
+  loadDurableContentOpsState,
+  type ScorecardTone,
+} from "@/lib/content-ops/durable-review";
 
 type Channel = "evergreen" | "commercial" | "dynamic";
 type Status =
@@ -19,14 +29,6 @@ type Status =
   | "refresh_due"
   | "blocked"
   | "archived";
-
-type CommercialDecisionOption =
-  | "strategic_anchor"
-  | "premium_sales_lure"
-  | "claimed_basic"
-  | "stub_only"
-  | "remove_or_block"
-  | "needs_human_permission";
 
 interface ContentInventoryItem {
   id: string;
@@ -73,28 +75,6 @@ interface QueueFile {
   tasks: TaskQueueItem[];
 }
 
-interface CommercialDecisionRecord {
-  content_item_id: string;
-  decision: CommercialDecisionOption;
-  decided_by: string;
-  decided_at: string;
-  rationale?: string;
-  next_action?: string;
-}
-
-interface CommercialDecisionOptionRecord {
-  id: CommercialDecisionOption;
-  label: string;
-  meaning: string;
-}
-
-interface CommercialDecisionsFile {
-  generatedAt: string;
-  purpose: string;
-  decisionOptions: CommercialDecisionOptionRecord[];
-  decisions: CommercialDecisionRecord[];
-}
-
 interface ResearchSummary {
   filePath: string | null;
   sourceCount: number;
@@ -102,15 +82,6 @@ interface ResearchSummary {
   recommendedNextStatus: string;
   humanReviewFlags: number;
 }
-
-const fallbackDecisionOptions: CommercialDecisionOptionRecord[] = [
-  { id: "strategic_anchor", label: "Strategic Anchor", meaning: "Free enhanced treatment because it materially improves Adventure Wales launch credibility." },
-  { id: "premium_sales_lure", label: "Premium Sales Lure", meaning: "Premium-quality preview for sales outreach; not a free published premium listing." },
-  { id: "claimed_basic", label: "Claimed/Basic", meaning: "Verified basic listing only; no unpaid premium placement." },
-  { id: "stub_only", label: "Stub Only", meaning: "Minimal claim-CTA page until claimed or paid." },
-  { id: "remove_or_block", label: "Remove/Block", meaning: "Hold or remove because evidence, safety, identity, or permission is unresolved." },
-  { id: "needs_human_permission", label: "Needs Permission", meaning: "Explicit operator/source/media permission needed before using assets or claims." },
-];
 
 function readJson<T>(path: string, fallback: T): T {
   if (!existsSync(path)) return fallback;
@@ -138,6 +109,12 @@ function statusClass(status: string) {
 
 function normaliseText(value: string | undefined | null) {
   return value?.trim() || "Not recorded";
+}
+
+function formatTimestamp(value: Date | string | null) {
+  if (!value) return "not recorded";
+  const date = value instanceof Date ? value : new Date(value);
+  return Number.isNaN(date.getTime()) ? "not recorded" : date.toISOString().replace("T", " ").slice(0, 16);
 }
 
 function collectSourceUrls(value: unknown): Set<string> {
@@ -239,7 +216,52 @@ function decisionPriority(item: ContentInventoryItem) {
   return score;
 }
 
-export default function ContentOpsPage() {
+const ACTION_OUTCOMES: Record<string, { tone: "green" | "amber" | "red"; message: string }> = {
+  "decision=recorded": {
+    tone: "green",
+    message:
+      "Commercial decision saved as an append-only ops_decisions row. Nothing was published, no operator record or tier changed, and no research was applied.",
+  },
+  "decision=store-unavailable": {
+    tone: "red",
+    message:
+      "Decision NOT saved. The durable store could not be written — apply the fact-check migrations to this database and try again.",
+  },
+  "decision=invalid": { tone: "red", message: "Decision not saved: that option is not in the allowed decision set." },
+  "decision=missing-item": { tone: "red", message: "Decision not saved: no content item was identified." },
+  "decision=unauthorized": { tone: "red", message: "Decision not saved: sign in as an admin first." },
+  "decision=forbidden": { tone: "red", message: "Decision not saved: your role cannot record commercial decisions." },
+  "review=recorded": {
+    tone: "green",
+    message:
+      "Review state saved to content_review_state. This records a human judgement only — it does not publish, apply research, or change production content.",
+  },
+  "review=store-unavailable": {
+    tone: "red",
+    message:
+      "Review state NOT saved. The durable store could not be written — apply the fact-check migrations to this database and try again.",
+  },
+  "review=invalid-status": {
+    tone: "red",
+    message: "Review state not saved: only researched, QA needed, reviewed, signed off or blocked can be recorded here. Publishing is not a review action.",
+  },
+  "review=missing-item": { tone: "red", message: "Review state not saved: no content item was identified." },
+  "review=unauthorized": { tone: "red", message: "Review state not saved: sign in as an admin first." },
+  "review=forbidden": { tone: "red", message: "Review state not saved: your role cannot record review state." },
+};
+
+const TONE_CLASSES: Record<ScorecardTone, string> = {
+  green: "border-green-200 bg-green-50 text-green-800",
+  amber: "border-amber-200 bg-amber-50 text-amber-800",
+  red: "border-red-200 bg-red-50 text-red-800",
+};
+
+export default async function ContentOpsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ decision?: string; review?: string }>;
+}) {
+  const params = await searchParams;
   const opsDir = join(process.cwd(), "content", "ops");
   const researchDir = join(process.cwd(), "data", "research", "content-ops");
   const inventory = readJson<InventoryFile>(join(opsDir, "content-inventory.json"), {
@@ -248,15 +270,8 @@ export default function ContentOpsPage() {
     items: [],
   });
   const queue = readJson<QueueFile>(join(opsDir, "task-queue.json"), { generatedAt: "", tasks: [] });
-  const commercialDecisions = readJson<CommercialDecisionsFile>(join(opsDir, "commercial-decisions.json"), {
-    generatedAt: "",
-    purpose: "Human-recorded commercial decisions.",
-    decisionOptions: fallbackDecisionOptions,
-    decisions: [],
-  });
   const researchByItem = readResearchSummaries(researchDir);
   const queueByItem = new Map(queue.tasks.map((task) => [task.content_item_id, task]));
-  const decisionByItem = new Map(commercialDecisions.decisions.map((decision) => [decision.content_item_id, decision]));
 
   const channelCounts = countBy(inventory.items.map((item) => item.channel));
   const statusCounts = countBy(inventory.items.map((item) => item.status));
@@ -269,10 +284,20 @@ export default function ContentOpsPage() {
     .filter((item) => !["published", "archived"].includes(item.status))
     .sort((a, b) => decisionPriority(b) - decisionPriority(a))
     .slice(0, 25);
+
+  // Durable state for exactly the items rendered below. Never throws: if the
+  // fact-check migrations are missing or the database is unreachable, the
+  // file-backed queue still renders and the banner says durable data is absent.
+  const durableState = await loadDurableContentOpsState(decisionQueue.map((item) => item.id));
+  const durableStore = describeDurableStore(durableState);
+
   const topTasks = queue.tasks.slice(0, 20);
   const criticalResearch = inventory.items.filter((item) => item.status === "research_needed").length;
   const qaNeeded = inventory.items.filter((item) => item.status === "qa_needed").length;
-  const openCommercialDecisions = decisionQueue.filter((item) => !decisionByItem.has(item.id)).length;
+  const openCommercialDecisions = decisionQueue.filter((item) => !durableState.latestDecisionByItem.has(item.id)).length;
+
+  const outcomeKey = params.decision ? `decision=${params.decision}` : params.review ? `review=${params.review}` : null;
+  const outcome = outcomeKey ? ACTION_OUTCOMES[outcomeKey] : null;
 
   return (
     <div>
@@ -284,21 +309,42 @@ export default function ContentOpsPage() {
           </div>
           <h1 className="mt-3 text-2xl font-bold text-gray-900">Launch readiness and commercial decision queue</h1>
           <p className="mt-2 max-w-3xl text-gray-500">
-            Tracks every publishable Adventure Wales asset by channel, status, priority, evidence, image, SEO, commercial review and next action. MK decisions are written only to <code className="rounded bg-gray-100 px-1">content/ops/commercial-decisions.json</code>; this dashboard does not publish content or change operator tiers automatically.
+            Tracks every publishable Adventure Wales asset by channel, status, priority, evidence, image, SEO, commercial review and next action. Decisions and review states are written to the durable <code className="rounded bg-gray-100 px-1">ops_decisions</code> and <code className="rounded bg-gray-100 px-1">content_review_state</code> tables. Recording them <strong>does not</strong> apply research, publish a page, change production operator data, or deploy.
           </p>
         </div>
         <div className="rounded-xl border border-gray-100 bg-white p-4 text-sm text-gray-500 shadow-sm">
           <div>Inventory generated: {inventory.generatedAt || "Not generated yet"}</div>
           <div>Source audit: {inventory.sourceAuditGeneratedAt || "Not available"}</div>
-          <div>Decision file: {commercialDecisions.generatedAt || "Not initialised"}</div>
+          <div>Task queue: {queue.generatedAt || "Not generated yet"}</div>
           <div className="mt-2 font-mono text-xs text-gray-400">npm run content-ops:audit</div>
+        </div>
+      </div>
+
+      {outcome ? (
+        <div className={`mb-6 rounded-lg border p-4 text-sm ${TONE_CLASSES[outcome.tone]}`}>{outcome.message}</div>
+      ) : null}
+
+      <div
+        className={`mb-8 flex items-start gap-3 rounded-lg border p-4 text-sm ${
+          durableStore.tone === "green" ? TONE_CLASSES.green : TONE_CLASSES.red
+        }`}
+      >
+        <Database className="mt-0.5 h-5 w-5 shrink-0" />
+        <div>
+          <div className="font-semibold">{durableStore.headline}</div>
+          <div className="mt-1">{durableStore.detail}</div>
         </div>
       </div>
 
       <div className="mb-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
         <MetricCard label="Inventory items" value={inventory.items.length} icon={<Layers3 className="h-5 w-5" />} tone="blue" />
         <MetricCard label="Queued agent tasks" value={queue.tasks.length} icon={<ClipboardList className="h-5 w-5" />} tone="purple" />
-        <MetricCard label="Open decisions" value={openCommercialDecisions} icon={<ShieldAlert className="h-5 w-5" />} tone="red" />
+        <MetricCard
+          label={durableState.available ? "Open decisions" : "Open decisions (unknown)"}
+          value={openCommercialDecisions}
+          icon={<ShieldAlert className="h-5 w-5" />}
+          tone="red"
+        />
         <MetricCard label="Research needed" value={criticalResearch} icon={<AlertTriangle className="h-5 w-5" />} tone="red" />
         <MetricCard label="QA needed" value={qaNeeded} icon={<Clock className="h-5 w-5" />} tone="amber" />
       </div>
@@ -308,14 +354,39 @@ export default function ContentOpsPage() {
         action={<span className="text-xs font-medium uppercase tracking-wide text-red-600">Commercial/operator blockers first</span>}
       >
         <div className="mb-4 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
-          Decision buttons create a human decision record only. They do not publish pages, change production operator tiers, or grant premium value automatically.
+          Both controls below only record a human judgement in the durable review tables. They do <strong>not</strong> apply research, publish a page, change production operator data or tiers, or deploy anything.
         </div>
         <div className="space-y-4">
           {decisionQueue.map((item) => {
             const task = queueByItem.get(item.id);
             const research = researchByItem[item.id];
-            const decision = decisionByItem.get(item.id);
+            const decision = durableState.latestDecisionByItem.get(item.id);
+            const review = durableState.reviewByItem.get(item.id);
             const sourceCount = item.source_count ?? item.source_urls?.length ?? 0;
+            const scorecard = buildQualityScorecard({
+              item: {
+                status: item.status,
+                evidenceStatus: item.evidence_status ?? "",
+                imageStatus: item.image_status ?? "",
+                copyStatus: item.copy_status ?? "",
+                seoStatus: item.seo_status ?? "",
+                routeOrSlug: item.route_or_slug ?? "",
+                sourceCount,
+              },
+              research: research
+                ? {
+                    sourceCount: research.sourceCount,
+                    imageStatus: research.imageStatus,
+                    humanReviewFlags: research.humanReviewFlags,
+                  }
+                : null,
+              durable: {
+                available: durableState.available,
+                decision: decision ?? null,
+                review: review ?? null,
+                verifiedEvidenceCount: durableState.verifiedEvidenceCountByItem.get(item.id) ?? 0,
+              },
+            });
 
             return (
               <article key={item.id} className="rounded-xl border border-gray-100 bg-white p-4 shadow-sm">
@@ -328,7 +399,11 @@ export default function ContentOpsPage() {
                       <span className={`inline-flex rounded-full border px-2 py-1 text-xs font-medium capitalize ${statusClass(item.status)}`}>
                         {statusLabel(item.status)}
                       </span>
-                      {decision ? (
+                      {!durableState.available ? (
+                        <span className="inline-flex rounded-full border border-red-200 bg-red-50 px-2 py-1 text-xs font-medium text-red-700">
+                          Durable state unavailable
+                        </span>
+                      ) : decision ? (
                         <span className={`inline-flex rounded-full border px-2 py-1 text-xs font-medium capitalize ${statusClass(decision.decision)}`}>
                           Decided: {statusLabel(decision.decision)}
                         </span>
@@ -337,10 +412,28 @@ export default function ContentOpsPage() {
                           Awaiting MK
                         </span>
                       )}
+                      {durableState.available && review ? (
+                        <span className={`inline-flex rounded-full border px-2 py-1 text-xs font-medium capitalize ${statusClass(review.status)}`}>
+                          Review: {statusLabel(review.status)}
+                        </span>
+                      ) : null}
                     </div>
                     <h2 className="mt-3 text-lg font-semibold text-gray-900">{item.title}</h2>
                     <div className="mt-1 text-sm text-gray-500">{item.route_or_slug}</div>
                     <div className="mt-2 text-sm text-gray-600">{normaliseText(item.blocker_reason || item.review_notes)}</div>
+
+                    <div className="mt-4">
+                      <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500">Quality scorecard</div>
+                      <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
+                        {scorecard.map((category) => (
+                          <div key={category.key} className={`rounded-lg border p-3 ${TONE_CLASSES[category.tone]}`}>
+                            <div className="text-xs font-semibold uppercase tracking-wide">{category.label}</div>
+                            <div className="mt-1 text-xs">{category.detail}</div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
                     <dl className="mt-4 grid gap-3 text-sm sm:grid-cols-2 xl:grid-cols-4">
                       <EvidenceStat label="Inventory sources" value={sourceCount.toString()} />
                       <EvidenceStat label="Research sources" value={(research?.sourceCount ?? 0).toString()} />
@@ -351,6 +444,7 @@ export default function ContentOpsPage() {
                       <EvidenceStat label="Research next" value={statusLabel(research?.recommendedNextStatus ?? "not_recorded")} />
                       <EvidenceStat label="Human flags" value={(research?.humanReviewFlags ?? 0).toString()} />
                     </dl>
+
                     <div className="mt-3 flex flex-wrap gap-2 text-xs text-gray-500">
                       {research?.filePath ? (
                         <span className="inline-flex items-center gap-1 rounded bg-gray-50 px-2 py-1">
@@ -362,32 +456,87 @@ export default function ContentOpsPage() {
                       )}
                       {task ? <span className="rounded bg-gray-50 px-2 py-1">Queue: {task.id}</span> : null}
                       {item.commercial_tier ? <span className="rounded bg-gray-50 px-2 py-1">Current tier: {item.commercial_tier}</span> : null}
+                      {durableState.available && decision ? (
+                        <span className="rounded bg-gray-50 px-2 py-1">
+                          Decision by {decision.decidedByEmail} at {formatTimestamp(decision.decidedAt)}
+                        </span>
+                      ) : null}
+                      {durableState.available && review ? (
+                        <span className="rounded bg-gray-50 px-2 py-1">
+                          Review by {review.reviewedByEmail ?? "unknown"} at {formatTimestamp(review.reviewedAt)}
+                        </span>
+                      ) : null}
                     </div>
+                    {durableState.available && review?.notes ? (
+                      <div className="mt-2 rounded-lg border border-gray-100 bg-gray-50 p-3 text-sm text-gray-600">
+                        Review notes: {review.notes}
+                      </div>
+                    ) : null}
                   </div>
 
-                  <div className="w-full shrink-0 xl:w-[360px]">
-                    <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500">Record decision</div>
-                    <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 xl:grid-cols-1">
-                      {(commercialDecisions.decisionOptions.length ? commercialDecisions.decisionOptions : fallbackDecisionOptions).map((option) => (
-                        <form key={option.id} action="/admin/content-ops/decisions" method="post">
-                          <input type="hidden" name="content_item_id" value={item.id} />
-                          <input type="hidden" name="title" value={item.title} />
-                          <input type="hidden" name="route_or_slug" value={item.route_or_slug} />
-                          <input type="hidden" name="decision" value={option.id} />
-                          <input type="hidden" name="source_count" value={sourceCount} />
-                          <input type="hidden" name="research_source_count" value={research?.sourceCount ?? 0} />
-                          <input type="hidden" name="image_status" value={item.image_status || "not_recorded"} />
-                          <input type="hidden" name="research_image_status" value={research?.imageStatus ?? "not_recorded"} />
-                          <input type="hidden" name="research_file" value={research?.filePath ?? ""} />
-                          <button
-                            type="submit"
-                            className="w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-left text-sm font-medium text-gray-700 transition hover:border-orange-300 hover:bg-orange-50 hover:text-orange-800"
-                            title={option.meaning}
-                          >
-                            {option.label}
-                          </button>
-                        </form>
-                      ))}
+                  <div className="w-full shrink-0 space-y-4 xl:w-[360px]">
+                    <div>
+                      <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500">Record commercial decision</div>
+                      <form action="/admin/content-ops/decisions" method="post" className="space-y-2">
+                        <input type="hidden" name="content_item_id" value={item.id} />
+                        <input type="hidden" name="title" value={item.title} />
+                        <input type="hidden" name="route_or_slug" value={item.route_or_slug} />
+                        <input type="hidden" name="source_count" value={sourceCount} />
+                        <input type="hidden" name="research_source_count" value={research?.sourceCount ?? 0} />
+                        <input type="hidden" name="image_status" value={item.image_status || "not_recorded"} />
+                        <input type="hidden" name="research_image_status" value={research?.imageStatus ?? "not_recorded"} />
+                        <input type="hidden" name="research_file" value={research?.filePath ?? ""} />
+                        <textarea
+                          name="rationale"
+                          rows={2}
+                          placeholder="Optional rationale for this decision"
+                          className="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm"
+                        />
+                        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 xl:grid-cols-1">
+                          {COMMERCIAL_DECISION_OPTIONS.map((option) => (
+                            <button
+                              key={option.id}
+                              type="submit"
+                              name="decision"
+                              value={option.id}
+                              className="w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-left text-sm font-medium text-gray-700 transition hover:border-orange-300 hover:bg-orange-50 hover:text-orange-800"
+                              title={option.meaning}
+                            >
+                              {option.label}
+                            </button>
+                          ))}
+                        </div>
+                      </form>
+                    </div>
+
+                    <div>
+                      <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500">Record review state</div>
+                      <form action="/admin/content-ops/review" method="post" className="space-y-2">
+                        <input type="hidden" name="content_item_id" value={item.id} />
+                        <textarea
+                          name="notes"
+                          rows={2}
+                          placeholder="Optional review notes"
+                          className="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm"
+                          defaultValue={review?.notes ?? ""}
+                        />
+                        <div className="grid grid-cols-2 gap-2 xl:grid-cols-3">
+                          {REVIEW_ACTION_STATUSES.map((status) => (
+                            <button
+                              key={status}
+                              type="submit"
+                              name="review_status"
+                              value={status}
+                              className="rounded-lg border border-gray-200 bg-white px-2 py-2 text-xs font-medium text-gray-700 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-800"
+                            >
+                              {REVIEW_ACTION_LABELS[status]}
+                            </button>
+                          ))}
+                        </div>
+                        <p className="text-xs text-gray-400">
+                          Records review state only. Publishing is deliberately not available here.
+                        </p>
+                      </form>
                     </div>
                   </div>
                 </div>

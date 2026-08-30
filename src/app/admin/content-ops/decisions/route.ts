@@ -1,7 +1,6 @@
 import { redirect } from "next/navigation";
 import { NextRequest } from "next/server";
 import { opsDecisions } from "@/db/schema";
-import { requireAdminRole, AdminAuthError } from "@/lib/admin-auth";
 import {
   DECISION_GUARDRAILS,
   isCommercialDecisionOption,
@@ -30,6 +29,12 @@ function text(value: FormDataEntryValue | null, fallback = "") {
  * instruction that anything is applied.
  */
 export async function POST(request: NextRequest) {
+  // Imported lazily, alongside the "@/db" import below, so merely loading this
+  // route module (e.g. during `next build`'s page-data collection) does not
+  // evaluate "@/db" through admin-auth's static import chain when
+  // DATABASE_URL is absent.
+  const { requireAdminRole, AdminAuthError } = await import("@/lib/admin-auth");
+
   let admin;
   try {
     admin = await requireAdminRole(["super", "admin", "editor"]);

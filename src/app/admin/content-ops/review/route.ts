@@ -1,7 +1,6 @@
 import { redirect } from "next/navigation";
 import { NextRequest } from "next/server";
 import { contentReviewState } from "@/db/schema";
-import { requireAdminRole, AdminAuthError } from "@/lib/admin-auth";
 import { isReviewActionStatus } from "@/lib/content-ops/durable-review";
 
 function text(value: FormDataEntryValue | null) {
@@ -17,6 +16,12 @@ function text(value: FormDataEntryValue | null) {
  * record is written, and no research JSON is applied to a listing.
  */
 export async function POST(request: NextRequest) {
+  // Imported lazily, alongside the "@/db" import below, so merely loading this
+  // route module (e.g. during `next build`'s page-data collection) does not
+  // evaluate "@/db" through admin-auth's static import chain when
+  // DATABASE_URL is absent.
+  const { requireAdminRole, AdminAuthError } = await import("@/lib/admin-auth");
+
   let admin;
   try {
     admin = await requireAdminRole(["super", "admin", "editor"]);

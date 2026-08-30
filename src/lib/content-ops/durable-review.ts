@@ -7,6 +7,13 @@
  * its two POST routes are the only consumers.
  */
 import { contentReviewStatusEnum, opsDecisionEnum } from "@/db/schema";
+import {
+  OPERATOR_ENTITY_TYPE,
+  countVerifiedEvidenceByItem,
+  describeEvidenceTarget,
+  resolveEvidenceTargetRequest,
+  type ResolvedEvidenceTarget,
+} from "./evidence-target";
 
 export type CommercialDecisionOption = (typeof opsDecisionEnum.enumValues)[number];
 export type ContentReviewStatus = (typeof contentReviewStatusEnum.enumValues)[number];
@@ -86,13 +93,23 @@ export interface DurableReview {
   notes: string | null;
 }
 
+/** The queue item fields the durable loader needs: the id to key state by, and enough to find its evidence. */
+export interface DurableContentOpsItem {
+  contentItemId: string;
+  contentType: string;
+  routeOrSlug: string;
+}
+
 export interface DurableContentOpsState {
   /** False when the fact-check tables are missing or the database is unreachable. */
   available: boolean;
   unavailableReason: string | null;
   latestDecisionByItem: Map<string, DurableDecision>;
   reviewByItem: Map<string, DurableReview>;
+  /** Keyed by content_item_id; only ever populated for items with a resolved evidence target. */
   verifiedEvidenceCountByItem: Map<string, number>;
+  /** The listing_evidence address each item resolved to. Absent means "identity unknown", not "no evidence". */
+  evidenceTargetByItem: Map<string, ResolvedEvidenceTarget>;
 }
 
 function emptyState(available: boolean, unavailableReason: string | null): DurableContentOpsState {
@@ -102,6 +119,7 @@ function emptyState(available: boolean, unavailableReason: string | null): Durab
     latestDecisionByItem: new Map(),
     reviewByItem: new Map(),
     verifiedEvidenceCountByItem: new Map(),
+    evidenceTargetByItem: new Map(),
   };
 }
 
@@ -128,17 +146,22 @@ function toTime(value: Date | string | null): number {
  * file-backed queue and say plainly that durable data is missing.
  */
 export async function loadDurableContentOpsState(
-  contentItemIds: string[],
+  items: DurableContentOpsItem[],
 ): Promise<DurableContentOpsState> {
-  const ids = Array.from(new Set(contentItemIds.filter((id) => id && id.trim().length > 0)));
+  const itemsById = new Map<string, DurableContentOpsItem>();
+  for (const item of items) {
+    if (item.contentItemId && item.contentItemId.trim().length > 0) {
+      itemsById.set(item.contentItemId, item);
+    }
+  }
+  const ids = Array.from(itemsById.keys());
 
   try {
     // Imported lazily and inside the try so an unset DATABASE_URL (which throws
     // at module load) degrades like any other store failure instead of 500ing.
     const { db } = await import("@/db");
-    const { contentReviewState, listingEvidence, opsDecisions } = await import("@/db/schema");
-    const { desc, inArray } = await import("drizzle-orm");
-    const { canPublishVerification } = await import("./evidence");
+    const { contentReviewState, listingEvidence, operators, opsDecisions } = await import("@/db/schema");
+    const { and, desc, eq, inArray } = await import("drizzle-orm");
 
     if (ids.length === 0) {
       // Nothing to look up, but still confirm the durable store answers so the
@@ -147,17 +170,61 @@ export async function loadDurableContentOpsState(
       return emptyState(true, null);
     }
 
-    const [decisionRows, reviewRows, evidenceRows] = await Promise.all([
+    // Evidence identity is resolved per item before any evidence is read. Items
+    // whose content type has no explicit mapper contribute nothing here — their
+    // identity stays unknown rather than being guessed from the queue id.
+    const operatorSlugByItem = new Map<string, string>();
+    for (const [contentItemId, item] of itemsById) {
+      const request = resolveEvidenceTargetRequest(item);
+      if (request) operatorSlugByItem.set(contentItemId, request.operatorSlug);
+    }
+    const operatorSlugs = Array.from(new Set(operatorSlugByItem.values()));
+
+    const [decisionRows, reviewRows, operatorRows] = await Promise.all([
       db
         .select()
         .from(opsDecisions)
         .where(inArray(opsDecisions.contentItemId, ids))
         .orderBy(desc(opsDecisions.decidedAt)),
       db.select().from(contentReviewState).where(inArray(contentReviewState.contentItemId, ids)),
-      db.select().from(listingEvidence).where(inArray(listingEvidence.entityId, ids)),
+      operatorSlugs.length > 0
+        ? db
+            .select({ id: operators.id, slug: operators.slug })
+            .from(operators)
+            .where(inArray(operators.slug, operatorSlugs))
+        : Promise.resolve([] as { id: number; slug: string }[]),
     ]);
 
     const state = emptyState(true, null);
+
+    // An operator's evidence entity id is its canonical operators.id as a
+    // string. A slug with no operators row stays unmapped, so the dashboard
+    // reports "identity unknown" instead of reading someone else's evidence.
+    const operatorIdBySlug = new Map(operatorRows.map((row) => [row.slug, String(row.id)]));
+    for (const [contentItemId, slug] of operatorSlugByItem) {
+      const entityId = operatorIdBySlug.get(slug);
+      if (entityId) {
+        state.evidenceTargetByItem.set(contentItemId, { entityType: OPERATOR_ENTITY_TYPE, entityId });
+      }
+    }
+
+    // Always scoped by entity_type as well as entity_id: listing_evidence is
+    // polymorphic, so a bare entity_id would collide across entity types.
+    const operatorEntityIds = Array.from(
+      new Set(Array.from(state.evidenceTargetByItem.values()).map((target) => target.entityId)),
+    );
+    const evidenceRows =
+      operatorEntityIds.length > 0
+        ? await db
+            .select()
+            .from(listingEvidence)
+            .where(
+              and(
+                eq(listingEvidence.entityType, OPERATOR_ENTITY_TYPE),
+                inArray(listingEvidence.entityId, operatorEntityIds),
+              ),
+            )
+        : [];
 
     // ops_decisions is append-only, so "the current decision" is the newest row
     // per item. Resolved here rather than in SQL so the answer does not depend
@@ -186,14 +253,11 @@ export async function loadDurableContentOpsState(
       });
     }
 
-    // listing_evidence is looked up by the same stable content_item_id used as
-    // entity_id. A CSV seed row can never count as verification, so an item with
-    // only seeded rows stays unverified rather than scoring green.
-    for (const row of evidenceRows) {
-      if (!canPublishVerification({ sourceType: row.sourceType, verdict: row.verdict })) continue;
-      const count = state.verifiedEvidenceCountByItem.get(row.entityId) ?? 0;
-      state.verifiedEvidenceCountByItem.set(row.entityId, count + 1);
-    }
+    // Counts are keyed back to the dashboard's content_item_id from the full
+    // (entity_type, entity_id) pair. A CSV seed row can never count as
+    // verification, so an item with only seeded rows stays unverified rather
+    // than scoring green.
+    state.verifiedEvidenceCountByItem = countVerifiedEvidenceByItem(state.evidenceTargetByItem, evidenceRows);
 
     return state;
   } catch (error) {
@@ -266,6 +330,8 @@ export interface ScorecardInput {
     decision: Pick<DurableDecision, "decision" | "decidedByEmail" | "decidedAt"> | null;
     review: Pick<DurableReview, "status" | "reviewedByEmail" | "reviewedAt"> | null;
     verifiedEvidenceCount: number;
+    /** Which listing_evidence row set the count came from; null when this item has no mapped evidence identity. */
+    evidenceTarget: ResolvedEvidenceTarget | null;
   };
 }
 
@@ -277,6 +343,10 @@ const SEO_READY = ["ready", "complete", "approved", "ok", "done"];
 const SEO_BLOCKED = ["missing", "blocked"];
 
 const STORE_UNAVAILABLE_DETAIL = "Durable store unavailable — state unknown, not assumed good.";
+// Covers both "this content type has no mapper yet" and "the operator slug
+// matched no operators row" — either way the identity is unknown, not absent.
+const NO_EVIDENCE_TARGET_DETAIL =
+  "No listing_evidence entity is mapped for this item, so verification cannot be read.";
 
 /**
  * Six founder-visible quality categories for one content item.
@@ -307,12 +377,14 @@ function evidenceCategory(
   const flags = research?.humanReviewFlags ?? 0;
   const flagNote = flags > 0 ? ` ${flags} research passage(s) flagged for human review.` : "";
 
-  if (durable.available && durable.verifiedEvidenceCount > 0) {
+  // Green requires a resolved evidence target: a count with no identity behind
+  // it says nothing about this item.
+  if (durable.available && durable.evidenceTarget && durable.verifiedEvidenceCount > 0) {
     return {
       key: "evidence",
       label: "Evidence",
       tone: "green",
-      detail: `${durable.verifiedEvidenceCount} verified evidence row(s) in listing_evidence, plus ${totalSources} recorded source(s).${flagNote}`,
+      detail: `${durable.verifiedEvidenceCount} verified evidence row(s) in listing_evidence for ${describeEvidenceTarget(durable.evidenceTarget)}, plus ${totalSources} recorded source(s).${flagNote}`,
     };
   }
 
@@ -325,13 +397,29 @@ function evidenceCategory(
     };
   }
 
+  if (!durable.available) {
+    return {
+      key: "evidence",
+      label: "Evidence",
+      tone: "amber",
+      detail: `${totalSources} source(s) recorded. ${STORE_UNAVAILABLE_DETAIL}`,
+    };
+  }
+
+  if (!durable.evidenceTarget) {
+    return {
+      key: "evidence",
+      label: "Evidence",
+      tone: "amber",
+      detail: `${totalSources} source(s) recorded. ${NO_EVIDENCE_TARGET_DETAIL}${flagNote}`,
+    };
+  }
+
   return {
     key: "evidence",
     label: "Evidence",
     tone: "amber",
-    detail: durable.available
-      ? `${totalSources} source(s) recorded but none human-verified in listing_evidence.${flagNote}`
-      : `${totalSources} source(s) recorded. ${STORE_UNAVAILABLE_DETAIL}`,
+    detail: `${totalSources} source(s) recorded but none human-verified in listing_evidence for ${describeEvidenceTarget(durable.evidenceTarget)}.${flagNote}`,
   };
 }
 

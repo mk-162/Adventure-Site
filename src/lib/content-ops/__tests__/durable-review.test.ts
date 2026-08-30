@@ -1,12 +1,14 @@
 // @vitest-environment node
 // Proves the dashboard's durable data helper degrades visibly and safely when
-// the fact-check tables are missing/unreachable, and that the quality scorecard
-// never infers green from missing data.
+// the fact-check tables are missing/unreachable, that the quality scorecard
+// never infers green from missing data, and that evidence is read by the
+// canonical (entity_type, entity_id) target rather than the queue id.
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import { contentReviewState, listingEvidence, opsDecisions } from "@/db/schema";
+import { contentReviewState, listingEvidence, operators, opsDecisions } from "@/db/schema";
 
 const mocks = vi.hoisted(() => ({
   rowsByTable: new Map<unknown, unknown[]>(),
+  whereByTable: new Map<unknown, unknown[]>(),
   queryError: null as Error | null,
   selectCalls: [] as unknown[],
   mutations: [] as string[],
@@ -25,7 +27,12 @@ vi.mock("@/db", () => {
       mocks.selectCalls.push(from);
       return chain;
     };
-    chain.where = self;
+    chain.where = (condition: unknown) => {
+      const recorded = mocks.whereByTable.get(table) ?? [];
+      recorded.push(condition);
+      mocks.whereByTable.set(table, recorded);
+      return chain;
+    };
     chain.orderBy = self;
     chain.limit = self;
     chain.then = (onFulfilled: (value: unknown) => unknown, onRejected?: (reason: unknown) => unknown) =>
@@ -56,8 +63,36 @@ async function loadHelper() {
   return import("../durable-review");
 }
 
+/** Dashboard queue item shape: the durable loader needs type + route, not just the id. */
+function operatorItem(slug: string) {
+  return {
+    contentItemId: `operator-${slug}`,
+    contentType: "operator",
+    routeOrSlug: `/directory/${slug}`,
+  };
+}
+
+/**
+ * Flattens a drizzle condition to the column names and bound values it
+ * references, so a test can assert the query really constrained entity_type.
+ */
+function sqlAtoms(node: unknown, out: string[] = []): string[] {
+  if (!node || typeof node !== "object") return out;
+  if (Array.isArray(node)) {
+    for (const child of node) sqlAtoms(child, out);
+    return out;
+  }
+  const candidate = node as { name?: unknown; table?: unknown; queryChunks?: unknown; value?: unknown };
+  if (typeof candidate.name === "string" && candidate.table) out.push(candidate.name);
+  if (candidate.queryChunks) sqlAtoms(candidate.queryChunks, out);
+  if (typeof candidate.value === "string") out.push(candidate.value);
+  if (Array.isArray(candidate.value)) for (const v of candidate.value) out.push(String(v));
+  return out;
+}
+
 beforeEach(() => {
   mocks.rowsByTable.clear();
+  mocks.whereByTable.clear();
   mocks.queryError = null;
   mocks.selectCalls.length = 0;
   mocks.mutations.length = 0;
@@ -87,7 +122,7 @@ describe("loadDurableContentOpsState", () => {
     ]);
 
     const { loadDurableContentOpsState } = await loadHelper();
-    const state = await loadDurableContentOpsState(["operator-a", "operator-b"]);
+    const state = await loadDurableContentOpsState([operatorItem("a"), operatorItem("b")]);
 
     expect(state.available).toBe(true);
     expect(state.unavailableReason).toBeNull();
@@ -109,32 +144,126 @@ describe("loadDurableContentOpsState", () => {
     ]);
 
     const { loadDurableContentOpsState } = await loadHelper();
-    const state = await loadDurableContentOpsState(["operator-a"]);
+    const state = await loadDurableContentOpsState([operatorItem("a")]);
 
     expect(state.reviewByItem.get("operator-a")?.status).toBe("qa_needed");
     expect(state.reviewByItem.get("operator-a")?.notes).toBe("Check the price claim.");
   });
 
   it("counts only human-verifiable evidence — a verified csv_seed row does not count", async () => {
+    mocks.rowsByTable.set(operators, [
+      { id: 42, slug: "a" },
+      { id: 7, slug: "b" },
+    ]);
     mocks.rowsByTable.set(listingEvidence, [
-      { entityId: "operator-a", verdict: "verified", sourceType: "operator_site" },
-      { entityId: "operator-a", verdict: "verified", sourceType: "csv_seed" },
-      { entityId: "operator-a", verdict: "unverified", sourceType: "operator_site" },
-      { entityId: "operator-b", verdict: "verified", sourceType: "csv_seed" },
+      { entityType: "operator", entityId: "42", verdict: "verified", sourceType: "operator_website" },
+      { entityType: "operator", entityId: "42", verdict: "verified", sourceType: "csv_seed" },
+      { entityType: "operator", entityId: "42", verdict: "unverified", sourceType: "operator_website" },
+      { entityType: "operator", entityId: "7", verdict: "verified", sourceType: "csv_seed" },
     ]);
 
     const { loadDurableContentOpsState } = await loadHelper();
-    const state = await loadDurableContentOpsState(["operator-a", "operator-b"]);
+    const state = await loadDurableContentOpsState([operatorItem("a"), operatorItem("b")]);
 
     expect(state.verifiedEvidenceCountByItem.get("operator-a")).toBe(1);
     expect(state.verifiedEvidenceCountByItem.get("operator-b") ?? 0).toBe(0);
+  });
+
+  it("resolves an operator's evidence entity id from operators.slug via its /directory/<slug> route", async () => {
+    mocks.rowsByTable.set(operators, [{ id: 42, slug: "gower-surf-academy" }]);
+    mocks.rowsByTable.set(listingEvidence, [
+      { entityType: "operator", entityId: "42", verdict: "verified", sourceType: "operator_website" },
+    ]);
+
+    const { loadDurableContentOpsState } = await loadHelper();
+    const state = await loadDurableContentOpsState([operatorItem("gower-surf-academy")]);
+
+    expect(state.evidenceTargetByItem.get("operator-gower-surf-academy")).toEqual({
+      entityType: "operator",
+      entityId: "42",
+    });
+    expect(state.verifiedEvidenceCountByItem.get("operator-gower-surf-academy")).toBe(1);
+  });
+
+  it("constrains the evidence query by entity_type as well as entity_id", async () => {
+    mocks.rowsByTable.set(operators, [{ id: 42, slug: "gower-surf-academy" }]);
+
+    const { loadDurableContentOpsState } = await loadHelper();
+    await loadDurableContentOpsState([operatorItem("gower-surf-academy")]);
+
+    const atoms = sqlAtoms(mocks.whereByTable.get(listingEvidence) ?? []);
+    expect(atoms).toContain("entity_type");
+    expect(atoms).toContain("operator");
+    expect(atoms).toContain("entity_id");
+    expect(atoms).toContain("42");
+    // The queue id must never be used as an evidence entity id.
+    expect(atoms).not.toContain("operator-gower-surf-academy");
+  });
+
+  it("does not count the same numeric entity id recorded under a different entity type", async () => {
+    mocks.rowsByTable.set(operators, [{ id: 42, slug: "gower-surf-academy" }]);
+    mocks.rowsByTable.set(listingEvidence, [
+      { entityType: "activity", entityId: "42", verdict: "verified", sourceType: "operator_website" },
+    ]);
+
+    const { loadDurableContentOpsState } = await loadHelper();
+    const state = await loadDurableContentOpsState([operatorItem("gower-surf-academy")]);
+
+    expect(state.verifiedEvidenceCountByItem.get("operator-gower-surf-academy") ?? 0).toBe(0);
+  });
+
+  it("does not treat the content_item_id as an evidence entity id", async () => {
+    mocks.rowsByTable.set(operators, [{ id: 42, slug: "gower-surf-academy" }]);
+    mocks.rowsByTable.set(listingEvidence, [
+      {
+        entityType: "operator",
+        entityId: "operator-gower-surf-academy",
+        verdict: "verified",
+        sourceType: "operator_website",
+      },
+    ]);
+
+    const { loadDurableContentOpsState } = await loadHelper();
+    const state = await loadDurableContentOpsState([operatorItem("gower-surf-academy")]);
+
+    expect(state.verifiedEvidenceCountByItem.get("operator-gower-surf-academy") ?? 0).toBe(0);
+  });
+
+  it("leaves an operator with no matching operators row unmapped rather than guessing", async () => {
+    mocks.rowsByTable.set(operators, []);
+    mocks.rowsByTable.set(listingEvidence, [
+      { entityType: "operator", entityId: "42", verdict: "verified", sourceType: "operator_website" },
+    ]);
+
+    const { loadDurableContentOpsState } = await loadHelper();
+    const state = await loadDurableContentOpsState([operatorItem("gower-surf-academy")]);
+
+    expect(state.evidenceTargetByItem.has("operator-gower-surf-academy")).toBe(false);
+    expect(state.verifiedEvidenceCountByItem.get("operator-gower-surf-academy") ?? 0).toBe(0);
+  });
+
+  it("maps no evidence target for content types without an explicit mapper", async () => {
+    const { loadDurableContentOpsState } = await loadHelper();
+    const state = await loadDurableContentOpsState([
+      {
+        contentItemId: "activity-location-anglesey-coasteering",
+        contentType: "activity_location",
+        routeOrSlug: "/anglesey/things-to-do/coasteering",
+      },
+    ]);
+
+    expect(state.available).toBe(true);
+    expect(state.evidenceTargetByItem.size).toBe(0);
+    expect(state.verifiedEvidenceCountByItem.size).toBe(0);
+    // No operator slugs to resolve, so the operators table is never queried.
+    expect(mocks.selectCalls).not.toContain(operators);
   });
 
   it("degrades visibly when the durable tables are missing, instead of throwing", async () => {
     mocks.queryError = new Error('relation "ops_decisions" does not exist');
 
     const { loadDurableContentOpsState } = await loadHelper();
-    const state = await loadDurableContentOpsState(["operator-a"]);
+    const state = await loadDurableContentOpsState([operatorItem("a")]);
 
     expect(state.available).toBe(false);
     expect(state.unavailableReason).toMatch(/migration/i);
@@ -147,13 +276,13 @@ describe("loadDurableContentOpsState", () => {
     mocks.queryError = new Error("getaddrinfo ENOTFOUND db.example.neon.tech");
 
     const { loadDurableContentOpsState } = await loadHelper();
-    const state = await loadDurableContentOpsState(["operator-a"]);
+    const state = await loadDurableContentOpsState([operatorItem("a")]);
 
     expect(state.available).toBe(false);
     expect(state.unavailableReason).toBeTruthy();
   });
 
-  it("does not query with an empty id list but still reports availability", async () => {
+  it("does not query with an empty item list but still reports availability", async () => {
     const { loadDurableContentOpsState } = await loadHelper();
     const state = await loadDurableContentOpsState([]);
 
@@ -171,6 +300,7 @@ describe("describeDurableStore", () => {
       latestDecisionByItem: new Map(),
       reviewByItem: new Map(),
       verifiedEvidenceCountByItem: new Map(),
+      evidenceTargetByItem: new Map(),
     });
 
     expect(description.tone).toBe("red");
@@ -186,6 +316,7 @@ describe("describeDurableStore", () => {
       latestDecisionByItem: new Map(),
       reviewByItem: new Map(),
       verifiedEvidenceCountByItem: new Map(),
+      evidenceTargetByItem: new Map(),
     });
 
     expect(description.tone).toBe("green");
@@ -203,11 +334,14 @@ const emptyItem = {
   sourceCount: 0,
 };
 
+const OPERATOR_TARGET = { entityType: "operator", entityId: "42" };
+
 const unknownDurable = {
   available: false,
   decision: null,
   review: null,
   verifiedEvidenceCount: 0,
+  evidenceTarget: null,
 };
 
 describe("buildQualityScorecard", () => {
@@ -253,7 +387,13 @@ describe("buildQualityScorecard", () => {
       buildQualityScorecard({
         item,
         research: null,
-        durable: { available, decision: null, review: null, verifiedEvidenceCount },
+        durable: {
+          available,
+          decision: null,
+          review: null,
+          verifiedEvidenceCount,
+          evidenceTarget: OPERATOR_TARGET,
+        },
       }).find((entry) => entry.key === "evidence");
 
     expect(evidenceFor(emptyItem, 0)?.tone).toBe("red");
@@ -261,6 +401,62 @@ describe("buildQualityScorecard", () => {
     expect(evidenceFor({ ...emptyItem, sourceCount: 4 }, 2)?.tone).toBe("green");
     // Durable store down means we cannot claim verification, whatever the file says.
     expect(evidenceFor({ ...emptyItem, sourceCount: 4 }, 2, false)?.tone).toBe("amber");
+  });
+
+  it("keeps evidence amber for an item with no mapped evidence entity, and says so", async () => {
+    const { buildQualityScorecard } = await loadHelper();
+    const evidence = buildQualityScorecard({
+      item: { ...emptyItem, sourceCount: 4 },
+      research: null,
+      durable: {
+        available: true,
+        decision: null,
+        review: null,
+        verifiedEvidenceCount: 0,
+        evidenceTarget: null,
+      },
+    }).find((entry) => entry.key === "evidence");
+
+    expect(evidence?.tone).toBe("amber");
+    expect(evidence?.detail).toMatch(/no .*evidence entity|not mapped/i);
+    // The wording must not imply the queue id is itself an evidence entity id.
+    expect(evidence?.detail).not.toMatch(/content[_ ]item[_ ]id/i);
+  });
+
+  it("never scores evidence green without a mapped evidence entity", async () => {
+    const { buildQualityScorecard } = await loadHelper();
+    const evidence = buildQualityScorecard({
+      item: { ...emptyItem, sourceCount: 4 },
+      research: null,
+      durable: {
+        available: true,
+        decision: null,
+        review: null,
+        verifiedEvidenceCount: 3,
+        evidenceTarget: null,
+      },
+    }).find((entry) => entry.key === "evidence");
+
+    expect(evidence?.tone).toBe("amber");
+  });
+
+  it("names the resolved evidence target when it reports verified evidence", async () => {
+    const { buildQualityScorecard } = await loadHelper();
+    const evidence = buildQualityScorecard({
+      item: { ...emptyItem, sourceCount: 4 },
+      research: null,
+      durable: {
+        available: true,
+        decision: null,
+        review: null,
+        verifiedEvidenceCount: 2,
+        evidenceTarget: OPERATOR_TARGET,
+      },
+    }).find((entry) => entry.key === "evidence");
+
+    expect(evidence?.tone).toBe("green");
+    expect(evidence?.detail).toMatch(/operator/);
+    expect(evidence?.detail).toMatch(/42/);
   });
 
   it("reflects the durable review state in the accuracy category", async () => {
@@ -274,6 +470,7 @@ describe("buildQualityScorecard", () => {
           decision: null,
           review: review ? { ...review, reviewedByEmail: "r@a.wales", reviewedAt: new Date() } : null,
           verifiedEvidenceCount: 0,
+          evidenceTarget: null,
         },
       }).find((entry) => entry.key === "accuracy");
 
@@ -298,6 +495,7 @@ describe("buildQualityScorecard", () => {
             : null,
           review: null,
           verifiedEvidenceCount: 0,
+          evidenceTarget: null,
         },
       }).find((entry) => entry.key === "approval");
 

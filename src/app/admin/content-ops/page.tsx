@@ -288,7 +288,13 @@ export default async function ContentOpsPage({
   // Durable state for exactly the items rendered below. Never throws: if the
   // fact-check migrations are missing or the database is unreachable, the
   // file-backed queue still renders and the banner says durable data is absent.
-  const durableState = await loadDurableContentOpsState(decisionQueue.map((item) => item.id));
+  const durableState = await loadDurableContentOpsState(
+    decisionQueue.map((item) => ({
+      contentItemId: item.id,
+      contentType: item.content_type,
+      routeOrSlug: item.route_or_slug ?? "",
+    })),
+  );
   const durableStore = describeDurableStore(durableState);
 
   const topTasks = queue.tasks.slice(0, 20);
@@ -385,6 +391,7 @@ export default async function ContentOpsPage({
                 decision: decision ?? null,
                 review: review ?? null,
                 verifiedEvidenceCount: durableState.verifiedEvidenceCountByItem.get(item.id) ?? 0,
+                evidenceTarget: durableState.evidenceTargetByItem.get(item.id) ?? null,
               },
             });
 

@@ -12,7 +12,7 @@
  audit          queue           research proposal        review          approved apply        DB              public page          build/crawl
 ┌─────────┐   ┌─────────┐   ┌──────────────────────┐   ┌──────────┐   ┌─────────────────┐   ┌────────┐   ┌────────────────────┐   ┌──────────────────┐
 │ content │──▶│ task-   │──▶│ agent research pass   │──▶│ human /  │──▶│ human applies    │──▶│ Neon   │──▶│ /admin/content-ops │──▶│ typecheck, lint,  │
-│ gap +   │   │ queue   │   │ (Jules CLI session)   │   │ Opus     │   │ change to DB /   │   │ Postgres│   │ dashboard shows    │   │ test, build, then │
+│ gap +   │   │ queue   │   │ (Jules API session)   │   │ Opus     │   │ change to DB /   │   │ Postgres│   │ dashboard shows    │   │ test, build, then │
 │ inventory│  │ .json   │   │ writes proposal JSON  │   │ verify   │   │ code, sets       │   │ (Drizzle│   │ status; only       │   │ npm run build +   │
 │ audit   │   │         │   │                       │   │ pass     │   │ status=published │   │ ORM)   │   │ published rows     │   │ crawl before it   │
 └─────────┘   └─────────┘   └──────────────────────┘   └──────────┘   └─────────────────┘   └────────┘   │ leave the DB       │   └──────────────────┘

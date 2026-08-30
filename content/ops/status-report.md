@@ -1,6 +1,6 @@
 # Adventure Wales Content Ops Status Report
 
-Generated: 2026-08-29T09:34:59.475Z
+Generated: 2026-08-30T08:42:05.513Z
 
 ## Inputs
 

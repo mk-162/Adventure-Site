@@ -1,0 +1,23 @@
+# Daily dependency audit so vulnerable packages are caught within a day,
+# instead of piling up as Dependabot alerts nobody reads.
+name: dependency-audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  audit:
+    name: npm audit (high and above)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Audit
+        run: npm audit --audit-level=high

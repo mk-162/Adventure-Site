@@ -37,7 +37,7 @@ jobs:
         run: npm run content-ops:report
 
       - name: Commit updated content-ops outputs
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "chore: nightly content-ops audit"
           file_pattern: "content/ops/"
